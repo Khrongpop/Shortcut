@@ -59,6 +59,8 @@
               :state="Boolean(file)"
               placeholder="Choose a file..."
               drop-placeholder="Drop file here..."
+              accept="image/*"
+              required
             ></b-form-file>
           </b-col>
         </b-row>
@@ -66,17 +68,17 @@
         <b-button type="submit" variant="primary">Submit</b-button>
         <b-button type="reset" variant="danger">Reset</b-button>
 
-        <b-button variant="primary" @click="writeToFirestore" :disabled="writeSuccessful">
+        <!-- <b-button variant="primary" @click="writeToFirestore" :disabled="writeSuccessful">
           <span v-if="!writeSuccessful">Write now</span>
           <span v-else>Successful!</span>
-        </b-button>
+        </b-button>-->
       </b-form>
     </div>
   </section>
 </template>
 
 <script>
-import { fireDb } from "~/plugins/firebase.js";
+import { fireDb, realDb, storage } from "~/plugins/firebase.js";
 export default {
   data() {
     return {
@@ -85,7 +87,9 @@ export default {
         name: "",
         phone: null,
         email: "",
-        sex: "male"
+        sex: "male",
+        image: null,
+        timestamp: null
       },
       foods: [
         { text: "Select One", value: null },
@@ -101,23 +105,65 @@ export default {
   },
   methods: {
     async writeToFirestore() {
-      const ref = fireDb.collection("users").doc();
+      // const ref = fireDb.collection("users").doc();
+      const ref = realDb.ref("users");
+      this.form.timestamp = new Date();
       // const document = {
       //   text: "This is a test message."
       // };
       try {
-        await ref.set(this.form);
+        // await ref.set(this.form);
+        await ref.push(this.form);
       } catch (e) {
         // TODO: error handling
         console.error(e);
       }
       this.writeSuccessful = true;
     },
-    onSubmit(evt) {
+    async onSubmit(evt) {
       evt.preventDefault();
-      alert(JSON.stringify(this.form));
-      console.log(this.users);
-      // this.users.push(this.form);
+
+      let filename = new Date().getTime() + "_" + this.file.name;
+      // this.form.timestamp = new Date().toString;
+      let storageRef = storage
+        // .ref("images")
+        // .ref("users")
+        .ref("image/users/" + filename);
+
+      let uploadTask = storageRef.put(this.file);
+      const _this = this;
+      const ref = realDb.ref("users");
+
+      uploadTask.on(
+        "state_changed",
+        function(snapshot) {},
+        function(error) {
+          // Handle unsuccessful uploads
+        },
+        function() {
+          uploadTask.snapshot.ref.getDownloadURL().then(function(downloadURL) {
+            console.log("File available at", downloadURL);
+            // Editor.insertEmbed(cursorLocation, "image", downloadURL);
+            _this.form.image = downloadURL;
+            // const ref = _this.realDb.ref("users");
+            try {
+              ref.push(_this.form);
+            } catch (e) {
+              // TODO: error handling
+              console.error(e);
+            }
+            // resetUploader();
+          });
+        }
+      );
+
+      //  const ref = realDb.ref("users");
+      // try {
+      //   await ref.push(this.form);
+      // } catch (e) {
+      //   // TODO: error handling
+      //   console.error(e);
+      // }
     },
     onReset(evt) {
       evt.preventDefault();
