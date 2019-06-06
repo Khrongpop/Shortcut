@@ -15,6 +15,7 @@
 
 import firebase from 'firebase/app'
 import 'firebase/firestore'
+import 'firebase'
 if (!firebase.apps.length) {
     const config = {
       apiKey: "AIzaSyAfLD6sQmWntuBrakzuk6Z5mP4b6IjqY3k",
@@ -29,4 +30,5 @@ if (!firebase.apps.length) {
     // firebase.firestore().settings({timestampsInSnapshots: true})
 }
 export const fireDb = firebase.firestore()
+export const realDb = firebase.database()
 

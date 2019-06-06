@@ -76,7 +76,7 @@
 </template>
 
 <script>
-import { fireDb } from "~/plugins/firebase.js";
+import { fireDb, realDb } from "~/plugins/firebase.js";
 export default {
   data() {
     return {
@@ -85,7 +85,8 @@ export default {
         name: "",
         phone: null,
         email: "",
-        sex: "male"
+        sex: "male",
+        timestamp: null
       },
       foods: [
         { text: "Select One", value: null },
@@ -101,12 +102,15 @@ export default {
   },
   methods: {
     async writeToFirestore() {
-      const ref = fireDb.collection("users").doc();
+      // const ref = fireDb.collection("users").doc();
+      const ref = realDb.ref("users");
+      this.form.timestamp = new Date();
       // const document = {
       //   text: "This is a test message."
       // };
       try {
-        await ref.set(this.form);
+        // await ref.set(this.form);
+        await ref.push(this.form);
       } catch (e) {
         // TODO: error handling
         console.error(e);
