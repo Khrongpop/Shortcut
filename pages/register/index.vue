@@ -66,10 +66,10 @@
         <b-button type="submit" variant="primary">Submit</b-button>
         <b-button type="reset" variant="danger">Reset</b-button>
 
-        <b-button variant="primary" @click="writeToFirestore" :disabled="writeSuccessful">
+        <!-- <b-button variant="primary" @click="writeToFirestore" :disabled="writeSuccessful">
           <span v-if="!writeSuccessful">Write now</span>
           <span v-else>Successful!</span>
-        </b-button>
+        </b-button>-->
       </b-form>
     </div>
   </section>
@@ -86,6 +86,7 @@ export default {
         phone: null,
         email: "",
         sex: "male",
+        image: null,
         timestamp: null
       },
       foods: [
@@ -117,11 +118,19 @@ export default {
       }
       this.writeSuccessful = true;
     },
-    onSubmit(evt) {
+    async onSubmit(evt) {
       evt.preventDefault();
-      alert(JSON.stringify(this.form));
-      console.log(this.users);
+      // alert(JSON.stringify(this.form));
+      // console.log(this.users);
       // this.users.push(this.form);
+
+      const ref = realDb.ref("users");
+      try {
+        await ref.push(this.form);
+      } catch (e) {
+        // TODO: error handling
+        console.error(e);
+      }
     },
     onReset(evt) {
       evt.preventDefault();
