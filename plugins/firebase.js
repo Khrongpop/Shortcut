@@ -33,4 +33,5 @@ if (!firebase.apps.length) {
 export const fireDb = firebase.firestore()
 export const realDb = firebase.database()
 export const storage = firebase.storage()
+export const users = realDb.ref('users')
 

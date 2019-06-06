@@ -124,7 +124,7 @@ export default {
       evt.preventDefault();
 
       let filename = new Date().getTime() + "_" + this.file.name;
-      this.form.timestamp = new Date().toString;
+      // this.form.timestamp = new Date().toString;
       let storageRef = storage
         // .ref("images")
         // .ref("users")
