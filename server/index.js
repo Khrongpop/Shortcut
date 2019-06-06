@@ -21,6 +21,12 @@ async function start() {
     await nuxt.ready()
   }
 
+
+  app.get('/api/', (req, res) => {
+    res.json({type: 'success', message: 'Test OK'})
+  })
+
+
   // Give nuxt middleware to express
   app.use(nuxt.render)
 
@@ -32,3 +38,5 @@ async function start() {
   })
 }
 start()
+
+

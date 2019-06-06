@@ -30,8 +30,9 @@ export default {
     };
   },
   async asyncData({ app, params, error }) {
-    const ref = fireDb.collection("users").doc("users");
+    const ref = fireDb.collection("users");
     let snap;
+    console.log(ref);
     try {
       snap = await ref.get();
       console.log(snap);
@@ -40,7 +41,7 @@ export default {
       console.error(e);
     }
     return {
-      text: snap.data().text
+      text: "snap.data()"
     };
   },
   methods: {
@@ -58,15 +59,16 @@ export default {
       this.writeSuccessful = true;
     },
     async readFromFirestore() {
-      const ref = fireDb.collection("users").doc("users");
+      const ref = fireDb.collection("users");
       let snap;
+      console.log(ref);
       try {
         snap = await ref.get();
       } catch (e) {
         // TODO: error handling
         console.error(e);
       }
-      this.text = snap.data().text;
+      this.text = snap.data();
       this.readSuccessful = true;
     }
   }
