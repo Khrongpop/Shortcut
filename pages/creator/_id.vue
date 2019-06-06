@@ -1,6 +1,8 @@
 <template>
   <div>
-    {{creator(id)}}
+    <pre>
+        {{creator(id)}}
+    </pre>
   </div>
 </template>
 

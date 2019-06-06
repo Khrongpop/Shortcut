@@ -1,9 +1,13 @@
 #menu {
   color: $color-white;
+  padding: 40px 0;
+  .hamburger{
+    float: left;
+    margin-top: -10px;
+  }
   .menu-list {
     float: right;
     text-transform: uppercase;
-    padding: 40px 0;
     list-style: none;
     li {
       float: left;
@@ -14,4 +18,42 @@
     }
   }
 }
+
+#menu-trigger{
+  top:40px;
+  @keyframes in {
+    0%{
+      left: -120%;
+    }
+    100%{
+      left: 0%;
+    }
+  }
+  @keyframes out {
+    0%{
+      left: 0%;
+    }
+    100%{
+      left: -120%;
+    }
+  }
+  .menu-trigger-in {
+    background:#333;
+    width: 100%;
+    left: 0;
+    position: absolute;
+    height: 100%;
+    animation: in 1s ease-in-out;
+  }
+  .menu-trigger-out {
+    background:#333;
+    width: 100%;
+    left: -120%;
+    position: absolute;
+    height: 100%;
+    animation: out 1s ease-in-out;
+
+  }
+}
+
 

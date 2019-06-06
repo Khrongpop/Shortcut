@@ -1,0 +1,7 @@
+[
+  {"id":1, "name":"healtech", "icon":"jpg"},
+  {"id":2, "name":"entertainment media", "icon":"jpg"},
+  {"id":3, "name":"instructional media", "icon":"jpg"},
+  {"id":4, "name":"service&management", "icon":"jpg"},
+  {"id":5, "name":"lifestyle", "icon":"jpg"}
+]

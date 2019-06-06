@@ -1,15 +1,16 @@
 <template>
   <div id="top-menu">
-    <menu-app class="clearfix"/>
+    <menu-app/>
     <nuxt />
   </div>
 </template>
 
 <script>
 import MenuApp from '~/components/Menu'
+
 export default {
   components: {
-    MenuApp
+    MenuApp,
   }
 }
 </script>
