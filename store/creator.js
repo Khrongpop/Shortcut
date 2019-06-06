@@ -1,5 +1,5 @@
-import creators from '../data/creators'
-import details from '../data/creator_details'
+import creators from '../data/creators.json'
+import details from '../data/creator_details.json'
 export const state = () => ({
   creators,
   details
