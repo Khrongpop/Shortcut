@@ -14,8 +14,9 @@
 
 
 import firebase from 'firebase/app'
-import 'firebase/firestore'
 import 'firebase'
+import 'firebase/firestore'
+import 'firebase/storage'
 if (!firebase.apps.length) {
     const config = {
       apiKey: "AIzaSyAfLD6sQmWntuBrakzuk6Z5mP4b6IjqY3k",
@@ -31,4 +32,5 @@ if (!firebase.apps.length) {
 }
 export const fireDb = firebase.firestore()
 export const realDb = firebase.database()
+export const storage = firebase.storage()
 

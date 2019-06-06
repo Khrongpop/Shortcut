@@ -76,7 +76,7 @@
 </template>
 
 <script>
-import { fireDb, realDb } from "~/plugins/firebase.js";
+import { fireDb, realDb, storage } from "~/plugins/firebase.js";
 export default {
   data() {
     return {
@@ -120,17 +120,47 @@ export default {
     },
     async onSubmit(evt) {
       evt.preventDefault();
-      // alert(JSON.stringify(this.form));
-      // console.log(this.users);
-      // this.users.push(this.form);
 
+      let filename = new Date().getTime() + "_" + this.file.name;
+      let storageRef = storage
+        // .ref("images")
+        // .ref("users")
+        .ref("image/users/" + filename);
+
+      let uploadTask = storageRef.put(this.file);
+      const _this = this;
       const ref = realDb.ref("users");
-      try {
-        await ref.push(this.form);
-      } catch (e) {
-        // TODO: error handling
-        console.error(e);
-      }
+
+      uploadTask.on(
+        "state_changed",
+        function(snapshot) {},
+        function(error) {
+          // Handle unsuccessful uploads
+        },
+        function() {
+          uploadTask.snapshot.ref.getDownloadURL().then(function(downloadURL) {
+            console.log("File available at", downloadURL);
+            // Editor.insertEmbed(cursorLocation, "image", downloadURL);
+            _this.form.image = downloadURL;
+            // const ref = _this.realDb.ref("users");
+            try {
+              ref.push(_this.form);
+            } catch (e) {
+              // TODO: error handling
+              console.error(e);
+            }
+            // resetUploader();
+          });
+        }
+      );
+
+      //  const ref = realDb.ref("users");
+      // try {
+      //   await ref.push(this.form);
+      // } catch (e) {
+      //   // TODO: error handling
+      //   console.error(e);
+      // }
     },
     onReset(evt) {
       evt.preventDefault();
