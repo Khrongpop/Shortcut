@@ -59,6 +59,8 @@
               :state="Boolean(file)"
               placeholder="Choose a file..."
               drop-placeholder="Drop file here..."
+              accept="image/*"
+              required
             ></b-form-file>
           </b-col>
         </b-row>
@@ -122,6 +124,7 @@ export default {
       evt.preventDefault();
 
       let filename = new Date().getTime() + "_" + this.file.name;
+      this.form.timestamp = new Date().toString;
       let storageRef = storage
         // .ref("images")
         // .ref("users")
