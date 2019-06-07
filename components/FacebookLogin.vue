@@ -15,6 +15,7 @@
 
 <script>
 import { users, dbAuth, provider } from "~/plugins/firebase.js";
+// import { users, dbAuth, provider } from "~/func/shortcut/plugins/firebase";
 export default {
   methods: {
     fbSignIn: function() {

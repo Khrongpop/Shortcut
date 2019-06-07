@@ -82,6 +82,8 @@
 import { fireDb, realDb, storage } from "~/plugins/firebase.js";
 import fbLogin from "@/components/FacebookLogin";
 
+// import { fireDb, realDb, storage } from "~/func/shortcut/plugins/firebase";
+
 export default {
   components: {
     fbLogin

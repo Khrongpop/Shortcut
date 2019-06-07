@@ -16,6 +16,7 @@
 </template>
 <script>
 import { realDb } from "~/plugins/firebase";
+// import { realDb } from "~/func/shortcut/plugins/firebase";
 export default {
   // firebase: {
   //   usersdata: realDb.ref("users")
