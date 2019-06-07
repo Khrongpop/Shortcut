@@ -12,6 +12,7 @@
       <br>
       {{users[getIndex].sex}}
     </div>
+    <div v-else>no</div>
   </section>
 </template>
 <script>
