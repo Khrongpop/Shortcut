@@ -1,8 +1,10 @@
 <template>
   <section class="container">
-    <div>
+    <div v-if="getIndex >= 0">
       <img :src="users[getIndex].image" alt>
       {{ users[getIndex].fullname }}
+      <br>
+      {{ users[getIndex].name }}
       <br>
       {{ users[getIndex].email }}
       <br>
@@ -51,16 +53,19 @@ export default {
   computed: {
     getIndex() {
       let count = this.users.length;
-
-      if (count % 3 == 0) {
-        console.log(count % 3);
-        return count - 1 - 1;
-      } else if (count % 3 == 2) {
-        console.log(count % 2);
+      if (count <= 1) {
         return count - 1;
       } else {
-        console.log(count % 1);
-        return count - 2 - 1;
+        if (count % 3 == 0) {
+          console.log(count % 3);
+          return count - 1 - 1;
+        } else if (count % 3 == 2) {
+          console.log(count % 2);
+          return count - 1;
+        } else {
+          console.log(count % 1);
+          return count - 2 - 1;
+        }
       }
     }
   }

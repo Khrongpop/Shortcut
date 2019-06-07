@@ -2,7 +2,8 @@
   <section class="container">
     <div>
       <div v-for="(user,index) in users" :key="index">
-        <img :src="user.image" alt>
+        <!-- <img :src="user.image" alt> -->
+        <b-img v-bind="mainProps" rounded="circle" :alt="user.fullname" :src="user.image"></b-img>
         {{ user.fullname }}
         <br>
         {{ user.email }}
@@ -10,13 +11,10 @@
         {{ user.phone }}
         <br>
         {{user.sex}}
+        <br>
+        <br>
+        <br>
       </div>
-
-      <br>
-      <br>
-      {{users.length}}
-      <br>
-      <br>
     </div>
   </section>
 </template>
@@ -28,7 +26,14 @@ export default {
   // },
   data() {
     return {
-      users: []
+      users: [],
+      mainProps: {
+        // blank: true,
+        // blankColor: "#777",
+        width: 75,
+        height: 75,
+        class: "m1"
+      }
     };
   },
   async asyncData({ app, params, error }) {
@@ -59,3 +64,10 @@ export default {
   methods: {}
 };
 </script>
+
+<style scoped>
+img {
+  object-fit: cover;
+}
+</style>
+
