@@ -17,6 +17,10 @@
       {{getIndex()}}
       <br>
       <br>
+
+      <br>
+      <input type="text" v-model="check">
+      {{test}}
     </div>
   </section>
 </template>
@@ -28,7 +32,8 @@ export default {
   // },
   data() {
     return {
-      users: []
+      users: [],
+      check: 1
     };
   },
   async asyncData({ app, params, error }) {
@@ -62,14 +67,55 @@ export default {
 
       if (count % 3 == 0) {
         console.log(count % 3);
-        return count;
+        return count - 2;
       } else if (count % 3 == 2) {
         console.log(count % 2);
         return count - 1;
       } else {
         console.log(count % 1);
-        return count - 2;
+        return count;
       }
+    }
+  },
+  computed: {
+    test() {
+      let count = this.check;
+
+      // TODO : FIRST
+      // if (count % 3 == 0) {
+      //   console.log(count % 3);
+      //   return count - 2;
+      // } else if (count % 3 == 2) {
+      //   console.log(count % 2);
+      //   return count - 1;
+      // } else {
+      //   console.log(count % 1);
+      //   return count;
+      // }
+
+      // TODO : SECOND
+      // if (count % 3 == 0) {
+      //   console.log(count % 3);
+      //   return count - 1;
+      // } else if (count % 3 == 2) {
+      //   console.log(count % 2);
+      //   return count;
+      // } else {
+      //   console.log(count % 1);
+      //   return count - 2;
+      // }
+
+      // TODO : THIRD
+      // if (count % 3 == 0) {
+      //   console.log(count % 3);
+      //   return count;
+      // } else if (count % 3 == 2) {
+      //   console.log(count % 2);
+      //   return count - 2;
+      // } else {
+      //   console.log(count % 1);
+      //   return count - 1;
+      // }
     }
   }
 };
