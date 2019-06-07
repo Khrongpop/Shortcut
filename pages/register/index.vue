@@ -1,5 +1,6 @@
 <template>
   <section class="container">
+    <fb-login/>
     <div>
       <b-form @submit="onSubmit" @reset="onReset" v-if="show">
         <b-row>
@@ -79,7 +80,12 @@
 
 <script>
 import { fireDb, realDb, storage } from "~/plugins/firebase.js";
+import fbLogin from '@/components/FacebookLogin'
+
 export default {
+  components:{
+    fbLogin
+  },
   data() {
     return {
       form: {
