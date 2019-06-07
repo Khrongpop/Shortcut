@@ -1,26 +1,15 @@
 <template>
   <section class="container">
     <div>
-      <div v-for="(user,index) in users" :key="index">
-        <img :src="user.image" alt>
-        {{ user.fullname }}
-        <br>
-        {{ user.email }}
-        <br>
-        {{ user.phone }}
-        <br>
-        {{user.sex}}
-      </div>
-
+      <!-- {{users[getIndex]}} -->
+      <img :src="users[getIndex].image" alt>
+      {{ users[getIndex].fullname }}
       <br>
+      {{ users[getIndex].email }}
       <br>
-      {{getIndex()}}
+      {{ users[getIndex].phone }}
       <br>
-      <br>
-
-      <br>
-      <input type="text" v-model="check">
-      {{test}}
+      {{users[getIndex].sex}}
     </div>
   </section>
 </template>
@@ -37,7 +26,7 @@ export default {
     };
   },
   async asyncData({ app, params, error }) {
-    const ref = realDb.ref("users");
+    const ref = realDb.ref("users").orderByChild("starCount");
     let snap;
     let users = [];
     const _this = this;
@@ -62,6 +51,21 @@ export default {
     };
   },
   methods: {
+    // getIndex() {
+    //   let count = this.users.length;
+    //   if (count % 3 == 0) {
+    //     console.log(count % 3);
+    //     return count - 2;
+    //   } else if (count % 3 == 2) {
+    //     console.log(count % 2);
+    //     return count - 1;
+    //   } else {
+    //     console.log(count % 1);
+    //     return count;
+    //   }
+    // }
+  },
+  computed: {
     getIndex() {
       let count = this.users.length;
 
@@ -75,9 +79,7 @@ export default {
         console.log(count % 1);
         return count;
       }
-    }
-  },
-  computed: {
+    },
     test() {
       let count = this.check;
 

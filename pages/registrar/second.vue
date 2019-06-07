@@ -56,7 +56,7 @@ export default {
       users: users
     };
   },
-  methods: {
+  computed: {
     getIndex() {
       let count = this.users.length;
 
