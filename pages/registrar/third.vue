@@ -1,22 +1,14 @@
 <template>
   <section class="container">
     <div>
-      <div v-for="(user,index) in users" :key="index">
-        <img :src="user.image" alt>
-        {{ user.fullname }}
-        <br>
-        {{ user.email }}
-        <br>
-        {{ user.phone }}
-        <br>
-        {{user.sex}}
-      </div>
-
+      <img :src="users[getIndex].image" alt>
+      {{ users[getIndex].fullname }}
       <br>
+      {{ users[getIndex].email }}
       <br>
-      {{users.length}}
+      {{ users[getIndex].phone }}
       <br>
-      <br>
+      {{users[getIndex].sex}}
     </div>
   </section>
 </template>
@@ -62,13 +54,13 @@ export default {
 
       if (count % 3 == 0) {
         console.log(count % 3);
-        return count;
+        return count - 1;
       } else if (count % 3 == 2) {
         console.log(count % 2);
-        return count - 2;
+        return count - 2 - 1;
       } else {
         console.log(count % 1);
-        return count - 1;
+        return count - 1 - 1;
       }
     }
   }
