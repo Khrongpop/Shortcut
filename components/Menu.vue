@@ -74,6 +74,7 @@ aside {
 .loading {
   // font-family: "The Girl Next Door", cursive;
   padding: 3px;
+  box-sizing: border-box;
 
   -webkit-filter: hue-rotate(@hueRotate);
   height: 71px;
