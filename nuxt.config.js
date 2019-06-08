@@ -31,7 +31,9 @@ module.exports = {
     // CSS file in the project
    // '@/assets/css/main.css',
     // SCSS file in the project
-    '@/assets/css/main.scss'
+    '@/assets/css/main.scss',
+
+    '@/assets/less/main.less'
   ],
 
   /*
