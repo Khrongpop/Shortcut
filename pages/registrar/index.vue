@@ -1,8 +1,8 @@
 <template>
   <section class="container">
     <div>
-      {{usersdata}}
-      <!-- <div v-for="(user,index) in users" :key="index">
+      <!-- {{usersdata}} -->
+      <div v-for="(user,index) in users" :key="index">
         <b-img v-bind="mainProps" rounded="circle" :alt="user.fullname" :src="user.image"></b-img>
         {{ user.fullname }}
         <br>
@@ -14,7 +14,7 @@
         <br>
         <br>
         <br>
-      </div>-->
+      </div>
     </div>
   </section>
 </template>
@@ -22,9 +22,9 @@
 import { realDb, users } from "~/plugins/firebase";
 // import { realDb } from "~/func/shortcut/plugins/firebase";
 export default {
-  firebase: {
-    usersdata: users
-  },
+  // firebase: {
+  //   usersdata: users
+  // },
   data() {
     return {
       users: [],
