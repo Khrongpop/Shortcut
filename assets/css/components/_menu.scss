@@ -1,6 +1,9 @@
 #menu {
   color: $color-white;
   padding: 40px 0;
+  .mn-50 {
+    min-height:50px;
+  }
   .hamburger{
     float: left;
     margin-top: -10px;
@@ -52,7 +55,6 @@
     position: absolute;
     height: 100%;
     animation: out 1s ease-in-out;
-
   }
 }
 
