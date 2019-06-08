@@ -1,7 +1,6 @@
 <template>
   <section class="container">
     <div>
-      <!-- {{usersdata}} -->
       <div v-for="(user,index) in users" :key="index">
         <b-img v-bind="mainProps" rounded="circle" :alt="user.fullname" :src="user.image"></b-img>
         {{ user.fullname }}
@@ -42,8 +41,9 @@ export default {
     let snap;
     let users = [];
     const _this = this;
+    console.log(ref);
     try {
-      ref.once("value", function(snapshot) {
+      ref.on("value", function(snapshot) {
         snapshot.forEach(function(childSnapshot) {
           var childKey = childSnapshot.key;
           var childData = childSnapshot.val();
@@ -62,7 +62,33 @@ export default {
       users: users
     };
   },
-  methods: {}
+  methods: {},
+  computed: {
+    usersData() {
+      const ref = realDb.ref("users");
+      let snap;
+      let users = [];
+      const _this = this;
+      console.log(ref);
+      try {
+        ref.on("value", function(snapshot) {
+          snapshot.forEach(function(childSnapshot) {
+            var childKey = childSnapshot.key;
+            var childData = childSnapshot.val();
+            // console.log("childKey", childKey);
+            // console.log("childData", childData);
+            users.push(childData);
+          });
+        });
+
+        // console.log(snap);
+      } catch (e) {
+        // TODO: error handling
+        console.error(e);
+      }
+      this.users = users;
+    }
+  }
 };
 </script>
 
