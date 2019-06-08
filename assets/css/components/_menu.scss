@@ -1,6 +1,9 @@
 #menu {
   color: $color-white;
   padding: 40px 0;
+  .mn-50 {
+    min-height:50px;
+  }
   .hamburger{
     float: left;
     margin-top: -10px;
@@ -38,7 +41,7 @@
     }
   }
   .menu-trigger-in {
-    background:#333;
+    background:#000;
     width: 100%;
     left: 0;
     position: absolute;
@@ -46,13 +49,12 @@
     animation: in 1s ease-in-out;
   }
   .menu-trigger-out {
-    background:#333;
+    background:#000;
     width: 100%;
     left: -120%;
     position: absolute;
     height: 100%;
     animation: out 1s ease-in-out;
-
   }
 }
 

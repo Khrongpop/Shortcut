@@ -1,7 +1,7 @@
 <template>
   <div id="menu-trigger">
     <div :class="triggerClass">
-      arm
+      <img src="../assets/images/menu/logo.png" alt="">
     </div>
   </div>
 </template>
