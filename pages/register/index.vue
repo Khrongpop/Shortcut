@@ -2,7 +2,7 @@
   <section class="container">
     <fb-login/>
     <div>
-      <b-form @submit="onSubmit" @reset="onReset" v-if="show">
+      <b-form @submit="onSubmit" v-if="show">
         <b-row>
           <b-col col md="6">
             <b-form-group label="FULL NAME" label-for="input-fullname">
@@ -13,22 +13,19 @@
                 placeholder="SASITHORN SINJAROENPONG"
               ></b-form-input>
             </b-form-group>
-          </b-col>
 
-          <b-col col md="6">
             <b-form-group label="NICKNAME" label-for="input-name">
               <b-form-input id="input-name" v-model="form.name" required placeholder="CHOMPOO"></b-form-input>
             </b-form-group>
-          </b-col>
-        </b-row>
 
-        <b-row>
-          <b-col col md="6">
-            <b-form-group label="PHONE NUMBER" label-for="input-phone">
-              <b-form-input id="input-phone" v-model="form.phone" required placeholder="0836674545"></b-form-input>
+            <b-form-group label="JOB / POSITION" label-for="input-job">
+              <b-form-input id="input-job" v-model="form.job" required placeholder="CHOMPOO"></b-form-input>
             </b-form-group>
-          </b-col>
-          <b-col col md="6">
+
+            <b-form-group label="DEPARTMENT / ACADEMY " label-for="input-department">
+              <b-form-input id="input-department" v-model="form.department" required placeholder="CHOMPOO"></b-form-input>
+            </b-form-group>
+
             <b-form-group label="EMAIL" label-for="input-email">
               <b-form-input
                 id="input-email"
@@ -39,21 +36,7 @@
               ></b-form-input>
             </b-form-group>
           </b-col>
-        </b-row>
 
-        <b-row>
-          <b-col col md="6">
-            <b-form-group label="Sex">
-              <b-row>
-                <b-col col md="6">
-                  <b-form-radio v-model="form.sex" name="some-radios" value="male">MALE</b-form-radio>
-                </b-col>
-                <b-col col md="6">
-                  <b-form-radio v-model="form.sex" name="some-radios" value="female">FEMALE</b-form-radio>
-                </b-col>
-              </b-row>
-            </b-form-group>
-          </b-col>
           <b-col col md="6">
             <b-form-file
               v-model="file"
@@ -67,7 +50,6 @@
         </b-row>
 
         <b-button type="submit" variant="primary">Submit</b-button>
-        <b-button type="reset" variant="danger">Reset</b-button>
 
         <!-- <b-button variant="primary" @click="writeToFirestore" :disabled="writeSuccessful">
           <span v-if="!writeSuccessful">Write now</span>
@@ -93,9 +75,9 @@ export default {
       form: {
         fullname: "",
         name: "",
-        phone: null,
+        job: "",
+        department: "",
         email: "",
-        sex: "male",
         image: null,
         timestamp: null
       },
@@ -160,7 +142,6 @@ export default {
               // TODO: error handling
               console.error(e);
             }
-            // resetUploader();
           });
         }
       );
@@ -173,20 +154,20 @@ export default {
       //   console.error(e);
       // }
     },
-    onReset(evt) {
-      evt.preventDefault();
-      // Reset our form values
-      this.form.fullname = "";
-      this.form.name = "";
-      this.form.phone = "";
-      this.form.email = "";
-      this.form.sex = "male";
-      // Trick to reset/clear native browser form validation state
-      this.show = false;
-      this.$nextTick(() => {
-        this.show = true;
-      });
-    }
+    // onReset(evt) {
+    //   evt.preventDefault();
+    //   // Reset our form values
+    //   this.form.fullname = "";
+    //   this.form.name = "";
+    //   this.form.job = "";
+    //   this.form.department = "";
+    //   this.form.email = "";
+    //   // Trick to reset/clear native browser form validation state
+    //   this.show = false;
+    //   this.$nextTick(() => {
+    //     this.show = true;
+    //   });
+    // }
   }
 };
 </script>
