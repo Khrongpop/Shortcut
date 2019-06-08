@@ -7,18 +7,21 @@
       <transition name="fade">
         <ul class="menu-list" v-show="!showHamburger">
           <li v-for="link in links" :key="link.name">
-            <nuxt-link :to="{name:link.path ? link.path : link.name}">{{link.name}}</nuxt-link>
+            <aside class="loading">
+              <nuxt-link :to="{name:link.path ? link.path : link.name}">{{link.name}}</nuxt-link>
+              <span :class="$route.name == (link.path ? link.path : link.name) ? 'border' :''"></span>
+            </aside>
           </li>
         </ul>
       </transition>
 
-      <aside class="loading">
+      <!-- <aside class="loading">
         <span class="text">Loading</span>
         <span class="border"></span>
-      </aside>
+      </aside> -->
     </div>
 
-    <menu-trigger :status="showHamburger" v-if="click" :menus="links"/>
+    <menu-trigger :status="showHamburger" v-if="click" :menus="links" @routeChange="triggerFalse()"/>
   </div>
 </template>
 
@@ -44,6 +47,9 @@ export default {
     menuTrigger() {
       this.click = true;
       this.showHamburger = !this.showHamburger;
+    },
+    triggerFalse(){
+      this.showHamburger = false
     }
   },
   components: {
@@ -67,13 +73,11 @@ aside {
 
 .loading {
   // font-family: "The Girl Next Door", cursive;
-  font-size: 26px;
   padding: 3px;
 
-  background-size: 130%;
   -webkit-filter: hue-rotate(@hueRotate);
-  height: 50px;
-  line-height: 46px;
+  height: 71px;
+  // line-height: 46px;
   color: white;
   border-radius: 8px;
   text-align: center;
@@ -148,8 +152,8 @@ body {
   height: 500px;
 }
 
-.loading {
-  background-color: #36c4e6;
+.loading, .nuxt-link-active {
+  // background-color: #36c4e6;
   border-radius: 25px;
   // border: 2px solid #bbddee;
 }
