@@ -32,6 +32,8 @@ export default {
     const ref = realDb.ref("users").orderByChild("starCount");
     let snap;
     let users = [];
+    // console.log("object");
+    console.log(ref);
     const _this = this;
     try {
       ref.once("value", function(snapshot) {
