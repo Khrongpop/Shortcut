@@ -1,25 +1,47 @@
 <template>
   <div id="menu-trigger">
     <div :class="triggerClass">
-      <div class="row">
+      <div class="row px-5">
         <div class="col-md-4">
           <img src="../assets/images/menu/logo.png">
         </div>
+
         <div class="col-md-4">
-          <ul class="menu-list">
-            <li v-for="link in menus" :key="link.name" style="float:none;">
-              <nuxt-link :to="{name:link.path ? link.path : link.name}"><img :src="`../assets/images/menu/${link.icon}.png`" width="40">{{link.name}}</nuxt-link>
+          <ul class="menu-list2">
+            <li v-for="link in menus" :key="link.name" style="float:none;" @click="$emit('routeChange', true )">
+              <nuxt-link :to="{name:link.path ? link.path : link.name}">
+                {{link.name}}
+              </nuxt-link>
             </li>
           </ul>
         </div>
+
+
+        <div class="col-md-4">
+          <ul class="menu-list2">
+            <li v-for="link in categories" :key="link.name" style="float:none;">
+              <nuxt-link :to="{name:link.path ? link.path : link.name}">
+                {{link.name}}
+              </nuxt-link>
+            </li>
+          </ul>
+        </div>
+
+
       </div>
     </div>
   </div>
 </template>
 
 <script>
+import categories from '../data/categories.json'
 export default {
   props: ["status", "menus"],
+  data() {
+    return {
+      categories
+    }
+  },
   computed: {
     triggerClass() {
       let status = this.status;

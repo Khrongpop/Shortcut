@@ -15,7 +15,6 @@
     li {
 
       float: left;
-
       a {
         padding-top: 25px;
         text-align: center;
@@ -76,6 +75,25 @@
     position: absolute;
     height: 100%;
     animation: out 0.5s ease-in-out;
+  }
+
+  .menu-list2 {
+    float: left;
+    text-transform: uppercase;
+    list-style: none;
+    li {
+
+      float: left;
+      a {
+        padding-top: 25px;
+        width: 100px;
+        height: 71px;
+        display: block;
+        color: $color-white;
+        text-decoration: none;
+        transition: .5s ;
+      }
+    }
   }
 }
 

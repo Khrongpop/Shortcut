@@ -1,6 +1,6 @@
 <template>
   <div>
-    <pre>
+    <pre class="text-white">
         {{creator(id)}}
     </pre>
   </div>

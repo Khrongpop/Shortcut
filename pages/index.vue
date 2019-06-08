@@ -9,7 +9,3 @@ export default {
   layout: 'topMenu',
 }
 </script>
-
-<style>
-
-</style>
