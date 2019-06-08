@@ -71,7 +71,7 @@ export default {
 }
 aside {
   margin: auto;
-  // width: 120px;
+  width: 120px;
 }
 
 @hueRotate: 10deg;
@@ -118,70 +118,41 @@ aside {
   // border: 2px dashed rgba(255, 255, 255, 1);
   // border: 2px dashed #6cdbe0 !important;
   border: 2px solid #6cdbe0 !important;
-  // clip: rect(0, 0, 0, 0);
-  // clip: rect(0, 50px, 10px, 0);
-  // clip: rect(0, 200px, 10px, 0);
+  clip: rect(0, 0, 0, 0);
 
-  // clip: rect(0px, 200px, 40px, 120px);
-  // clip: rect(10px, 200px, 100px, 120px);
-
-  clip: rect(60px, 150px, 10px, 0px);
-  // clip: rect(60px, 200px, 200px, 0px);
-
-  // clip: rect(0, 10px, 200px, 0px);
-
-  // animation: maskBorder 3s infinite;
+  animation: maskBorder 3s infinite;
 }
-
-// @keyframes maskBorder {
-//   0% {
-//     // height: 200%;
-//     clip: rect(0, 50px, 10px, 0);
-//   }
-//   20% {
-//     clip: rect(0, 200px, 10px, 0);
-//   }
-//   35% {
-//     clip: rect(0, 200px, 10px, 190px);
-//   }
-//   50% {
-//     clip: rect(10px, 200px, 71px, 190px);
-//   }
-//   60% {
-//     clip: rect(40px, 200px, 71px, 190px);
-//   }
-//   70% {
-//     clip: rect(40px, 200px, 71px, 0px);
-//   }
-//   85% {
-//     clip: rect(40px, 10px, 71px, 0px);
-//   }
-//   90% {
-//     clip: rect(0, 10px, 71px, 0px);
-//   }
-//   100% {
-//     clip: rect(0, 10px, 10px, 0px);
-//   }
-// }
 
 @keyframes maskBorder {
   0% {
-    clip: rect(0, 200px, 10px, 0);
+    clip: rect(0, 50px, 10px, 0);
   }
   20% {
     clip: rect(0, 200px, 10px, 0);
   }
-  40% {
-    clip: rect(10px, 200px, 71px, 190px);
+  35% {
+    // clip: rect(0, 200px, 10px, 190px);
+    clip: rect(0, 200px, 10px, 100px);
+  }
+  50% {
+    // clip: rect(10px, 200px, 50px, 190px);
+    clip: rect(10px, 200px, 50px, 100px);
   }
   60% {
-    clip: rect(60px, 200px, 200px, 0px);
+    clip: rect(40px, 200px, 71px, 100px);
+    // clip: rect(40px, 200px, 71px, 190px);
   }
-  90% {
+  70% {
     clip: rect(40px, 200px, 71px, 0px);
   }
+  85% {
+    clip: rect(40px, 10px, 71px, 0px);
+  }
+  90% {
+    clip: rect(0, 10px, 50px, 0px);
+  }
   100% {
-    clip: rect(0, 10px, 200px, 0px);
+    clip: rect(0, 10px, 10px, 0px);
   }
 }
 
