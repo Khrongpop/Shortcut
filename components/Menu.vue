@@ -71,7 +71,7 @@ export default {
 }
 aside {
   margin: auto;
-  width: 200px;
+  width: 120px;
 }
 
 @hueRotate: 10deg;
