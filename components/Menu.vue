@@ -9,7 +9,7 @@
           <li v-for="link in links" :key="link.name">
             <aside class="loading">
               <nuxt-link :to="{name:link.path ? link.path : link.name}">{{link.name}}</nuxt-link>
-              <span :class="$route.name == (link.path ? link.path : link.name) ? 'border' :''"></span>
+              <span :class="$route.name == (link.path ? link.path : link.name) ? 'border' :'none'"></span>
             </aside>
           </li>
         </ul>
@@ -95,7 +95,8 @@ aside {
 }
 
 .text,
-.border {
+.border,
+aside:hover > .none {
   z-index: 5;
   border-radius: 25px;
   display: block;
@@ -122,7 +123,12 @@ aside {
 
   animation: maskBorder 3s infinite;
 }
+aside:hover > .none {
+  border: 2px solid #6cdbe0 !important;
+  clip: rect(0, 0, 0, 0);
 
+  animation: maskBorder 3s infinite;
+}
 @keyframes maskBorder {
   0% {
     clip: rect(0, 50px, 10px, 0);
