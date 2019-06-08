@@ -1,6 +1,6 @@
 <template>
   <div id="menu-trigger">
-    <div :class="`menu-trigger-${status ? 'in' : 'out'}`">
+    <div :class="triggerClass()">
       arm
     </div>
   </div>
@@ -9,6 +9,13 @@
 <script>
 export default {
   props:['status'],
+  methods: {
+    triggerClass() {
+      let status = this.status
+      let sclass = 'menu-trigger-'
+      return sclass + status ? 'in' : 'out'
+    }
+  },
 }
 </script>
 

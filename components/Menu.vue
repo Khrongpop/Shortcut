@@ -6,7 +6,7 @@
     </div>
     <ul class="menu-list">
       <li v-for="link in links" :key="link.name">
-        <router-link :to="{name:link.name}">{{link.name}}</router-link>
+        <nuxt-link :to="{name:link.name}">{{link.name}}</nuxt-link>
       </li>
     </ul>
   </div>
