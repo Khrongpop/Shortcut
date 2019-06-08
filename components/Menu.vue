@@ -18,10 +18,15 @@
       <!-- <aside class="loading">
         <span class="text">Loading</span>
         <span class="border"></span>
-      </aside> -->
+      </aside>-->
     </div>
 
-    <menu-trigger :status="showHamburger" v-if="click" :menus="links" @routeChange="triggerFalse()"/>
+    <menu-trigger
+      :status="showHamburger"
+      v-if="click"
+      :menus="links"
+      @routeChange="triggerFalse()"
+    />
   </div>
 </template>
 
@@ -48,8 +53,8 @@ export default {
       this.click = true;
       this.showHamburger = !this.showHamburger;
     },
-    triggerFalse(){
-      this.showHamburger = false
+    triggerFalse() {
+      this.showHamburger = false;
     }
   },
   components: {
@@ -110,14 +115,17 @@ aside {
   top: 7px;
 }
 .border {
-  border: 2px dashed rgba(255, 255, 255, 1);
+  // border: 2px dashed rgba(255, 255, 255, 1);
+  // border: 2px dashed #6cdbe0 !important;
+  border: 2px solid #6cdbe0 !important;
   clip: rect(0, 0, 0, 0);
 
-  animation: maskBorder 2.4s infinite;
+  animation: maskBorder 3s infinite;
 }
 
 @keyframes maskBorder {
   0% {
+    // height: 200%;
     clip: rect(0, 50px, 10px, 0);
   }
   20% {
@@ -153,7 +161,8 @@ body {
   height: 500px;
 }
 
-.loading, .nuxt-link-active {
+.loading,
+.nuxt-link-active {
   // background-color: #36c4e6;
   border-radius: 25px;
   // border: 2px solid #bbddee;
