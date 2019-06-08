@@ -39,7 +39,7 @@ module.exports = {
   */
   plugins: [
     '~/plugins/firebase.js',
-    '~/plugins/vuefire.js'
+    // '~/plugins/vuefire.js'
   ],
 
   /*
