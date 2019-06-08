@@ -5,19 +5,17 @@
         class="btn-fb p-3 border-0 text-white"
         variant="primary"
         @click="fbSignIn()"
-
         style="background:#3B5998;"
-
       >
-      <i class="fab fa-facebook-square fa-2x"></i> เข้าสู่ระบบด้วย facebook
+        <i class="fab fa-facebook-square fa-2x"></i> เข้าสู่ระบบด้วย facebook
       </button>
     </div>
   </div>
 </template>
 
 <script>
-
 import { users, dbAuth, provider } from "~/plugins/firebase.js";
+// import { users, dbAuth, provider } from "~/func/shortcut/plugins/firebase";
 export default {
   methods: {
     fbSignIn: function() {
@@ -31,15 +29,24 @@ export default {
           var user = result.user;
           console.log(user);
           // console.log( user.photoURL.substring(27));
-          let str = user.photoURL.substring(27)
-          str = str.split('/')
-          users.child(user.uid).update({
+          let str = user.photoURL.substring(27);
+          str = str.split("/");
+          // users.child(user.uid).update({
+          //   fullname: user.displayName,
+          //   image: user.photoURL,
+          // uid: user.uid,
+          // email:user.email,
+          // provider: str[0]
+          // });
+
+          let newUser = {
             fullname: user.displayName,
             image: user.photoURL,
             uid: user.uid,
-            email:user.email,
+            email: user.email,
             provider: str[0]
-          });
+          };
+          users.push(newUser);
           // users.child(user.uid).child("photoURL/"+user.photoURL).push("s")
         })
         .catch(function(error) {
