@@ -13,12 +13,31 @@
     text-transform: uppercase;
     list-style: none;
     li {
+
       float: left;
-      margin-right: 60px;
+
       a {
+        padding-top: 25px;
+        text-align: center;
+        width: 198px;
+        height: 71px;
+        display: block;
         color: $color-white;
+        text-decoration: none;
       }
     }
+
+
+    // active !!!
+
+    .nuxt-link-exact-active {
+      background :url('../images/menu/btn-menu.png') no-repeat;
+      background-size: contain;
+      object-fit: contain;
+      display: block;
+
+    }
+
   }
 }
 
@@ -26,7 +45,7 @@
   top:40px;
   @keyframes in {
     0%{
-      left: -120%;
+      left: -100%;
     }
     100%{
       left: 0%;
@@ -37,7 +56,7 @@
       left: 0%;
     }
     100%{
-      left: -120%;
+      left: -100%;
     }
   }
   .menu-trigger-in {
@@ -46,15 +65,15 @@
     left: 0;
     position: absolute;
     height: 100%;
-    animation: in 1s ease-in-out;
+    animation: in 0.5s ease-in-out;
   }
   .menu-trigger-out {
     background:#000;
     width: 100%;
-    left: -120%;
+    left: -100%;
     position: absolute;
     height: 100%;
-    animation: out 1s ease-in-out;
+    animation: out 0.5s ease-in-out;
   }
 }
 

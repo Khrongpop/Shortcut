@@ -16,7 +16,7 @@
       </transition>
     </div>
 
-    <menu-trigger :status="showHamburger" v-if="click"/>
+    <menu-trigger :status="showHamburger" v-if="click" :menus="links"/>
   </div>
 </template>
 

@@ -1,14 +1,21 @@
 <template>
   <div id="menu-trigger">
     <div :class="triggerClass">
-      <img src="../assets/images/menu/logo.png" alt="">
+      <div class="row">
+        <div class="col-md-4">
+          <img src="../assets/images/menu/logo.png">
+        </div>
+         <div class="col-md-4">
+           {{menus}}
+        </div>
+      </div>
     </div>
   </div>
 </template>
 
 <script>
 export default {
-  props:['status'],
+  props:['status','menus'],
   computed: {
     triggerClass() {
       let status = this.status
