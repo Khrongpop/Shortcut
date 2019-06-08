@@ -10,7 +10,7 @@
       <transition name="fade">
         <ul class="menu-list" v-show="!showHamburger">
           <li v-for="link in links" :key="link.name">
-            <nuxt-link :to="{name:link.name}">{{link.name}}</nuxt-link>
+            <nuxt-link :to="{name:link.path ? link.path : link.name}">{{link.name}}</nuxt-link>
           </li>
         </ul>
       </transition>
@@ -27,7 +27,7 @@ export default {
   data() {
     return {
       links: [
-        { name: "home", icon:'001-home'},
+        { name: "home", path:'index',icon:'001-home'},
         { name: "creator",icon:'002-user'},
         { name: "book", icon:'003-ebook'},
         { name: "exhibition", icon:'004-tickets'},

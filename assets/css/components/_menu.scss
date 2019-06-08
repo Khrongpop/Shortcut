@@ -2,7 +2,7 @@
   color: $color-white;
   padding: 40px 0;
   .mn-50 {
-    min-height:50px;
+    min-height:100px;
   }
   .hamburger{
     float: left;
@@ -19,11 +19,12 @@
       a {
         padding-top: 25px;
         text-align: center;
-        width: 198px;
+        width: 100px;
         height: 71px;
         display: block;
         color: $color-white;
         text-decoration: none;
+        transition: .5s ;
       }
     }
 
@@ -35,6 +36,7 @@
       background-size: contain;
       object-fit: contain;
       display: block;
+      width: 198px;
 
     }
 
