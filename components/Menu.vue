@@ -4,7 +4,7 @@
     <div class="hamburger">
       <img src="https://campriverrun.org/wp-content/themes/allyourbase/img/hamburger.png" width="40" @click="menuTrigger()">
     </div>
-    <ul class="menu-list">
+    <ul class="menu-list" v-if="!showHamburger">
       <li v-for="link in links" :key="link.name">
         <nuxt-link :to="{name:link.name}">{{link.name}}</nuxt-link>
       </li>
