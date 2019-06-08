@@ -87,14 +87,18 @@ aside {
 .text,
 .border {
   z-index: 5;
-  border-radius: 10px;
+  border-radius: 25px;
   display: block;
   position: absolute;
-  left: 4px;
-  top: 4px;
-  bottom: 4px;
-  right: 4px;
+  // left: 4px;
+  // top: 4px;
+  // bottom: 4px;
+  // right: 4px;
   display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
 }
 
 .text {
@@ -104,7 +108,7 @@ aside {
   border: 2px dashed rgba(255, 255, 255, 1);
   clip: rect(0, 0, 0, 0);
 
-  animation: maskBorder 1.4s infinite;
+  animation: maskBorder 2.4s infinite;
 }
 
 @keyframes maskBorder {
@@ -146,5 +150,7 @@ body {
 
 .loading {
   background-color: #36c4e6;
+  border-radius: 25px;
+  // border: 2px solid #bbddee;
 }
 </style>
