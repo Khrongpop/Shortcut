@@ -127,19 +127,19 @@ aside {
     clip: rect(0, 200px, 10px, 190px);
   }
   50% {
-    clip: rect(10px, 200px, 50px, 190px);
+    clip: rect(10px, 200px, 71px, 190px);
   }
   60% {
-    clip: rect(40px, 200px, 50px, 190px);
+    clip: rect(40px, 200px, 71px, 190px);
   }
   70% {
-    clip: rect(40px, 200px, 50px, 0px);
+    clip: rect(40px, 200px, 71px, 0px);
   }
   85% {
-    clip: rect(40px, 10px, 50px, 0px);
+    clip: rect(40px, 10px, 71px, 0px);
   }
   90% {
-    clip: rect(0, 10px, 50px, 0px);
+    clip: rect(0, 10px, 71px, 0px);
   }
   100% {
     clip: rect(0, 10px, 10px, 0px);
