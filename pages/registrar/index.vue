@@ -22,9 +22,9 @@
 import { realDb, users } from "~/plugins/firebase";
 // import { realDb } from "~/func/shortcut/plugins/firebase";
 export default {
-  firebase: {
-    usersdata: users
-  },
+  // firebase: {
+  //   usersdata: users
+  // },
   data() {
     return {
       users: [],

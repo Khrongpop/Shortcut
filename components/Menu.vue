@@ -3,8 +3,7 @@
     <div class="clearfix mn-50">
       <div class="hamburger">
         <img
-          src="https://campriverrun.org/wp-content/themes/allyourbase/img/hamburger.png"
-          width="40"
+          src="../assets/images/menu/ham-hover.png"
           @click="menuTrigger()"
         >
       </div>
@@ -28,13 +27,12 @@ export default {
   data() {
     return {
       links: [
-        { name: "home" },
-        { name: "creator" },
-        { name: "book" },
-        { name: "exhibition" },
-        { name: "book" },
-        { name: "thankyou" },
-        { name: "contact" }
+        { name: "home", icon:'001-home'},
+        { name: "creator",icon:'002-user'},
+        { name: "book", icon:'003-ebook'},
+        { name: "exhibition", icon:'004-tickets'},
+        { name: "thankyou",  icon:'005-handshake'},
+        { name: "contact", icon: '006-contact'}
       ],
       showHamburger: false,
       click: false
