@@ -25,11 +25,12 @@
               </nuxt-link>
             </li>
           </ul>
+                    <sponsor-small class="float-right"/>
+
         </div>
 
 
       </div>
-          <sponsor-small class="float-right"/>
 
     </div>
   </div>
