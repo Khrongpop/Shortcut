@@ -49,8 +49,17 @@ export default {
     };
   },
   methods: {
+    disableScrolling(){
+    var x=window.scrollX;
+    var y=window.scrollY;
+    window.onscroll=function(){window.scrollTo(x, y);};
+    },
+    enableScrolling(){
+    window.onscroll=function(){};
+    },
     menuTrigger() {
       this.click = true;
+      this.disableScrolling()
       this.showHamburger = !this.showHamburger;
     },
     triggerFalse() {

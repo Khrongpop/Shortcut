@@ -25,7 +25,7 @@
               </nuxt-link>
             </li>
           </ul>
-                    <sponsor-small class="float-right"/>
+        <sponsor-small class="frr"/>
 
         </div>
 
@@ -58,4 +58,13 @@ export default {
   }
 };
 </script>
+
+<style scoped>
+.frr {
+  position: relative;
+  bottom: 0;
+  right: 0;
+}
+</style>
+
 
