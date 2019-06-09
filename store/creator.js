@@ -16,7 +16,9 @@ export const getters = {
   },
   getCreatorByCat: (state) => (name) => {
     let cats = state.categories.find(creator => creator.name === name)
-    let creators = state.creators.find(creator => creator.category_id === cats.id)
-    return creators
+    const result = state.creators.filter((creator) => {
+      return creator.category_id == cats.id
+    })
+    return result
  }
 }
