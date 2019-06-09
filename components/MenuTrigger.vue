@@ -19,13 +19,13 @@
 
         <div class="col-md-4">
           <ul class="menu-list2">
-            <li v-for="link in categories" :key="link.name" style="float:none;">
-              <nuxt-link :to="{name:link.path ? link.path : link.name}">
+            <li v-for="link in categories" :key="link.name" style="float:none;"  @click="$emit('routeChange', true )">
+              <nuxt-link :to="{ name:'creator-category-name', params:{name: link.name}}">
                 {{link.name}}
               </nuxt-link>
             </li>
           </ul>
-        <sponsor-small class="frr"/>
+        <!-- <sponsor-small class="frr"/> -->
 
         </div>
 
