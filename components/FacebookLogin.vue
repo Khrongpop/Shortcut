@@ -68,7 +68,6 @@ export default {
 
 <style>
 #login {
-  min-height: 100vh;
   padding-top: 50px;
   box-sizing: border-box;
 }
