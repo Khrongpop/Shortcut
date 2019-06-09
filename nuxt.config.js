@@ -41,6 +41,7 @@ module.exports = {
   */
   plugins: [
     '~/plugins/firebase.js',
+    { src: "~/plugins/vue-carousel", ssr: false },
     // '~/plugins/vuefire.js'
   ],
 
