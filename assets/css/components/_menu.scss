@@ -1,59 +1,111 @@
 #menu {
   color: $color-white;
   padding: 40px 0;
-  .hamburger{
+
+  .mn-50 {
+    min-height: 100px;
+  }
+
+  .hamburger {
     float: left;
     margin-top: -10px;
   }
+
   .menu-list {
     float: right;
     text-transform: uppercase;
     list-style: none;
+
     li {
+
       float: left;
-      margin-right: 60px;
+
       a {
+        padding-top: 25px;
+        text-align: center;
+        width: 100px;
+        height: 71px;
+        display: block;
         color: $color-white;
+        text-decoration: none;
+        transition: .5s;
       }
     }
+
+
+    // active !!!
+
+    .nuxt-link-exact-active {
+      // background :url('../images/menu/btn-menu.png') no-repeat;
+      background-size: contain;
+      object-fit: contain;
+      display: block;
+      width: 120px;
+
+    }
+
   }
 }
 
-#menu-trigger{
-  top:40px;
+#menu-trigger {
+  top: 40px;
+
   @keyframes in {
-    0%{
-      left: -120%;
+    0% {
+      left: -100%;
     }
-    100%{
+
+    100% {
       left: 0%;
     }
   }
+
   @keyframes out {
-    0%{
+    0% {
       left: 0%;
     }
-    100%{
-      left: -120%;
+
+    100% {
+      left: -100%;
     }
   }
+
   .menu-trigger-in {
-    background:#333;
+    background: #000;
     width: 100%;
     left: 0;
     position: absolute;
     height: 100%;
-    animation: in 1s ease-in-out;
+    animation: in 0.5s ease-in-out;
   }
+
   .menu-trigger-out {
-    background:#333;
+    background: #000;
     width: 100%;
-    left: -120%;
+    left: -100%;
     position: absolute;
     height: 100%;
-    animation: out 1s ease-in-out;
+    animation: out 0.5s ease-in-out;
+  }
 
+  .menu-list2 {
+    float: left;
+    text-transform: uppercase;
+    list-style: none;
+
+    li {
+
+      float: left;
+
+      a {
+        padding-top: 25px;
+        width: 100px;
+        height: 71px;
+        display: block;
+        color: $color-white;
+        text-decoration: none;
+        transition: .5s;
+      }
+    }
   }
 }
-
-

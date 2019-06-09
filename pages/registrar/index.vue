@@ -2,7 +2,6 @@
   <section class="container">
     <div>
       <div v-for="(user,index) in users" :key="index">
-        <!-- <img :src="user.image" alt> -->
         <b-img v-bind="mainProps" rounded="circle" :alt="user.fullname" :src="user.image"></b-img>
         {{ user.fullname }}
         <br>
@@ -19,11 +18,11 @@
   </section>
 </template>
 <script>
-import { realDb } from "~/plugins/firebase";
+import { realDb, users } from "~/plugins/firebase";
 // import { realDb } from "~/func/shortcut/plugins/firebase";
 export default {
   // firebase: {
-  //   usersdata: realDb.ref("users")
+  //   usersdata: users
   // },
   data() {
     return {
@@ -42,8 +41,9 @@ export default {
     let snap;
     let users = [];
     const _this = this;
+    console.log(ref);
     try {
-      ref.once("value", function(snapshot) {
+      ref.on("value", function(snapshot) {
         snapshot.forEach(function(childSnapshot) {
           var childKey = childSnapshot.key;
           var childData = childSnapshot.val();
@@ -62,7 +62,33 @@ export default {
       users: users
     };
   },
-  methods: {}
+  methods: {},
+  computed: {
+    usersData() {
+      const ref = realDb.ref("users");
+      let snap;
+      let users = [];
+      const _this = this;
+      console.log(ref);
+      try {
+        ref.on("value", function(snapshot) {
+          snapshot.forEach(function(childSnapshot) {
+            var childKey = childSnapshot.key;
+            var childData = childSnapshot.val();
+            // console.log("childKey", childKey);
+            // console.log("childData", childData);
+            users.push(childData);
+          });
+        });
+
+        // console.log(snap);
+      } catch (e) {
+        // TODO: error handling
+        console.error(e);
+      }
+      this.users = users;
+    }
+  }
 };
 </script>
 

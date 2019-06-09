@@ -31,14 +31,17 @@ module.exports = {
     // CSS file in the project
    // '@/assets/css/main.css',
     // SCSS file in the project
-    '@/assets/css/main.scss'
+    '@/assets/css/main.scss',
+
+    // '@/assets/less/main.less'
   ],
 
   /*
   ** Plugins to load before mounting the App
   */
   plugins: [
-    '~/plugins/firebase.js'
+    '~/plugins/firebase.js',
+    // '~/plugins/vuefire.js'
   ],
 
   /*

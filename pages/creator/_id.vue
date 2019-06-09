@@ -1,6 +1,6 @@
 <template>
   <div>
-    <pre>
+    <pre class="text-white">
         {{creator(id)}}
     </pre>
   </div>
@@ -9,6 +9,7 @@
 <script>
 import { mapGetters } from 'vuex'
 export default {
+  layout: 'topMenu',
   computed : {
     id() {
       return parseInt(this.$route.params.id)
@@ -20,6 +21,3 @@ export default {
 }
 </script>
 
-<style>
-
-</style>
