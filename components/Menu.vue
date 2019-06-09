@@ -9,7 +9,7 @@
           <li v-for="link in links" :key="link.name">
             <aside class="loading">
               <nuxt-link :to="{name:link.path ? link.path : link.name}">{{link.name}}</nuxt-link>
-              <span :class="$route.name == (link.path ? link.path : link.name) ? 'border' :''"></span>
+              <span :class="$route.name == (link.path ? link.path : link.name) ? 'border' :'none'"></span>
             </aside>
           </li>
         </ul>
@@ -95,7 +95,8 @@ aside {
 }
 
 .text,
-.border {
+.border,
+aside:hover > .none {
   z-index: 5;
   border-radius: 25px;
   display: block;
@@ -122,23 +123,30 @@ aside {
 
   animation: maskBorder 3s infinite;
 }
+aside:hover > .none {
+  border: 2px solid #6cdbe0 !important;
+  clip: rect(0, 0, 0, 0);
 
+  animation: maskBorder 3s infinite;
+}
 @keyframes maskBorder {
   0% {
-    // height: 200%;
     clip: rect(0, 50px, 10px, 0);
   }
   20% {
     clip: rect(0, 200px, 10px, 0);
   }
   35% {
-    clip: rect(0, 200px, 10px, 190px);
+    // clip: rect(0, 200px, 10px, 190px);
+    clip: rect(0, 200px, 10px, 100px);
   }
   50% {
-    clip: rect(10px, 200px, 71px, 190px);
+    // clip: rect(10px, 200px, 50px, 190px);
+    clip: rect(10px, 200px, 50px, 100px);
   }
   60% {
-    clip: rect(40px, 200px, 71px, 190px);
+    clip: rect(40px, 200px, 71px, 100px);
+    // clip: rect(40px, 200px, 71px, 190px);
   }
   70% {
     clip: rect(40px, 200px, 71px, 0px);
@@ -147,7 +155,7 @@ aside {
     clip: rect(40px, 10px, 71px, 0px);
   }
   90% {
-    clip: rect(0, 10px, 71px, 0px);
+    clip: rect(0, 10px, 50px, 0px);
   }
   100% {
     clip: rect(0, 10px, 10px, 0px);
