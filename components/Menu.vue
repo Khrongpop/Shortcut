@@ -72,7 +72,7 @@ export default {
 };
 </script>
 
-<style lang="less" scoped>
+<style lang="scss" scoped>
 // @import url(https://fonts.googleapis.com/css?family=The+Girl+Next+Door);
 
 .wrapper {
@@ -83,14 +83,14 @@ aside {
   width: 120px;
 }
 
-@hueRotate: 10deg;
+$hueRotate: 10deg;
 
 .loading {
   // font-family: "The Girl Next Door", cursive;
   padding: 3px;
   box-sizing: border-box;
 
-  -webkit-filter: hue-rotate(@hueRotate);
+  -webkit-filter: hue-rotate($hueRotate);
   height: 71px;
   // line-height: 46px;
   color: white;
@@ -173,7 +173,7 @@ aside:hover > .none {
 
 body {
   background: #bbddee;
-  background: radial-gradient(ellipse cover, #fff 0%, #bbddee 100%);
+  background: radial-gradient(ellipse farthest-corner, #fff 0%, #bbddee 100%);
   padding: 50px 100px;
   height: 500px;
 }
