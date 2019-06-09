@@ -29,11 +29,14 @@
 
 
       </div>
+          <sponsor-small class="float-right"/>
+
     </div>
   </div>
 </template>
 
 <script>
+import SponsorSmall from '~/components/SponsorSmall'
 import categories from '../data/categories.json'
 export default {
   props: ["status", "menus"],
@@ -41,6 +44,9 @@ export default {
     return {
       categories
     }
+  },
+  components:{
+    SponsorSmall
   },
   computed: {
     triggerClass() {

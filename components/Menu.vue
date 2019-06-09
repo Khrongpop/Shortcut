@@ -44,8 +44,8 @@ export default {
         { name: "thankyou", icon: "005-handshake" },
         { name: "contact", icon: "006-contact" }
       ],
-      showHamburger: false,
-      click: false
+      showHamburger: true,
+      click: true
     };
   },
   methods: {
