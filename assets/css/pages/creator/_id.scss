@@ -1,4 +1,12 @@
 #creator_detail {
+  position: relative;
+
+  .avatar {
+    position: absolute;
+    bottom: 5%;
+    left: 30%;
+  }
+
   .creator_row {
     widows: 200%;
     overflow: hidden;
