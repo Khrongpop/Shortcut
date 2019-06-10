@@ -12,12 +12,25 @@
             <b-img v-bind="profileProps" rounded alt="Rounded image"></b-img>
           </div>
           <div style="width:50%" class="float-right">
-            รายละเอียดฟังก์ชัน Lorem Ipsum คือ เนื้อหา
-            จำลองแบบเรียบๆ ที่ใช้กันในธุรกิจงานพิมพ์
-            <br>รายละเอียดฟังก์ชัน Lorem Ipsum คือ เนื้อหา
-            จำลองแบบเรียบๆ ที่ใช้กันในธุรกิจงานพิมพ์
-            <br>รายละเอียดฟังก์ชัน Lorem Ipsum คือ เนื้อหา
-            จำลองแบบเรียบๆ ที่ใช้กันในธุรกิจงานพิมพ์
+            <img src="/creators/detail/func.png" alt="">
+            <br>
+
+            <ul class="list-unstyled">
+              <li>
+                <img src="/creators/detail/bulet.png" alt="">
+                รายละเอียดฟังก์ชัน Lorem Ipsum คือ เนื้อหา
+            จำลองแบบเรียบๆ ที่ใช้กันในธุรกิจงานพิมพ์</li>
+             <li>
+                <img src="/creators/detail/bulet.png" alt="">
+                รายละเอียดฟังก์ชัน Lorem Ipsum คือ เนื้อหา
+            จำลองแบบเรียบๆ ที่ใช้กันในธุรกิจงานพิมพ์</li>
+               <li>
+                <img src="/creators/detail/bulet.png" alt="">
+                รายละเอียดฟังก์ชัน Lorem Ipsum คือ เนื้อหา
+            จำลองแบบเรียบๆ ที่ใช้กันในธุรกิจงานพิมพ์</li>
+            </ul>
+
+
           </div>
         </div>
       </slide>
@@ -32,7 +45,7 @@
             <b-col>
               <b-row class="creator_row">
                 <b-col>
-                  SHOWREEL
+                  <img src="/creators/detail/showreel.png" alt="">
                   <br>
                   <iframe
                     width="560"
@@ -44,14 +57,16 @@
                   ></iframe>
                 </b-col>
                 <b-col>
-                  TECHNOLOGY
+                                  <img src="/creators/detail/tech.png" alt="">
+
                   <br>FROTEND
                   <br>BACKEND
                 </b-col>
               </b-row>
               <b-row class="mt-3">
                 <b-col>
-                  SCREENSHOT
+                <img src="/creators/detail/screenshots.png" alt="">
+
                   <br>
                   <carousel :per-page="5" :paginationEnabled="false" :loop="true" :autoplay="false">
                     <slide v-for="item in 10" :key="item.id">
