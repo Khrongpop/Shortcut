@@ -4,22 +4,22 @@
     "img": "",
     "email": "mrtnotmrt@gmail.com",
     "category_id": 1,
-    "platform_id": 1
+    "platform_id": 3
   },
   {
     "id": 13570119,
     "name": "Kanjanat Thongkhumzuy",
     "img": "",
     "email": "dt-namnow@hotmail.com",
-    "category_id": 1,
-    "platform_id": 1
+    "category_id": 2,
+    "platform_id": 2
   },
   {
     "id": 13570141,
     "name": "Chalermwut Akanitsupron",
     "img": "",
     "email": "dt-namnow@hotmail.com",
-    "category_id": 1,
+    "category_id": 3,
     "platform_id": 1
   },
   {
@@ -27,7 +27,7 @@
     "name": "Nattapat Triyasut",
     "img": "",
     "email": "dt-namnow@hotmail.com",
-    "category_id": 1,
+    "category_id": 2,
     "platform_id": 2
   },
   {
@@ -35,30 +35,30 @@
     "name": "Pansupa Pauenpud",
     "img": "",
     "email": "pare280239@gmail.com",
-    "category_id": 1,
+    "category_id": 2,
     "platform_id": 2
   }, {
     "id": 13570283,
     "name": "Montha Chiangkhong",
     "img": "",
     "email": "milkiiiez.1996@gmail.com",
-    "category_id": 1,
+    "category_id": 2,
     "platform_id": 3
   }, {
     "id": 13570321,
     "name": "Sasithorn Sinjaroenpong",
     "img": "",
     "email": "milkiiiez.1996@gmail.com",
-    "category_id": 1,
-    "platform_id": 1
+    "category_id": 5,
+    "platform_id": 2
   },
   {
     "id": 13570357,
     "name": "Sophon Meebriboon",
     "img": "",
     "email": "quanta-01@outlook.com",
-    "category_id": 1,
-    "platform_id": 2
+    "category_id": 4,
+    "platform_id": 1
   },
   {
     "id": 13570362,
@@ -66,30 +66,30 @@
     "img": "",
     "email": "Toeypang03@hotmail.com",
     "category_id": 1,
-    "platform_id": 3
+    "platform_id": 1
   },
   {
     "id": 13580180,
     "name": "Kanokporn Masawat",
     "img": "",
     "email": "cream-_cream@hotmail.com",
-    "category_id": 1,
-    "platform_id": 1
+    "category_id": 2,
+    "platform_id": 2
   },
   {
     "id": 13580183,
-    "name": "Kanokporn Masawat",
+    "name": "Krittanai Muangnoi",
     "img": "",
     "email": "moungnoi_k@silpakorn.edu",
-    "category_id": 1,
-    "platform_id": 2
+    "category_id": 3,
+    "platform_id": 1
   },
   {
     "id": 13580186,
     "name": "Khrongpop Phonngam",
     "img": "",
     "email": "mr.khrongpop@gmail.com",
-    "category_id": 1,
+    "category_id": 3,
     "platform_id": 3
   },
   {
@@ -97,31 +97,31 @@
     "name": "Chaliporn Pengpan",
     "img": "",
     "email": "chalypoly@gmail.com",
-    "category_id": 1,
-    "platform_id": 1
+    "category_id": 3,
+    "platform_id": 2
   },
   {
     "id": 13580192,
     "name": "Chanya Thaveesricharoenlap",
     "img": "",
     "email": "art_thavee@hotmail.com",
-    "category_id": 1,
-    "platform_id": 3
+    "category_id": 4,
+    "platform_id": 1
   },
   {
     "id": 13580194,
     "name": "Chaiwat Trithipsakul",
     "img": "",
     "email": "nongboy.chaiwat@gmail.com",
-    "category_id": 1,
-    "platform_id": 2
+    "category_id": 5,
+    "platform_id": 1
   },
   {
     "id": 13580199,
     "name": "Thitibhorn Roongwarin",
     "img": "",
     "email": "janekawaii542@gmail.com",
-    "category_id": 1,
+    "category_id": 2,
     "platform_id": 2
   },
   {
@@ -129,7 +129,7 @@
     "name": "Natcha Mungmee",
     "img": "",
     "email": "donut.mungmee@gmail.com",
-    "category_id": 1,
+    "category_id": 4,
     "platform_id": 1
   },
   {
@@ -137,8 +137,8 @@
     "name": "Nutthanaporn Pongudom",
     "img": "",
     "email": "lin-por@hotmail.com",
-    "category_id": 1,
-    "platform_id": 1
+    "category_id": 2,
+    "platform_id": 2
   },
   {
     "id": 13580209,
@@ -153,7 +153,7 @@
     "name": "Thanaporn pudpongsai",
     "img": "",
     "email": "ccn-tangmay4@hotmail.com",
-    "category_id": 1,
+    "category_id": 4,
     "platform_id": 2
   },
   {
@@ -161,7 +161,7 @@
     "name": "Tharinee Natthakaranic",
     "img": "",
     "email": "NATTHAKARANIC_T@silpakorn.edu",
-    "category_id": 1,
+    "category_id": 2,
     "platform_id": 2
   },
   {
@@ -169,15 +169,15 @@
     "name": "Thyrissara Promraksa",
     "img": "",
     "email": "yuya.coss@gmail.com",
-    "category_id": 1,
-    "platform_id": 2
+    "category_id": 3,
+    "platform_id": 3
   },
   {
     "id": 13580213,
     "name": "Noppakorn Poolcharoen",
     "img": "",
     "email": "consequent542@gmail.com",
-    "category_id": 1,
+    "category_id": 2,
     "platform_id": 2
   },
   {
@@ -185,7 +185,7 @@
     "name": "Nedchanok Chantasorn",
     "img": "",
     "email": "nmtaann@gmail.com",
-    "category_id": 1,
+    "category_id": 2,
     "platform_id": 2
   },
   {
@@ -209,8 +209,8 @@
     "name": "Pajaree Ruangrit",
     "img": "",
     "email": "pajaree2140@gmail.com",
-    "category_id": 1,
-    "platform_id": 2
+    "category_id": 3,
+    "platform_id": 3
   },
   {
     "id": 13580228,
@@ -233,15 +233,15 @@
     "name": "Warathat Panthongthaworn",
     "img": "",
     "email": "warathat.pan@gmail.com",
-    "category_id": 1,
-    "platform_id": 2
+    "category_id": 4,
+    "platform_id": 1
   },
   {
     "id": 13580238,
     "name": "Sawanda Trichok",
     "img": "",
     "email": "sawanda.trichok@gmail.com",
-    "category_id": 1,
+    "category_id": 2,
     "platform_id": 2
   },
   {
@@ -249,15 +249,15 @@
     "name": "Sawanda Trichok",
     "img": "",
     "email": "sawanda.trichok@gmail.com",
-    "category_id": 1,
-    "platform_id": 2
+    "category_id": 4,
+    "platform_id": 1
   },
   {
     "id": 13580246,
     "name": "Suttaya Dhanisornkul",
     "img": "",
     "email": "i.amaysa@hotmail.com",
-    "category_id": 1,
+    "category_id": 3,
     "platform_id": 2
   },
   {
@@ -265,8 +265,8 @@
     "name": "Apinya Winyuchai",
     "img": "",
     "email": "fapy13th@gmail.com",
-    "category_id": 1,
-    "platform_id": 2
+    "category_id": 4,
+    "platform_id": 1
   },
   {
     "id": 13580250,
