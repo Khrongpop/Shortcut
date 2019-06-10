@@ -9,7 +9,12 @@
             <h2>การออกแบบ</h2>
           </div>
           <div style="width:50%" class="float-left">
-            <b-img v-bind="profileProps" rounded alt="Rounded image"></b-img>
+            <b-img
+              v-bind="profileProps"
+              rounded
+              alt="Rounded image"
+              :src="`/creators/${creator(id).id}.jpg`"
+            ></b-img>
           </div>
           <div style="width:50%" class="float-right">
             <img src="/creators/detail/func.png" alt>
@@ -134,8 +139,8 @@ export default {
         class: ""
       },
       profileProps: {
-        blank: true,
-        blankColor: "#777",
+        // blank: true,
+        // blankColor: "#777",
         width: 340,
         height: 680,
         class: ""
