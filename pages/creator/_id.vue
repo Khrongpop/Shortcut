@@ -100,7 +100,12 @@
             <p>ID : {{creator(id).id}}</p>
 
             <p>EMAIL : {{creator(id).email}}</p>
-            {{creator(id).facebook}}
+
+            <a
+              :href="creator(id).facebook_link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >{{creator(id).facebook}}</a>
           </div>
         </b-col>
       </div>
