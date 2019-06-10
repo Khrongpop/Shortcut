@@ -156,9 +156,6 @@
       </carousel>
     </div>
     <span class="clearfix"></span>
-    <pre class="text-white">
-        <!-- {{ creators(name) }} -->
-    </pre>
   </div>
 </template>
 
