@@ -1,9 +1,18 @@
 <template>
   <div>
-    <div>
+    <div style="height:100%">
       <div style="width:30%" class="float-left">sdsds</div>
       <div style="width:70%" class="float-right mb-5">
-        <carousel :per-page="5" :paginationEnabled="false" :loop="true" :autoplay="false">
+        <carousel
+          :per-page="5"
+          :paginationEnabled="true"
+          :loop="true"
+          :autoplay="false"
+          :scrollPerPage="true"
+          :navigationEnabled="true"
+          paginationActiveColor="#6cdbe0"
+          paginationColor="#ccc"
+        >
           <slide v-for="(val, index)  in 20" :key="index">
             <div v-if="index < 5">
               <b-col v-if="index % 5 === 0">
