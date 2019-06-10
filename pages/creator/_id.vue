@@ -71,15 +71,22 @@
     </carousel>
 
     <b-row class="mt-3">
-      <b-col class="avatar-card">
-        <b-img v-bind="avataProps" rounded alt="Rounded image"></b-img>
-        <div class="avatar-txt">
-          <h2>{{creator(id).name}}</h2>
-          <p>ID : {{creator(id).id}}</p>
+      <div class="avatar">
+        <b-col class="avatar-card">
+          <b-img
+            v-bind="avataProps"
+            rounded
+            alt="Rounded image"
+            :src="`/creators/${creator(id).id}.jpg`"
+          ></b-img>
+          <div class="avatar-txt">
+            <h2>{{creator(id).name}}</h2>
+            <p>ID : {{creator(id).id}}</p>
 
-          <p>EMAIL : {{creator(id).email}}</p>
-        </div>
-      </b-col>
+            <p>EMAIL : {{creator(id).email}}</p>
+          </div>
+        </b-col>
+      </div>
     </b-row>
   </div>
 </template>
@@ -98,8 +105,8 @@ export default {
         class: ""
       },
       avataProps: {
-        blank: true,
-        blankColor: "#777",
+        // blank: true,
+        // blankColor: "#777",
         width: 135,
         height: 135,
         class: ""
@@ -124,3 +131,8 @@ export default {
 };
 </script>
 
+<style scoped>
+img {
+  object-fit: cover;
+}
+</style>
