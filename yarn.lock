@@ -8394,6 +8394,11 @@ vue-loader@^15.7.0:
     vue-hot-reload-api "^2.3.0"
     vue-style-loader "^4.1.0"
 
+vue-matrix-digit-rain@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/vue-matrix-digit-rain/-/vue-matrix-digit-rain-1.0.1.tgz#c9a0211cf23d2be51e4b7fc00e10306fa678e8d5"
+  integrity sha512-TDeoSXEaBMXZOZxXAbgPUzUX8SDaofakBs4X3XBemVxFuKoaUUsxrozZIaFWIiEJkV+BJxWFOoqLjCmnZFdcoA==
+
 vue-meta@^1.6.0:
   version "1.6.0"
   resolved "https://registry.yarnpkg.com/vue-meta/-/vue-meta-1.6.0.tgz#89b664f6011a207e098e8ba3b9d32e29c819b65d"
