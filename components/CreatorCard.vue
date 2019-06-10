@@ -2,7 +2,7 @@
   <div>
     <router-link :to="`/creator/${vdata.id}`">
       <!-- {{vdata.id}} -->
-      <b-img v-bind="mainProps" rounded alt="Rounded image"></b-img>
+      <b-img v-bind="mainProps" rounded alt="Rounded image" :src="`/creators/${vdata.id}.jpg`"></b-img>
       <br>
       {{vdata.name}}
       <br>
@@ -17,8 +17,8 @@ export default {
   data() {
     return {
       mainProps: {
-        blank: true,
-        blankColor: "#777",
+        // blank: true,
+        // blankColor: "#777",
         width: 150,
         height: 200,
         class: "m1"
@@ -28,5 +28,8 @@ export default {
 };
 </script>
 
-<style>
+<style scope>
+img {
+  object-fit: cover;
+}
 </style>
