@@ -1,13 +1,13 @@
 <template>
   <section class="container">
-    <VueMatrixRaindrop
+    <!-- <VueMatrixRaindrop
       textContent="01"
       :fontSize="11"
       textColor="#FFFFFF"
       :speed="5"
       :canvasWidth="canvasWidth"
       :canvasHeight="canvasHeight"
-    ></VueMatrixRaindrop>
+    ></VueMatrixRaindrop> -->
     <svg
       version="1.1"
       id="Layer_1"
@@ -544,13 +544,13 @@
 <script>
 import { fireDb, realDb, storage } from "~/plugins/firebase.js";
 import fbLogin from "@/components/FacebookLogin";
-import VueMatrixRaindrop from "vue-matrix-digit-rain";
+// import VueMatrixRaindrop from "vue-matrix-digit-rain";
 // import { fireDb, realDb, storage } from "~/func/shortcut/plugins/firebase";
 
 export default {
   components: {
     fbLogin,
-    VueMatrixRaindrop
+    // VueMatrixRaindrop
   },
   data() {
     return {
