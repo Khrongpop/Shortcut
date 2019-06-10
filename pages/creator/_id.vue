@@ -3,18 +3,22 @@
     <div style="width:10%" class="float-left">sdsds</div>
     <carousel :per-page="1" :paginationEnabled="false" :loop="true" :autoplay="false">
       <slide>
-        <div style="width:50%" class="float-left">
-          <b-col>
+        <div style="width:70%" class="float-left">
+          <div style="width:100%" class="float-left">
+            <h1>Project Name</h1>
+            <h2>การออกแบบ</h2>
+          </div>
+          <div style="width:50%" class="float-left">
             <b-img v-bind="profileProps" rounded alt="Rounded image"></b-img>
-          </b-col>
-          <b-col>
+          </div>
+          <div style="width:50%" class="float-right">
             รายละเอียดฟังก์ชัน Lorem Ipsum คือ เนื้อหา
             จำลองแบบเรียบๆ ที่ใช้กันในธุรกิจงานพิมพ์
             <br>รายละเอียดฟังก์ชัน Lorem Ipsum คือ เนื้อหา
             จำลองแบบเรียบๆ ที่ใช้กันในธุรกิจงานพิมพ์
             <br>รายละเอียดฟังก์ชัน Lorem Ipsum คือ เนื้อหา
             จำลองแบบเรียบๆ ที่ใช้กันในธุรกิจงานพิมพ์
-          </b-col>
+          </div>
         </div>
       </slide>
       <slide>
