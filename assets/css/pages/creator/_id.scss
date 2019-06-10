@@ -1,4 +1,9 @@
 #creator_detail {
+  .creator_row {
+    widows: 200%;
+    overflow: hidden;
+  }
+
   .avatar-card {
     margin-top: 2rem;
     margin-left: 5rem;
