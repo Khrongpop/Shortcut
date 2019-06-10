@@ -3,7 +3,7 @@
     <div :class="triggerClass">
       <div class="row px-5">
         <div class="col-md-4">
-          <img src="../assets/images/menu/logo.png">
+          <logo/>
         </div>
 
         <div class="col-md-4">
@@ -38,6 +38,8 @@
 
 <script>
 import SponsorSmall from '~/components/SponsorSmall'
+import Logo from '~/components/Logo'
+
 import categories from '../data/categories.json'
 export default {
   props: ["status", "menus"],
@@ -47,7 +49,8 @@ export default {
     }
   },
   components:{
-    SponsorSmall
+    SponsorSmall,
+    Logo
   },
   computed: {
     triggerClass() {
