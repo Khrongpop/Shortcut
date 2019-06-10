@@ -1,58 +1,82 @@
 <template>
   <div id="creator_detail">
-    <div style="width:30%" class="float-left">sdsds</div>
-    <div style="width:70%" class="float-right mb-5">
-      <b-row>
-        <b-col>
-          <b-img v-bind="profileProps" rounded alt="Rounded image"></b-img>
-        </b-col>
-        <b-col>
-          <b-row class="creator_row">
-            <b-col>
-              SHOWREEL
-              <br>
-              <iframe
-                width="560"
-                height="315"
-                src="https://www.youtube.com/embed/lELqMu5HCY0"
-                frameborder="0"
-                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen
-              ></iframe>
-            </b-col>
-            <b-col>
-              TECHNOLOGY
-              <br>FROTEND
-              <br>BACKEND
-            </b-col>
-          </b-row>
-          <b-row class="mt-3">
-            <b-col>
-              SCREENSHOT
-              <br>
-              <carousel :per-page="5" :paginationEnabled="false" :loop="true" :autoplay="false">
-                <slide v-for="item in 10" :key="item.id">
-                  <b-col>
-                    <b-img v-bind="mainProps" rounded alt="Rounded image"></b-img>
-                  </b-col>
-                </slide>
-              </carousel>
-            </b-col>
-          </b-row>
-        </b-col>
-      </b-row>
-      <b-row class="mt-3">
-        <b-col class="avatar-card">
-          <b-img v-bind="avataProps" rounded alt="Rounded image"></b-img>
-          <div class="avatar-txt">
-            <h2>{{creator(id).name}}</h2>
-            <p>ID : {{creator(id).id}}</p>
+    <div style="width:10%" class="float-left">sdsds</div>
+    <carousel :per-page="1" :paginationEnabled="false" :loop="true" :autoplay="false">
+      <slide>
+        <div style="width:50%" class="float-left">
+          <b-col>
+            <b-img v-bind="profileProps" rounded alt="Rounded image"></b-img>
+          </b-col>
+          <b-col>
+            รายละเอียดฟังก์ชัน Lorem Ipsum คือ เนื้อหา
+            จำลองแบบเรียบๆ ที่ใช้กันในธุรกิจงานพิมพ์
+            <br>รายละเอียดฟังก์ชัน Lorem Ipsum คือ เนื้อหา
+            จำลองแบบเรียบๆ ที่ใช้กันในธุรกิจงานพิมพ์
+            <br>รายละเอียดฟังก์ชัน Lorem Ipsum คือ เนื้อหา
+            จำลองแบบเรียบๆ ที่ใช้กันในธุรกิจงานพิมพ์
+          </b-col>
+        </div>
+      </slide>
+      <slide>
+        <div style="width:50%" class="float-left">
+          <b-row>
+            <!-- <carousel :per-page="2" :paginationEnabled="false" :loop="true" :autoplay="false"> -->
+            <!-- <slide> -->
 
-            <p>EMAIL : {{creator(id).email}}</p>
-          </div>
-        </b-col>
-      </b-row>
-    </div>
+            <!-- </slide> -->
+            <!-- <slide> -->
+            <b-col>
+              <b-row class="creator_row">
+                <b-col>
+                  SHOWREEL
+                  <br>
+                  <iframe
+                    width="560"
+                    height="315"
+                    src="https://www.youtube.com/embed/lELqMu5HCY0"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                  ></iframe>
+                </b-col>
+                <b-col>
+                  TECHNOLOGY
+                  <br>FROTEND
+                  <br>BACKEND
+                </b-col>
+              </b-row>
+              <b-row class="mt-3">
+                <b-col>
+                  SCREENSHOT
+                  <br>
+                  <carousel :per-page="5" :paginationEnabled="false" :loop="true" :autoplay="false">
+                    <slide v-for="item in 10" :key="item.id">
+                      <b-col>
+                        <b-img v-bind="mainProps" rounded alt="Rounded image"></b-img>
+                      </b-col>
+                    </slide>
+                  </carousel>
+                </b-col>
+              </b-row>
+            </b-col>
+            <!-- </slide> -->
+            <!-- </carousel> -->
+          </b-row>
+        </div>
+      </slide>
+    </carousel>
+
+    <b-row class="mt-3">
+      <b-col class="avatar-card">
+        <b-img v-bind="avataProps" rounded alt="Rounded image"></b-img>
+        <div class="avatar-txt">
+          <h2>{{creator(id).name}}</h2>
+          <p>ID : {{creator(id).id}}</p>
+
+          <p>EMAIL : {{creator(id).email}}</p>
+        </div>
+      </b-col>
+    </b-row>
   </div>
 </template>
 
@@ -79,8 +103,8 @@ export default {
       profileProps: {
         blank: true,
         blankColor: "#777",
-        width: 135,
-        height: 135,
+        width: 340,
+        height: 680,
         class: ""
       }
     };
