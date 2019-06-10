@@ -5,32 +5,33 @@
       <slide>
         <div style="width:70%" class="float-left">
           <div style="width:100%" class="float-left">
-            <h1>Project Name</h1>
+            <h1>{{creator(id).project_name}}</h1>
             <h2>การออกแบบ</h2>
           </div>
           <div style="width:50%" class="float-left">
             <b-img v-bind="profileProps" rounded alt="Rounded image"></b-img>
           </div>
           <div style="width:50%" class="float-right">
-            <img src="/creators/detail/func.png" alt="">
+            <img src="/creators/detail/func.png" alt>
             <br>
 
             <ul class="list-unstyled">
               <li>
-                <img src="/creators/detail/bulet.png" alt="">
+                <img src="/creators/detail/bulet.png" alt>
                 รายละเอียดฟังก์ชัน Lorem Ipsum คือ เนื้อหา
-            จำลองแบบเรียบๆ ที่ใช้กันในธุรกิจงานพิมพ์</li>
-             <li>
-                <img src="/creators/detail/bulet.png" alt="">
+                จำลองแบบเรียบๆ ที่ใช้กันในธุรกิจงานพิมพ์
+              </li>
+              <li>
+                <img src="/creators/detail/bulet.png" alt>
                 รายละเอียดฟังก์ชัน Lorem Ipsum คือ เนื้อหา
-            จำลองแบบเรียบๆ ที่ใช้กันในธุรกิจงานพิมพ์</li>
-               <li>
-                <img src="/creators/detail/bulet.png" alt="">
+                จำลองแบบเรียบๆ ที่ใช้กันในธุรกิจงานพิมพ์
+              </li>
+              <li>
+                <img src="/creators/detail/bulet.png" alt>
                 รายละเอียดฟังก์ชัน Lorem Ipsum คือ เนื้อหา
-            จำลองแบบเรียบๆ ที่ใช้กันในธุรกิจงานพิมพ์</li>
+                จำลองแบบเรียบๆ ที่ใช้กันในธุรกิจงานพิมพ์
+              </li>
             </ul>
-
-
           </div>
         </div>
       </slide>
@@ -45,7 +46,7 @@
             <b-col>
               <b-row class="creator_row">
                 <b-col>
-                  <img src="/creators/detail/showreel.png" alt="">
+                  <img src="/creators/detail/showreel.png" alt>
                   <br>
                   <iframe
                     width="560"
@@ -57,7 +58,7 @@
                   ></iframe>
                 </b-col>
                 <b-col>
-                                  <img src="/creators/detail/tech.png" alt="">
+                  <img src="/creators/detail/tech.png" alt>
 
                   <br>FROTEND
                   <br>BACKEND
@@ -65,7 +66,7 @@
               </b-row>
               <b-row class="mt-3">
                 <b-col>
-                <img src="/creators/detail/screenshots.png" alt="">
+                  <img src="/creators/detail/screenshots.png" alt>
 
                   <br>
                   <carousel :per-page="5" :paginationEnabled="false" :loop="true" :autoplay="false">
@@ -99,7 +100,12 @@
             <p>ID : {{creator(id).id}}</p>
 
             <p>EMAIL : {{creator(id).email}}</p>
-            {{creator(id).facebook}}
+
+            <a
+              :href="creator(id).facebook_link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >{{creator(id).facebook}}</a>
           </div>
         </b-col>
       </div>
