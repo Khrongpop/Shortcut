@@ -1,0 +1,25 @@
+#creator_detail {
+  .avatar-card {
+    margin-top: 2rem;
+    margin-left: 5rem;
+    position: relative;
+
+  }
+
+  .avatar-card img {
+    position: absolute
+  }
+
+  .avatar-txt {
+    padding-left: 150px;
+  }
+
+  h2 {
+    padding-top: 10px;
+    padding-bottom: 15px;
+  }
+
+  p {
+    line-height: .8;
+  }
+}

@@ -11,11 +11,13 @@
 
 // pages
 @import "pages/creator/index";
+@import "pages/creator/id";
 @import "pages/registor/index";
 
 body {
   background-color: #000;
 }
+
 .mt-6 {
   margin-top: 4rem;
 }

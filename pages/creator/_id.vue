@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div id="creator_detail">
     <div style="width:30%" class="float-left">sdsds</div>
     <div style="width:70%" class="float-right mb-5">
       <b-row>
@@ -34,10 +34,18 @@
           </carousel>
         </b-col>
       </b-row>
+      <b-row class="mt-3">
+        <b-col class="avatar-card">
+          <b-img v-bind="avataProps" rounded alt="Rounded image"></b-img>
+          <div class="avatar-txt">
+            <h2>{{creator(id).name}}</h2>
+            <p>ID : {{creator(id).id}}</p>
+
+            <p>EMAIL : {{creator(id).email}}</p>
+          </div>
+        </b-col>
+      </b-row>
     </div>
-    <pre class="text-white">
-        {{creator(id)}}
-    </pre>
   </div>
 </template>
 
@@ -52,6 +60,13 @@ export default {
         blankColor: "#777",
         width: 240,
         height: 140,
+        class: ""
+      },
+      avataProps: {
+        blank: true,
+        blankColor: "#777",
+        width: 135,
+        height: 135,
         class: ""
       }
     };
