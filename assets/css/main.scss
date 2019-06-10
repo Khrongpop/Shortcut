@@ -1,20 +1,21 @@
 // mixins
-@import 'mixins/fonts';
-@import 'mixins/colors';
-@import 'mixins/animations';
-
+@import "mixins/fonts";
+@import "mixins/colors";
+@import "mixins/animations";
 
 // layouts
-@import 'layouts/topMenu';
+@import "layouts/topMenu";
 
 // components
-@import 'components/menu';
+@import "components/menu";
 
 // pages
-@import 'pages/creator/index';
-@import 'pages/registor/index';
+@import "pages/creator/index";
+@import "pages/registor/index";
 
-
+body {
+  background-color: #000;
+}
 .mt-6 {
   margin-top: 4rem;
 }
