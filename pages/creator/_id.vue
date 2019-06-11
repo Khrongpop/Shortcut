@@ -6,7 +6,7 @@
         <div style="width:70%" class="float-left">
           <div style="width:100%" class="float-left">
             <h1>{{creator(id).project_name}}</h1>
-            <h2>การออกแบบ</h2>
+            <h2>{{creator(id).project_fullname_th}}</h2>
           </div>
           <div style="width:50%" class="float-left">
             <b-img
@@ -23,18 +23,33 @@
             <ul class="list-unstyled">
               <li>
                 <img src="/creators/detail/bulet.png" alt>
-                รายละเอียดฟังก์ชัน Lorem Ipsum คือ เนื้อหา
-                จำลองแบบเรียบๆ ที่ใช้กันในธุรกิจงานพิมพ์
+                <div class="text-list">
+                  <h5>FUNCTION1</h5>
+                  <p>
+                    รายละเอียดฟังก์ชัน Lorem Ipsum คือ เนื้อหา
+                    จำลองแบบเรียบๆ ที่ใช้กันในธุรกิจงานพิมพ์
+                  </p>
+                </div>
               </li>
               <li>
                 <img src="/creators/detail/bulet.png" alt>
-                รายละเอียดฟังก์ชัน Lorem Ipsum คือ เนื้อหา
-                จำลองแบบเรียบๆ ที่ใช้กันในธุรกิจงานพิมพ์
+                <div class="text-list">
+                  <h5>FUNCTION1</h5>
+                  <p>
+                    รายละเอียดฟังก์ชัน Lorem Ipsum คือ เนื้อหา
+                    จำลองแบบเรียบๆ ที่ใช้กันในธุรกิจงานพิมพ์
+                  </p>
+                </div>
               </li>
               <li>
                 <img src="/creators/detail/bulet.png" alt>
-                รายละเอียดฟังก์ชัน Lorem Ipsum คือ เนื้อหา
-                จำลองแบบเรียบๆ ที่ใช้กันในธุรกิจงานพิมพ์
+                <div class="text-list">
+                  <h5>FUNCTION1</h5>
+                  <p>
+                    รายละเอียดฟังก์ชัน Lorem Ipsum คือ เนื้อหา
+                    จำลองแบบเรียบๆ ที่ใช้กันในธุรกิจงานพิมพ์
+                  </p>
+                </div>
               </li>
             </ul>
           </div>
