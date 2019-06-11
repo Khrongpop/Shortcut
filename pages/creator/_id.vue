@@ -1,6 +1,6 @@
 <template>
   <div id="creator_detail">
-    <div style="width:10%" class="float-left">sdsds</div>
+    <div style="width:10%" class="float-left">อ่านทำไม</div>
     <carousel :per-page="1" :paginationEnabled="false" :loop="true" :autoplay="false">
       <slide>
         <div style="width:70%" class="float-left">
@@ -49,8 +49,8 @@
                   <img src="/creators/detail/showreel.png" alt>
                   <br>
                   <iframe
-                    width="560"
-                    height="315"
+                    width="510"
+                    height="275"
                     src="https://www.youtube.com/embed/lELqMu5HCY0"
                     frameborder="0"
                     allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
@@ -113,7 +113,7 @@
                   </b-row>
                 </b-col>
               </b-row>
-              <b-row class="mt-3">
+              <b-row class="screenshot-section">
                 <b-col>
                   <img src="/creators/detail/screenshots.png" alt>
 
