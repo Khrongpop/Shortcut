@@ -59,29 +59,36 @@
                 </b-col>
                 <b-col>
                   <img src="/creators/detail/tech.png" alt>
-                  <b-row>
+                  <b-row class="mt-3">
                     <b-col>
                       <div class="tech-title">
-                        <img src="/creators/detail/bulet.png" alt>
+                        <img src="/creators/detail/bulet.png" alt class="bulet">
                         <span>FROTEND</span>
+                        <b-row class="mt-3">
+                          <b-col v-for="(item, index) in 3" :key="index">
+                            <b-img v-bind="toolProps" rounded alt="Rounded image"></b-img>
+                          </b-col>
+                        </b-row>
                       </div>
                     </b-col>
                     <b-col>
                       <div class="tech-title">
-                        <img src="/creators/detail/bulet.png" alt>
-                        <span>BACKEND</span>
+                        <img src="/creators/detail/bulet.png" alt class="bulet">
+                        <span class="mt-3">BACKEND</span>
+                      </div>
+                    </b-col>
+                  </b-row>
+                  <b-row class="mt-3">
+                    <b-col>
+                      <div class="tech-title">
+                        <img src="/creators/detail/bulet.png" alt class="bulet">
+                        <span class="mt-3">DATABASE</span>
                       </div>
                     </b-col>
                     <b-col>
                       <div class="tech-title">
-                        <img src="/creators/detail/bulet.png" alt>
-                        <span>DATABASE</span>
-                      </div>
-                    </b-col>
-                    <b-col>
-                      <div class="tech-title">
-                        <img src="/creators/detail/bulet.png" alt>
-                        <span>TOOLS</span>
+                        <img src="/creators/detail/bulet.png" alt class="bulet">
+                        <span class="mt-3">TOOLS</span>
                       </div>
                     </b-col>
                   </b-row>
@@ -162,6 +169,13 @@ export default {
         // blankColor: "#777",
         width: 340,
         height: 680,
+        class: ""
+      },
+      toolProps: {
+        blank: true,
+        blankColor: "#777",
+        width: 75,
+        height: 75,
         class: ""
       }
     };
