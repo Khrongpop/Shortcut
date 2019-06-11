@@ -16,15 +16,15 @@
     margin-top: 2rem;
     margin-left: 5rem;
     position: relative;
-
   }
 
   .avatar-card img {
-    position: absolute
+    position: absolute;
   }
 
   .avatar-txt {
     padding-left: 150px;
+    padding-right: 50px;
   }
 
   h2 {
@@ -33,6 +33,17 @@
   }
 
   p {
-    line-height: .8;
+    line-height: 0.8;
+  }
+
+  .soical-set {
+    position: absolute;
+    bottom: 10px;
+    right: 0;
+  }
+
+  .socail-icon {
+    font-size: 32px;
+    color: #ffffff;
   }
 }

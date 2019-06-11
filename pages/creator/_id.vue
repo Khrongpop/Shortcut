@@ -106,11 +106,12 @@
 
             <p>EMAIL : {{creator(id).email}}</p>
 
-            <a
-              :href="creator(id).facebook_link"
-              target="_blank"
-              rel="noopener noreferrer"
-            >{{creator(id).facebook}}</a>
+            <div class="soical-set">
+              <a :href="creator(id).facebook_link" target="_blank" rel="noopener noreferrer">
+                <i class="fa fa-facebook socail-icon"></i>
+                <!-- {{creator(id).facebook}} -->
+              </a>
+            </div>
           </div>
         </b-col>
       </div>
@@ -121,7 +122,7 @@
 <script>
 import { mapGetters } from "vuex";
 export default {
-  layout: "topMenu",
+  layout: "noMenu",
   data() {
     return {
       mainProps: {
