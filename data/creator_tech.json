@@ -1,6 +1,9 @@
 [{
     "id": 13560118,
-    "frontends": ["Angular"],
+    "frontends": [{
+      "name": "Angular",
+      "img": ""
+    }],
     "backends": ["Express.js"],
     "database": "MongoDB",
     "tools": [{
@@ -12,7 +15,10 @@
   },
   {
     "id": 13570119,
-    "frontends": ["Unity"],
+    "frontends": [{
+      "name": "Unity",
+      "img": ""
+    }],
     "backends": ["PHP"],
     "database": "MySQL",
     "tools": [{
@@ -23,7 +29,16 @@
   },
   {
     "id": 13570141,
-    "frontends": ["HTML", "CSS", "Javascript"],
+    "frontends": [{
+      "name": "HTML",
+      "img": ""
+    }, {
+      "name": "CSS",
+      "img": ""
+    }, {
+      "name": "Javascript",
+      "img": ""
+    }],
     "backends": ["Laravel"],
     "database": "MySQL",
     "tools": [{
@@ -43,7 +58,10 @@
   },
   {
     "id": 13570178,
-    "frontends": ["C#"],
+    "frontends": [{
+      "name": "C#",
+      "img": ""
+    }],
     "backends": ["Firebase"],
     "database": ["Firebase Realtime Database"],
     "tools": [],
@@ -51,21 +69,30 @@
   },
   {
     "id": 13570261,
-    "frontends": ["Unity "],
+    "frontends": [{
+      "name": "Unity",
+      "img": ""
+    }],
     "backends": [""],
     "database": "",
     "tools": [],
     "percen": "50-50"
   }, {
     "id": 13570283,
-    "frontends": ["Unity "],
+    "frontends": [{
+      "name": "Unity",
+      "img": ""
+    }],
     "backends": ["C#", "PHP"],
     "database": "MySQL",
     "tools": [],
     "percen": "60-40"
   }, {
     "id": 13570321,
-    "frontends": ["Unity "],
+    "frontends": [{
+      "name": "Unity",
+      "img": ""
+    }],
     "backends": ["C#", "PHP"],
     "database": "MySQL",
     "tools": [],
@@ -73,7 +100,16 @@
   },
   {
     "id": 13570357,
-    "frontends": ["HTML", "Jquery"],
+    "frontends": [{
+      "name": "HTML",
+      "img": ""
+    }, {
+      "name": "CSS",
+      "img": ""
+    }, {
+      "name": "Jquery",
+      "img": ""
+    }],
     "backends": ["Laravel"],
     "database": "MySQL",
     "tools": [{
@@ -84,7 +120,16 @@
   },
   {
     "id": 13570362,
-    "frontends": ["HTML", "CSS", "Javascript"],
+    "frontends": [{
+      "name": "HTML",
+      "img": ""
+    }, {
+      "name": "CSS",
+      "img": ""
+    }, {
+      "name": "Javascript",
+      "img": ""
+    }],
     "backends": ["PHP"],
     "database": "MySQL",
     "tools": [{
@@ -95,14 +140,20 @@
   },
   {
     "id": 13580180,
-    "frontends": ["Swift"],
+    "frontends": [{
+      "name": "Swift",
+      "img": ""
+    }],
     "backends": [""],
     "database": "60-40",
     "tools": []
   },
   {
     "id": 13580183,
-    "frontends": ["Vue.Js"],
+    "frontends": [{
+      "name": "Vue.Js",
+      "img": ""
+    }],
     "backends": ["Laravel"],
     "database": "MySQL",
     "tools": [{
@@ -119,7 +170,10 @@
   },
   {
     "id": 13580186,
-    "frontends": ["Swift"],
+    "frontends": [{
+      "name": "Swift",
+      "img": ""
+    }],
     "backends": ["Golang"],
     "database": "MySQL",
     "tools": [{
@@ -142,7 +196,10 @@
   },
   {
     "id": 13580191,
-    "frontends": ["Unity"],
+    "frontends": [{
+      "name": "Unity",
+      "img": ""
+    }],
     "backends": ["C#"],
     "database": "Local Storage",
     "tools": [{
@@ -154,7 +211,16 @@
   },
   {
     "id": 13580192,
-    "frontends": ["HTML", "CSS", "Javascript"],
+    "frontends": [{
+      "name": "HTML",
+      "img": ""
+    }, {
+      "name": "CSS",
+      "img": ""
+    }, {
+      "name": "Javascript",
+      "img": ""
+    }],
     "backends": ["Laravel"],
     "database": "MySQL",
     "tools": [{
@@ -172,7 +238,13 @@
   },
   {
     "id": 13580199,
-    "frontends": ["Unity", "C#"],
+    "frontends": [{
+      "name": "Unity",
+      "img": ""
+    }, {
+      "name": "C#",
+      "img": ""
+    }],
     "backends": ["C#", "PHP"],
     "database": "MySQL",
     "tools": [],
@@ -180,7 +252,10 @@
   },
   {
     "id": 13580201,
-    "frontends": ["Nuxt.js"],
+    "frontends": [{
+      "name": "Nuxt.js",
+      "img": ""
+    }],
     "backends": ["Laravel"],
     "database": "MySQL",
     "tools": [],
@@ -188,7 +263,10 @@
   },
   {
     "id": 13580203,
-    "frontends": ["Unity"],
+    "frontends": [{
+      "name": "Unity",
+      "img": ""
+    }],
     "backends": ["PHP"],
     "database": "MySQL",
     "tools": [],
@@ -196,7 +274,10 @@
   },
   {
     "id": 13580209,
-    "frontends": ["JAVA"],
+    "frontends": [{
+      "name": "JAVA",
+      "img": ""
+    }],
     "backends": ["Firebase"],
     "database": "Firebase Realtime Database",
     "tools": [],
@@ -204,7 +285,10 @@
   },
   {
     "id": 13580210,
-    "frontends": ["React Native"],
+    "frontends": [{
+      "name": "React Native",
+      "img": ""
+    }],
     "backends": ["Express.js"],
     "database": "MongoDB",
     "tools": [],
@@ -220,7 +304,10 @@
   },
   {
     "id": 13580212,
-    "frontends": ["Unity"],
+    "frontends": [{
+      "name": "Unity",
+      "img": ""
+    }],
     "backends": ["C#"],
     "database": "Local Storage",
     "tools": [{
@@ -231,7 +318,10 @@
   },
   {
     "id": 13580213,
-    "frontends": ["Unity "],
+    "frontends": [{
+      "name": "Unity",
+      "img": ""
+    }],
     "backends": ["C#", "PHP"],
     "database": "MySQL",
     "tools": [],
@@ -239,7 +329,10 @@
   },
   {
     "id": 13580217,
-    "frontends": ["Swift"],
+    "frontends": [{
+      "name": "Swift",
+      "img": ""
+    }],
     "backends": [""],
     "database": "",
     "tools": [{
@@ -250,7 +343,10 @@
   },
   {
     "id": 13580218,
-    "frontends": ["Swift"],
+    "frontends": [{
+      "name": "Swift",
+      "img": ""
+    }],
     "backends": ["Firebase"],
     "database": "Firebase Realtime Database",
     "tools": [{
@@ -261,7 +357,10 @@
   },
   {
     "id": 13580219,
-    "frontends": ["Swift"],
+    "frontends": [{
+      "name": "Swift",
+      "img": ""
+    }],
     "backends": ["Firebase"],
     "database": "Firebase Realtime Database",
     "tools": [],
@@ -269,7 +368,10 @@
   },
   {
     "id": 13580220,
-    "frontends": ["JAVA"],
+    "frontends": [{
+      "name": "JAVA",
+      "img": ""
+    }],
     "backends": ["Firebase"],
     "database": "Firebase Realtime Database",
     "tools": [],
@@ -277,7 +379,10 @@
   },
   {
     "id": 13580228,
-    "frontends": ["Swift"],
+    "frontends": [{
+      "name": "Swift",
+      "img": ""
+    }],
     "backends": ["Laravel"],
     "database": "MySQL",
     "tools": [],
@@ -285,7 +390,10 @@
   },
   {
     "id": 13580232,
-    "frontends": ["Swift"],
+    "frontends": [{
+      "name": "Swift",
+      "img": ""
+    }],
     "backends": ["Laravel"],
     "database": "MySQL",
     "tools": [{
@@ -296,7 +404,10 @@
   },
   {
     "id": 13580234,
-    "frontends": ["Vue.Js"],
+    "frontends": [{
+      "name": "Vue.Js",
+      "img": ""
+    }],
     "backends": ["Laravel"],
     "database": "MySQL",
     "tools": [{
@@ -313,7 +424,10 @@
   },
   {
     "id": 13580238,
-    "frontends": ["Unity"],
+    "frontends": [{
+      "name": "Unity",
+      "img": ""
+    }],
     "backends": ["C#"],
     "database": "",
     "tools": [],
@@ -321,7 +435,16 @@
   },
   {
     "id": 13580242,
-    "frontends": ["HTML", "CSS", "Jquery"],
+    "frontends": [{
+      "name": "HTML",
+      "img": ""
+    }, {
+      "name": "CSS",
+      "img": ""
+    }, {
+      "name": "Jquery",
+      "img": ""
+    }],
     "backends": ["Laravel"],
     "database": "MySQL",
     "tools": [{
@@ -338,7 +461,10 @@
   },
   {
     "id": 13580246,
-    "frontends": ["Swift"],
+    "frontends": [{
+      "name": "Swift",
+      "img": ""
+    }],
     "backends": ["Laravel"],
     "database": "MySQL",
     "tools": [],
@@ -346,7 +472,16 @@
   },
   {
     "id": 13580248,
-    "frontends": ["HTML", "CSS", "Javascript"],
+    "frontends": [{
+      "name": "HTML",
+      "img": ""
+    }, {
+      "name": "CSS",
+      "img": ""
+    }, {
+      "name": "Javascript",
+      "img": ""
+    }],
     "backends": ["Laravel"],
     "database": "MySQL",
     "tools": [],
@@ -354,7 +489,10 @@
   },
   {
     "id": 13580250,
-    "frontends": ["JAVA"],
+    "frontends": [{
+      "name": "JAVA",
+      "img": ""
+    }],
     "backends": ["Firebase"],
     "database": "Firebase Realtime Database",
     "tools": [],
