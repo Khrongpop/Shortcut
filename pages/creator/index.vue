@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div style="height:100%">
+    <div style="height:100%" v-if="false">
       <div style="width:30%" class="float-left">sdsds</div>
       <div style="width:70%" class="float-right mb-5">
         <carousel
@@ -121,6 +121,39 @@
       </div>
       <span class="clearfix"></span>
     </div>
+
+    <div v-else>
+      <carousel
+        :per-page="3"
+        :paginationEnabled="true"
+        :loop="true"
+        :autoplay="false"
+        :scrollPerPage="true"
+        :navigationEnabled="true"
+        paginationActiveColor="#6cdbe0"
+        paginationColor="#ccc"
+      >
+        <slide v-for="(val, index)  in getSize()" :key="index">
+          <b-col>
+            <creator-card
+              :vdata="creators[getIndex(val,index)]"
+              v-if="creators[getIndex(val,index)]"
+              class
+            />
+            <creator-card
+              :vdata="creators[getIndex(val,index)+ 1]"
+              v-if="creators[getIndex(val,index)+1]"
+              class
+            />
+            <creator-card
+              :vdata="creators[getIndex(val,index)+ 2]"
+              v-if="creators[getIndex(val,index)+2]"
+              class
+            />
+          </b-col>
+        </slide>
+      </carousel>
+    </div>
   </div>
 </template>
 
@@ -137,6 +170,39 @@ export default {
       creators: "creator/creators"
     })
   },
-  methods: {}
+  methods: {
+    getSize() {
+      // return this.creators.length / 4;
+      let size = this.creators.length / 3;
+      // console.log(Math.ceil(size));
+      return Math.ceil(size);
+    },
+    getIndex(val, index) {
+      if (val === 1) {
+        return index;
+      } else if (val === 2 || val === 3) {
+        return index * val + 1;
+      } else if (val === 4) {
+        return val * 2 + 2;
+      } else if (val === 5) {
+        return (index - 1) * (val - 1) + 1;
+      } else if (val === 6) {
+        return (index - 1) * (val - 1) - 4;
+      } else if (val === 7) {
+        return (index - 2) * (val - 2) - 1;
+      } else if (val === 8) {
+        return (index - 3) * (val - 2) - 2;
+      } else if (val === 9) {
+        return 25;
+      } else if (val === 10) {
+        return 28;
+      } else if (val === 11) {
+        return 31;
+      } else if (val === 12) {
+        return 34;
+      }
+      return index;
+    }
+  }
 };
 </script>
