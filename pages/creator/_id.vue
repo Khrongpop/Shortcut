@@ -18,7 +18,6 @@
           </div>
           <div style="width:50%" class="float-right">
             <img src="/creators/detail/func.png" alt class="func-title">
-            <br>
 
             <ul class="list-unstyled">
               <li
@@ -60,9 +59,32 @@
                 </b-col>
                 <b-col>
                   <img src="/creators/detail/tech.png" alt>
-
-                  <br>FROTEND
-                  <br>BACKEND
+                  <b-row>
+                    <b-col>
+                      <div class="tech-title">
+                        <img src="/creators/detail/bulet.png" alt>
+                        <span>FROTEND</span>
+                      </div>
+                    </b-col>
+                    <b-col>
+                      <div class="tech-title">
+                        <img src="/creators/detail/bulet.png" alt>
+                        <span>BACKEND</span>
+                      </div>
+                    </b-col>
+                    <b-col>
+                      <div class="tech-title">
+                        <img src="/creators/detail/bulet.png" alt>
+                        <span>DATABASE</span>
+                      </div>
+                    </b-col>
+                    <b-col>
+                      <div class="tech-title">
+                        <img src="/creators/detail/bulet.png" alt>
+                        <span>TOOLS</span>
+                      </div>
+                    </b-col>
+                  </b-row>
                 </b-col>
               </b-row>
               <b-row class="mt-3">
