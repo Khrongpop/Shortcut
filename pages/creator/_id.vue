@@ -13,11 +13,11 @@
               v-bind="profileProps"
               rounded
               alt="Rounded image"
-              :src="`/creators/${creator(id).id}.jpg`"
+              :src="`${baseURL}/creators/${creator(id).id}.jpg`"
             ></b-img>
           </div>
           <div style="width:50%; margin-left:-7%;" class="float-left">
-            <img src="/creators/detail/func.png" alt class="func-title">
+            <img :src="`${baseURL}/creators/detail/func.png`" alt class="func-title">
 
             <ul class="list-unstyled">
               <li
@@ -25,7 +25,7 @@
                 :key="index"
                 :class="getClass(index)"
               >
-                <img src="/creators/detail/bulet.png" alt>
+                <img :src="`${baseURL}/creators/detail/bulet.png`" alt>
                 <div class="text-list">
                   <h5>{{func.name}}</h5>
                   <p>{{func.des}}</p>
@@ -58,11 +58,11 @@
                   ></iframe>
                 </b-col>
                 <b-col>
-                  <img src="/creators/detail/tech.png" alt>
+                  <img :src="`${baseURL}/creators/detail/tech.png`" alt>
                   <b-row class="mt-3">
                     <b-col v-if="creator(id).frontends.length > 0">
                       <div class="tech-title">
-                        <img src="/creators/detail/bulet.png" alt class="bulet">
+                        <img :src="`${baseURL}/creators/detail/bulet.png`" alt class="bulet">
                         <span>FROTEND</span>
                         <b-row class="mt-3">
                           <b-col v-for="(frontend, index) in creator(id).frontends" :key="index">
@@ -74,7 +74,7 @@
                     </b-col>
                     <b-col v-if="creator(id).backends.length > 0">
                       <div class="tech-title">
-                        <img src="/creators/detail/bulet.png" alt class="bulet">
+                        <img :src="`${baseURL}/creators/detail/bulet.png`" alt class="bulet">
                         <span class="mt-3">BACKEND</span>
                         <b-row class="mt-3">
                           <b-col v-for="(backend, index) in creator(id).backends" :key="index">
@@ -88,7 +88,7 @@
                   <b-row class="mt-3">
                     <b-col v-if="creator(id).database">
                       <div class="tech-title">
-                        <img src="/creators/detail/bulet.png" alt class="bulet">
+                        <img :src="`${baseURL}/creators/detail/bulet.png`" alt class="bulet">
                         <span class="mt-3">DATABASE</span>
                         <b-row class="mt-3">
                           <b-col>
@@ -100,7 +100,7 @@
                     </b-col>
                     <b-col v-if="creator(id).tools.length > 0">
                       <div class="tech-title">
-                        <img src="/creators/detail/bulet.png" alt class="bulet">
+                        <img :src="`${baseURL}/creators/detail/bulet.png`" alt class="bulet">
                         <span class="mt-3">TOOLS</span>
                         <b-row class="mt-3">
                           <b-col v-for="(tool, index) in creator(id).tools" :key="index">
@@ -115,7 +115,7 @@
               </b-row>
               <b-row class="screenshot-section">
                 <b-col>
-                  <img src="/creators/detail/screenshots.png" alt>
+                  <img :src="`${baseURL}/creators/detail/screenshots.png`" alt>
 
                   <br>
                   <carousel :per-page="5" :paginationEnabled="false" :loop="true" :autoplay="false">
@@ -142,7 +142,7 @@
             v-bind="avataProps"
             rounded
             alt="Rounded image"
-            :src="`/creators/${creator(id).id}.jpg`"
+            :src="`${baseURL}/creators/${creator(id).id}.jpg`"
           ></b-img>
           <div class="avatar-txt">
             <h3>{{creator(id).name}}</h3>
