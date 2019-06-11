@@ -65,8 +65,9 @@
                         <img src="/creators/detail/bulet.png" alt class="bulet">
                         <span>FROTEND</span>
                         <b-row class="mt-3">
-                          <b-col v-for="(item, index) in 3" :key="index">
+                          <b-col v-for="(frontend, index) in creator(id).frontends" :key="index">
                             <b-img v-bind="toolProps" rounded alt="Rounded image"></b-img>
+                            {{frontend}}
                           </b-col>
                         </b-row>
                       </div>
@@ -187,7 +188,7 @@ export default {
       } else if (index === 1) {
         return "ml-6";
       }
-      return "ml-8";
+      return "ml-10";
     }
   },
   computed: {

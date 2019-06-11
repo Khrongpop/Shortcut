@@ -3,7 +3,10 @@
     "frontends": ["Angular"],
     "backends": ["Express.js"],
     "database": "MongoDB",
-    "tools": ["Strava API"],
+    "tools": [{
+      "name": "Strava API",
+      "img": ""
+    }],
     "percen": "40-60"
 
   },
@@ -12,98 +15,153 @@
     "frontends": ["Unity"],
     "backends": ["PHP"],
     "database": "MySQL",
-    "tools": ["Google Cloud API"],
+    "tools": [{
+      "name": "Google Cloud API",
+      "img": ""
+    }],
     "percen": "60-40"
   },
   {
     "id": 13570141,
     "frontends": ["HTML", "CSS", "Javascript"],
-    "backends": ["HTML,CSS,Javascript"],
+    "backends": ["Laravel"],
     "database": "MySQL",
-    "tools": ["OpenDota API ", " Ow-API ", "PUBG Developer API"],
+    "tools": [{
+        "name": "OpenDota API",
+        "img": ""
+      },
+      {
+        "name": "Ow-API",
+        "img": ""
+      },
+      {
+        "name": "PUBG Developer API",
+        "img": ""
+      }
+    ],
     "percen": "40-60"
   },
   {
     "id": 13570178,
-    "frontends": [""],
-    "backends": [""],
-    "database": "",
+    "frontends": ["C#"],
+    "backends": ["Firebase"],
+    "database": ["Firebase Realtime Database"],
     "tools": [],
-    "percen": ""
+    "percen": "60-40"
   },
   {
     "id": 13570261,
-    "frontends": [""],
+    "frontends": ["Unity "],
     "backends": [""],
     "database": "",
     "tools": [],
-    "percen": ""
+    "percen": "50-50"
   }, {
     "id": 13570283,
-    "frontends": [""],
-    "backends": [""],
-    "database": "",
+    "frontends": ["Unity "],
+    "backends": ["C#", "PHP"],
+    "database": "MySQL",
     "tools": [],
-    "percen": ""
+    "percen": "60-40"
   }, {
     "id": 13570321,
-    "frontends": [""],
-    "backends": [""],
-    "database": "",
+    "frontends": ["Unity "],
+    "backends": ["C#", "PHP"],
+    "database": "MySQL",
     "tools": [],
-    "percen": ""
+    "percen": "60-40"
   },
   {
     "id": 13570357,
-    "frontends": [""],
-    "backends": [""],
-    "database": "",
-    "tools": []
+    "frontends": ["HTML", "Jquery"],
+    "backends": ["Laravel"],
+    "database": "MySQL",
+    "tools": [{
+      "name": "Here API",
+      "img": ""
+    }],
+    "percen": "40-60"
   },
   {
     "id": 13570362,
-    "frontends": [""],
-    "backends": [""],
-    "database": "",
-    "tools": [],
-    "percen": ""
+    "frontends": ["HTML", "CSS", "Javascript"],
+    "backends": ["PHP"],
+    "database": "MySQL",
+    "tools": [{
+      "name": "SMS",
+      "img": ""
+    }],
+    "percen": "40-60"
   },
   {
     "id": 13580180,
-    "frontends": [""],
+    "frontends": ["Swift"],
     "backends": [""],
-    "database": "",
+    "database": "60-40",
     "tools": []
   },
   {
     "id": 13580183,
-    "frontends": [""],
-    "backends": [""],
-    "database": "",
-    "tools": [],
-    "percen": ""
+    "frontends": ["Vue.Js"],
+    "backends": ["Laravel"],
+    "database": "MySQL",
+    "tools": [{
+      "name": "FFMPEG",
+      "img": ""
+    }, {
+      "name": "Google Cloud API",
+      "img": ""
+    }, {
+      "name": "Facebook SDK",
+      "img": ""
+    }],
+    "percen": "40-60"
   },
   {
     "id": 13580186,
-    "frontends": [""],
-    "backends": [""],
-    "database": "",
-    "tools": [],
-    "percen": ""
+    "frontends": ["Swift"],
+    "backends": ["Golang"],
+    "database": "MySQL",
+    "tools": [{
+      "name": "Firebase",
+      "img": ""
+    }, {
+      "name": "OneSignal",
+      "img": ""
+    }, {
+      "name": "Google Cloud API",
+      "img": ""
+    }, {
+      "name": "Heroku",
+      "img": ""
+    }, {
+      "name": "Facebook SDK",
+      "img": ""
+    }],
+    "percen": "40-60"
   },
   {
     "id": 13580191,
-    "frontends": [""],
-    "backends": [""],
-    "database": "",
-    "tools": []
+    "frontends": ["Unity"],
+    "backends": ["C#"],
+    "database": "Local Storage",
+    "tools": [{
+      "name": "Native Audio",
+      "img": ""
+    }],
+
+    "percen": "50-50"
   },
   {
     "id": 13580192,
-    "frontends": [""],
-    "backends": [""],
-    "database": "",
-    "tools": []
+    "frontends": ["HTML", "CSS", "Javascript"],
+    "backends": ["Laravel"],
+    "database": "MySQL",
+    "tools": [{
+      "name": "Aftership API",
+      "img": ""
+    }],
+    "percen": "40-60"
   },
   {
     "id": 13580194,
@@ -114,42 +172,43 @@
   },
   {
     "id": 13580199,
-    "frontends": [""],
-    "backends": [""],
-    "database": "",
+    "frontends": ["Unity", "C#"],
+    "backends": ["C#", "PHP"],
+    "database": "MySQL",
     "tools": [],
-    "percen": ""
+    "percen": "60-40"
   },
   {
     "id": 13580201,
-    "frontends": [""],
-    "backends": [""],
-    "database": "",
-    "tools": []
+    "frontends": ["Nuxt.js"],
+    "backends": ["Laravel"],
+    "database": "MySQL",
+    "tools": [],
+    "percen": "60-40"
   },
   {
     "id": 13580203,
-    "frontends": [""],
-    "backends": [""],
-    "database": "",
+    "frontends": ["Unity"],
+    "backends": ["PHP"],
+    "database": "MySQL",
     "tools": [],
-    "percen": ""
+    "percen": "60-40"
   },
   {
     "id": 13580209,
-    "frontends": [""],
-    "backends": [""],
-    "database": "",
+    "frontends": ["JAVA"],
+    "backends": ["Firebase"],
+    "database": "Firebase Realtime Database",
     "tools": [],
-    "percen": ""
+    "percen": "50-50"
   },
   {
     "id": 13580210,
-    "frontends": [""],
-    "backends": [""],
-    "database": "",
+    "frontends": ["React Native"],
+    "backends": ["Express.js"],
+    "database": "MongoDB",
     "tools": [],
-    "percen": ""
+    "percen": "50-50"
   },
   {
     "id": 13580211,
@@ -161,114 +220,144 @@
   },
   {
     "id": 13580212,
-    "frontends": [""],
-    "backends": [""],
-    "database": "",
-    "tools": [],
-    "percen": ""
+    "frontends": ["Unity"],
+    "backends": ["C#"],
+    "database": "Local Storage",
+    "tools": [{
+      "name": "Facebook SDK",
+      "img": ""
+    }],
+    "percen": "60-40"
   },
   {
     "id": 13580213,
-    "frontends": [""],
-    "backends": [""],
-    "database": "",
+    "frontends": ["Unity "],
+    "backends": ["C#", "PHP"],
+    "database": "MySQL",
     "tools": [],
-    "percen": ""
+    "percen": "50-50"
   },
   {
     "id": 13580217,
-    "frontends": [""],
+    "frontends": ["Swift"],
     "backends": [""],
     "database": "",
-    "tools": [],
-    "percen": ""
+    "tools": [{
+      "name": "CoreML",
+      "img": ""
+    }],
+    "percen": "60-40"
   },
   {
     "id": 13580218,
-    "frontends": [""],
-    "backends": [""],
-    "database": "",
-    "tools": [],
-    "percen": ""
+    "frontends": ["Swift"],
+    "backends": ["Firebase"],
+    "database": "Firebase Realtime Database",
+    "tools": [{
+      "name": "CoreMotion",
+      "img": ""
+    }],
+    "percen": "50-50"
   },
   {
     "id": 13580219,
-    "frontends": [""],
-    "backends": [""],
-    "database": "",
+    "frontends": ["Swift"],
+    "backends": ["Firebase"],
+    "database": "Firebase Realtime Database",
     "tools": [],
-    "percen": ""
+    "percen": "50-50"
   },
   {
     "id": 13580220,
-    "frontends": [""],
-    "backends": [""],
-    "database": "",
+    "frontends": ["JAVA"],
+    "backends": ["Firebase"],
+    "database": "Firebase Realtime Database",
     "tools": [],
-    "percen": ""
+    "percen": "50-50"
   },
   {
     "id": 13580228,
-    "frontends": [""],
-    "backends": [""],
-    "database": "",
+    "frontends": ["Swift"],
+    "backends": ["Laravel"],
+    "database": "MySQL",
     "tools": [],
-    "percen": ""
+    "percen": "50-50"
   },
   {
     "id": 13580232,
-    "frontends": [""],
-    "backends": [""],
-    "database": "",
-    "tools": [],
-    "percen": ""
+    "frontends": ["Swift"],
+    "backends": ["Laravel"],
+    "database": "MySQL",
+    "tools": [{
+      "name": "CoreML",
+      "img": ""
+    }],
+    "percen": "40-60"
   },
   {
     "id": 13580234,
-    "frontends": [""],
-    "backends": [""],
-    "database": "",
-    "tools": [],
-    "percen": ""
+    "frontends": ["Vue.Js"],
+    "backends": ["Laravel"],
+    "database": "MySQL",
+    "tools": [{
+      "name": "Firebase",
+      "img": ""
+    }, {
+      "name": "OneSignal",
+      "img": ""
+    }, {
+      "name": "Google Cloud API",
+      "img": ""
+    }],
+    "percen": "40-60"
   },
   {
     "id": 13580238,
-    "frontends": [""],
-    "backends": [""],
+    "frontends": ["Unity"],
+    "backends": ["C#"],
     "database": "",
     "tools": [],
-    "percen": ""
+    "percen": "50-50"
   },
   {
     "id": 13580242,
-    "frontends": [""],
-    "backends": [""],
-    "database": "",
-    "tools": [],
-    "percen": ""
+    "frontends": ["HTML", "CSS", "Jquery"],
+    "backends": ["Laravel"],
+    "database": "MySQL",
+    "tools": [{
+      "name": "Omise API",
+      "img": ""
+    }, {
+      "name": "Google Cloud API",
+      "img": ""
+    }, {
+      "name": "Pusher",
+      "img": ""
+    }],
+    "percen": "50-50"
   },
   {
     "id": 13580246,
-    "frontends": [""],
-    "backends": [""],
-    "database": "",
+    "frontends": ["Swift"],
+    "backends": ["Laravel"],
+    "database": "MySQL",
     "tools": [],
-    "percen": ""
+    "percen": "50-50"
   },
   {
     "id": 13580248,
-    "frontends": [""],
-    "backends": [""],
-    "database": "",
+    "frontends": ["HTML", "CSS", "Javascript"],
+    "backends": ["Laravel"],
+    "database": "MySQL",
     "tools": [],
-    "percen": ""
+    "percen": "50-50"
   },
   {
     "id": 13580250,
-    "frontends": [""],
-    "backends": [""],
-    "database": "",
+    "frontends": ["JAVA"],
+    "backends": ["Firebase"],
+    "database": "Firebase Realtime Database",
     "tools": [],
-    "percen": ""
+    "percen": "50-50"
   }
 ]
