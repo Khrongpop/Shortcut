@@ -7,6 +7,9 @@
         <div class="col-md-3">
         </div>
         <div class="col-md-7">
+          <i class="devicon-android-plain"></i>
+          <i class="devicon-mysql-plain"></i>
+
             <img src="/thankyou/head.png" class="img-fluid">
             <div class="row pt-5">
               <div class="col-md-4">
