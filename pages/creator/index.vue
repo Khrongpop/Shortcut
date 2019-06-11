@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div style="height:100%" v-if="false">
+    <div style="height:100%" v-if="true">
       <div style="width:30%" class="float-left">sdsds</div>
       <div style="width:70%" class="float-right mb-5">
         <carousel
