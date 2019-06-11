@@ -16,9 +16,10 @@
 @import "pages/thankyou/index";
 
 
+html,
 body {
   background-color: #000;
-  font-size:20px;
+  font-size: 20px;
 }
 
 .mt-6 {
@@ -39,4 +40,16 @@ body {
 
 .mt-10 {
   margin-top: 8rem;
+}
+
+.ml-6 {
+  margin-left: 4rem;
+}
+
+.ml-7 {
+  margin-left: 5rem;
+}
+
+.ml-8 {
+  margin-left: 6rem;
 }

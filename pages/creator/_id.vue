@@ -6,7 +6,7 @@
         <div style="width:70%" class="float-left">
           <div style="width:100%" class="float-left">
             <h1>{{creator(id).project_name}}</h1>
-            <h2>การออกแบบ</h2>
+            <h2>{{creator(id).project_fullname_th}}</h2>
           </div>
           <div style="width:50%" class="float-left">
             <b-img
@@ -17,24 +17,19 @@
             ></b-img>
           </div>
           <div style="width:50%" class="float-right">
-            <img src="/creators/detail/func.png" alt>
-            <br>
+            <img src="/creators/detail/func.png" alt class="func-title">
 
             <ul class="list-unstyled">
-              <li>
+              <li
+                v-for="(func, index) in creator(id).functions"
+                :key="index"
+                :class="getClass(index)"
+              >
                 <img src="/creators/detail/bulet.png" alt>
-                รายละเอียดฟังก์ชัน Lorem Ipsum คือ เนื้อหา
-                จำลองแบบเรียบๆ ที่ใช้กันในธุรกิจงานพิมพ์
-              </li>
-              <li>
-                <img src="/creators/detail/bulet.png" alt>
-                รายละเอียดฟังก์ชัน Lorem Ipsum คือ เนื้อหา
-                จำลองแบบเรียบๆ ที่ใช้กันในธุรกิจงานพิมพ์
-              </li>
-              <li>
-                <img src="/creators/detail/bulet.png" alt>
-                รายละเอียดฟังก์ชัน Lorem Ipsum คือ เนื้อหา
-                จำลองแบบเรียบๆ ที่ใช้กันในธุรกิจงานพิมพ์
+                <div class="text-list">
+                  <h5>{{func.name}}</h5>
+                  <p>{{func.des}}</p>
+                </div>
               </li>
             </ul>
           </div>
@@ -64,9 +59,32 @@
                 </b-col>
                 <b-col>
                   <img src="/creators/detail/tech.png" alt>
-
-                  <br>FROTEND
-                  <br>BACKEND
+                  <b-row>
+                    <b-col>
+                      <div class="tech-title">
+                        <img src="/creators/detail/bulet.png" alt>
+                        <span>FROTEND</span>
+                      </div>
+                    </b-col>
+                    <b-col>
+                      <div class="tech-title">
+                        <img src="/creators/detail/bulet.png" alt>
+                        <span>BACKEND</span>
+                      </div>
+                    </b-col>
+                    <b-col>
+                      <div class="tech-title">
+                        <img src="/creators/detail/bulet.png" alt>
+                        <span>DATABASE</span>
+                      </div>
+                    </b-col>
+                    <b-col>
+                      <div class="tech-title">
+                        <img src="/creators/detail/bulet.png" alt>
+                        <span>TOOLS</span>
+                      </div>
+                    </b-col>
+                  </b-row>
                 </b-col>
               </b-row>
               <b-row class="mt-3">
@@ -101,7 +119,7 @@
             :src="`/creators/${creator(id).id}.jpg`"
           ></b-img>
           <div class="avatar-txt">
-            <h2>{{creator(id).name}}</h2>
+            <h3>{{creator(id).name}}</h3>
             <p>ID : {{creator(id).id}}</p>
 
             <p>EMAIL : {{creator(id).email}}</p>
@@ -147,6 +165,16 @@ export default {
         class: ""
       }
     };
+  },
+  methods: {
+    getClass(index) {
+      if (index === 0) {
+        return "";
+      } else if (index === 1) {
+        return "ml-6";
+      }
+      return "ml-8";
+    }
   },
   computed: {
     id() {

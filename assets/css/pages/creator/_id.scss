@@ -3,7 +3,7 @@
 
   .avatar {
     position: absolute;
-    bottom: 5%;
+    bottom: 2.5%;
     left: 30%;
   }
 
@@ -27,9 +27,34 @@
     padding-right: 50px;
   }
 
+  .tech-title {
+    img {
+      width: 25px;
+    }
+
+    span {
+      font-family: 'geometosregular';
+      font-size: .8em;
+
+    }
+  }
+
+  h1 {
+    text-align: center;
+    font-family: 'walkway_ultrabold';
+    letter-spacing: 5px;
+  }
+
   h2 {
+    font-size: 1em;
+    text-align: center;
+    // font-family: 'walkway_ultrabold';
+  }
+
+  h3 {
     padding-top: 10px;
     padding-bottom: 15px;
+    // font-family: 'walkway_ultrabold';
   }
 
   p {
@@ -46,4 +71,42 @@
     font-size: 32px;
     color: #ffffff;
   }
+
+  .func-title {
+    margin-top: 25px;
+  }
+
+  .list-unstyled {
+    // padding-top: 25px;
+    // margin-top: 20px;
+
+    li {
+      margin-top: 2rem;
+      position: relative;
+
+      .text-list {
+        padding-left: 65px;
+
+        h5 {
+          font-family: 'walkway_ultrabold';
+          font-size: 1em;
+        }
+
+        p {
+          line-height: 1;
+          font-size: .9em;
+        }
+      }
+
+      img {
+        top: 20px;
+        position: absolute;
+      }
+
+
+    }
+  }
+
+
+
 }
