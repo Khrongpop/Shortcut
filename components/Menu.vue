@@ -1,20 +1,23 @@
 <template>
   <div id="menu">
-    <div class="clearfix mn-50">
-      <div class="hamburger">
+    <div class="clearfix mn-50" :class="noMenuClass('position-absolute')">
+      <div class="hamburger" :class="noMenuClass('z9999')">
         <img src="../assets/images/menu/ham-hover.png" @click="menuTrigger()">
-        <i class="fa fa-car" style="font-size:60px;color:white;"></i>
       </div>
-      <transition name="fade">
-        <ul class="menu-list" v-show="!showHamburger">
-          <li v-for="link in links" :key="link.name">
-            <aside class="loading">
-              <nuxt-link :to="{name:link.path ? link.path : link.name}">{{link.name}}</nuxt-link>
-              <span :class="$route.name == (link.path ? link.path : link.name) ? 'border' :'none'"></span>
-            </aside>
-          </li>
-        </ul>
-      </transition>
+      <div v-if="showmenu">
+        <transition name="fade">
+          <ul class="menu-list" v-show="!showHamburger">
+            <li v-for="link in links" :key="link.name">
+              <aside class="loading">
+                <nuxt-link :to="{name:link.path ? link.path : link.name}">{{link.name}}</nuxt-link>
+                <span
+                  :class="$route.name == (link.path ? link.path : link.name) ? 'border' :'none'"
+                ></span>
+              </aside>
+            </li>
+          </ul>
+        </transition>
+      </div>
 
       <!-- <aside class="loading">
         <span class="text">Loading</span>
@@ -35,6 +38,7 @@
 <script>
 import MenuTrigger from "~/components/MenuTrigger";
 export default {
+  props: ["showmenu"],
   data() {
     return {
       links: [
@@ -50,13 +54,18 @@ export default {
     };
   },
   methods: {
-    disableScrolling(){
-    var x=window.scrollX;
-    var y=window.scrollY;
-    window.onscroll=function(){window.scrollTo(x, y);};
+    disableScrolling() {
+      var x = window.scrollX;
+      var y = window.scrollY;
+      window.onscroll = function() {
+        window.scrollTo(x, y);
+      };
     },
-    enableScrolling(){
-    window.onscroll=function(){};
+    noMenuClass(classs) {
+      return !this.showmenu ? classs : "";
+    },
+    enableScrolling() {
+      window.onscroll = function() {};
     },
     menuTrigger() {
       this.click = true;
@@ -75,7 +84,10 @@ export default {
 
 <style lang="scss" scoped>
 // @import url(https://fonts.googleapis.com/css?family=The+Girl+Next+Door);
-
+.z9999 {
+  z-index: 99999999;
+  position: absolute;
+}
 .wrapper {
   padding: 30px;
 }
