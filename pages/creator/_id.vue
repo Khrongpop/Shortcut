@@ -17,38 +17,19 @@
             ></b-img>
           </div>
           <div style="width:50%" class="float-right">
-            <img src="/creators/detail/func.png" alt>
+            <img src="/creators/detail/func.png" alt class="func-title">
             <br>
 
             <ul class="list-unstyled">
-              <li>
+              <li
+                v-for="(func, index) in creator(id).functions"
+                :key="index"
+                :class="getClass(index)"
+              >
                 <img src="/creators/detail/bulet.png" alt>
                 <div class="text-list">
-                  <h5>FUNCTION1</h5>
-                  <p>
-                    รายละเอียดฟังก์ชัน Lorem Ipsum คือ เนื้อหา
-                    จำลองแบบเรียบๆ ที่ใช้กันในธุรกิจงานพิมพ์
-                  </p>
-                </div>
-              </li>
-              <li>
-                <img src="/creators/detail/bulet.png" alt>
-                <div class="text-list">
-                  <h5>FUNCTION1</h5>
-                  <p>
-                    รายละเอียดฟังก์ชัน Lorem Ipsum คือ เนื้อหา
-                    จำลองแบบเรียบๆ ที่ใช้กันในธุรกิจงานพิมพ์
-                  </p>
-                </div>
-              </li>
-              <li>
-                <img src="/creators/detail/bulet.png" alt>
-                <div class="text-list">
-                  <h5>FUNCTION1</h5>
-                  <p>
-                    รายละเอียดฟังก์ชัน Lorem Ipsum คือ เนื้อหา
-                    จำลองแบบเรียบๆ ที่ใช้กันในธุรกิจงานพิมพ์
-                  </p>
+                  <h5>{{func.name}}</h5>
+                  <p>{{func.des}}</p>
                 </div>
               </li>
             </ul>
@@ -116,7 +97,7 @@
             :src="`/creators/${creator(id).id}.jpg`"
           ></b-img>
           <div class="avatar-txt">
-            <h2>{{creator(id).name}}</h2>
+            <h3>{{creator(id).name}}</h3>
             <p>ID : {{creator(id).id}}</p>
 
             <p>EMAIL : {{creator(id).email}}</p>
@@ -162,6 +143,16 @@ export default {
         class: ""
       }
     };
+  },
+  methods: {
+    getClass(index) {
+      if (index === 0) {
+        return "";
+      } else if (index === 1) {
+        return "ml-6";
+      }
+      return "ml-8";
+    }
   },
   computed: {
     id() {

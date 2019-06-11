@@ -34,10 +34,14 @@
   }
 
   h2 {
-    padding-top: 10px;
-    padding-bottom: 15px;
     font-size: 1em;
     text-align: center;
+    // font-family: 'walkway_ultrabold';
+  }
+
+  h3 {
+    padding-top: 10px;
+    padding-bottom: 15px;
     // font-family: 'walkway_ultrabold';
   }
 
@@ -56,19 +60,41 @@
     color: #ffffff;
   }
 
+  .func-title {
+    margin-top: 25px;
+  }
+
   .list-unstyled {
-    padding-top: 25px;
+    // padding-top: 25px;
+    // margin-top: 20px;
+
+    li {
+      margin-top: 2rem;
+      position: relative;
+
+      .text-list {
+        padding-left: 65px;
+
+        h5 {
+          font-family: 'walkway_ultrabold';
+          font-size: 1em;
+        }
+
+        p {
+          line-height: 1;
+          font-size: .9em;
+        }
+      }
+
+      img {
+        top: 20px;
+        position: absolute;
+      }
+
+
+    }
   }
 
-  .list-unstyled li {
-    position: relative;
-  }
 
-  .list-unstyled li img {
-    position: absolute;
-  }
 
-  .list-unstyled li .text-list {
-    padding-left: 65px;
-  }
 }
