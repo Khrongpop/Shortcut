@@ -2,7 +2,12 @@
   <div>
     <router-link :to="`/creator/${vdata.id}`" class="text-white" style="text-decoration:none;">
       <!-- {{vdata.id}} -->
-      <b-img v-bind="mainProps" rounded alt="Rounded image" :src="`/creators/${vdata.id}.jpg`"></b-img>
+      <b-img
+        v-bind="mainProps"
+        rounded
+        alt="Rounded image"
+        :src="`${baseURL}/creators/${vdata.id}.jpg`"
+      ></b-img>
       <br>
       {{vdata.name}}
       <br>

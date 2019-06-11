@@ -42,6 +42,7 @@ module.exports = {
   plugins: [
     '~/plugins/firebase.js',
     { src: "~/plugins/vue-carousel", ssr: false },
+    '~/plugins/mixin.js'
     // '~/plugins/vuefire.js'
   ],
 
@@ -60,6 +61,9 @@ module.exports = {
     /*
     ** You can extend webpack config here
     */
+   publicPath: 'https://www.ict.su.ac.th/func/shortcut/',
+   srcDir:'https://www.ict.su.ac.th/func/shortcut/',
+   rootDir:'https://www.ict.su.ac.th/func/shortcut/',
     extend(config, ctx) {
     }
   }
