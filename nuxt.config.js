@@ -54,6 +54,10 @@ module.exports = {
     'bootstrap-vue/nuxt',
   ],
 
+  router: {
+    routeNameSplitter: '/func/shortcut/'
+  },
+
   /*
   ** Build configuration
   */
