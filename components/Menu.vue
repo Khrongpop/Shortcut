@@ -3,6 +3,7 @@
     <div class="clearfix mn-50">
       <div class="hamburger">
         <img src="../assets/images/menu/ham-hover.png" @click="menuTrigger()">
+        <i class="fa fa-car" style="font-size:60px;color:white;"></i>
       </div>
       <transition name="fade">
         <ul class="menu-list" v-show="!showHamburger">
