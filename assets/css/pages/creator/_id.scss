@@ -47,7 +47,7 @@
   }
 
   h2 {
-    font-size: 1em;
+    font-size: 1.4em;
     text-align: center;
     // font-family: 'walkway_ultrabold';
   }
@@ -111,6 +111,20 @@
 
   .screenshot-section {
     margin-top: -50px;
+
   }
+
+  .item-2 {
+    margin-left: -10% !important;
+    transition: .5s ease-in-out;
+  }
+
+  // VueCarousel-slide VueCarousel-slide-active VueCarousel-slide-center
+  .VueCarousel-slide-active {
+    .item-2 {
+      margin-left: 0 !important;
+    }
+  }
+
 
 }

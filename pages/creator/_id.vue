@@ -16,7 +16,7 @@
               :src="`/creators/${creator(id).id}.jpg`"
             ></b-img>
           </div>
-          <div style="width:50%" class="float-right">
+          <div style="width:50%; margin-left:-7%;" class="float-left">
             <img src="/creators/detail/func.png" alt class="func-title">
 
             <ul class="list-unstyled">
@@ -36,7 +36,7 @@
         </div>
       </slide>
       <slide>
-        <div style="width:50%" class="float-left">
+        <div style="width:50%" class="float-left item-2">
           <b-row>
             <!-- <carousel :per-page="2" :paginationEnabled="false" :loop="true" :autoplay="false"> -->
             <!-- <slide> -->
