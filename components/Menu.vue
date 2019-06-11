@@ -2,8 +2,8 @@
   <div id="menu">
     <div class="clearfix mn-50" :class="noMenuClass('position-absolute')">
       <div class="hamburger" :class="noMenuClass('z9999')">
-          <img src="/menu_ham.png" @click="menuTrigger()" v-if="!showHamburger">
-          <img src="/menu_ham_active.png" @click="menuTrigger()" v-if="showHamburger">
+          <img src="/menu_ham.png" @click="menuTrigger()" v-if="!showHamburger" width="60">
+          <img src="/menu_ham_active.png" @click="menuTrigger()" v-if="showHamburger" width="60">
       </div>
       <div v-if="showmenu">
         <transition name="fade">
