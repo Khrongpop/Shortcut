@@ -1,8 +1,13 @@
 <template>
   <div>
-    <router-link :to="`${baseURL}/creator/${vdata.id}`">
+    <router-link :to="`/creator/${vdata.id}`">
       <!-- {{vdata.id}} -->
-      <b-img v-bind="mainProps" rounded alt="Rounded image" :src="`/creators/${vdata.id}.jpg`"></b-img>
+      <b-img
+        v-bind="mainProps"
+        rounded
+        alt="Rounded image"
+        :src="`${baseURL}/creators/${vdata.id}.jpg`"
+      ></b-img>
       <br>
       {{vdata.name}}
       <br>
@@ -24,13 +29,6 @@ export default {
         class: "m1"
       }
     };
-  },
-  computed: {
-    baseURL() {
-      return process.env.NODE_ENV.toLowerCase() === "production"
-        ? "https://www.ict.su.ac.th/func/shortcut"
-        : "";
-    }
   }
 };
 </script>
