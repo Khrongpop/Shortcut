@@ -60,36 +60,54 @@
                 <b-col>
                   <img src="/creators/detail/tech.png" alt>
                   <b-row class="mt-3">
-                    <b-col>
+                    <b-col v-if="creator(id).frontends.length > 0">
                       <div class="tech-title">
                         <img src="/creators/detail/bulet.png" alt class="bulet">
                         <span>FROTEND</span>
                         <b-row class="mt-3">
                           <b-col v-for="(frontend, index) in creator(id).frontends" :key="index">
                             <b-img v-bind="toolProps" rounded alt="Rounded image"></b-img>
-                            {{frontend}}
+                            <p>{{frontend.name}}</p>
                           </b-col>
                         </b-row>
                       </div>
                     </b-col>
-                    <b-col>
+                    <b-col v-if="creator(id).backends.length > 0">
                       <div class="tech-title">
                         <img src="/creators/detail/bulet.png" alt class="bulet">
                         <span class="mt-3">BACKEND</span>
+                        <b-row class="mt-3">
+                          <b-col v-for="(backend, index) in creator(id).backends" :key="index">
+                            <b-img v-bind="toolProps" rounded alt="Rounded image"></b-img>
+                            <p>{{backend.name}}</p>
+                          </b-col>
+                        </b-row>
                       </div>
                     </b-col>
                   </b-row>
                   <b-row class="mt-3">
-                    <b-col>
+                    <b-col v-if="creator(id).database">
                       <div class="tech-title">
                         <img src="/creators/detail/bulet.png" alt class="bulet">
                         <span class="mt-3">DATABASE</span>
+                        <b-row class="mt-3">
+                          <b-col>
+                            <b-img v-bind="toolProps" rounded alt="Rounded image"></b-img>
+                            <p>{{creator(id).database.name}}</p>
+                          </b-col>
+                        </b-row>
                       </div>
                     </b-col>
-                    <b-col>
+                    <b-col v-if="creator(id).tools.length > 0">
                       <div class="tech-title">
                         <img src="/creators/detail/bulet.png" alt class="bulet">
                         <span class="mt-3">TOOLS</span>
+                        <b-row class="mt-3">
+                          <b-col v-for="(tool, index) in creator(id).tools" :key="index">
+                            <b-img v-bind="toolProps" rounded alt="Rounded image"></b-img>
+                            <p>{{tool.name}}</p>
+                          </b-col>
+                        </b-row>
                       </div>
                     </b-col>
                   </b-row>
