@@ -61,6 +61,8 @@ module.exports = {
     ** You can extend webpack config here
     */
    publicPath: 'https://www.ict.su.ac.th/func/shortcut/',
+   srcDir:'https://www.ict.su.ac.th/func/shortcut/',
+   rootDir:'https://www.ict.su.ac.th/func/shortcut/',
     extend(config, ctx) {
     }
   }
