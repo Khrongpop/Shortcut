@@ -13,7 +13,6 @@
        url('../fonts/geometos-webfont.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
-
 }
 
 
@@ -24,6 +23,17 @@
   font-weight: normal;
   font-style: normal;
 
+}
+
+@font-face {
+  font-family: 'dbadmanx';
+  src: url('../fonts/dbadmanx.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body, html , input , option , textarea {
+  font-family: 'dbadmanx';
 }
 
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
