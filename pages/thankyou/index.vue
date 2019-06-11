@@ -2,9 +2,18 @@
 <div id="thankyou">
     <div class="row px-5">
         <div class="col-md-2">
-         <logo/>
+       <img src="/shortcut_left.png" class="img-fluid">
         </div>
         <div class="col-md-3">
+          <ul class="list-unstyled text-center" style="margin-top:50%;">
+            <li>ผู้ช่วยศาสตราจารย์ ดร.วันชัย สุทธะนันท์<br>
+            อธิการบดีมหาวิทยาลัยศิลปากร
+            </li>
+            <li class="pt-5">
+              ผู้ช่วยศาสตราจารย์สมศักดิ์ ชาติน้ำเพ็ชร<br>
+              คณบดีคณะเทคโนโลยีสารสนเทศและการสื่อสาร
+            </li>
+          </ul>
         </div>
         <div class="col-md-7 text-center">
             <img src="/thankyou/head.png" class="img-fluid">
@@ -73,8 +82,12 @@
 </template>
 
 <script>
+import Logo from '~/components/Logo'
 export default {
-  layout: 'topMenu'
+  layout: 'topMenu',
+  components: {
+    Logo
+  }
 }
 </script>
 
