@@ -1,17 +1,93 @@
 // mixins
-@import 'mixins/fonts';
-@import 'mixins/colors';
-@import 'mixins/animations';
+
+@import "mixins/fonts";
+@import "mixins/colors";
+@import "mixins/animations";
+@import "mixins/icon";
+
 
 // Global style
 @import 'style';
 
+
 // layouts
-@import 'layouts/topMenu';
+@import "layouts/topMenu";
 
 // components
-@import 'components/menu';
+@import "components/menu";
+@import "components/creator-card";
 
 // pages
-@import 'pages/creator/index';
-@import 'pages/register/index';
+
+@import "pages/creator/index";
+@import "pages/creator/id";
+@import "pages/register/index";
+@import "pages/thankyou/index";
+@import "pages/exhibition/index";
+
+html,
+body {
+  background-color: #000;
+  font-size: 20px;
+
+  // @include media-breakpoint-down(lg) {
+  // 	font-size: 16px;
+  // }
+
+  // @include media-breakpoint-down(md) {
+  // 	font-size: 18px;
+  // 	padding-top: 90px * 0.8;
+  // }
+
+  // @include media-breakpoint-down(sm) {
+  // 	font-size: 16px;
+  // }
+
+  // @include media-breakpoint-down(xs) {
+  // 	font-size: 14px;
+  // }
+}
+
+.mt {
+  &-6 {
+    margin-top: 4rem;
+  }
+
+  &-7 {
+    margin-top: 5rem;
+  }
+
+  &-8 {
+    margin-top: 6rem;
+  }
+
+  &-9 {
+    margin-top: 7rem;
+  }
+
+  &-10 {
+    margin-top: 8rem;
+  }
+}
+
+.ml {
+  &-6 {
+    margin-left: 4rem;
+  }
+
+  &-7 {
+    margin-left: 5rem;
+  }
+
+  &-8 {
+    margin-left: 6rem;
+  }
+
+  &-9 {
+    margin-left: 7rem;
+  }
+
+  &-10 {
+    margin-left: 8rem;
+  }
+}

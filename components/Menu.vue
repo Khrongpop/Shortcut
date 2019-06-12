@@ -1,19 +1,34 @@
 <template>
   <div id="menu">
-    <div class="clearfix mn-50">
-      <div class="hamburger">
-        <img src="../assets/images/menu/ham-hover.png" @click="menuTrigger()">
+    <div class="clearfix mn-50" :class="noMenuClass('position-absolute')">
+      <div class="hamburger" :class="noMenuClass('z9999')">
+        <img
+          :src="`${baseURL}/menu_ham.png`"
+          @click="menuTrigger()"
+          v-if="!showHamburger"
+          width="60"
+        >
+        <img
+          :src="`${baseURL}/menu_ham_active.png`"
+          @click="menuTrigger()"
+          v-if="showHamburger"
+          width="60"
+        >
       </div>
-      <transition name="fade">
-        <ul class="menu-list" v-show="!showHamburger">
-          <li v-for="link in links" :key="link.name">
-            <aside class="loading">
-              <nuxt-link :to="{name:link.path ? link.path : link.name}">{{link.name}}</nuxt-link>
-              <span :class="$route.name == (link.path ? link.path : link.name) ? 'border' :'none'"></span>
-            </aside>
-          </li>
-        </ul>
-      </transition>
+      <div v-if="showmenu && lg">
+        <transition name="fade">
+          <ul class="menu-list" v-show="!showHamburger">
+            <li v-for="link in links" :key="link.name">
+              <aside class="loading">
+                <nuxt-link :to="{name:link.path ? link.path : link.name}">{{link.name}}</nuxt-link>
+                <span
+                  :class="$route.name == (link.path ? link.path : link.name) ? 'border' :'none'"
+                ></span>
+              </aside>
+            </li>
+          </ul>
+        </transition>
+      </div>
 
       <!-- <aside class="loading">
         <span class="text">Loading</span>
@@ -34,11 +49,12 @@
 <script>
 import MenuTrigger from "~/components/MenuTrigger";
 export default {
+  props: ["showmenu"],
   data() {
     return {
       links: [
         { name: "home", path: "index", icon: "001-home" },
-        { name: "creator", icon: "002-user" },
+        { name: "creators", icon: "002-user" },
         { name: "book", icon: "003-ebook" },
         { name: "exhibition", icon: "004-tickets" },
         { name: "thankyou", icon: "005-handshake" },
@@ -49,17 +65,22 @@ export default {
     };
   },
   methods: {
-    disableScrolling(){
-    var x=window.scrollX;
-    var y=window.scrollY;
-    window.onscroll=function(){window.scrollTo(x, y);};
+    disableScrolling() {
+      var x = window.scrollX;
+      var y = window.scrollY;
+      window.onscroll = function() {
+        window.scrollTo(x, y);
+      };
     },
-    enableScrolling(){
-    window.onscroll=function(){};
+    noMenuClass(classs) {
+      return !this.showmenu ? classs : "";
+    },
+    enableScrolling() {
+      window.onscroll = function() {};
     },
     menuTrigger() {
       this.click = true;
-      this.disableScrolling()
+      // this.disableScrolling()
       this.showHamburger = !this.showHamburger;
     },
     triggerFalse() {
@@ -74,7 +95,10 @@ export default {
 
 <style lang="scss" scoped>
 // @import url(https://fonts.googleapis.com/css?family=The+Girl+Next+Door);
-
+.z9999 {
+  z-index: 99999999;
+  position: absolute;
+}
 .wrapper {
   padding: 30px;
 }

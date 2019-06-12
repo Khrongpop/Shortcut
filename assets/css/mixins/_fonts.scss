@@ -5,3 +5,35 @@
   font-weight: normal;
   font-style: normal;
 }
+
+@font-face {
+  font-family: 'geometosregular';
+  src: url('../fonts/geometos-webfont.woff2') format('woff2'),
+       url('../fonts/geometos-webfont.woff') format('woff'),
+       url('../fonts/geometos-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'vcr_osd_monoregular';
+  src: url('../fonts/vcr_osd_mono_1001-webfont.woff') format('woff'),
+       url('../fonts/vcr_osd_mono_1001-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'dbadmanx';
+  src: url('../fonts/dbadmanx.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body, html , input , option , textarea {
+  font-family: 'dbadmanx';
+}
+
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');

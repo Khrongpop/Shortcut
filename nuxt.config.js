@@ -41,6 +41,8 @@ module.exports = {
   */
   plugins: [
     '~/plugins/firebase.js',
+    { src: "~/plugins/vue-carousel", ssr: false },
+    '~/plugins/mixin.js'
     // '~/plugins/vuefire.js'
   ],
 
@@ -52,6 +54,18 @@ module.exports = {
     'bootstrap-vue/nuxt',
   ],
 
+  router: {
+    // routeNameSplitter: '/func/shortcut/',
+    // base: '/func/shortcut/',
+    extendRoutes (routes, resolve) {
+      routes.push({
+        name: 'custom',
+        path: '*',
+        component: resolve(__dirname, 'pages/404.vue')
+      })
+    }
+  },
+
   /*
   ** Build configuration
   */
@@ -59,6 +73,12 @@ module.exports = {
     /*
     ** You can extend webpack config here
     */
+  //  publicPath: 'https://www.ict.su.ac.th/func/shortcut/',
+  // srcDir:'https://www.ict.su.ac.th/func/shortcut/',
+  // rootDir:'https://www.ict.su.ac.th/func/shortcut/',
+  //  publicPath: '/func/shortcut/',
+  //  srcDir:'/func/shortcut/',
+  //  rootDir:'/func/shortcut/',
     extend(config, ctx) {
     }
   }

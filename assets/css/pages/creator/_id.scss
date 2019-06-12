@@ -1,0 +1,136 @@
+#creator_detail {
+  position: relative;
+
+  .avatar {
+    position: absolute;
+    bottom: 2.5%;
+    left: 30%;
+  }
+
+  .creator_row {
+    widows: 200%;
+    overflow: hidden;
+  }
+
+  .avatar-card {
+    margin-top: 2rem;
+    margin-left: 5rem;
+    position: relative;
+  }
+
+  .avatar-card img {
+    position: absolute;
+  }
+
+  .avatar-txt {
+    padding-left: 150px;
+    padding-right: 50px;
+  }
+
+  .tech-title {
+    .bulet {
+      width: 25px;
+    }
+
+    span {
+      font-family: 'geometosregular',
+        'dbadmanx';
+      font-size: .8em;
+      color: #3ac6f4;
+    }
+  }
+
+  h1 {
+    // text-align: center;
+    font-family: 'geometosregular',
+      'dbadmanx';
+    letter-spacing: 5px;
+    color: #3ac6f4;
+  }
+
+  h2 {
+    font-size: 1.4em;
+    // text-align: center;
+    // font-family: 'walkway_ultrabold';
+  }
+
+  h3 {
+    padding-top: 10px;
+    padding-bottom: 15px;
+    font-family: 'vcr_osd_monoregular', 'dbadmanx';
+  }
+
+  p {
+    line-height: 0.8;
+  }
+
+  .soical-set {
+    position: absolute;
+    bottom: 10px;
+    right: 0;
+  }
+
+  .socail-icon {
+    font-size: 32px;
+    color: #ffffff;
+  }
+
+  .func-title {
+    margin-top: 25px;
+  }
+
+  .list-unstyled {
+    // padding-top: 25px;
+    // margin-top: 20px;
+
+    li {
+      margin-top: 2rem;
+      position: relative;
+
+      .text-list {
+        padding-left: 65px;
+
+        h5 {
+          font-family: 'geometosregular',
+            'dbadmanx';
+          font-size: 1.3em;
+          color: #3ac6f4;
+        }
+
+        p {
+          line-height: 1;
+          font-size: .9em;
+        }
+      }
+
+      img {
+        top: 20px;
+        position: absolute;
+      }
+
+
+    }
+  }
+
+  .screenshot-section {
+    margin-top: -50px;
+  }
+
+  .tech-section {
+    margin-left: -150px;
+  }
+
+  .item-2 {
+    margin-left: -10% !important;
+    transition: .5s ease-in-out;
+  }
+
+  // VueCarousel-slide VueCarousel-slide-active VueCarousel-slide-center
+  .VueCarousel-slide-active {
+    .item-2 {
+      margin-left: 0 !important;
+    }
+  }
+
+
+}

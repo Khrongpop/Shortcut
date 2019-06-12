@@ -1,0 +1,688 @@
+[{
+    "id": 13560118,
+    "frontends": [{
+      "name": "Angular",
+      "img": ""
+    }],
+    "backends": [{
+      "name": "Express.js",
+      "img": "express"
+    }],
+    "database": {
+      "name": "MongoDB",
+      "img": "mongodb"
+    },
+    "tools": [{
+      "name": "Strava API",
+      "img": ""
+    }],
+    "percen": "40-60"
+
+  },
+  {
+    "id": 13570119,
+    "frontends": [{
+      "name": "Unity",
+      "img": ""
+    }],
+    "backends": [{
+      "name": "PHP",
+      "img": "php"
+    }],
+    "database": {
+      "name": "MySQL",
+      "img": "mysql"
+    },
+    "tools": [{
+      "name": "Google Cloud API",
+      "img": "google"
+    }],
+    "percen": "60-40"
+  },
+  {
+    "id": 13570141,
+    "frontends": [{
+      "name": "HTML",
+      "img": "html"
+    }, {
+      "name": "CSS",
+      "img": "css"
+    }, {
+      "name": "Javascript",
+      "img": "javascript"
+    }],
+    "backends": [{
+      "name": "Laravel",
+      "img": "laravel"
+    }],
+    "database": {
+      "name": "MySQL",
+      "img": "mysql"
+    },
+    "tools": [{
+        "name": "OpenDota API",
+        "img": ""
+      },
+      {
+        "name": "Ow-API",
+        "img": ""
+      },
+      {
+        "name": "PUBG Developer API",
+        "img": ""
+      }
+    ],
+    "percen": "40-60"
+  },
+  {
+    "id": 13570178,
+    "frontends": [{
+      "name": "C#",
+      "img": "csharp"
+    }],
+    "backends": [{
+      "name": "Firebase",
+      "img": ""
+    }],
+    "database": {
+      "name": "Firebase Realtime Database",
+      "img": ""
+    },
+    "tools": [],
+    "percen": "60-40"
+  },
+  {
+    "id": 13570261,
+    "frontends": [{
+      "name": "Unity",
+      "img": ""
+    }],
+    "backends": [""],
+    "database": "",
+    "tools": [],
+    "percen": "50-50"
+  }, {
+    "id": 13570283,
+    "frontends": [{
+      "name": "Unity",
+      "img": ""
+    }],
+    "backends": [{
+      "name": "C#",
+      "img": ""
+    }, {
+      "name": "PHP",
+      "img": "php"
+    }],
+    "database": {
+      "name": "MySQL",
+      "img": "mysql"
+    },
+    "tools": [],
+    "percen": "60-40"
+  }, {
+    "id": 13570321,
+    "frontends": [{
+      "name": "Unity",
+      "img": ""
+    }],
+    "backends": [{
+        "name": "C#",
+        "img": "csharp"
+      },
+      {
+        "name": "PHP",
+        "img": "php"
+      }
+    ],
+    "database": {
+      "name": "MySQL",
+      "img": "mysql"
+    },
+    "tools": [],
+    "percen": "60-40"
+  },
+  {
+    "id": 13570357,
+    "frontends": [{
+      "name": "HTML",
+      "img": "html-"
+    }, {
+      "name": "CSS",
+      "img": ""
+    }, {
+      "name": "Jquery",
+      "img": "jquery"
+    }],
+    "backends": [{
+      "name": "Laravel",
+      "img": "laravel"
+    }],
+    "database": {
+      "name": "MySQL",
+      "img": "mysql"
+    },
+    "tools": [{
+      "name": "Here API",
+      "img": ""
+    }],
+    "percen": "40-60"
+  },
+  {
+    "id": 13570362,
+    "frontends": [{
+      "name": "HTML",
+      "img": "html"
+    }, {
+      "name": "CSS",
+      "img": "css"
+    }, {
+      "name": "Javascript",
+      "img": "javascript"
+    }],
+    "backends": [{
+      "name": "PHP",
+      "img": "php"
+    }],
+    "database": {
+      "name": "MySQL",
+      "img": "mysql"
+    },
+    "tools": [{
+      "name": "SMS",
+      "img": ""
+    }],
+    "percen": "40-60"
+  },
+  {
+    "id": 13580180,
+    "frontends": [{
+      "name": "Swift",
+      "img": "swift"
+    }],
+    "backends": [""],
+    "database": "60-40",
+    "tools": []
+  },
+  {
+    "id": 13580183,
+    "frontends": [{
+      "name": "Vue.Js",
+      "img": "vuejs"
+    }],
+    "backends": [{
+      "name": "Laravel",
+      "img": "laravel"
+    }],
+    "database": {
+      "name": "MySQL",
+      "img": "mysql"
+    },
+    "tools": [{
+      "name": "FFMPEG",
+      "img": ""
+    }, {
+      "name": "Google Cloud API",
+      "img": "google"
+    }, {
+      "name": "Facebook SDK",
+      "img": "facebook"
+    }],
+    "percen": "40-60"
+  },
+  {
+    "id": 13580186,
+    "frontends": [{
+      "name": "Swift",
+      "img": "swift"
+    }],
+    "backends": [{
+      "name": "Golang",
+      "img": "go"
+    }],
+    "database": {
+      "name": "MySQL",
+      "img": "mysql"
+    },
+    "tools": [{
+      "name": "Firebase",
+      "img": ""
+    }, {
+      "name": "OneSignal",
+      "img": ""
+    }, {
+      "name": "Google Cloud API",
+      "img": "google"
+    }, {
+      "name": "Heroku",
+      "img": "heroku"
+    }, {
+      "name": "Facebook SDK",
+      "img": "facebook"
+    }],
+    "percen": "40-60"
+  },
+  {
+    "id": 13580191,
+    "frontends": [{
+      "name": "Unity",
+      "img": ""
+    }],
+    "backends": [{
+      "name": "C#",
+      "img": "csharp"
+    }],
+    "database": {
+      "name": "Local Storage",
+      "img": ""
+    },
+    "tools": [{
+      "name": "Native Audio",
+      "img": ""
+    }],
+
+    "percen": "50-50"
+  },
+  {
+    "id": 13580192,
+    "frontends": [{
+      "name": "HTML",
+      "img": "html"
+    }, {
+      "name": "CSS",
+      "img": "css"
+    }, {
+      "name": "Javascript",
+      "img": "javascript"
+    }],
+    "backends": [{
+      "name": "Laravel",
+      "img": "laravel"
+    }],
+    "database": {
+      "name": "MySQL",
+      "img": "mysql"
+    },
+    "tools": [{
+      "name": "Aftership API",
+      "img": ""
+    }],
+    "percen": "40-60"
+  },
+  {
+    "id": 13580194,
+    "frontends": [""],
+    "backends": [""],
+    "database": "",
+    "tools": []
+  },
+  {
+    "id": 13580199,
+    "frontends": [{
+      "name": "Unity",
+      "img": ""
+    }],
+    "backends": [{
+      "name": "C#",
+      "img": "csharp"
+    }, {
+      "name": "PHP",
+      "img": "php"
+    }],
+    "database": {
+      "name": "MySQL",
+      "img": "mysql"
+    },
+    "tools": [],
+    "percen": "60-40"
+  },
+  {
+    "id": 13580201,
+    "frontends": [{
+      "name": "Nuxt.js",
+      "img": ""
+    }],
+    "backends": [{
+      "name": "Laravel",
+      "img": "laravel"
+    }],
+    "database": {
+      "name": "MySQL",
+      "img": "mysql"
+    },
+    "tools": [],
+    "percen": "60-40"
+  },
+  {
+    "id": 13580203,
+    "frontends": [{
+      "name": "Unity",
+      "img": ""
+    }],
+    "backends": [{
+      "name": "PHP",
+      "img": "php"
+    }],
+    "database": {
+      "name": "MySQL",
+      "img": "mysql"
+    },
+    "tools": [],
+    "percen": "60-40"
+  },
+  {
+    "id": 13580209,
+    "frontends": [{
+      "name": "JAVA",
+      "img": "java"
+    }],
+    "backends": [{
+      "name": "Firebase",
+      "img": ""
+    }],
+    "database": {
+      "name": "Firebase Realtime Database",
+      "img": ""
+    },
+    "tools": [],
+    "percen": "50-50"
+  },
+  {
+    "id": 13580210,
+    "frontends": [{
+      "name": "React Native",
+      "img": "react"
+    }],
+    "backends": [{
+      "name": "Express.js",
+      "img": ""
+    }],
+    "database": {
+      "name": "MongoDB",
+      "img": "mongodb"
+    },
+    "tools": [],
+    "percen": "50-50"
+  },
+  {
+    "id": 13580211,
+    "frontends": [""],
+    "backends": [""],
+    "database": "",
+    "tools": [],
+    "percen": ""
+  },
+  {
+    "id": 13580212,
+    "frontends": [{
+      "name": "Unity",
+      "img": ""
+    }],
+    "backends": [{
+      "name": "C#",
+      "img": "csharp"
+    }],
+    "database": "Local Storage",
+    "tools": [{
+      "name": "Facebook SDK",
+      "img": "facebook"
+    }],
+    "percen": "60-40"
+  },
+  {
+    "id": 13580213,
+    "frontends": [{
+      "name": "Unity",
+      "img": ""
+    }],
+    "backends": [{
+        "name": "C#",
+        "img": "csharp"
+      },
+      {
+        "name": "PHP",
+        "img": "php"
+      }
+    ],
+    "database": {
+      "name": "MySQL",
+      "img": "mysql"
+    },
+    "tools": [],
+    "percen": "50-50"
+  },
+  {
+    "id": 13580217,
+    "frontends": [{
+      "name": "Swift",
+      "img": ""
+    }],
+    "backends": [""],
+    "database": "",
+    "tools": [{
+      "name": "CoreML",
+      "img": ""
+    }],
+    "percen": "60-40"
+  },
+  {
+    "id": 13580218,
+    "frontends": [{
+      "name": "Swift",
+      "img": "swift"
+    }],
+    "backends": [{
+      "name": "Firebase",
+      "img": ""
+    }],
+    "database": {
+      "name": "Firebase Realtime Database",
+      "img": ""
+    },
+    "tools": [{
+      "name": "CoreMotion",
+      "img": ""
+    }],
+    "percen": "50-50"
+  },
+  {
+    "id": 13580219,
+    "frontends": [{
+      "name": "Swift",
+      "img": "swift"
+    }],
+    "backends": [{
+      "name": "Firebase",
+      "img": ""
+    }],
+    "database": {
+      "name": "Firebase Realtime Database",
+      "img": ""
+    },
+    "tools": [],
+    "percen": "50-50"
+  },
+  {
+    "id": 13580220,
+    "frontends": [{
+      "name": "JAVA",
+      "img": "java"
+    }],
+    "backends": [{
+      "name": "Firebase",
+      "img": ""
+    }],
+    "database": {
+      "name": "Firebase Realtime Database",
+      "img": ""
+    },
+    "tools": [],
+    "percen": "50-50"
+  },
+  {
+    "id": 13580228,
+    "frontends": [{
+      "name": "Swift",
+      "img": "swift"
+    }],
+    "backends": [{
+      "name": "Laravel",
+      "img": "laravel"
+    }],
+    "database": {
+      "name": "MySQL",
+      "img": "mysql"
+    },
+    "tools": [],
+    "percen": "50-50"
+  },
+  {
+    "id": 13580232,
+    "frontends": [{
+      "name": "Swift",
+      "img": "swift"
+    }],
+    "backends": [{
+      "name": "Laravel",
+      "img": "laravel"
+    }],
+    "database": {
+      "name": "MySQL",
+      "img": "mysql"
+    },
+    "tools": [{
+      "name": "CoreML",
+      "img": ""
+    }],
+    "percen": "40-60"
+  },
+  {
+    "id": 13580234,
+    "frontends": [{
+      "name": "Vue.Js",
+      "img": "vuejs"
+    }],
+    "backends": [{
+      "name": "Laravel",
+      "img": "laravel"
+    }],
+    "database": {
+      "name": "MySQL",
+      "img": "mysql"
+    },
+    "tools": [{
+      "name": "Firebase",
+      "img": ""
+    }, {
+      "name": "OneSignal",
+      "img": ""
+    }, {
+      "name": "Google Cloud API",
+      "img": "google"
+    }],
+    "percen": "40-60"
+  },
+  {
+    "id": 13580238,
+    "frontends": [{
+      "name": "Unity",
+      "img": ""
+    }],
+    "backends": [{
+      "name": "C#",
+      "img": "csharp"
+    }],
+    "database": "",
+    "tools": [],
+    "percen": "50-50"
+  },
+  {
+    "id": 13580242,
+    "frontends": [{
+      "name": "HTML",
+      "img": "html"
+    }, {
+      "name": "CSS",
+      "img": "css"
+    }, {
+      "name": "Jquery",
+      "img": "jquery"
+    }],
+    "backends": [{
+      "name": "Laravel",
+      "img": "laravel"
+    }],
+    "database": {
+      "name": "MySQL",
+      "img": "mysql"
+    },
+    "tools": [{
+      "name": "Omise API",
+      "img": ""
+    }, {
+      "name": "Google Cloud API",
+      "img": "google"
+    }, {
+      "name": "Pusher",
+      "img": ""
+    }],
+    "percen": "50-50"
+  },
+  {
+    "id": 13580246,
+    "frontends": [{
+      "name": "Swift",
+      "img": "swift"
+    }],
+    "backends": [{
+      "name": "Laravel",
+      "img": "laravel"
+    }],
+    "database": {
+      "name": "MySQL",
+      "img": "mysql"
+    },
+    "tools": [],
+    "percen": "50-50"
+  },
+  {
+    "id": 13580248,
+    "frontends": [{
+      "name": "HTML",
+      "img": "html"
+    }, {
+      "name": "CSS",
+      "img": ""
+    }, {
+      "name": "Javascript",
+      "img": "javascript"
+    }],
+    "backends": [{
+      "name": "Laravel",
+      "img": "laravel"
+    }],
+    "database": {
+      "name": "MySQL",
+      "img": "mysql"
+    },
+    "tools": [],
+    "percen": "50-50"
+  },
+  {
+    "id": 13580250,
+    "frontends": [{
+      "name": "JAVA",
+      "img": "java"
+    }],
+    "backends": [{
+      "name": "Firebase",
+      "img": ""
+    }],
+    "database": {
+      "name": "Firebase Realtime Database",
+      "img": ""
+    },
+    "tools": [],
+    "percen": "50-50"
+  }
+]
