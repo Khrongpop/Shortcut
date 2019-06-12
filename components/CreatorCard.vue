@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="creator-card">
     <router-link :to="`/creator/${vdata.id}`" class="text-white" style="text-decoration:none;">
       <!-- {{vdata.id}} -->
       <b-img
@@ -8,10 +8,9 @@
         alt="Rounded image"
         :src="`${baseURL}/creators/${vdata.id}.jpg`"
       ></b-img>
-      <br>
-      {{subName}}
-      <br>
-      {{vdata.id}}
+      <h1>{{subName}}</h1>
+      <p>{{vdata.id}}</p>
+      <br v-if="!lg">
     </router-link>
   </div>
 </template>
@@ -33,7 +32,9 @@ export default {
   computed: {
     subName() {
       let name = this.vdata.name;
-      if (this.windowWidth <= 850 && this.windowWidth > 832) {
+      if (this.windowWidth <= 904 && this.windowWidth > 850) {
+        return name.length > 23 ? name.substring(0, 20) + "..." : name;
+      } else if (this.windowWidth <= 850 && this.windowWidth > 832) {
         return name.length > 20 ? name.substring(0, 20) + "..." : name;
       } else if (this.windowWidth <= 832) {
         return name.length > 19 ? name.substring(0, 17) + "..." : name;
