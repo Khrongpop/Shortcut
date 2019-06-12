@@ -158,6 +158,34 @@
       </div>
       <span class="clearfix"></span>
     </div>
+    <div v-else-if="md">
+      <carousel
+        :per-page="3"
+        :paginationEnabled="true"
+        :loop="true"
+        :autoplay="false"
+        :scrollPerPage="true"
+        :navigationEnabled="true"
+        paginationActiveColor="#6cdbe0"
+        paginationColor="#ccc"
+      >
+        <slide v-for="(val, index)  in getSize" :key="index">
+          <b-col>
+            <creator-card
+              :vdata="creators(name)[val + index-1]"
+              v-if="creators(name)[val + index-1]"
+              class
+            />
+
+            <creator-card
+              :vdata="creators(name)[val + index]"
+              v-if="creators(name)[val + index]"
+              class
+            />
+          </b-col>
+        </slide>
+      </carousel>
+    </div>
     <div v-else>
       อ่านทำไม
       <carousel
@@ -221,7 +249,7 @@ export default {
     },
     getSize() {
       // return this.creators.length / 4;
-      let size = this.creators(this.name).length / 3;
+      let size = this.creators(this.name).length / (this.md ? 2 : 3);
       console.log(Math.ceil(size));
       return Math.ceil(size);
     }
