@@ -147,7 +147,7 @@
           <b-col>
             <!-- {{creators[index]}} -->
             <creator-card :vdata="creators[val + index-1]" v-if="creators[val + index-1]" class/>
-            <creator-card :vdata="creators[val + index]" v-if="creators[val + index]" class/>
+            <!-- <creator-card :vdata="creators[val + index]" v-if="creators[val + index]" class/> -->
             <!-- <creator-card :vdata="creators[index]" v-if="creators[index]" class/> -->
             <!-- <creator-card :vdata="creators[index+2]" v-if="creators[index+2]" class/> -->
             <!-- <creator-card
