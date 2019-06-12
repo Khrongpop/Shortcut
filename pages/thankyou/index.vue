@@ -1,12 +1,11 @@
 <template>
   <div id="thankyou">
-    {{windowWidth}}
     <div class="row">
-      <div class="col-md-2">
+      <div class="col-lg-2 pb-3" v-if="lg">
         <img src="/shortcut_left.png" class="img-fluid">
       </div>
-      <div class="col-md-3">
-        <ul class="list-unstyled text-center" style="margin-top:50%;">
+      <div class="col-lg-3">
+        <ul class="list-unstyled text-center" :class="lg?'m50per':''">
           <li>
             ผู้ช่วยศาสตราจารย์ ดร.วันชัย สุทธะนันท์
             <br>อธิการบดีมหาวิทยาลัยศิลปากร
@@ -17,7 +16,7 @@
           </li>
         </ul>
       </div>
-      <div class="col-md-7 text-center">
+      <div class="col-lg-7 text-center">
         <img src="/thankyou/head.png" class="img-fluid">
         <div class="row pt-5">
           <div class="col-12 col-md-4">
@@ -97,5 +96,8 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
+.m50per {
+  margin-top: 50%;
+}
 </style>
