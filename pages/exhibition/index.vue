@@ -5,7 +5,7 @@
       <carousel :per-page="1" :paginationEnabled="false" :loop="true" :autoplay="false">
         <slide class="exhibition-section-1">
           <Logo/>
-          <div class="video">sdsd</div>
+          <div class="video">ss</div>
 
           <div class="bottom-content-1">
             <img :src="`${baseURL}/creators/detail/bulet.png`" alt>
@@ -24,10 +24,20 @@
           </div>
         </slide>
         <slide class="exhibition-section-2">
+          <div class="slide">
+            <b-row>
+              <carousel :per-page="1" :paginationEnabled="false" :loop="true" :autoplay="false">
+                <slide v-for="(item,index) in 5" :key="index">
+                  <!-- <b-col> -->
+                  <!-- <img src="https://placehold.it/400x250"> -->
+                  <!-- </b-col> -->
+                </slide>
+              </carousel>
+            </b-row>
+          </div>
           <div class="bottom-content-1">
-            <div class="slide"></div>
-
-            <div class="bottom-left-content-2">
+            <span class="clearfix"></span>
+            <div class="bottom-left-content-2 mt-3">
               <div class="img-title">
                 <img :src="`${baseURL}/creators/detail/bulet.png`" alt>
                 <div class="img"></div>
