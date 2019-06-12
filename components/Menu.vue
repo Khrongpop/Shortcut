@@ -15,7 +15,7 @@
           width="60"
         >
       </div>
-      <div v-if="showmenu && md">
+      <div v-if="showmenu && lg">
         <transition name="fade">
           <ul class="menu-list" v-show="!showHamburger">
             <li v-for="link in links" :key="link.name">

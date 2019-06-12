@@ -1,6 +1,6 @@
 <template>
   <div id="creator">
-    <div style="height:100%" v-if="true">
+    <div style="height:100%" v-if="lg">
       <div style="width:5%;" class="float-left">อ่านทำไม</div>
       <div class="center-section">
         <Logo/>
@@ -132,7 +132,7 @@
 
     <div v-else>
       <carousel
-        :per-page="3"
+        :per-page="!lg ? 4 : (xs ? 2 : 3)"
         :paginationEnabled="true"
         :loop="true"
         :autoplay="false"
@@ -184,7 +184,7 @@ export default {
     getSize() {
       // return this.creators.length / 4;
       let size = this.creators.length / 3;
-      // console.log(Math.ceil(size));
+      console.log(Math.ceil(size));
       return Math.ceil(size);
     },
     getIndex(val, index) {
