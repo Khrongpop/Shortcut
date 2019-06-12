@@ -6,6 +6,8 @@
         <Logo/>
 
         <div class="creator-txt">
+          <h2>{{currentCreatorLG}}</h2>
+          <h3>/</h3>
           <h1>{{creators(name).length}}</h1>
           <p>CREATORS</p>
         </div>
@@ -20,6 +22,7 @@
           :navigationEnabled="true"
           paginationActiveColor="#6cdbe0"
           paginationColor="#ccc"
+          @page-change="handleCurrentLG"
         >
           <slide v-for="(val, index)  in getSizes" :key="index">
             <!-- <creator-card :vdata=" creators(name)[index]" class="mt-9"/> -->
@@ -237,6 +240,11 @@ import CreatorCard from "@/components/CreatorCard";
 import Logo from "~/components/Logo";
 export default {
   layout: "topMenu",
+  data() {
+    return {
+      currentLG: 0
+    };
+  },
   components: {
     CreatorCard,
     Logo
@@ -262,6 +270,17 @@ export default {
       let size = this.creators(this.name).length / (this.md ? 2 : 3);
       console.log(Math.ceil(size));
       return Math.ceil(size);
+    },
+    currentCreatorLG() {
+      let category_id = this.creators(this.name)[0].category_id;
+      if (this.currentLG === 0) {
+        return 8;
+      } else if (this.currentLG === 1) {
+        return 17;
+      } else if (this.currentLG === 2) {
+        return 26;
+      }
+      return this.creators.length;
     }
   },
   methods: {
@@ -290,6 +309,10 @@ export default {
         return 34;
       }
       return index;
+    },
+    handleCurrentLG(e) {
+      console.log(e);
+      this.currentLG = e;
     }
   }
 };
