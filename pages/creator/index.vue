@@ -6,7 +6,7 @@
         <Logo/>
 
         <div class="creator-txt">
-          {{currentCreator}}
+          {{currentCreatorLG}}
           <h1>35</h1>
           <p>CREATORS</p>
         </div>
@@ -175,7 +175,7 @@ export default {
   layout: "topMenu",
   data() {
     return {
-      current: 0
+      currentLG: 0
     };
   },
   components: {
@@ -186,12 +186,12 @@ export default {
     ...mapGetters({
       creators: "creator/creators"
     }),
-    currentCreator() {
-      if (this.current === 0) {
+    currentCreatorLG() {
+      if (this.currentLG === 0) {
         return 8;
-      } else if (this.current === 1) {
+      } else if (this.currentLG === 1) {
         return 17;
-      } else if (this.current === 2) {
+      } else if (this.currentLG === 2) {
         return 26;
       }
       return this.creators.length;
@@ -232,7 +232,7 @@ export default {
     },
     handleCurrentLG(e) {
       console.log(e);
-      this.current = e;
+      this.currentLG = e;
     }
   }
 };

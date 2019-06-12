@@ -11,7 +11,7 @@
     "name": "Kanjanat Thongkhumzuy",
     "img": "",
     "email": "dt-namnow@hotmail.com",
-    "category": 3,
+    "category_id": 3,
     "platform_id": 2
   },
   {
@@ -27,7 +27,7 @@
     "name": "Nattapat Triyasut",
     "img": "",
     "email": "pjspacher456@gmail.com",
-    "category": 3,
+    "category_id": 3,
     "platform_id": 2
   },
   {
@@ -35,21 +35,21 @@
     "name": "Pansupa Pauenpud",
     "img": "",
     "email": "pare280239@gmail.com",
-    "category": 3,
+    "category_id": 3,
     "platform_id": 2
   }, {
     "id": 13570283,
     "name": "Montha Chiangkhong",
     "img": "",
     "email": "milkiiiez.1996@gmail.com",
-    "category": 3,
+    "category_id": 3,
     "platform_id": 3
   }, {
     "id": 13570321,
     "name": "Sasithorn Sinjaroenpong",
     "img": "",
     "email": "milkiiiez.1996@gmail.com",
-    "category": 3,
+    "category_id": 3,
     "platform_id": 2
   },
   {
@@ -73,7 +73,7 @@
     "name": "Kanokporn Masawat",
     "img": "",
     "email": "cream-_cream@hotmail.com",
-    "category": 3,
+    "category_id": 3,
     "platform_id": 2
   },
   {
@@ -121,7 +121,7 @@
     "name": "Thitibhorn Roongwarin",
     "img": "",
     "email": "janekawaii542@gmail.com",
-    "category": 3,
+    "category_id": 3,
     "platform_id": 2
   },
   {
@@ -137,7 +137,7 @@
     "name": "Nutthanaporn Pongudom",
     "img": "",
     "email": "lin-por@hotmail.com",
-    "category": 3,
+    "category_id": 3,
     "platform_id": 2
   },
   {
@@ -161,7 +161,7 @@
     "name": "Tharinee Natthakaranic",
     "img": "",
     "email": "NATTHAKARANIC_T@silpakorn.edu",
-    "category": 3,
+    "category_id": 3,
     "platform_id": 2
   },
   {
@@ -177,7 +177,7 @@
     "name": "Noppakorn Poolcharoen",
     "img": "",
     "email": "consequent542@gmail.com",
-    "category": 3,
+    "category_id": 3,
     "platform_id": 2
   },
   {
@@ -185,7 +185,7 @@
     "name": "Nedchanok Chantasorn",
     "img": "",
     "email": "nmtaann@gmail.com",
-    "category": 3,
+    "category_id": 3,
     "platform_id": 2
   },
   {
@@ -241,7 +241,7 @@
     "name": "Sawanda Trichok",
     "img": "",
     "email": "sawanda.trichok@gmail.com",
-    "category": 3,
+    "category_id": 3,
     "platform_id": 2
   },
   {
