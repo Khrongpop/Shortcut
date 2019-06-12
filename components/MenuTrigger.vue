@@ -27,6 +27,8 @@
           </ul>
         <!-- <sponsor-small class="frr"/> -->
 
+        <img src="/menu/spon-r.png" alt="" class="img-fluid">
+
         </div>
 
 
@@ -67,6 +69,11 @@ export default {
   position: relative;
   bottom: 0;
   right: 0;
+}
+.list2-l {
+    font-family: 'geometosregular';
+    font-size: 1em !important;
+    margin-top: 40px;
 }
 .list2-r {
   li{
