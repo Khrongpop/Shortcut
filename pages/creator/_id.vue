@@ -38,11 +38,6 @@
       <slide>
         <div style="width:50%" class="float-left item-2">
           <b-row>
-            <!-- <carousel :per-page="2" :paginationEnabled="false" :loop="true" :autoplay="false"> -->
-            <!-- <slide> -->
-
-            <!-- </slide> -->
-            <!-- <slide> -->
             <b-col>
               <b-row class="creator_row">
                 <b-col>
@@ -57,7 +52,7 @@
                     allowfullscreen
                   ></iframe>
                 </b-col>
-                <b-col>
+                <b-col class="tech-section">
                   <img :src="`${baseURL}/creators/detail/tech.png`" alt>
                   <b-row class="mt-3">
                     <b-col v-if="creator(id).frontends.length > 0">
@@ -103,9 +98,26 @@
                         <img :src="`${baseURL}/creators/detail/bulet.png`" alt class="bulet">
                         <span class="mt-3">TOOLS</span>
                         <b-row class="mt-3">
+                          <!-- <b-col v-if="creator(id).tools.length > 3">
+                            <b-row>
+                              <carousel
+                                :per-page="4"
+                                :loop="true"
+                                :autoplay="true"
+                                :paginationEnabled="false"
+                              >
+                                <slide v-for="(tool, index) in creator(id).tools" :key="index">
+                                  <b-img v-bind="toolProps" rounded alt="Rounded image"></b-img>
+                                  <p>{{tool.name}}</p>
+                                </slide>
+                              </carousel>
+                            </b-row>
+                          </b-col>-->
                           <b-col v-for="(tool, index) in creator(id).tools" :key="index">
-                            <b-img v-bind="toolProps" rounded alt="Rounded image"></b-img>
-                            <p>{{tool.name}}</p>
+                            <div v-if="index < 3">
+                              <b-img v-bind="toolProps" rounded alt="Rounded image"></b-img>
+                              <p>{{tool.name}}</p>
+                            </div>
                           </b-col>
                         </b-row>
                       </div>
