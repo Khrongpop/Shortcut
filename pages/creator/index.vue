@@ -144,14 +144,16 @@
         paginationActiveColor="#6cdbe0"
         paginationColor="#ccc"
       >
-        <slide v-for="(val, index)  in getSize()" :key="index">
+        <slide v-for="(val, index)  in getSize" :key="index">
           <b-col>
-            <creator-card
+            {{creators[index]}}
+            <creator-card :vdata="creators[index]" v-if="creators[index]" class/>
+            <!-- <creator-card
               :vdata="creators[getIndex(val,index)]"
               v-if="creators[getIndex(val,index)]"
               class
-            />
-            <creator-card
+            />-->
+            <!-- <creator-card
               :vdata="creators[getIndex(val,index)+ 1]"
               v-if="creators[getIndex(val,index)+1]"
               class
@@ -160,7 +162,7 @@
               :vdata="creators[getIndex(val,index)+ 2]"
               v-if="creators[getIndex(val,index)+2]"
               class
-            />
+            />-->
           </b-col>
         </slide>
       </carousel>
@@ -187,6 +189,12 @@ export default {
     ...mapGetters({
       creators: "creator/creators"
     }),
+    getSize() {
+      // return this.creators.length / 4;
+      let size = this.creators.length / 3;
+      // console.log(Math.ceil(size));
+      return Math.ceil(size);
+    },
     currentCreatorLG() {
       if (this.currentLG === 0) {
         return 8;
@@ -199,35 +207,36 @@ export default {
     }
   },
   methods: {
-    getSize() {
-      // return this.creators.length / 4;
-      let size = this.creators.length / 3;
-      // console.log(Math.ceil(size));
-      return Math.ceil(size);
-    },
     getIndex(val, index) {
       if (val === 1) {
         return index;
-      } else if (val === 2 || val === 3) {
-        return index * val + 1;
+      } else if (val === 2) {
+        return 3;
+      } else if (val === 3) {
+        return 6;
       } else if (val === 4) {
-        return val * 2 + 2;
+        // return val * 2 + 2;
+        return 9;
       } else if (val === 5) {
-        return (index - 1) * (val - 1) + 1;
+        // return (index - 1) * (val - 1) + 1;
+        return 12;
       } else if (val === 6) {
-        return (index - 1) * (val - 1) - 4;
+        // return (index - 1) * (val - 1) - 4;
+        return 15;
       } else if (val === 7) {
-        return (index - 2) * (val - 2) - 1;
+        // return (index - 2) * (val - 2) - 1;
+        return 18;
       } else if (val === 8) {
-        return (index - 3) * (val - 2) - 2;
+        // return (index - 3) * (val - 2) - 2;
+        return 21;
       } else if (val === 9) {
-        return 25;
+        return 24;
       } else if (val === 10) {
-        return 28;
+        return 27;
       } else if (val === 11) {
-        return 31;
+        return 30;
       } else if (val === 12) {
-        return 34;
+        return 33;
       }
       return index;
     },

@@ -2,7 +2,7 @@
   <div id="thankyou">
     <div class="row">
       <div class="col-lg-2 pb-3" v-if="lg">
-        <img src="/shortcut_left.png" class="img-fluid">
+        <img :src="`${baseURL}/shortcut_left.png`" class="img-fluid">
       </div>
       <div class="col-lg-3">
         <ul class="list-unstyled text-center" :class="lg?'m50per':''">
@@ -17,10 +17,10 @@
         </ul>
       </div>
       <div class="col-lg-7 text-center">
-        <img src="/thankyou/head.png" class="img-fluid">
+        <img :src="`${baseURL}/thankyou/head.png`" class="img-fluid">
         <div class="row pt-5">
           <div class="col-12 col-md-4">
-            <img src="/thankyou/n1.png" class="img-fluid">
+            <img :src="`${baseURL}/thankyou/n1.png`" class="img-fluid">
             <ul class="list-unstyled list-teacher pt-2">
               <li>อาจารย์รักชนก สุขะกาลนันท์</li>
               <li>อาจารย์ ดร. อติเทพ แจ้ดนาลาว</li>
@@ -31,7 +31,7 @@
             </ul>
           </div>
           <div class="col-12 col-md-4">
-            <img src="/thankyou/n2.png" class="img-fluid">
+            <img :src="`${baseURL}/thankyou/n2.png`" class="img-fluid">
             <ul class="list-unstyled list-teacher pt-2">
               <li>อาจารย์ ดร.กันย์พัชญ์ กะลัมพะเหติ</li>
               <li>อาจารย์ ดร.รสา สุนทรายุทธ</li>
@@ -41,7 +41,7 @@
             </ul>
           </div>
           <div class="col-12 col-md-4">
-            <img src="/thankyou/n3.png" class="img-fluid">
+            <img :src="`${baseURL}/thankyou/n3.png`" class="img-fluid">
             <ul class="list-unstyled list-teacher pt-2">
               <li>อาจารย์ ดร.อรวรรณ ประฤติดี</li>
               <li>ผศ. ดร. ธีรพงศ์ ลีลานุภาพ</li>
@@ -51,7 +51,7 @@
             </ul>
           </div>
           <div class="col-12 col-md-4 text-center">
-            <img src="/thankyou/n4.png" class="img-fluid">
+            <img :src="`${baseURL}/thankyou/n4.png`" class="img-fluid">
             <ul class="list-unstyled list-teacher pt-2">
               <li>อาจารย์ขจรพล หิรัญโชติไพศาล</li>
               <li>อาจารย์จุลดิษฐ์ สันติธรณี</li>
@@ -61,7 +61,7 @@
             </ul>
           </div>
           <div class="col-12 col-md-4">
-            <img src="/thankyou/n5.png" class="img-fluid">
+            <img :src="`${baseURL}/thankyou/n5.png`" class="img-fluid">
             <ul class="list-unstyled list-teacher pt-2">
               <li>อาจารย์โกวิท มีบุญ</li>
               <li>อาจารย์ ดร.วิชญ มุกดามณี</li>
@@ -71,7 +71,7 @@
             </ul>
           </div>
           <div class="col-12 col-md-4">
-            <img src="/thankyou/n6.png" class="img-fluid">
+            <img :src="`${baseURL}/thankyou/n6.png`" class="img-fluid">
             <ul class="list-unstyled list-teacher pt-2">
               <li>อาจารย์เมธิน ปิงสุธิวงศ์</li>
               <li>อาจารย์ ดร.บุญชู บุญลิขิตศิริ</li>
