@@ -1,5 +1,6 @@
 <template>
   <div id="thankyou">
+    {{windowWidth}}
     <div class="row">
       <div class="col-md-2">
         <img src="/shortcut_left.png" class="img-fluid">
