@@ -1,7 +1,7 @@
 <template>
   <div id="thankyou">
     <div class="row">
-      <div class="col-md-2">
+      <div class="col-md-2" v-if="md">
         <img src="/shortcut_left.png" class="img-fluid">
       </div>
       <div class="col-md-5">
@@ -21,7 +21,7 @@
           </ul>
         </div>
 
-        <div class="portfolio">
+        <div class="portfolio mt-5">
           <div class="img-title">
             <img src="/contact/title3.png" class="img-fluid">
           </div>
@@ -56,7 +56,7 @@
           </ul>
         </div>
 
-        <div class="funcsl">
+        <div class="funcsl mt-5">
           <div class="img-title">
             <img src="/contact/title4.png" class="img-fluid">
           </div>
@@ -164,5 +164,3 @@ export default {
 };
 </script>
 
-<style>
-</style>
