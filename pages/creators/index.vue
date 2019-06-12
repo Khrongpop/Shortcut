@@ -1,6 +1,6 @@
 <template>
   <div class="creator" :style="bg_animate">
-    <div style="height:100%" v-if="lg">
+    <div v-if="lg">
       <div style="width:5%;" class="float-left">อ่านทำไม</div>
       <div class="center-section">
         <Logo/>
@@ -132,7 +132,6 @@
       </div>
       <span class="clearfix"></span>
     </div>
-
     <div v-else>
       <carousel
         :per-page="!lg ? 4 : (xs ? 2 : 3)"
@@ -146,8 +145,11 @@
       >
         <slide v-for="(val, index)  in getSize" :key="index">
           <b-col>
-            {{creators[index]}}
-            <creator-card :vdata="creators[index]" v-if="creators[index]" class/>
+            <!-- {{creators[index]}} -->
+            <creator-card :vdata="creators[val + index-1]" v-if="creators[val + index-1]" class/>
+            <creator-card :vdata="creators[val + index]" v-if="creators[val + index]" class/>
+            <!-- <creator-card :vdata="creators[index]" v-if="creators[index]" class/> -->
+            <!-- <creator-card :vdata="creators[index+2]" v-if="creators[index+2]" class/> -->
             <!-- <creator-card
               :vdata="creators[getIndex(val,index)]"
               v-if="creators[getIndex(val,index)]"
@@ -191,7 +193,7 @@ export default {
     }),
     getSize() {
       // return this.creators.length / 4;
-      let size = this.creators.length / 3;
+      let size = this.creators.length / 2;
       // console.log(Math.ceil(size));
       return Math.ceil(size);
     },
