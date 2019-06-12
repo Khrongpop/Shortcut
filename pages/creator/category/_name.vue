@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div v-if="false">
+    <div v-if="lg">
       <div style="width:30%" class="float-left">{{creators(name).length}}</div>
       <div style="width:70%" class="float-right mb-5">
         <carousel

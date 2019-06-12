@@ -55,8 +55,15 @@ module.exports = {
   ],
 
   router: {
-  //   routeNameSplitter: '/func/shortcut/',
-    // base: '/func/shortcut/'
+    // routeNameSplitter: '/func/shortcut/',
+    // base: '/func/shortcut/',
+    extendRoutes (routes, resolve) {
+      routes.push({
+        name: 'custom',
+        path: '*',
+        component: resolve(__dirname, 'pages/404.vue')
+      })
+    }
   },
 
   /*
@@ -66,13 +73,12 @@ module.exports = {
     /*
     ** You can extend webpack config here
     */
-  //  router: {
-  //   routeNameSplitter: '/func/shortcut/',
-  //   base: '/func/shortcut/'
-  // },
-   publicPath: 'https://www.ict.su.ac.th/func/shortcut/',
-   srcDir:'https://www.ict.su.ac.th/func/shortcut/',
-   rootDir:'https://www.ict.su.ac.th/func/shortcut/',
+  //  publicPath: 'https://www.ict.su.ac.th/func/shortcut/',
+  // srcDir:'https://www.ict.su.ac.th/func/shortcut/',
+  // rootDir:'https://www.ict.su.ac.th/func/shortcut/',
+  //  publicPath: '/func/shortcut/',
+  //  srcDir:'/func/shortcut/',
+  //  rootDir:'/func/shortcut/',
     extend(config, ctx) {
     }
   }
