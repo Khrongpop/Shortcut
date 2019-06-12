@@ -6,7 +6,8 @@
         <Logo/>
 
         <div class="creator-txt">
-          {{currentCreatorLG}}
+          <h2>{{currentCreatorLG}}</h2>
+          <h3>/</h3>
           <h1>35</h1>
           <p>CREATORS</p>
         </div>
