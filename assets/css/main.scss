@@ -3,6 +3,8 @@
 @import 'mixins/colors';
 @import 'mixins/animations';
 
+// Global style
+@import 'style';
 
 // layouts
 @import 'layouts/topMenu';
@@ -12,4 +14,4 @@
 
 // pages
 @import 'pages/creator/index';
-@import 'pages/registor/index';
+@import 'pages/register/index';

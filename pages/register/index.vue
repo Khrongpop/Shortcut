@@ -1,13 +1,13 @@
 <template>
   <section class="container">
-    <!-- <VueMatrixRaindrop
+    <VueMatrixRaindrop
       textContent="01"
       :fontSize="11"
       textColor="#FFFFFF"
-      :speed="5"
+      :speed="6"
       :canvasWidth="canvasWidth"
       :canvasHeight="canvasHeight"
-    ></VueMatrixRaindrop> -->
+    ></VueMatrixRaindrop>
     <svg
       version="1.1"
       id="Layer_1"
@@ -471,30 +471,25 @@
     <div class="wrapper">
       <b-form @submit="onSubmit" v-if="show">
         <b-row>
-          <b-col col md="6" offset-md="1">
+          <b-col col md="6" offset-md="1" class="p-0">
             <b-form-group label="ชื่อ-สกุล" label-for="input-fullname">
-              <b-form-input
-                id="input-fullname"
-                v-model="form.fullname"
-                required
-                placeholder="SASITHORN SINJAROENPONG"
-              ></b-form-input>
+              <b-form-input id="input-fullname" v-model="form.fullname" required class="bg-input"></b-form-input>
             </b-form-group>
 
             <b-form-group label="ชื่อเล่น" label-for="input-name">
-              <b-form-input id="input-name" v-model="form.name" required placeholder="CHOMPOO"></b-form-input>
+              <b-form-input id="input-name" v-model="form.name" required class="bg-input"></b-form-input>
             </b-form-group>
 
             <b-form-group label="อาชีพ / ตำแหน่งงาน" label-for="input-job">
-              <b-form-input id="input-job" v-model="form.job" required placeholder="CHOMPOO"></b-form-input>
+              <b-form-input id="input-job" v-model="form.job" required class="bg-input"></b-form-input>
             </b-form-group>
 
-            <b-form-group label="หน่วยงาน / สถานศึกษา " label-for="input-department">
+            <b-form-group label="หน่วยงาน / สถานศึกษา" label-for="input-department">
               <b-form-input
                 id="input-department"
                 v-model="form.department"
                 required
-                placeholder="CHOMPOO"
+                class="bg-input"
               ></b-form-input>
             </b-form-group>
 
@@ -504,33 +499,39 @@
                 v-model="form.email"
                 type="email"
                 required
-                placeholder="SASITHORN@SHORYCUT.COM"
+                class="bg-input"
               ></b-form-input>
             </b-form-group>
           </b-col>
 
-          <b-col col md="4" class="ml-5">
+          <b-col col md="4" class="ml-5 p-0">
             <div class="bg-upload-img-outline">
               <div class="bg-upload-img-inside">
                 <div class="bg-upload-img-people">
-                  <img src="profile_people.png" alt="profile_people">
+                  <img
+                    :src="form.image ? form.image:preview"
+                    alt="profile_people"
+                    @click="$refs.up.click()"
+                    class="img-profile"
+                  >
+                  <img src="/profile_gradient.png" alt="profile_gradient" class="img-bg">
                 </div>
-                <!-- <b-form-file
-                      v-model="file"
-                      :state="Boolean(file)"
-                      placeholder="Choose a file..."
-                      drop-placeholder="Drop file here..."
-                      accept="image/*"
-                      required
-                    ></b-form-file>-->
+                <input @change="setImg" ref="up" required style="display: none;" type="file" name="image">
+                <img
+                  src="/icon_camera.png"
+                  alt="icon_camera"
+                  class="icon-addimg"
+                  @click="$refs.up.click()"
+                >
               </div>
             </div>
           </b-col>
         </b-row>
-        <b-col col md="12" class="text-center mt-5">
-          <b-button type="submit" variant="primary" class="w-25">GETSHORTCUT</b-button>
+        <b-col col md="11" offset-md="1" class="text-center mt-60">
+          <div class="w-25 btn-bg"></div>
+          <b-button type="submit" variant="primary" class="w-25 btn-shortcut">GETSHORTCUT</b-button>
         </b-col>
-        <fb-login/>
+        <!-- <fb-login/> -->
 
         <!-- <b-button variant="primary" @click="writeToFirestore" :disabled="writeSuccessful">
           <span v-if="!writeSuccessful">Write now</span>
@@ -544,13 +545,13 @@
 <script>
 import { fireDb, realDb, storage } from "~/plugins/firebase.js";
 import fbLogin from "@/components/FacebookLogin";
-// import VueMatrixRaindrop from "vue-matrix-digit-rain";
+import VueMatrixRaindrop from "@/node_modules/vue-matrix-digit-rain";
 // import { fireDb, realDb, storage } from "~/func/shortcut/plugins/firebase";
 
 export default {
   components: {
     fbLogin,
-    // VueMatrixRaindrop
+    VueMatrixRaindrop
   },
   data() {
     return {
@@ -563,10 +564,12 @@ export default {
         image: null,
         timestamp: null
       },
+      img: "",
+      preview: "/profile_people.png",
       show: true,
-      file: null,
+      file: {},
       writeSuccessful: false,
-      canvasWidth: 1000,
+      canvasWidth: 3000,
       canvasHeight: 1000
     };
   },
@@ -592,6 +595,7 @@ export default {
 
       let filename = new Date().getTime() + "_" + this.file.name;
       // this.form.timestamp = new Date().toString;
+
       let storageRef = storage
         // .ref("images")
         // .ref("users")
@@ -630,21 +634,11 @@ export default {
       //   // TODO: error handling
       //   console.error(e);
       // }
+    },
+    setImg(e) {
+      this.img = e.target.files[0];
+      this.preview = URL.createObjectURL(event.target.files[0]);
     }
-    // onReset(evt) {
-    //   evt.preventDefault();
-    //   // Reset our form values
-    //   this.form.fullname = "";
-    //   this.form.name = "";
-    //   this.form.job = "";
-    //   this.form.department = "";
-    //   this.form.email = "";
-    //   // Trick to reset/clear native browser form validation state
-    //   this.show = false;
-    //   this.$nextTick(() => {
-    //     this.show = true;
-    //   });
-    // }
   }
 };
 </script>
@@ -653,6 +647,7 @@ export default {
 #vue-matrix-raindrop {
   position: absolute;
   z-index: 0;
+  opacity: 0.2;
 }
 .container {
   width: 100%;
