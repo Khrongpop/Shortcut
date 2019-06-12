@@ -1,6 +1,6 @@
 #menu {
   color: $color-white;
-  padding: 40px 0;
+  padding: 20px 0;
 
   .mn-50 {
     min-height: 100px;
@@ -9,6 +9,7 @@
   .hamburger {
     float: left;
     margin-top: -10px;
+
     img {
       cursor: pointer;
     }
