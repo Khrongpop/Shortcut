@@ -66,7 +66,9 @@
                         <span>FROTEND</span>
                         <b-row class="mt-3">
                           <b-col v-for="(frontend, index) in creator(id).frontends" :key="index">
-                            <b-img v-bind="toolProps" rounded alt="Rounded image"></b-img>
+                            <!-- <b-img v-bind="toolProps" rounded alt="Rounded image"></b-img> -->
+                            <dev-icon :name="frontend.img" size="2" v-if="frontend.img"/>
+                            <!-- {{frontend}} -->
                             <p>{{frontend.name}}</p>
                           </b-col>
                         </b-row>
@@ -78,7 +80,9 @@
                         <span class="mt-3">BACKEND</span>
                         <b-row class="mt-3">
                           <b-col v-for="(backend, index) in creator(id).backends" :key="index">
-                            <b-img v-bind="toolProps" rounded alt="Rounded image"></b-img>
+                            <!-- <b-img v-bind="toolProps" rounded alt="Rounded image"></b-img> -->
+                            <dev-icon :name="backend.img" size="2" v-if="backend.img"/>
+
                             <p>{{backend.name}}</p>
                           </b-col>
                         </b-row>
@@ -92,7 +96,13 @@
                         <span class="mt-3">DATABASE</span>
                         <b-row class="mt-3">
                           <b-col>
-                            <b-img v-bind="toolProps" rounded alt="Rounded image"></b-img>
+                            <dev-icon
+                              :name="creator(id).database.img"
+                              size="2"
+                              v-if="creator(id).database.img"
+                            />
+
+                            <!-- <b-img v-bind="toolProps" rounded alt="Rounded image"></b-img> -->
                             <p>{{creator(id).database.name}}</p>
                           </b-col>
                         </b-row>
@@ -165,8 +175,12 @@
 
 <script>
 import { mapGetters } from "vuex";
+import DevIcon from "~/components/DevIcon";
 export default {
   layout: "noMenu",
+  components: {
+    DevIcon
+  },
   data() {
     return {
       mainProps: {

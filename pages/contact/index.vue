@@ -164,3 +164,13 @@ export default {
 };
 </script>
 
+<style scoped>
+.thesis-list,
+.course-information,
+.portfolio,
+.funcsl {
+  min-height: 50%;
+}
+</style>
+
+
