@@ -1,5 +1,5 @@
 <template>
-  <div id="creator">
+  <div class="creator">
     <div style="height:100%" v-if="lg">
       <div style="width:5%;" class="float-left">อ่านทำไม</div>
       <div class="center-section">

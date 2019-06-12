@@ -1,7 +1,15 @@
 <template>
-  <div>
+  <div class="creator">
     <div v-if="lg">
-      <div style="width:30%" class="float-left">{{creators(name).length}}</div>
+      <div style="width:5%;" class="float-left">อ่านทำไม</div>
+      <div class="center-section">
+        <Logo/>
+
+        <div class="creator-txt">
+          <h1>{{creators(name).length}}</h1>
+          <p>CREATORS</p>
+        </div>
+      </div>
       <div style="width:70%" class="float-right mb-5">
         <carousel
           :per-page="5"
@@ -226,10 +234,12 @@
 <script>
 import { mapGetters } from "vuex";
 import CreatorCard from "@/components/CreatorCard";
+import Logo from "~/components/Logo";
 export default {
   layout: "topMenu",
   components: {
-    CreatorCard
+    CreatorCard,
+    Logo
   },
   computed: {
     name() {
