@@ -9,7 +9,7 @@
         :src="`${baseURL}/creators/${vdata.id}.jpg`"
       ></b-img>
       <br>
-      {{vdata.name}}
+      {{subName}}
       <br>
       {{vdata.id}}
     </router-link>
@@ -29,6 +29,17 @@ export default {
         class: "m1"
       }
     };
+  },
+  computed: {
+    subName() {
+      let name = this.vdata.name;
+      if (this.windowWidth <= 850 && this.windowWidth > 832) {
+        return name.length > 20 ? name.substring(0, 20) + "..." : name;
+      } else if (this.windowWidth <= 832) {
+        return name.length > 19 ? name.substring(0, 17) + "..." : name;
+      }
+      return name;
+    }
   }
 };
 </script>

@@ -184,7 +184,7 @@ export default {
     getSize() {
       // return this.creators.length / 4;
       let size = this.creators.length / 3;
-      console.log(Math.ceil(size));
+      // console.log(Math.ceil(size));
       return Math.ceil(size);
     },
     getIndex(val, index) {
