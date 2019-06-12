@@ -2,12 +2,12 @@
   <div id="thankyou">
     <div class="row">
       <div class="col-md-2" v-if="md">
-        <img src="/shortcut_left.png" class="img-fluid">
+        <img :src="`${baseURL}/shortcut_left.png`" class="img-fluid">
       </div>
       <div class="col-md-5">
         <div class="course-information">
           <div class="img-title">
-            <img src="/contact/title1.png" class="img-fluid">
+            <img :src="`${baseURL}/contact/title1.png`" class="img-fluid">
           </div>
           <ul class="list-unstyled">
             <li v-for="(link, index) in links1" :key="index">
@@ -23,7 +23,7 @@
 
         <div class="portfolio mt-5">
           <div class="img-title">
-            <img src="/contact/title3.png" class="img-fluid">
+            <img :src="`${baseURL}/contact/title3.png`" class="img-fluid">
           </div>
           <ul class="list-unstyled">
             <li v-for="(link, index) in links3" :key="index">
@@ -42,7 +42,7 @@
       <div class="col-md-5">
         <div class="thesis-list">
           <div class="img-title">
-            <img src="/contact/title2.png" class="img-fluid">
+            <img :src="`${baseURL}/contact/title2.png`" class="img-fluid">
           </div>
           <ul class="list-unstyled">
             <li v-for="(link, index) in links2" :key="index">
@@ -58,11 +58,11 @@
 
         <div class="funcsl mt-5">
           <div class="img-title">
-            <img src="/contact/title4.png" class="img-fluid">
+            <img :src="`${baseURL}/contact/title4.png`" class="img-fluid">
           </div>
           <h5>{{links4.name}}</h5>
 
-          <img :src="`/contact/fb.png`" class="mr-1">
+          <img :src="`${baseURL}/contact/fb.png`" class="mr-1">
           <a
             :href="'http://'+links4.link"
             target="_blank"
@@ -158,7 +158,7 @@ export default {
           link: "ict.su.ac.th"
         }
       ],
-      links4: { link: "facebook.com/func/", name: "Shotcut 13.5" }
+      links4: { link: "facebook.com/funcslash/", name: "Shotcut 13.5" }
     };
   }
 };

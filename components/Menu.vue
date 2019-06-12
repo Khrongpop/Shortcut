@@ -54,7 +54,7 @@ export default {
     return {
       links: [
         { name: "home", path: "index", icon: "001-home" },
-        { name: "creator", icon: "002-user" },
+        { name: "creators", icon: "002-user" },
         { name: "book", icon: "003-ebook" },
         { name: "exhibition", icon: "004-tickets" },
         { name: "thankyou", icon: "005-handshake" },
