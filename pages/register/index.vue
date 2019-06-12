@@ -5,7 +5,7 @@
       :fontSize="11"
       textColor="#FFFFFF"
       :speed="6"
-      :canvasWidth="canvasWidth"
+      :canvasWidth.sync="canvasWidth"
       :canvasHeight="canvasHeight"
     ></VueMatrixRaindrop>
     <svg
@@ -468,10 +468,12 @@
     <div class="row">
       <img src="logo+regis.png" alt="logoregister" class="logo-regis">
     </div>
+    <img src="/png_error_line_right.png" alt="png_error_line_right" class="img-bg-font-right">
     <div class="wrapper">
+      <img src="/font_design_left_butt.png" alt="font_design_left_butt" class="img-bg-font-left">
       <b-form @submit="onSubmit" v-if="show">
-        <b-row>
-          <b-col col md="6" offset-md="1" class="p-0">
+        <b-row class="w-100">
+          <b-col col md="6" offset-md="1" offset-lg="0" class="p-0 ml-lg-5">
             <b-form-group label="ชื่อ-สกุล" label-for="input-fullname">
               <b-form-input id="input-fullname" v-model="form.fullname" required class="bg-input"></b-form-input>
             </b-form-group>
@@ -515,8 +517,16 @@
                     class="img-profile"
                   >
                   <img src="/profile_gradient.png" alt="profile_gradient" class="img-bg">
+                  <div class="img-bg-name">{{ form.name }}</div>
                 </div>
-                <input @change="setImg" ref="up" required style="display: none;" type="file" name="image">
+                <input
+                  @change="setImg"
+                  ref="up"
+                  required
+                  style="display: none;"
+                  type="file"
+                  name="image"
+                >
                 <img
                   src="/icon_camera.png"
                   alt="icon_camera"
@@ -569,9 +579,11 @@ export default {
       show: true,
       file: {},
       writeSuccessful: false,
-      canvasWidth: 3000,
+      canvasWidth: 1000,
       canvasHeight: 1000
     };
+  },
+  mounted() {
   },
   methods: {
     async writeToFirestore() {
@@ -593,14 +605,12 @@ export default {
     async onSubmit(evt) {
       evt.preventDefault();
 
-      let filename = new Date().getTime() + "_" + this.file.name;
-      // this.form.timestamp = new Date().toString;
+      let filename = new Date().getTime() + "_" + this.form.fullname;
+      this.form.timestamp = new Date().toString;
 
-      let storageRef = storage
-        // .ref("images")
-        // .ref("users")
-        .ref("image/users/" + filename);
+      let storageRef = storage.ref("image/users/" + filename);
 
+      this.file = filename;
       let uploadTask = storageRef.put(this.file);
       const _this = this;
       const ref = realDb.ref("users");
