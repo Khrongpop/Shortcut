@@ -1,5 +1,5 @@
 <template>
-  <div id="creator_detail">
+  <div id="creator_detail" :style="bg_animate">
     <div style="width:10%" class="float-left">อ่านทำไม</div>
     <carousel :per-page="1" :paginationEnabled="false" :loop="true" :autoplay="false">
       <slide>

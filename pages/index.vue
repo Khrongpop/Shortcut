@@ -1,5 +1,5 @@
 <template>
-  <div>this is home</div>
+  <div :style="bg_animate">this is home</div>
 </template>
 
 <script>

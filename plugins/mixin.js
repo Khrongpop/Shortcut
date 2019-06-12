@@ -5,7 +5,8 @@ Vue.mixin({
     return {
       scrolled: false,
       windowWidth: 0,
-      windowHeight: 0
+      windowHeight: 0,
+      bg_animate: {'background-image':`url(/bg_animate.gif)`,'height':'100%'}
     }
   },
   computed: {
