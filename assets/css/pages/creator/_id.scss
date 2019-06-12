@@ -33,7 +33,8 @@
     }
 
     span {
-      font-family: 'geometosregular';
+      font-family: 'geometosregular',
+        'dbadmanx';
       font-size: .8em;
       color: #3ac6f4;
     }
@@ -41,7 +42,8 @@
 
   h1 {
     // text-align: center;
-    font-family: 'geometosregular';
+    font-family: 'geometosregular',
+      'dbadmanx';
     letter-spacing: 5px;
     color: #3ac6f4;
   }
@@ -112,7 +114,6 @@
 
   .screenshot-section {
     margin-top: -50px;
-
   }
 
   .item-2 {

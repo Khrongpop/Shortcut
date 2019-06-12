@@ -113,7 +113,7 @@
                   </b-row>
                 </b-col>
               </b-row>
-              <b-row class="screenshot-section">
+              <b-row :class="getScreenShotMargin">
                 <b-col>
                   <img :src="`${baseURL}/creators/detail/screenshots.png`" alt>
 
@@ -215,7 +215,13 @@ export default {
     },
     ...mapGetters({
       creator: "creator/getCreatorById"
-    })
+    }),
+    getScreenShotMargin() {
+      return this.creator(this.id).tools.length === 0 &&
+        !this.creator(this.id).database
+        ? ""
+        : "screenshot-section";
+    }
   }
 };
 </script>

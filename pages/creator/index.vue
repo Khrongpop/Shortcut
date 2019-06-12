@@ -1,8 +1,16 @@
 <template>
-  <div>
+  <div id="creator">
     <div style="height:100%" v-if="true">
-      <div style="width:30%" class="float-left">sdsds</div>
-      <div style="width:70%" class="float-right mb-5">
+      <div style="width:5%;" class="float-left">อ่านทำไม</div>
+      <div class="center-section">
+        <Logo/>
+
+        <div class="creator-txt">
+          <h1>35</h1>
+          <p>CREATORS</p>
+        </div>
+      </div>
+      <div style="width:70%;" class="float-right mb-5">
         <carousel
           :per-page="5"
           :paginationEnabled="true"
@@ -159,11 +167,13 @@
 
 <script>
 import { mapGetters } from "vuex";
+import Logo from "~/components/Logo";
 import CreatorCard from "@/components/CreatorCard";
 export default {
   layout: "topMenu",
   components: {
-    CreatorCard
+    CreatorCard,
+    Logo
   },
   computed: {
     ...mapGetters({
