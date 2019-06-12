@@ -1,0 +1,22 @@
+#creator {
+  .center-section {
+    width: 25%;
+    height: 100%;
+    float: left;
+  }
+
+  .creator-txt {
+    position: absolute;
+    bottom: 5%;
+
+    h1 {
+      font-size: 4.5em;
+      font-family: 'vcr_osd_monoregular';
+    }
+
+    p {
+      line-height: 0;
+      font-family: 'geometosregular';
+    }
+  }
+}
