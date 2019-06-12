@@ -55,8 +55,8 @@ module.exports = {
   ],
 
   router: {
-    routeNameSplitter: '/func/shortcut/',
-    base: '/func/shortcut/',
+    // routeNameSplitter: '/func/shortcut/',
+    // base: '/func/shortcut/',
     extendRoutes (routes, resolve) {
       routes.push({
         name: 'custom',
@@ -76,9 +76,9 @@ module.exports = {
   //  publicPath: 'https://www.ict.su.ac.th/func/shortcut/',
   // srcDir:'https://www.ict.su.ac.th/func/shortcut/',
   // rootDir:'https://www.ict.su.ac.th/func/shortcut/',
-   publicPath: '/func/shortcut/',
-   srcDir:'/func/shortcut/',
-   rootDir:'/func/shortcut/',
+  //  publicPath: '/func/shortcut/',
+  //  srcDir:'/func/shortcut/',
+  //  rootDir:'/func/shortcut/',
     extend(config, ctx) {
     }
   }
