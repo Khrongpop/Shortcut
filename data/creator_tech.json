@@ -6,11 +6,11 @@
     }],
     "backends": [{
       "name": "Express.js",
-      "img": ""
+      "img": "express"
     }],
     "database": {
       "name": "MongoDB",
-      "img": ""
+      "img": "mongodb"
     },
     "tools": [{
       "name": "Strava API",
@@ -27,15 +27,15 @@
     }],
     "backends": [{
       "name": "PHP",
-      "img": ""
+      "img": "php"
     }],
     "database": {
       "name": "MySQL",
-      "img": ""
+      "img": "mysql"
     },
     "tools": [{
       "name": "Google Cloud API",
-      "img": ""
+      "img": "google"
     }],
     "percen": "60-40"
   },
@@ -43,21 +43,21 @@
     "id": 13570141,
     "frontends": [{
       "name": "HTML",
-      "img": ""
+      "img": "html"
     }, {
       "name": "CSS",
-      "img": ""
+      "img": "css"
     }, {
       "name": "Javascript",
-      "img": ""
+      "img": "javascript"
     }],
     "backends": [{
       "name": "Laravel",
-      "img": ""
+      "img": "laravel"
     }],
     "database": {
       "name": "MySQL",
-      "img": ""
+      "img": "mysql"
     },
     "tools": [{
         "name": "OpenDota API",
@@ -78,7 +78,7 @@
     "id": 13570178,
     "frontends": [{
       "name": "C#",
-      "img": ""
+      "img": "csharp"
     }],
     "backends": [{
       "name": "Firebase",
@@ -112,11 +112,11 @@
       "img": ""
     }, {
       "name": "PHP",
-      "img": ""
+      "img": "php"
     }],
     "database": {
       "name": "MySQL",
-      "img": ""
+      "img": "mysql"
     },
     "tools": [],
     "percen": "60-40"
@@ -128,16 +128,16 @@
     }],
     "backends": [{
         "name": "C#",
-        "img": ""
+        "img": "csharp"
       },
       {
         "name": "PHP",
-        "img": ""
+        "img": "php"
       }
     ],
     "database": {
       "name": "MySQL",
-      "img": ""
+      "img": "mysql"
     },
     "tools": [],
     "percen": "60-40"
@@ -146,21 +146,21 @@
     "id": 13570357,
     "frontends": [{
       "name": "HTML",
-      "img": ""
+      "img": "html-"
     }, {
       "name": "CSS",
       "img": ""
     }, {
       "name": "Jquery",
-      "img": ""
+      "img": "jquery"
     }],
     "backends": [{
       "name": "Laravel",
-      "img": ""
+      "img": "laravel"
     }],
     "database": {
       "name": "MySQL",
-      "img": ""
+      "img": "mysql"
     },
     "tools": [{
       "name": "Here API",
@@ -172,21 +172,21 @@
     "id": 13570362,
     "frontends": [{
       "name": "HTML",
-      "img": ""
+      "img": "html"
     }, {
       "name": "CSS",
-      "img": ""
+      "img": "css"
     }, {
       "name": "Javascript",
-      "img": ""
+      "img": "javascript"
     }],
     "backends": [{
       "name": "PHP",
-      "img": ""
+      "img": "php"
     }],
     "database": {
       "name": "MySQL",
-      "img": ""
+      "img": "mysql"
     },
     "tools": [{
       "name": "SMS",
@@ -198,7 +198,7 @@
     "id": 13580180,
     "frontends": [{
       "name": "Swift",
-      "img": ""
+      "img": "swift"
     }],
     "backends": [""],
     "database": "60-40",
@@ -208,25 +208,25 @@
     "id": 13580183,
     "frontends": [{
       "name": "Vue.Js",
-      "img": ""
+      "img": "vuejs"
     }],
     "backends": [{
       "name": "Laravel",
-      "img": ""
+      "img": "laravel"
     }],
     "database": {
       "name": "MySQL",
-      "img": ""
+      "img": "mysql"
     },
     "tools": [{
       "name": "FFMPEG",
       "img": ""
     }, {
       "name": "Google Cloud API",
-      "img": ""
+      "img": "google"
     }, {
       "name": "Facebook SDK",
-      "img": ""
+      "img": "facebook"
     }],
     "percen": "40-60"
   },
@@ -234,15 +234,15 @@
     "id": 13580186,
     "frontends": [{
       "name": "Swift",
-      "img": ""
+      "img": "swift"
     }],
     "backends": [{
       "name": "Golang",
-      "img": ""
+      "img": "go"
     }],
     "database": {
       "name": "MySQL",
-      "img": ""
+      "img": "mysql"
     },
     "tools": [{
       "name": "Firebase",
@@ -252,13 +252,13 @@
       "img": ""
     }, {
       "name": "Google Cloud API",
-      "img": ""
+      "img": "google"
     }, {
       "name": "Heroku",
-      "img": ""
+      "img": "heroku"
     }, {
       "name": "Facebook SDK",
-      "img": ""
+      "img": "facebook"
     }],
     "percen": "40-60"
   },
@@ -270,7 +270,7 @@
     }],
     "backends": [{
       "name": "C#",
-      "img": ""
+      "img": "csharp"
     }],
     "database": {
       "name": "Local Storage",
@@ -287,18 +287,21 @@
     "id": 13580192,
     "frontends": [{
       "name": "HTML",
-      "img": ""
+      "img": "html"
     }, {
       "name": "CSS",
-      "img": ""
+      "img": "css"
     }, {
       "name": "Javascript",
-      "img": ""
+      "img": "javascript"
     }],
-    "backends": ["Laravel"],
+    "backends": [{
+      "name": "Laravel",
+      "img": "laravel"
+    }],
     "database": {
       "name": "MySQL",
-      "img": ""
+      "img": "mysql"
     },
     "tools": [{
       "name": "Aftership API",
@@ -318,20 +321,17 @@
     "frontends": [{
       "name": "Unity",
       "img": ""
-    }, {
-      "name": "C#",
-      "img": ""
     }],
     "backends": [{
       "name": "C#",
-      "img": ""
+      "img": "csharp"
     }, {
       "name": "PHP",
-      "img": ""
+      "img": "php"
     }],
     "database": {
       "name": "MySQL",
-      "img": ""
+      "img": "mysql"
     },
     "tools": [],
     "percen": "60-40"
@@ -344,11 +344,11 @@
     }],
     "backends": [{
       "name": "Laravel",
-      "img": ""
+      "img": "laravel"
     }],
     "database": {
       "name": "MySQL",
-      "img": ""
+      "img": "mysql"
     },
     "tools": [],
     "percen": "60-40"
@@ -361,11 +361,11 @@
     }],
     "backends": [{
       "name": "PHP",
-      "img": ""
+      "img": "php"
     }],
     "database": {
       "name": "MySQL",
-      "img": ""
+      "img": "mysql"
     },
     "tools": [],
     "percen": "60-40"
@@ -374,7 +374,7 @@
     "id": 13580209,
     "frontends": [{
       "name": "JAVA",
-      "img": ""
+      "img": "java"
     }],
     "backends": [{
       "name": "Firebase",
@@ -391,7 +391,7 @@
     "id": 13580210,
     "frontends": [{
       "name": "React Native",
-      "img": ""
+      "img": "react"
     }],
     "backends": [{
       "name": "Express.js",
@@ -399,7 +399,7 @@
     }],
     "database": {
       "name": "MongoDB",
-      "img": ""
+      "img": "mongodb"
     },
     "tools": [],
     "percen": "50-50"
@@ -420,12 +420,12 @@
     }],
     "backends": [{
       "name": "C#",
-      "img": ""
+      "img": "csharp"
     }],
     "database": "Local Storage",
     "tools": [{
       "name": "Facebook SDK",
-      "img": ""
+      "img": "facebook"
     }],
     "percen": "60-40"
   },
@@ -437,16 +437,16 @@
     }],
     "backends": [{
         "name": "C#",
-        "img": ""
+        "img": "csharp"
       },
       {
         "name": "PHP",
-        "img": ""
+        "img": "php"
       }
     ],
     "database": {
       "name": "MySQL",
-      "img": ""
+      "img": "mysql"
     },
     "tools": [],
     "percen": "50-50"
@@ -469,7 +469,7 @@
     "id": 13580218,
     "frontends": [{
       "name": "Swift",
-      "img": ""
+      "img": "swift"
     }],
     "backends": [{
       "name": "Firebase",
@@ -489,7 +489,7 @@
     "id": 13580219,
     "frontends": [{
       "name": "Swift",
-      "img": ""
+      "img": "swift"
     }],
     "backends": [{
       "name": "Firebase",
@@ -506,7 +506,7 @@
     "id": 13580220,
     "frontends": [{
       "name": "JAVA",
-      "img": ""
+      "img": "java"
     }],
     "backends": [{
       "name": "Firebase",
@@ -523,15 +523,15 @@
     "id": 13580228,
     "frontends": [{
       "name": "Swift",
-      "img": ""
+      "img": "swift"
     }],
     "backends": [{
       "name": "Laravel",
-      "img": ""
+      "img": "laravel"
     }],
     "database": {
       "name": "MySQL",
-      "img": ""
+      "img": "mysql"
     },
     "tools": [],
     "percen": "50-50"
@@ -540,15 +540,15 @@
     "id": 13580232,
     "frontends": [{
       "name": "Swift",
-      "img": ""
+      "img": "swift"
     }],
     "backends": [{
       "name": "Laravel",
-      "img": ""
+      "img": "laravel"
     }],
     "database": {
       "name": "MySQL",
-      "img": ""
+      "img": "mysql"
     },
     "tools": [{
       "name": "CoreML",
@@ -560,15 +560,15 @@
     "id": 13580234,
     "frontends": [{
       "name": "Vue.Js",
-      "img": ""
+      "img": "vuejs"
     }],
     "backends": [{
       "name": "Laravel",
-      "img": ""
+      "img": "laravel"
     }],
     "database": {
       "name": "MySQL",
-      "img": ""
+      "img": "mysql"
     },
     "tools": [{
       "name": "Firebase",
@@ -578,7 +578,7 @@
       "img": ""
     }, {
       "name": "Google Cloud API",
-      "img": ""
+      "img": "google"
     }],
     "percen": "40-60"
   },
@@ -590,7 +590,7 @@
     }],
     "backends": [{
       "name": "C#",
-      "img": ""
+      "img": "csharp"
     }],
     "database": "",
     "tools": [],
@@ -600,28 +600,28 @@
     "id": 13580242,
     "frontends": [{
       "name": "HTML",
-      "img": ""
+      "img": "html"
     }, {
       "name": "CSS",
-      "img": ""
+      "img": "css"
     }, {
       "name": "Jquery",
-      "img": ""
+      "img": "jquery"
     }],
     "backends": [{
       "name": "Laravel",
-      "img": ""
+      "img": "laravel"
     }],
     "database": {
       "name": "MySQL",
-      "img": ""
+      "img": "mysql"
     },
     "tools": [{
       "name": "Omise API",
       "img": ""
     }, {
       "name": "Google Cloud API",
-      "img": ""
+      "img": "google"
     }, {
       "name": "Pusher",
       "img": ""
@@ -632,15 +632,15 @@
     "id": 13580246,
     "frontends": [{
       "name": "Swift",
-      "img": ""
+      "img": "swift"
     }],
     "backends": [{
       "name": "Laravel",
-      "img": ""
+      "img": "laravel"
     }],
     "database": {
       "name": "MySQL",
-      "img": ""
+      "img": "mysql"
     },
     "tools": [],
     "percen": "50-50"
@@ -649,21 +649,21 @@
     "id": 13580248,
     "frontends": [{
       "name": "HTML",
-      "img": ""
+      "img": "html"
     }, {
       "name": "CSS",
       "img": ""
     }, {
       "name": "Javascript",
-      "img": ""
+      "img": "javascript"
     }],
     "backends": [{
       "name": "Laravel",
-      "img": ""
+      "img": "laravel"
     }],
     "database": {
       "name": "MySQL",
-      "img": ""
+      "img": "mysql"
     },
     "tools": [],
     "percen": "50-50"
@@ -672,7 +672,7 @@
     "id": 13580250,
     "frontends": [{
       "name": "JAVA",
-      "img": ""
+      "img": "java"
     }],
     "backends": [{
       "name": "Firebase",
