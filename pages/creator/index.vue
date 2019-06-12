@@ -1,7 +1,7 @@
 <template>
   <div id="creator">
     <div style="height:100%" v-if="true">
-      <div style="width:5%" class="float-left">อ่านทำไม</div>
+      <div style="width:5%;" class="float-left">อ่านทำไม</div>
       <div class="center-section">
         <Logo/>
 
@@ -10,7 +10,7 @@
           <p>CREATORS</p>
         </div>
       </div>
-      <div style="width:70%" class="float-right mb-5">
+      <div style="width:70%;" class="float-right mb-5">
         <carousel
           :per-page="5"
           :paginationEnabled="true"
