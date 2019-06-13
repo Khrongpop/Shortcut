@@ -1,6 +1,19 @@
 #creator_detail {
   position: relative;
 
+  .tab {
+    padding-bottom: 300px;
+    .avatar {
+      background-color: #000000;
+      width: 100%;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+    }
+    .avatar-card {
+      margin: 0;
+    }
+  }
   .avatar {
     position: absolute;
     // bottom: 5%;
