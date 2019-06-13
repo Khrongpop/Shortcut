@@ -161,7 +161,8 @@ export default {
       img: null,
       camera: null,
       deviceId: null,
-      devices: []
+      devices: [],
+      img_file: null
     };
   },
   methods: {
@@ -189,7 +190,8 @@ export default {
       let status = true;
       const _this = this;
       console.log(this.img.name);
-      let filename = new Date().getTime() + "_" + this.img.name;
+      // let filename = new Date().getTime() + "_" + this.img.name;
+      let filename = new Date().getTime() + "_" + "register";
       let storageRef = storage
         // .ref("images")
         // .ref("users")
@@ -201,17 +203,20 @@ export default {
           // sucseess
           console.log("sucseess");
           let user = result.user;
-
-          let uploadTask = storageRef.put(_this.img);
-
+          // console.log(_this.img);
+          let uploadTask = storageRef.put(_this.img_file);
+          console.log("object");
           uploadTask.on(
             "state_changed",
-            function(snapshot) {},
+            function(snapshot) {
+              console.log(snapshot);
+            },
             function(error) {
               console.log(error);
               // Handle unsuccessful uploads
             },
             function() {
+              console.log("upload");
               uploadTask.snapshot.ref
                 .getDownloadURL()
                 .then(function(downloadURL) {
@@ -259,7 +264,15 @@ export default {
     },
     onCapture() {
       this.img = this.$refs.webcam.capture();
-      console.log(this.img);
+      const _this = this;
+      // console.log(this.img);
+      const url = this.$refs.webcam.capture();
+      fetch(url)
+        .then(res => res.blob())
+        .then(blob => {
+          const file = new File([blob], "File name");
+          _this.img_file = file;
+        });
     },
     onReset() {
       this.img = null;
