@@ -53,6 +53,7 @@
             <div class="bg-upload-img-outline">
               <div class="bg-upload-img-inside">
                 <div class="bg-upload-img-people">
+                  <img :src="`${baseURL}/faceid2.png`" alt id="faceID">
                   <!-- <img
                     :src="form.image ? form.image:preview"
                     alt="profile_people"
