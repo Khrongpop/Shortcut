@@ -192,7 +192,7 @@ export default {
       const _this = this;
       console.log(this.img.name);
       // let filename = new Date().getTime() + "_" + this.img.name;
-      let filename = new Date().getTime() + "_" + "register";
+      let filename = new Date().getTime() + "_" + this.form.name + ".jpg";
       let storageRef = storage
         // .ref("images")
         // .ref("users")
