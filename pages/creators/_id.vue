@@ -301,13 +301,24 @@
                   <img :src="`${baseURL}/creators/detail/bulet.png`" alt class="bulet">
                   <span class="mt-3">DATABASE</span>
                   <b-row class="mt-3">
-                    <b-col>
-                      <dev-icon
-                        :name="creator(id).database.img"
-                        size="2"
-                        v-if="creator(id).database.img"
-                      />
-                      <p>{{creator(id).database.name}}</p>
+                    <b-col v-if="creator(id).database">
+                      <div class="tech-title">
+                        <img :src="`${baseURL}/creators/detail/bulet.png`" alt class="bulet">
+                        <span class="mt-3">DATABASE</span>
+                        <b-row class="mt-3">
+                          <b-col>
+                            <dev-icon
+                              :name="creator(id).database.img"
+                              size="2"
+                              v-if="creator(id).database.img"
+                              :svg="creator(id).database.svg"
+                            />
+
+                            <!-- <b-img v-bind="toolProps" rounded alt="Rounded image"></b-img> -->
+                            <p>{{creator(id).database.name}}</p>
+                          </b-col>
+                        </b-row>
+                      </div>
                     </b-col>
                   </b-row>
                 </div>

@@ -336,9 +336,18 @@
   },
   {
     "id": 13580194,
-    "frontends": [""],
-    "backends": [""],
-    "database": "",
+    "frontends": [{
+      "name": "Vue.Js",
+      "img": "vuejs"
+    }],
+    "backends": [{
+      "name": "Laravel",
+      "img": "laravel"
+    }],
+    "database": {
+      "name": "MySQL",
+      "img": "mysql"
+    },
     "tools": []
   },
   {
