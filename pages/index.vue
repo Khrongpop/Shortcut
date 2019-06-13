@@ -4,6 +4,11 @@
 
 <script>
 export default {
+  head () {
+    return {
+      title: 'Home'
+    }
+  },
   layout: "topMenu",
   computed: {
     id() {

@@ -48,10 +48,10 @@
     "id": 13570141,
     "frontends": [{
       "name": "HTML",
-      "img": "html"
+      "img": "html5"
     }, {
       "name": "CSS",
-      "img": "css"
+      "img": "css3"
     }, {
       "name": "Javascript",
       "img": "javascript"
@@ -159,7 +159,7 @@
     "id": 13570357,
     "frontends": [{
       "name": "HTML",
-      "img": "html-"
+      "img": "html5"
     }, {
       "name": "CSS",
       "img": ""
@@ -187,10 +187,10 @@
     "id": 13570362,
     "frontends": [{
       "name": "HTML",
-      "img": "html"
+      "img": "html5"
     }, {
       "name": "CSS",
-      "img": "css"
+      "img": "css3"
     }, {
       "name": "Javascript",
       "img": "javascript"
@@ -311,10 +311,10 @@
     "id": 13580192,
     "frontends": [{
       "name": "HTML",
-      "img": "html"
+      "img": "html5"
     }, {
       "name": "CSS",
-      "img": "css"
+      "img": "css3"
     }, {
       "name": "Javascript",
       "img": "javascript"
@@ -648,10 +648,10 @@
     "id": 13580242,
     "frontends": [{
       "name": "HTML",
-      "img": "html"
+      "img": "html5"
     }, {
       "name": "CSS",
-      "img": "css"
+      "img": "css3"
     }, {
       "name": "Jquery",
       "img": "jquery"
@@ -700,7 +700,7 @@
     "id": 13580248,
     "frontends": [{
       "name": "HTML",
-      "img": "html"
+      "img": "html5"
     }, {
       "name": "CSS",
       "img": ""

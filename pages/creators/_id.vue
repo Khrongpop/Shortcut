@@ -189,6 +189,11 @@
 import { mapGetters } from "vuex";
 import DevIcon from "~/components/DevIcon";
 export default {
+  head () {
+    return {
+      title: `${this.creator(this.id).project_name} | ${this.creator(this.id).project_fullname_th} | ${this.creator(this.id).name}`
+    }
+  },
   layout: "noMenu",
   components: {
     DevIcon

@@ -92,6 +92,11 @@ export default {
   layout: "topMenu",
   components: {
     Logo
+  },
+   head () {
+    return {
+      title: `Thankyou`
+    }
   }
 };
 </script>
