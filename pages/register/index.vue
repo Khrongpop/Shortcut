@@ -58,8 +58,8 @@
                     alt="profile_people"
                     @click="$refs.up.click()"
                     class="img-profile"
-                  >-->
-                  <!-- <img src="/profile_gradient.png" alt="profile_gradient" class="img-bg"> -->
+                  >
+                  <img src="/profile_gradient.png" alt="profile_gradient" class="img-bg">-->
                   <vue-web-cam
                     ref="webcam"
                     :device-id="deviceId"
@@ -69,9 +69,17 @@
                     @error="onError"
                     @cameras="onCameras"
                     @camera-change="onCameraChange"
+                    v-if="!img"
                   />
+                  <img
+                    v-else
+                    :src="img ? img:preview"
+                    alt="profile_people"
+                    @click="$refs.up.click()"
+                    class="img-profile"
+                  >
                 </div>
-                <input
+                <!-- <input
                   @change="setImg"
                   ref="up"
                   required
@@ -84,8 +92,12 @@
                   alt="icon_camera"
                   class="icon-addimg"
                   @click="$refs.up.click()"
-                >
+                >-->
               </div>
+            </div>
+
+            <div ref="up" name="image">
+              <img src="/icon_camera.png" alt="icon_camera" class="icon-addimg" @click="onCapture">
             </div>
           </b-col>
         </b-row>
@@ -97,6 +109,8 @@
         <button type="button" class="btn btn-primary" @click="onCapture">Capture Photo</button>
         <button type="button" class="btn btn-danger" @click="onStop">Stop Camera</button>
         <button type="button" class="btn btn-success" @click="onStart">Start Camera</button>
+        <button type="button" class="btn btn-success" @click="onReset">Reset</button>
+
         <!-- <fb-login/> -->
 
         <!-- <b-button variant="primary" @click="writeToFirestore" :disabled="writeSuccessful">
@@ -138,7 +152,6 @@ export default {
         image: null,
         timestamp: null
       },
-      img: "",
       preview: "/profile_people.png",
       show: true,
       file: {},
@@ -175,6 +188,7 @@ export default {
       const ref = realDb.ref("users");
       let status = true;
       const _this = this;
+      console.log(this.img.name);
       let filename = new Date().getTime() + "_" + this.img.name;
       let storageRef = storage
         // .ref("images")
@@ -194,6 +208,7 @@ export default {
             "state_changed",
             function(snapshot) {},
             function(error) {
+              console.log(error);
               // Handle unsuccessful uploads
             },
             function() {
@@ -244,6 +259,10 @@ export default {
     },
     onCapture() {
       this.img = this.$refs.webcam.capture();
+      console.log(this.img);
+    },
+    onReset() {
+      this.img = null;
     },
     onStarted(stream) {
       console.log("On Started Event", stream);
@@ -257,6 +276,7 @@ export default {
     onStart() {
       this.$refs.webcam.start();
     },
+
     onError(error) {
       console.log("On Error Event", error);
     },
