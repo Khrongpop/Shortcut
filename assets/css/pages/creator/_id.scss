@@ -33,17 +33,15 @@
     }
 
     span {
-      font-family: 'geometosregular',
-        'dbadmanx';
-      font-size: .8em;
+      font-family: "geometosregular", "dbadmanx";
+      font-size: 0.8em;
       color: #3ac6f4;
     }
   }
 
   h1 {
     // text-align: center;
-    font-family: 'geometosregular',
-      'dbadmanx';
+    font-family: "geometosregular", "dbadmanx";
     letter-spacing: 5px;
     color: #3ac6f4;
   }
@@ -57,7 +55,7 @@
   h3 {
     padding-top: 10px;
     padding-bottom: 15px;
-    font-family: 'vcr_osd_monoregular', 'dbadmanx';
+    font-family: "vcr_osd_monoregular", "dbadmanx";
   }
 
   p {
@@ -91,15 +89,14 @@
         padding-left: 65px;
 
         h5 {
-          font-family: 'geometosregular',
-            'dbadmanx';
+          font-family: "geometosregular", "dbadmanx";
           font-size: 1.3em;
           color: #3ac6f4;
         }
 
         p {
           line-height: 1;
-          font-size: .9em;
+          font-size: 0.9em;
         }
       }
 
@@ -107,13 +104,11 @@
         top: 20px;
         position: absolute;
       }
-
-
     }
   }
 
   .screenshot-section {
-    margin-top: -50px;
+    margin-top: -10px;
   }
 
   .tech-section {
@@ -122,7 +117,7 @@
 
   .item-2 {
     margin-left: -10% !important;
-    transition: .5s ease-in-out;
+    transition: 0.5s ease-in-out;
   }
 
   // VueCarousel-slide VueCarousel-slide-active VueCarousel-slide-center
@@ -131,6 +126,4 @@
       margin-left: 0 !important;
     }
   }
-
-
 }

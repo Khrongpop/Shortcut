@@ -38,7 +38,7 @@
       "img": "mysql"
     },
     "tools": [{
-      "name": "Google Cloud API",
+      "name": "GCP",
       "img": "gcloud",
       "svg": true
     }],
@@ -239,7 +239,7 @@
       "img": "ffmpeg",
       "svg": true
     }, {
-      "name": "Google Cloud API",
+      "name": "GCP",
       "img": "gcloud",
       "svg": true
 
@@ -272,7 +272,7 @@
       "img": "onesignal",
       "svg": true
     }, {
-      "name": "Google Cloud API",
+      "name": "GCP",
       "img": "gcloud",
       "svg": true
     }, {
@@ -623,7 +623,7 @@
       "img": "onesignal",
       "svg": true
     }, {
-      "name": "Google Cloud API",
+      "name": "GCP",
       "img": "gcloud",
       "svg": true
     }],
@@ -669,7 +669,7 @@
       "img": "omise",
       "svg": true
     }, {
-      "name": "Google Cloud API",
+      "name": "GCP",
       "img": "gcloud",
       "svg": true
     }, {
