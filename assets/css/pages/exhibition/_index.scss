@@ -42,6 +42,46 @@
     }
   }
 
+  .exhibition-section-m {
+    margin-top: 2.5rem;
+
+    .bottom-content-1 {
+      position: relative;
+      padding-left: 250px;
+
+
+    }
+
+    .img_pick {
+      position: absolute;
+      top: 20px;
+      left: 100px;
+      width: 70px;
+    }
+
+    .img_txt {
+      position: absolute;
+      top: 100px;
+      left: 20px;
+      width: 200px;
+      object-fit: contain;
+    }
+
+  }
+
+  .bottom-left-content-m {
+    .ex-title {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+
+    span {
+      opacity: .7;
+      padding-bottom: 30px;
+    }
+
+    text-align: center;
+  }
 
 
   .exhibition-section-2 {
