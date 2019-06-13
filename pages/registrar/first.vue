@@ -36,7 +36,7 @@ export default {
     console.log(ref);
     const _this = this;
     try {
-      ref.once("value", function(snapshot) {
+      ref.on("value", function(snapshot) {
         snapshot.forEach(function(childSnapshot) {
           var childKey = childSnapshot.key;
           var childData = childSnapshot.val();
