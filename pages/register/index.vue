@@ -191,7 +191,7 @@ export default {
       const _this = this;
 
       // let filename = new Date().getTime() + "_" + this.img.name;
-      let filename = new Date().getTime() + "_" + this.form.name + ".jpg";
+      let filename = new Date().getTime() + "_" + this.form.name + ".jpeg";
       let storageRef = storage
         // .ref("images")
         // .ref("users")
@@ -273,7 +273,9 @@ export default {
       fetch(url)
         .then(res => res.blob())
         .then(blob => {
-          const file = new File([blob], "File name");
+          const file = new File([blob], "File name", {
+            type: "image/jpeg"
+          });
           _this.img_file = file;
         });
     },
@@ -317,6 +319,8 @@ export default {
       };
 
       this.img = null;
+
+      this.$router.go(0);
     }
   },
   computed: {
