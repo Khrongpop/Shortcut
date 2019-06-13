@@ -133,73 +133,53 @@
       <span class="clearfix"></span>
     </div>
     <div v-else>
+      <b-row class="mb-4">
+        <div class="creator-txt-m">
+          <p>
+            CREATORS
+            <span>{{creators.length}}</span>
+          </p>
+        </div>
+      </b-row>
       <carousel
         :per-page="!lg ? 4 : (xs ? 2 : 3)"
-        :paginationEnabled="true"
         :loop="true"
+        :paginationEnabled="false"
         :autoplay="false"
         :scrollPerPage="true"
         :navigationEnabled="true"
-        paginationActiveColor="#6cdbe0"
-        paginationColor="#ccc"
       >
-        <slide v-for="(val, index)  in getSize" :key="index">
+        <slide v-for="(val, index)  in getSize" :key="index" v-if="index % 3 === 0">
           <b-col>
-            <!-- {{creators[index]}} -->
             <creator-card :vdata="creators[index]" v-if="creators[index]" class/>
-            <!-- <creator-card :vdata="creators[val + index]" v-if="creators[val + index]" class/> -->
-            <!-- <creator-card :vdata="creators[index]" v-if="creators[index]" class/> -->
-            <!-- <creator-card :vdata="creators[index+2]" v-if="creators[index+2]" class/> -->
-            <!-- <creator-card
-              :vdata="creators[getIndex(val,index)]"
-              v-if="creators[getIndex(val,index)]"
-              class
-            />-->
-            <!-- <creator-card
-              :vdata="creators[getIndex(val,index)+ 1]"
-              v-if="creators[getIndex(val,index)+1]"
-              class
-            />
-            <creator-card
-              :vdata="creators[getIndex(val,index)+ 2]"
-              v-if="creators[getIndex(val,index)+2]"
-              class
-            />-->
           </b-col>
         </slide>
       </carousel>
       <carousel
         :per-page="!lg ? 4 : (xs ? 2 : 3)"
-        :paginationEnabled="true"
+        :paginationEnabled="false"
         :loop="true"
         :autoplay="false"
         :scrollPerPage="true"
         :navigationEnabled="true"
-        paginationActiveColor="#6cdbe0"
-        paginationColor="#ccc"
       >
-        <slide v-for="(val, index)  in getSize" :key="index">
+        <slide v-for="(val, index)  in getSize" :key="index" v-if="index % 3 === 1">
           <b-col>
-            <!-- {{creators[index]}} -->
             <creator-card :vdata="creators[index]" v-if="creators[index]" class/>
-            <!-- <creator-card :vdata="creators[val + index]" v-if="creators[val + index]" class/> -->
-            <!-- <creator-card :vdata="creators[index]" v-if="creators[index]" class/> -->
-            <!-- <creator-card :vdata="creators[index+2]" v-if="creators[index+2]" class/> -->
-            <!-- <creator-card
-              :vdata="creators[getIndex(val,index)]"
-              v-if="creators[getIndex(val,index)]"
-              class
-            />-->
-            <!-- <creator-card
-              :vdata="creators[getIndex(val,index)+ 1]"
-              v-if="creators[getIndex(val,index)+1]"
-              class
-            />
-            <creator-card
-              :vdata="creators[getIndex(val,index)+ 2]"
-              v-if="creators[getIndex(val,index)+2]"
-              class
-            />-->
+          </b-col>
+        </slide>
+      </carousel>
+      <carousel
+        :per-page="!lg ? 4 : (xs ? 2 : 3)"
+        :paginationEnabled="false"
+        :loop="true"
+        :autoplay="false"
+        :scrollPerPage="true"
+        :navigationEnabled="true"
+      >
+        <slide v-for="(val, index)  in getSize" :key="index" v-if="index % 3 === 2">
+          <b-col>
+            <creator-card :vdata="creators[index]" v-if="creators[index]" class/>
           </b-col>
         </slide>
       </carousel>
@@ -289,3 +269,22 @@ export default {
   }
 };
 </script>
+
+  <!-- <creator-card :vdata="creators[val + index]" v-if="creators[val + index]" class/> -->
+            <!-- <creator-card :vdata="creators[index]" v-if="creators[index]" class/> -->
+            <!-- <creator-card :vdata="creators[index+2]" v-if="creators[index+2]" class/> -->
+            <!-- <creator-card
+              :vdata="creators[getIndex(val,index)]"
+              v-if="creators[getIndex(val,index)]"
+              class
+            />-->
+            <!-- <creator-card
+              :vdata="creators[getIndex(val,index)+ 1]"
+              v-if="creators[getIndex(val,index)+1]"
+              class
+            />
+            <creator-card
+              :vdata="creators[getIndex(val,index)+ 2]"
+              v-if="creators[getIndex(val,index)+2]"
+              class
+            />-->
