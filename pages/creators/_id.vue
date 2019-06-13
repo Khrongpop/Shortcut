@@ -1,6 +1,6 @@
 <template>
   <div id="creator_detail" :style="bg_animate">
-    <div v-if="false">
+    <div v-if="lg">
       <!-- <div style="width:10%" class="float-left">อ่านทำไม</div> -->
       <carousel
         :per-page="1"
@@ -210,7 +210,7 @@
         </div>
       </b-row>
     </div>
-    <div v-else class="tab">
+    <div v-else class="tab mt-5">
       <div>
         <b-row>
           <div>
@@ -219,23 +219,23 @@
           </div>
         </b-row>
         <b-row>
-          <div>
+          <div
+            class="float-left"
+            :style="windowWidth > 499 ? {'width':'200px'} : {'width':'100%','margin':'20px 0 30px'}"
+          >
             <b-img
-              class="profileProps"
+              class="profilePropsMD"
               rounded
               alt="Rounded image"
               :src="`${baseURL}/creators/${creator(id).id}.jpg`"
+              :style="windowWidth > 499 ? {'width':'180px'} : {'width':'100%'}"
             ></b-img>
           </div>
-          <div>
+          <div class="float-left" :style="windowWidth > 499 ? {'width':'60%'} : {'width':'100%'}">
             <img :src="`${baseURL}/creators/detail/func.png`" alt class="func-title">
 
             <ul class="list-unstyled">
-              <li
-                v-for="(func, index) in creator(id).functions"
-                :key="index"
-                :class="getClass(index)"
-              >
+              <li v-for="(func, index) in creator(id).functions" :key="index">
                 <img :src="`${baseURL}/creators/detail/bulet.png`" alt>
                 <div class="text-list">
                   <h5>{{func.name}}</h5>
@@ -246,11 +246,11 @@
           </div>
         </b-row>
         <b-row>
-          <b-col>
-            <img src="/creators/detail/showreel.png" alt>
+          <b-col class="mt-3">
+            <img src="/creators/detail/showreel.png" alt class="mb-3">
             <br>
             <iframe
-              width="480"
+              :width="windowWidth > 555 ? `480` : `100%`"
               height="245"
               src="https://www.youtube.com/embed/lELqMu5HCY0"
               frameborder="0"
@@ -258,8 +258,8 @@
               allowfullscreen
             ></iframe>
           </b-col>
-          <b-col class>
-            <img :src="`${baseURL}/creators/detail/tech.png`" alt>
+          <b-col class="mt-3">
+            <img :src="`${baseURL}/creators/detail/tech.png`" alt class="mb-3">
             <b-row class="mt-3">
               <b-col v-if="creator(id).frontends.length > 0">
                 <div class="tech-title">
@@ -295,7 +295,7 @@
                 </div>
               </b-col>
             </b-row>
-            <b-row class="mt-3">
+            <b-row class="mt-4">
               <b-col v-if="creator(id).database">
                 <div class="tech-title">
                   <img :src="`${baseURL}/creators/detail/bulet.png`" alt class="bulet">
