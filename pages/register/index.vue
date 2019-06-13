@@ -107,10 +107,10 @@ export default {
     VueMatrixRaindrop,
     Logo
   },
-   head () {
+  head() {
     return {
       title: `Register`
-    }
+    };
   },
   data() {
     return {
@@ -152,25 +152,33 @@ export default {
     async onSubmit(evt) {
       evt.preventDefault();
 
-      let filename = new Date().getTime() + "_" + this.img.name;
       // this.form.timestamp = new Date().toString;
-
+      const ref = realDb.ref("users");
+      let status = true;
+      const _this = this;
+      let filename = new Date().getTime() + "_" + this.img.name;
       let storageRef = storage
         // .ref("images")
         // .ref("users")
         .ref("image/users/" + filename);
 
-      let status = true;
-
       let newUser = dbAuth
         .createUserWithEmailAndPassword(this.form.email, "password")
         .then(function(result) {
+          // sucseess
           console.log("sucseess");
           let user = result.user;
-          // sucseess
-          let uploadTask = storageRef.put(this.img);
-          const _this = this;
-          const ref = realDb.ref("users");
+
+          console.log(user);
+          console.log(user.uid);
+          // try {
+          //   ref.child(user.uid).set(_this.form);
+          // } catch (e) {
+          //   // TODO: error handling
+          //   console.error(e);
+          // }
+
+          let uploadTask = storageRef.put(_this.img);
 
           uploadTask.on(
             "state_changed",
@@ -203,6 +211,30 @@ export default {
           status = false;
           // ...
         });
+
+      // let uploadTask = storageRef.put(this.img);
+
+      // uploadTask.on(
+      //   "state_changed",
+      //   function(snapshot) {},
+      //   function(error) {
+      //     // Handle unsuccessful uploads
+      //   },
+      //   function() {
+      //     uploadTask.snapshot.ref.getDownloadURL().then(function(downloadURL) {
+      //       console.log("File available at", downloadURL);
+      //       // Editor.insertEmbed(cursorLocation, "image", downloadURL);
+      //       _this.form.image = downloadURL;
+      //       // const ref = _this.realDb.ref("users");
+      //       try {
+      //         ref.child(user.uid).set(_this.form);
+      //       } catch (e) {
+      //         // TODO: error handling
+      //         console.error(e);
+      //       }
+      //     });
+      //   }
+      // );
 
       if (status) {
       } else {
