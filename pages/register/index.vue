@@ -53,13 +53,23 @@
             <div class="bg-upload-img-outline">
               <div class="bg-upload-img-inside">
                 <div class="bg-upload-img-people">
-                  <img
+                  <!-- <img
                     :src="form.image ? form.image:preview"
                     alt="profile_people"
                     @click="$refs.up.click()"
                     class="img-profile"
-                  >
-                  <img src="/profile_gradient.png" alt="profile_gradient" class="img-bg">
+                  >-->
+                  <!-- <img src="/profile_gradient.png" alt="profile_gradient" class="img-bg"> -->
+                  <vue-web-cam
+                    ref="webcam"
+                    :device-id="deviceId"
+                    width="100%"
+                    @started="onStarted"
+                    @stopped="onStopped"
+                    @error="onError"
+                    @cameras="onCameras"
+                    @camera-change="onCameraChange"
+                  />
                 </div>
                 <input
                   @change="setImg"
@@ -83,6 +93,10 @@
           <div class="w-25 btn-bg"></div>
           <b-button type="submit" variant="primary" class="w-25 btn-shortcut">GETSHORTCUT</b-button>
         </b-col>
+
+        <button type="button" class="btn btn-primary" @click="onCapture">Capture Photo</button>
+        <button type="button" class="btn btn-danger" @click="onStop">Stop Camera</button>
+        <button type="button" class="btn btn-success" @click="onStart">Start Camera</button>
         <!-- <fb-login/> -->
 
         <!-- <b-button variant="primary" @click="writeToFirestore" :disabled="writeSuccessful">
@@ -100,12 +114,13 @@ import fbLogin from "@/components/FacebookLogin";
 import VueMatrixRaindrop from "@/node_modules/vue-matrix-digit-rain";
 import Logo from "~/components/Logo";
 // import { fireDb, realDb, storage } from "~/func/shortcut/plugins/firebase";
-
+// import { WebCam } from "vue-web-cam";
 export default {
   components: {
     fbLogin,
     VueMatrixRaindrop,
     Logo
+    // "vue-web-cam": WebCam
   },
   head() {
     return {
@@ -129,7 +144,11 @@ export default {
       file: {},
       writeSuccessful: false,
       canvasWidth: 3000,
-      canvasHeight: 1000
+      canvasHeight: 1000,
+      img: null,
+      camera: null,
+      deviceId: null,
+      devices: []
     };
   },
   methods: {
@@ -222,6 +241,51 @@ export default {
       this.img = e.target.files[0];
       // this.form.image = e.target.files[0];
       this.preview = URL.createObjectURL(event.target.files[0]);
+    },
+    onCapture() {
+      this.img = this.$refs.webcam.capture();
+    },
+    onStarted(stream) {
+      console.log("On Started Event", stream);
+    },
+    onStopped(stream) {
+      console.log("On Stopped Event", stream);
+    },
+    onStop() {
+      this.$refs.webcam.stop();
+    },
+    onStart() {
+      this.$refs.webcam.start();
+    },
+    onError(error) {
+      console.log("On Error Event", error);
+    },
+    onCameras(cameras) {
+      this.devices = cameras;
+      console.log("On Cameras Event", cameras);
+    },
+    onCameraChange(deviceId) {
+      this.deviceId = deviceId;
+      this.camera = deviceId;
+      console.log("On Camera Change Event", deviceId);
+    }
+  },
+  computed: {
+    device() {
+      return this.devices.find(n => n.deviceId === this.deviceId);
+    }
+  },
+  watch: {
+    camera(id) {
+      this.deviceId = id;
+    },
+    devices() {
+      // Once we have a list select the first one
+      const [first, ...tail] = this.devices;
+      if (first) {
+        this.camera = first.deviceId;
+        this.deviceId = first.deviceId;
+      }
     }
   }
 };

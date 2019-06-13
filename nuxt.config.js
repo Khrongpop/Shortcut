@@ -42,6 +42,7 @@ module.exports = {
   plugins: [
     '~/plugins/firebase.js',
     { src: "~/plugins/vue-carousel", ssr: false },
+    { src: "~/plugins/vue-web-cam", ssr: false },
     '~/plugins/mixin.js'
     // '~/plugins/vuefire.js'
   ],
