@@ -1,23 +1,34 @@
 #exhibition {
   .video {
     width: 70%;
-    height: 350px;
-    background-color: #666;
-    margin-left: 320px;
+    height: 250px;
+    // background-color: #666;
+    // margin-left: 320px;
+    margin-left: 420px;
+
+    img {
+      width: 90%;
+      float: left;
+      // height: 100%;
+      // object-fit: contain;
+    }
   }
 
   .img-key {
-    width: 300px;
-    height: 200px;
-    background-color: #666;
+    width: 400px;
+    height: 300px;
+    object-fit: contain;
+    // background-color: #666;
     position: absolute;
+    left: 150px;
+    top: 250px;
   }
 
   .exhibition-section-1 {
     position: relative;
 
     .bottom-left-content-1 {
-      padding-left: 400px;
+      padding-left: 600px;
 
       .img-title {
         width: 300px;
@@ -26,7 +37,7 @@
       }
 
       p {
-        padding-left: 30px;
+        padding-left: 70px;
       }
     }
   }

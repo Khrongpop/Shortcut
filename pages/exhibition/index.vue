@@ -5,14 +5,17 @@
       <carousel :per-page="1" :paginationEnabled="false" :loop="true" :autoplay="false">
         <slide class="exhibition-section-1">
           <Logo/>
-          <div class="video">ss</div>
+          <div class="video">
+            <img :src="`${baseURL}/exhibition/banner.jpg`" alt>
+          </div>
 
           <div class="bottom-content-1">
-            <img :src="`${baseURL}/creators/detail/bulet.png`" alt>
+            <img :src="`${baseURL}/exhibition/key-title.png`" alt class="img-key">
 
-            <div class="img-key"></div>
+            <!-- <div class="img-key"></div> -->
             <div class="bottom-left-content-1">
-              <div class="img-title"></div>
+              <!-- <div class="img-title"></div> -->
+              <img :src="`${baseURL}/exhibition/web-title.png`" alt>
               <p>
                 คณะเทคโนโลยีสารสนเทศและการสื่อสาร มหาวิทยาลัยศิลปากåร มหาวิทยาลัยชั้น
                 นำแห่งการสร้างสรรค์ ได้เล็งเห็นความสำคัญของการนำระบบเทคโนโลยีสารสนเทศ
