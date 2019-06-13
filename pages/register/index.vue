@@ -169,15 +169,6 @@ export default {
           console.log("sucseess");
           let user = result.user;
 
-          console.log(user);
-          console.log(user.uid);
-          // try {
-          //   ref.child(user.uid).set(_this.form);
-          // } catch (e) {
-          //   // TODO: error handling
-          //   console.error(e);
-          // }
-
           let uploadTask = storageRef.put(_this.img);
 
           uploadTask.on(
@@ -211,30 +202,6 @@ export default {
           status = false;
           // ...
         });
-
-      // let uploadTask = storageRef.put(this.img);
-
-      // uploadTask.on(
-      //   "state_changed",
-      //   function(snapshot) {},
-      //   function(error) {
-      //     // Handle unsuccessful uploads
-      //   },
-      //   function() {
-      //     uploadTask.snapshot.ref.getDownloadURL().then(function(downloadURL) {
-      //       console.log("File available at", downloadURL);
-      //       // Editor.insertEmbed(cursorLocation, "image", downloadURL);
-      //       _this.form.image = downloadURL;
-      //       // const ref = _this.realDb.ref("users");
-      //       try {
-      //         ref.child(user.uid).set(_this.form);
-      //       } catch (e) {
-      //         // TODO: error handling
-      //         console.error(e);
-      //       }
-      //     });
-      //   }
-      // );
 
       if (status) {
       } else {
