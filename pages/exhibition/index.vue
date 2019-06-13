@@ -65,6 +65,11 @@
 <script>
 import Logo from "~/components/Logo";
 export default {
+   head () {
+    return {
+      title: `Exhibition`
+    }
+  },
   layout: "topMenu",
   components: {
     Logo

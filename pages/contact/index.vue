@@ -78,6 +78,11 @@
 <script>
 import Logo from "~/components/Logo";
 export default {
+  head () {
+    return {
+      title: 'Contact'
+    }
+  },
   layout: "topMenu",
   data() {
     return {

@@ -239,6 +239,11 @@ import { mapGetters } from "vuex";
 import CreatorCard from "@/components/CreatorCard";
 import Logo from "~/components/Logo";
 export default {
+   head () {
+    return {
+      title: this.name
+    }
+  },
   layout: "topMenu",
   data() {
     return {

@@ -107,6 +107,11 @@ export default {
     VueMatrixRaindrop,
     Logo
   },
+   head () {
+    return {
+      title: `Register`
+    }
+  },
   data() {
     return {
       form: {

@@ -179,7 +179,7 @@ import CreatorCard from "@/components/CreatorCard";
 export default {
   head () {
     return {
-      title: 'Creator'
+      title: 'Creators'
     }
   },
   layout: "topMenu",
