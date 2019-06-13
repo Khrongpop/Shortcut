@@ -1,0 +1,80 @@
+#exhibition {
+  .video {
+    width: 70%;
+    height: 350px;
+    background-color: #666;
+    margin-left: 320px;
+  }
+
+  .img-key {
+    width: 300px;
+    height: 200px;
+    background-color: #666;
+    position: absolute;
+  }
+
+  .exhibition-section-1 {
+    position: relative;
+
+    .bottom-left-content-1 {
+      padding-left: 400px;
+
+      .img-title {
+        width: 300px;
+        height: 100px;
+        background-color: #666;
+      }
+
+      p {
+        padding-left: 30px;
+      }
+    }
+  }
+
+
+
+  .exhibition-section-2 {
+    .slide {
+      width: 100%;
+      height: 250px;
+      background-color: #666;
+    }
+
+    .bottom-left-content-2 {
+      text-align: center;
+      // float: left;
+
+      .img-title {
+        width: 900px;
+        height: 100px;
+        background-color: #999;
+        margin: 0 auto;
+        position: relative;
+        padding-left: 50px;
+
+        img {
+          position: absolute;
+          left: 0;
+        }
+
+        .img {
+          width: 200px;
+          height: 50px;
+          background-color: #333;
+
+          // margin: 0 auto;
+        }
+      }
+
+      p {
+        width: 50%;
+        margin: 0 auto;
+
+      }
+
+      span {
+        opacity: .7;
+      }
+    }
+  }
+}

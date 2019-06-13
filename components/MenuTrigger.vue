@@ -8,49 +8,56 @@
 
         <div class="col-md-4">
           <ul class="menu-list2 list2-l">
-            <li v-for="link in menus" :key="link.name" style="float:none;" @click="$emit('routeChange', true )">
+            <li
+              v-for="link in menus"
+              :key="link.name"
+              style="float:none;"
+              @click="$emit('routeChange', true )"
+            >
               <nuxt-link :to="{name:link.path ? link.path : link.name}">
-                <img :src="`/menu/${link.name}.png`" width="48" ><span>{{link.name}}</span>
+                <img :src="`/menu/${link.name}.png`" width="48">
+                <span>{{link.name}}</span>
               </nuxt-link>
             </li>
           </ul>
         </div>
-
 
         <div class="col-md-4">
           <ul class="menu-list2 list2-r">
-            <li v-for="(link,index) in categories" :key="link.name" style="float:none;"  @click="$emit('routeChange', true )">
-              <nuxt-link :to="{ name:'creator-category-name', params:{name: link.name}}">
-                 <img :src="`/menu/cat-${index+1}.png`" width="80"> {{link.name}}
+            <li
+              v-for="(link,index) in categories"
+              :key="link.name"
+              style="float:none;"
+              @click="$emit('routeChange', true )"
+            >
+              <nuxt-link :to="{ name:'creators-category-name', params:{name: link.name}}">
+                <img :src="`/menu/cat-${index+1}.png`" width="80">
+                {{link.name}}
               </nuxt-link>
             </li>
           </ul>
-        <!-- <sponsor-small class="frr"/> -->
+          <!-- <sponsor-small class="frr"/> -->
 
-        <img src="/menu/spon-r.png" alt="" class="img-fluid">
-
+          <img src="/menu/spon-r.png" alt class="img-fluid">
         </div>
-
-
       </div>
-
     </div>
   </div>
 </template>
 
 <script>
-import SponsorSmall from '~/components/SponsorSmall'
-import Logo from '~/components/Logo'
+import SponsorSmall from "~/components/SponsorSmall";
+import Logo from "~/components/Logo";
 
-import categories from '../data/categories.json'
+import categories from "../data/categories.json";
 export default {
   props: ["status", "menus"],
   data() {
     return {
       categories
-    }
+    };
   },
-  components:{
+  components: {
     SponsorSmall,
     Logo
   },
@@ -71,17 +78,15 @@ export default {
   right: 0;
 }
 .list2-l {
-    font-family: 'geometosregular';
-    font-size: 1em !important;
-    margin-top: 40px;
+  font-family: "geometosregular";
+  font-size: 1em !important;
+  margin-top: 40px;
 }
 .list2-r {
-  li{
-      padding-bottom: 1em;
+  li {
+    padding-bottom: 1em;
   }
 }
-
-
 </style>
 
 
