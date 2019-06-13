@@ -13,10 +13,10 @@
     <div class="row">
       <img src="logo+regis.png" alt="logoregister" class="logo-regis">
     </div>
-        <img src="/png_error_line_right.png" alt="png_error_line_right" class="img-bg-font-right">
+    <img src="/png_error_line_right.png" alt="png_error_line_right" class="img-bg-font-right">
 
     <div class="wrapper">
-            <img src="/font_design_left_butt.png" alt="font_design_left_butt" class="img-bg-font-left">
+      <img src="/font_design_left_butt.png" alt="font_design_left_butt" class="img-bg-font-left">
 
       <b-form @submit="onSubmit" v-if="show">
         <b-row>
@@ -102,15 +102,20 @@
             </div>
 
             <div ref="up" name="image">
-              <img src="/icon_camera.png" alt="icon_camera" class="icon-addimg" @click="onCapture">
+              <img
+                src="/icon_camera.png"
+                alt="icon_camera"
+                class="icon-addimg"
+                @click="onCapture"
+                v-if="!img"
+              >
+              <b-button type="button" variant="success" @click="onStart" v-else>Reset</b-button>
             </div>
           </b-col>
         </b-row>
         <b-col col md="11" offset-md="1" class="text-center mt-60">
           <div class="w-25 btn-bg"></div>
           <b-button type="submit" variant="primary" class="w-25 btn-shortcut">GETSHORTCUT</b-button>
-          <b-button type="button" class="btn btn-success" @click="onReset">Reset</b-button>
-          <button type="button" class="btn btn-success" @click="onStart">Start Camera</button>
         </b-col>
 
         <!-- <fb-login/> -->
@@ -125,7 +130,7 @@
 </template>
 
 <script>
-const Swal = require('sweetalert2')
+const Swal = require("sweetalert2");
 
 import { fireDb, realDb, storage, dbAuth } from "~/plugins/firebase.js";
 import fbLogin from "@/components/FacebookLogin";
@@ -169,10 +174,7 @@ export default {
       img_file: null
     };
   },
-  created(){
-
-
-  },
+  created() {},
   methods: {
     async writeToFirestore() {
       // const ref = fireDb.collection("users").doc();
@@ -237,19 +239,19 @@ export default {
                     ref.push(_this.form);
                     //  suscess
                     // TODO :   Alret upload suscess
-                      Swal.fire({
-                        type: 'succcess',
-                        title: 'ขอบคุณ',
-                        text: 'คุณได้ทำการลงเบียนงาน Shortcut 13.5 สำเร็จ',
-                      })
+                    Swal.fire({
+                      type: "succcess",
+                      title: "ขอบคุณ",
+                      text: "คุณได้ทำการลงเบียนงาน Shortcut 13.5 สำเร็จ"
+                    });
                     _this.clearData();
                   } catch (e) {
                     // error handling
-                      Swal.fire({
-                        type: 'error',
-                        title: 'ขออภัย',
-                        text: 'ไม่สามารถอัพโหลดรูปได้!',
-                      })
+                    Swal.fire({
+                      type: "error",
+                      title: "ขออภัย",
+                      text: "ไม่สามารถอัพโหลดรูปได้!"
+                    });
                     console.error(e);
                   }
                 });
@@ -260,11 +262,12 @@ export default {
           // Handle Errors here.
           //  error
 
-            Swal.fire({
-              type: 'error',
-              title: 'แจ้งเตือน',
-              text: 'email ผู้ใข้งานนี้ได้ทำการลงทะเบียนเรียบร้อยแล้ว กรุณาใช้ email อื่นในการลงทะเบียน',
-    })
+          Swal.fire({
+            type: "error",
+            title: "แจ้งเตือน",
+            text:
+              "email ผู้ใข้งานนี้ได้ทำการลงทะเบียนเรียบร้อยแล้ว กรุณาใช้ email อื่นในการลงทะเบียน"
+          });
           var errorCode = error.code;
           var errorMessage = error.message;
           // status = false;
