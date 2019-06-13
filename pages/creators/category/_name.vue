@@ -170,6 +170,14 @@
       <span class="clearfix"></span>
     </div>
     <div v-else-if="md">
+      <b-row class="mb-4">
+        <div class="creator-txt-m">
+          <p>
+            CREATORS
+            <span>{{creators(name).length}}</span>
+          </p>
+        </div>
+      </b-row>
       <carousel
         :per-page="3"
         :paginationEnabled="true"
@@ -198,7 +206,14 @@
       </carousel>
     </div>
     <div v-else>
-      อ่านทำไม
+      <b-row class="mb-4">
+        <div class="creator-txt-m">
+          <p>
+            CREATORS
+            <span>{{creators(name).length}}</span>
+          </p>
+        </div>
+      </b-row>
       <carousel
         :per-page="!lg ? 4 : (xs ? 2 : 3)"
         :paginationEnabled="true"

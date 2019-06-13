@@ -34,4 +34,25 @@
       padding-left: 70px;
     }
   }
+
+  .creator-txt-m {
+
+    span {
+      font-size: 3.5em;
+      color: #ec3939;
+      // float: right;
+      font-family: "vcr_osd_monoregular";
+      margin-top: -5px;
+      position: absolute;
+      right: 15%;
+    }
+
+    p {
+      float: left;
+      line-height: 0;
+      font-family: "geometosregular";
+      padding-left: 5%;
+    }
+
+  }
 }
