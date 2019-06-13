@@ -258,6 +258,22 @@
               allowfullscreen
             ></iframe>
           </b-col>
+        </b-row>
+        <b-row class="mt-3 mb-3">
+          <b-col>
+            <img :src="`${baseURL}/creators/detail/screenshots.png`" alt>
+
+            <br>
+            <carousel :per-page="3" :paginationEnabled="false" :loop="true" :autoplay="false">
+              <slide v-for="item in 10" :key="item.id">
+                <b-col>
+                  <b-img v-bind="mainProps" rounded alt="Rounded image"></b-img>
+                </b-col>
+              </slide>
+            </carousel>
+          </b-col>
+        </b-row>
+        <b-row>
           <b-col class="mt-3">
             <img :src="`${baseURL}/creators/detail/tech.png`" alt class="mb-3">
             <b-row class="mt-3">

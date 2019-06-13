@@ -168,6 +168,41 @@
           </b-col>
         </slide>
       </carousel>
+      <carousel
+        :per-page="!lg ? 4 : (xs ? 2 : 3)"
+        :paginationEnabled="true"
+        :loop="true"
+        :autoplay="false"
+        :scrollPerPage="true"
+        :navigationEnabled="true"
+        paginationActiveColor="#6cdbe0"
+        paginationColor="#ccc"
+      >
+        <slide v-for="(val, index)  in getSize" :key="index">
+          <b-col>
+            <!-- {{creators[index]}} -->
+            <creator-card :vdata="creators[index]" v-if="creators[index]" class/>
+            <!-- <creator-card :vdata="creators[val + index]" v-if="creators[val + index]" class/> -->
+            <!-- <creator-card :vdata="creators[index]" v-if="creators[index]" class/> -->
+            <!-- <creator-card :vdata="creators[index+2]" v-if="creators[index+2]" class/> -->
+            <!-- <creator-card
+              :vdata="creators[getIndex(val,index)]"
+              v-if="creators[getIndex(val,index)]"
+              class
+            />-->
+            <!-- <creator-card
+              :vdata="creators[getIndex(val,index)+ 1]"
+              v-if="creators[getIndex(val,index)+1]"
+              class
+            />
+            <creator-card
+              :vdata="creators[getIndex(val,index)+ 2]"
+              v-if="creators[getIndex(val,index)+2]"
+              class
+            />-->
+          </b-col>
+        </slide>
+      </carousel>
     </div>
   </div>
 </template>
