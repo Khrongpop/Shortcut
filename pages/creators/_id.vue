@@ -62,7 +62,7 @@
                         <b-row class="mt-3">
                           <b-col v-for="(frontend, index) in creator(id).frontends" :key="index">
                             <!-- <b-img v-bind="toolProps" rounded alt="Rounded image"></b-img> -->
-                            <dev-icon :name="frontend.img" size="2" v-if="frontend.img"/>
+                            <dev-icon :name="frontend.img" size="2" v-if="frontend.img" :svg="frontend.svg"/>
                             <!-- {{frontend}} -->
                             <p>{{frontend.name}}</p>
                           </b-col>
@@ -76,7 +76,7 @@
                         <b-row class="mt-3">
                           <b-col v-for="(backend, index) in creator(id).backends" :key="index">
                             <!-- <b-img v-bind="toolProps" rounded alt="Rounded image"></b-img> -->
-                            <dev-icon :name="backend.img" size="2" v-if="backend.img"/>
+                            <dev-icon :name="backend.img" size="2" v-if="backend.img" :svg="backend.svg"/>
 
                             <p>{{backend.name}}</p>
                           </b-col>
@@ -125,7 +125,7 @@
                           </b-col>-->
                           <b-col v-for="(tool, index) in creator(id).tools" :key="index">
                             <div v-if="index < 3">
-                              <b-img v-bind="toolProps" rounded alt="Rounded image"></b-img>
+                              <dev-icon :name="tool.img" size="2" v-if="tool.img" :svg="tool.svg"/>
                               <p>{{tool.name}}</p>
                             </div>
                           </b-col>

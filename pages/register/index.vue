@@ -658,7 +658,7 @@ export default {
   justify-content: center;
   background-color: #000;
   color: #fff;
-  overflow: hidden;
+  // overflow: hidden;
 }
 
 .title {

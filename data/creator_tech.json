@@ -2,11 +2,13 @@
     "id": 13560118,
     "frontends": [{
       "name": "Angular",
-      "img": ""
+      "img": "angular",
+      "svg": true
     }],
     "backends": [{
       "name": "Express.js",
-      "img": "express"
+      "img": "express",
+      "svg": true
     }],
     "database": {
       "name": "MongoDB",
@@ -14,7 +16,8 @@
     },
     "tools": [{
       "name": "Strava API",
-      "img": ""
+      "img": "strava",
+      "svg": true
     }],
     "percen": "40-60"
 
@@ -23,7 +26,8 @@
     "id": 13570119,
     "frontends": [{
       "name": "Unity",
-      "img": ""
+      "img": "unity",
+      "svg": true
     }],
     "backends": [{
       "name": "PHP",
@@ -35,7 +39,8 @@
     },
     "tools": [{
       "name": "Google Cloud API",
-      "img": "google"
+      "img": "gcloud",
+      "svg": true
     }],
     "percen": "60-40"
   },
@@ -61,15 +66,18 @@
     },
     "tools": [{
         "name": "OpenDota API",
-        "img": ""
+        "img": "api",
+        "svg": true
       },
       {
         "name": "Ow-API",
-        "img": ""
+        "img": "api",
+        "svg": true
       },
       {
         "name": "PUBG Developer API",
-        "img": ""
+        "img": "api",
+        "svg": true
       }
     ],
     "percen": "40-60"
@@ -82,11 +90,13 @@
     }],
     "backends": [{
       "name": "Firebase",
-      "img": ""
+      "img": "firebase",
+      "svg": true
     }],
     "database": {
       "name": "Firebase Realtime Database",
-      "img": ""
+      "img": "firebase",
+      "svg": true
     },
     "tools": [],
     "percen": "60-40"
@@ -95,7 +105,8 @@
     "id": 13570261,
     "frontends": [{
       "name": "Unity",
-      "img": ""
+      "img": "unity",
+      "svg": true
     }],
     "backends": [""],
     "database": "",
@@ -105,11 +116,12 @@
     "id": 13570283,
     "frontends": [{
       "name": "Unity",
-      "img": ""
+      "img": "unity",
+      "svg": true
     }],
     "backends": [{
       "name": "C#",
-      "img": ""
+      "img": "csharp"
     }, {
       "name": "PHP",
       "img": "php"
@@ -124,7 +136,8 @@
     "id": 13570321,
     "frontends": [{
       "name": "Unity",
-      "img": ""
+      "img": "unity",
+      "svg": true
     }],
     "backends": [{
         "name": "C#",
@@ -164,7 +177,9 @@
     },
     "tools": [{
       "name": "Here API",
-      "img": ""
+      "img": "api",
+      "svg": true
+
     }],
     "percen": "40-60"
   },
@@ -190,7 +205,8 @@
     },
     "tools": [{
       "name": "SMS",
-      "img": ""
+      "img": "api",
+      "svg": true
     }],
     "percen": "40-60"
   },
@@ -220,10 +236,13 @@
     },
     "tools": [{
       "name": "FFMPEG",
-      "img": ""
+      "img": "ffmpeg",
+      "svg": true
     }, {
       "name": "Google Cloud API",
-      "img": "google"
+      "img": "gcloud",
+      "svg": true
+
     }, {
       "name": "Facebook SDK",
       "img": "facebook"
@@ -246,13 +265,16 @@
     },
     "tools": [{
       "name": "Firebase",
-      "img": ""
+      "img": "firebase",
+      "svg": true
     }, {
       "name": "OneSignal",
-      "img": ""
+      "img": "onesignal",
+      "svg": true
     }, {
       "name": "Google Cloud API",
-      "img": "google"
+      "img": "gcloud",
+      "svg": true
     }, {
       "name": "Heroku",
       "img": "heroku"
@@ -266,7 +288,8 @@
     "id": 13580191,
     "frontends": [{
       "name": "Unity",
-      "img": ""
+      "img": "unity",
+      "svg": true
     }],
     "backends": [{
       "name": "C#",
@@ -274,7 +297,8 @@
     }],
     "database": {
       "name": "Local Storage",
-      "img": ""
+      "img": "local",
+      "svg": true
     },
     "tools": [{
       "name": "Native Audio",
@@ -305,7 +329,8 @@
     },
     "tools": [{
       "name": "Aftership API",
-      "img": ""
+      "img": "api",
+      "svg": true
     }],
     "percen": "40-60"
   },
@@ -320,7 +345,8 @@
     "id": 13580199,
     "frontends": [{
       "name": "Unity",
-      "img": ""
+      "img": "unity",
+      "svg": true
     }],
     "backends": [{
       "name": "C#",
@@ -340,7 +366,8 @@
     "id": 13580201,
     "frontends": [{
       "name": "Nuxt.js",
-      "img": ""
+      "img": "nuxt",
+      "svg": true
     }],
     "backends": [{
       "name": "Laravel",
@@ -357,7 +384,8 @@
     "id": 13580203,
     "frontends": [{
       "name": "Unity",
-      "img": ""
+      "img": "unity",
+      "svg": true
     }],
     "backends": [{
       "name": "PHP",
@@ -378,7 +406,8 @@
     }],
     "backends": [{
       "name": "Firebase",
-      "img": ""
+      "img": "firebase",
+      "svg": true
     }],
     "database": {
       "name": "Firebase Realtime Database",
@@ -395,7 +424,8 @@
     }],
     "backends": [{
       "name": "Express.js",
-      "img": ""
+      "img": "express",
+      "svg": true
     }],
     "database": {
       "name": "MongoDB",
@@ -416,13 +446,18 @@
     "id": 13580212,
     "frontends": [{
       "name": "Unity",
-      "img": ""
+      "img": "unity",
+      "svg": true
     }],
     "backends": [{
       "name": "C#",
       "img": "csharp"
     }],
-    "database": "Local Storage",
+    "database": {
+      "name": "Local Storage",
+      "img": "local",
+      "svg": true
+    },
     "tools": [{
       "name": "Facebook SDK",
       "img": "facebook"
@@ -433,7 +468,8 @@
     "id": 13580213,
     "frontends": [{
       "name": "Unity",
-      "img": ""
+      "img": "unity",
+      "svg": true
     }],
     "backends": [{
         "name": "C#",
@@ -455,13 +491,14 @@
     "id": 13580217,
     "frontends": [{
       "name": "Swift",
-      "img": ""
+      "img": "swift"
     }],
     "backends": [""],
     "database": "",
     "tools": [{
       "name": "CoreML",
-      "img": ""
+      "img": "ml",
+      "svg": true
     }],
     "percen": "60-40"
   },
@@ -473,11 +510,13 @@
     }],
     "backends": [{
       "name": "Firebase",
-      "img": ""
+      "img": "firebase",
+      "svg": true
     }],
     "database": {
       "name": "Firebase Realtime Database",
-      "img": ""
+      "img": "firebase",
+      "svg": true
     },
     "tools": [{
       "name": "CoreMotion",
@@ -493,11 +532,13 @@
     }],
     "backends": [{
       "name": "Firebase",
-      "img": ""
+      "img": "firebase",
+      "svg": true
     }],
     "database": {
       "name": "Firebase Realtime Database",
-      "img": ""
+      "img": "firebase",
+      "svg": true
     },
     "tools": [],
     "percen": "50-50"
@@ -510,11 +551,13 @@
     }],
     "backends": [{
       "name": "Firebase",
-      "img": ""
+      "img": "firebase",
+      "svg": true
     }],
     "database": {
       "name": "Firebase Realtime Database",
-      "img": ""
+      "img": "firebase",
+      "svg": true
     },
     "tools": [],
     "percen": "50-50"
@@ -552,7 +595,8 @@
     },
     "tools": [{
       "name": "CoreML",
-      "img": ""
+      "img": "ml",
+      "svg": true
     }],
     "percen": "40-60"
   },
@@ -572,13 +616,16 @@
     },
     "tools": [{
       "name": "Firebase",
-      "img": ""
+      "img": "firebase",
+      "svg": true
     }, {
       "name": "OneSignal",
-      "img": ""
+      "img": "onesignal",
+      "svg": true
     }, {
       "name": "Google Cloud API",
-      "img": "google"
+      "img": "gcloud",
+      "svg": true
     }],
     "percen": "40-60"
   },
@@ -586,7 +633,8 @@
     "id": 13580238,
     "frontends": [{
       "name": "Unity",
-      "img": ""
+      "img": "unity",
+      "svg": true
     }],
     "backends": [{
       "name": "C#",
@@ -618,13 +666,16 @@
     },
     "tools": [{
       "name": "Omise API",
-      "img": ""
+      "img": "omise",
+      "svg": true
     }, {
       "name": "Google Cloud API",
-      "img": "google"
+      "img": "gcloud",
+      "svg": true
     }, {
       "name": "Pusher",
-      "img": ""
+      "img": "pusher",
+      "svg": true
     }],
     "percen": "50-50"
   },
@@ -676,11 +727,13 @@
     }],
     "backends": [{
       "name": "Firebase",
-      "img": ""
+      "img": "firebase",
+      "svg": true
     }],
     "database": {
       "name": "Firebase Realtime Database",
-      "img": ""
+      "img": "firebase",
+      "svg": true
     },
     "tools": [],
     "percen": "50-50"
