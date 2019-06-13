@@ -5,15 +5,19 @@
       :fontSize="11"
       textColor="#FFFFFF"
       :speed="6"
-      :canvasWidth="canvasWidth"
-      :canvasHeight="canvasHeight"
+      :canvasWidth="windowWidth"
+      :canvasHeight="windowHeight"
     ></VueMatrixRaindrop>
     <Logo/>
     <!-- <img src="shortcut_left.png" alt="logoshortcut" class="logo-shortcut_left"> -->
     <div class="row">
       <img src="logo+regis.png" alt="logoregister" class="logo-regis">
     </div>
+        <img src="/png_error_line_right.png" alt="png_error_line_right" class="img-bg-font-right">
+
     <div class="wrapper">
+            <img src="/font_design_left_butt.png" alt="font_design_left_butt" class="img-bg-font-left">
+
       <b-form @submit="onSubmit" v-if="show">
         <b-row>
           <b-col col md="6" offset-md="1" class="p-0">
