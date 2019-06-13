@@ -95,7 +95,7 @@
 </template>
 
 <script>
-import { fireDb, realDb, storage } from "~/plugins/firebase.js";
+import { fireDb, realDb, storage, dbAuth } from "~/plugins/firebase.js";
 import fbLogin from "@/components/FacebookLogin";
 import VueMatrixRaindrop from "@/node_modules/vue-matrix-digit-rain";
 import Logo from "~/components/Logo";
@@ -155,31 +155,56 @@ export default {
         // .ref("users")
         .ref("image/users/" + filename);
 
-      let uploadTask = storageRef.put(this.img);
-      const _this = this;
-      const ref = realDb.ref("users");
+      let status = true;
 
-      uploadTask.on(
-        "state_changed",
-        function(snapshot) {},
-        function(error) {
-          // Handle unsuccessful uploads
-        },
-        function() {
-          uploadTask.snapshot.ref.getDownloadURL().then(function(downloadURL) {
-            console.log("File available at", downloadURL);
-            // Editor.insertEmbed(cursorLocation, "image", downloadURL);
-            _this.form.image = downloadURL;
-            // const ref = _this.realDb.ref("users");
-            try {
-              ref.push(_this.form);
-            } catch (e) {
-              // TODO: error handling
-              console.error(e);
+      let newUser = dbAuth
+        .createUserWithEmailAndPassword(this.form.email, "password")
+        .then(function(result) {
+          console.log("sucseess");
+          let user = result.user;
+          // sucseess
+          let uploadTask = storageRef.put(this.img);
+          const _this = this;
+          const ref = realDb.ref("users");
+
+          uploadTask.on(
+            "state_changed",
+            function(snapshot) {},
+            function(error) {
+              // Handle unsuccessful uploads
+            },
+            function() {
+              uploadTask.snapshot.ref
+                .getDownloadURL()
+                .then(function(downloadURL) {
+                  console.log("File available at", downloadURL);
+                  // Editor.insertEmbed(cursorLocation, "image", downloadURL);
+                  _this.form.image = downloadURL;
+                  // const ref = _this.realDb.ref("users");
+                  try {
+                    ref.child(user.uid).set(_this.form);
+                  } catch (e) {
+                    // TODO: error handling
+                    console.error(e);
+                  }
+                });
             }
-          });
-        }
-      );
+          );
+        })
+        .catch(function(error) {
+          // Handle Errors here.
+          var errorCode = error.code;
+          var errorMessage = error.message;
+          status = false;
+          // ...
+        });
+
+      console.log(newUser.uid);
+
+      if (status) {
+      } else {
+        console.log("already have user");
+      }
 
       //  const ref = realDb.ref("users");
       // try {
