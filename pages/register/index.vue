@@ -73,11 +73,10 @@
                     v-if="!img"
                   />
                   <img
-                    v-else
                     :src="img ? img:preview"
                     alt="profile_people"
                     @click="$refs.up.click()"
-                    class="img-profile"
+                    class="img-profile preview"
                   >
                 </div>
                 <!-- <input
@@ -190,7 +189,7 @@ export default {
       const ref = realDb.ref("users");
       let status = true;
       const _this = this;
-      console.log(this.img.name);
+
       // let filename = new Date().getTime() + "_" + this.img.name;
       let filename = new Date().getTime() + "_" + this.form.name + ".jpg";
       let storageRef = storage
@@ -206,7 +205,7 @@ export default {
           let user = result.user;
           // console.log(_this.img);
           let uploadTask = storageRef.put(_this.img_file);
-          console.log("object");
+
           uploadTask.on(
             "state_changed",
             function(snapshot) {
@@ -226,10 +225,13 @@ export default {
                   _this.form.image = downloadURL;
                   // const ref = _this.realDb.ref("users");
                   try {
-                    ref.child(user.uid).set(_this.form);
+                    // ref.child(user.uid).set(_this.form);
+                    ref.push(_this.form);
                     //  suscess
+                    // TODO :   Alret upload suscess
+                    _this.clearData();
                   } catch (e) {
-                    // TODO: error handling
+                    // error handling
                     console.error(e);
                   }
                 });
@@ -302,6 +304,19 @@ export default {
       this.deviceId = deviceId;
       this.camera = deviceId;
       console.log("On Camera Change Event", deviceId);
+    },
+    clearData() {
+      this.form = {
+        fullname: "",
+        name: "",
+        job: "",
+        department: "",
+        email: "",
+        image: null,
+        timestamp: null
+      };
+
+      this.img = null;
     }
   },
   computed: {
