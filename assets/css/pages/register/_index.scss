@@ -8,25 +8,28 @@
       display: inline-block;
       margin-top: 30px;
     }
+
     &-inside {
       width: 85%;
       height: 75%;
       border-radius: 10px;
-      border-image-source: linear-gradient(
-        135deg,
-        rgba(255, 255, 255, 0) 0%,
-        $color-secondary 100%
-      );
+      border-image-source: linear-gradient(135deg,
+          rgba(255, 255, 255, 0) 0%,
+          $color-secondary 100%);
       margin: 20px auto 0;
       text-align: center;
+
+      overflow: hidden;
     }
+
     &-people {
       width: 100%;
       height: 100%;
       border-radius: 10px;
       background: rgba(255, 255, 255, 0.1);
       position: relative;
-      & .img-{
+
+      & .img- {
         &profile {
           width: 100%;
           height: 100%;
@@ -34,6 +37,7 @@
           object-fit: cover;
           object-position: center;
         }
+
         &bg {
           width: 100%;
           height: 100%;
@@ -44,36 +48,43 @@
       }
     }
   }
+
   &input {
     border: 1px solid $color-secondary;
     color: $color-white;
     background-color: rgba(62, 198, 243, 0.3);
+
     &:focus {
       border: 1px solid $color-secondary;
       color: $color-white;
       background-color: rgba(62, 198, 243, 0.3);
     }
+
     &-err {
       background-color: rgba(238, 29, 71, 0.25);
     }
+
     &::placeholder {
       color: $color-white;
     }
   }
 }
-.icon-{
+
+.icon- {
   &addimg {
     width: 45px;
     height: 45px;
     margin: 20px auto;
   }
 }
+
 .logo {
   &-shortcut_left {
     width: 23%;
     position: absolute;
     z-index: 1;
   }
+
   &-regis {
     width: 25%;
     height: 100%;
@@ -87,6 +98,7 @@
     filter: blur(20px);
     height: 100%;
   }
+
   &shortcut {
     border: 4px solid #50B1C0;
     border-radius: 30px;
@@ -109,324 +121,397 @@
       animation: sto-99 2s linear;
       animation-fill-mode: both;
     }
+
     &2 {
       animation: sto-9914 2s linear 1s;
       animation-fill-mode: both;
     }
+
     &3 {
       animation: sto-1 2s linear 2s;
       animation-fill-mode: both;
     }
   }
+
   &2- {
     &1 {
       animation: sto-8318 2s linear;
       animation-fill-mode: both;
     }
+
     &2 {
       animation: sto-0240 2s linear 1s;
       animation-fill-mode: both;
     }
+
     &3 {
       animation: sto-0420 2s linear 2s;
       animation-fill-mode: both;
     }
+
     &4 {
       animation: sto-0638 2s linear 3s;
       animation-fill-mode: both;
     }
+
     &5 {
       animation: sto-1 2s linear 4s;
       animation-fill-mode: both;
     }
   }
+
   &3- {
     &1 {
       animation: sto-01 2s linear 1s;
       animation-fill-mode: both;
     }
+
     &2 {
       animation: sto-0223 2s linear 2s;
       animation-fill-mode: both;
     }
+
     &3 {
       animation: sto-1 2s linear 2s;
       animation-fill-mode: both;
     }
+
     &4 {
       animation: sto-1 2s linear 2s;
       animation-fill-mode: both;
     }
+
     &5 {
       animation: sto-01 2s linear 2s;
       animation-fill-mode: both;
     }
   }
+
   &4- {
     &1 {
       animation: sto-4802 2s linear;
       animation-fill-mode: both;
     }
+
     &2 {
       animation: sto-01 2s linear 1s;
       animation-fill-mode: both;
     }
+
     &3 {
       animation: sto-0223 2s linear 2s;
       animation-fill-mode: both;
     }
+
     &4 {
       animation: sto-1 2s linear 2s;
       animation-fill-mode: both;
     }
   }
+
   &5- {
     &1 {
       animation: sto-2646 2s linear;
       animation-fill-mode: both;
     }
+
     &2 {
       animation: sto-01 2s linear 1s;
       animation-fill-mode: both;
     }
+
     &3 {
       animation: sto-0174 2s linear 2s;
       animation-fill-mode: both;
     }
+
     &4 {
       animation: sto-0316 2s linear 2s;
       animation-fill-mode: both;
     }
+
     &5 {
       animation: sto-0478 2s linear 2s;
       animation-fill-mode: both;
     }
+
     &6 {
       animation: sto-0674 2s linear 2s;
       animation-fill-mode: both;
     }
+
     &7 {
       animation: sto-1 2s linear 2s;
       animation-fill-mode: both;
     }
   }
+
   &6- {
     &1 {
       animation: sto-0234 2s linear;
       animation-fill-mode: both;
     }
+
     &2 {
       animation: sto-0477 2s linear 1s;
       animation-fill-mode: both;
     }
+
     &3 {
       animation: sto-0728 2s linear 2s;
       animation-fill-mode: both;
     }
+
     &4 {
       animation: sto-1 2s linear 2s;
       animation-fill-mode: both;
     }
+
     &5 {
       animation: sto-0607 2s linear 2s;
       animation-fill-mode: both;
     }
+
     &6 {
       animation: sto-0398 2s linear 2s;
       animation-fill-mode: both;
     }
+
     &7 {
       animation: sto-0232 2s linear 2s;
       animation-fill-mode: both;
     }
+
     &8 {
       animation: sto-8988 2s linear 2s;
       animation-fill-mode: both;
     }
   }
+
   &7- {
     &1 {
       animation: sto-0234 2s linear;
       animation-fill-mode: both;
     }
+
     &2 {
       animation: sto-0477 2s linear 1s;
       animation-fill-mode: both;
     }
+
     &3 {
       animation: sto-0728 2s linear 2s;
       animation-fill-mode: both;
     }
+
     &4 {
       animation: sto-1 2s linear 2s;
       animation-fill-mode: both;
     }
+
     &5 {
       animation: sto-0607 2s linear 2s;
       animation-fill-mode: both;
     }
+
     &6 {
       animation: sto-0398 2s linear 2s;
       animation-fill-mode: both;
     }
+
     &7 {
       animation: sto-0232 2s linear 2s;
       animation-fill-mode: both;
     }
+
     &8 {
       animation: sto-8988 2s linear 2s;
       animation-fill-mode: both;
     }
   }
+
   &8- {
     &1 {
       animation: sto-8318 2s linear;
       animation-fill-mode: both;
     }
+
     &2 {
       animation: sto-0240 2s linear 1s;
       animation-fill-mode: both;
     }
+
     &3 {
       animation: sto-0420 2s linear 2s;
       animation-fill-mode: both;
     }
+
     &4 {
       animation: sto-0638 2s linear 2s;
       animation-fill-mode: both;
     }
+
     &5 {
       animation: sto-1 2s linear 2s;
       animation-fill-mode: both;
     }
   }
+
   &9- {
     &1 {
       animation: sto-1 2s linear;
       animation-fill-mode: both;
     }
   }
+
   &10- {
     &1 {
       animation: sto-2155 2s linear;
       animation-fill-mode: both;
     }
+
     &2 {
       animation: sto-0101 2s linear 1s;
       animation-fill-mode: both;
     }
+
     &3 {
       animation: sto-0188 2s linear 2s;
       animation-fill-mode: both;
     }
+
     &4 {
       animation: sto-0279 2s linear 2s;
       animation-fill-mode: both;
     }
+
     &5 {
       animation: sto-0377 2s linear 2s;
       animation-fill-mode: both;
     }
+
     &6 {
       animation: sto-0485 2s linear 2s;
       animation-fill-mode: both;
     }
+
     &7 {
       animation: sto-0607 2s linear 2s;
       animation-fill-mode: both;
     }
+
     &8 {
       animation: sto-0754 2s linear 2s;
       animation-fill-mode: both;
     }
+
     &9 {
       animation: sto-1 2s linear 2s;
       animation-fill-mode: both;
     }
   }
+
   &11- {
     &1 {
       animation: sto-1 2s linear;
       animation-fill-mode: both;
     }
+
     &2 {
       animation: sto-1 2s linear 1s;
       animation-fill-mode: both;
     }
+
     &3 {
       animation: sto-1 2s linear 2s;
       animation-fill-mode: both;
     }
   }
+
   &12- {
     &1 {
       animation: sto-7837 2s linear;
       animation-fill-mode: both;
     }
+
     &2 {
       animation: sto-0243 2s linear 1s;
       animation-fill-mode: both;
     }
+
     &3 {
       animation: sto-0429 2s linear 2s;
       animation-fill-mode: both;
     }
+
     &4 {
       animation: sto-0651 2s linear 2s;
       animation-fill-mode: both;
     }
+
     &5 {
       animation: sto-1 2s linear 2s;
       animation-fill-mode: both;
     }
   }
+
   &13- {
     &1 {
       animation: sto-0137 2s linear;
       animation-fill-mode: both;
     }
+
     &2 {
       animation: sto-1 2s linear 1s;
       animation-fill-mode: both;
     }
   }
+
   &14- {
     &1 {
       animation: sto-0137 2s linear;
       animation-fill-mode: both;
     }
+
     &2 {
       animation: sto-1 2s linear 1s;
       animation-fill-mode: both;
     }
   }
+
   &15- {
     &1 {
       animation: sto-0137 2s linear;
       animation-fill-mode: both;
     }
+
     &2 {
       animation: sto-1 2s linear 1s;
       animation-fill-mode: both;
     }
   }
+
   &16- {
     &1 {
       animation: sto-8318 2s linear;
       animation-fill-mode: both;
     }
+
     &2 {
       animation: sto-0240 2s linear 1s;
       animation-fill-mode: both;
     }
+
     &3 {
       animation: sto-0420 2s linear 2s;
       animation-fill-mode: both;
     }
+
     &4 {
       animation: sto-0638 2s linear 2s;
       animation-fill-mode: both;
     }
+
     &5 {
       animation: sto-1 2s linear 2s;
       animation-fill-mode: both;
@@ -438,271 +523,348 @@
   from {
     stop-opacity: 0;
   }
+
   to {
     stop-opacity: 1;
   }
 }
+
 @keyframes sto-99 {
   from {
     stop-opacity: 0;
   }
+
   to {
     stop-opacity: 0.99;
   }
 }
+
 @keyframes sto-9914 {
   from {
     stop-opacity: 0;
   }
+
   to {
     stop-opacity: 0.9914;
   }
 }
+
 @keyframes sto-8988 {
   from {
     stop-opacity: 0;
   }
+
   to {
     stop-opacity: 8.988416e-2;
   }
 }
+
 @keyframes sto-8318 {
   from {
     stop-opacity: 0;
   }
+
   to {
     stop-opacity: 8.3188e-2;
   }
 }
+
 @keyframes sto-7837 {
   from {
     stop-opacity: 0;
   }
+
   to {
     stop-opacity: 7.837558e-2;
   }
 }
+
 @keyframes sto-4802 {
   from {
     stop-opacity: 0;
   }
+
   to {
     stop-opacity: 4.802275e-2;
   }
 }
+
 @keyframes sto-2646 {
   from {
     stop-opacity: 0;
   }
+
   to {
     stop-opacity: 2.646519e-2;
   }
 }
+
 @keyframes sto-2125 {
   from {
     stop-opacity: 0;
   }
+
   to {
     stop-opacity: 2.155823e-2;
   }
 }
+
 @keyframes sto-0754 {
   from {
     stop-opacity: 0;
   }
+
   to {
     stop-opacity: 0.7548;
   }
 }
+
 @keyframes sto-0728 {
   from {
     stop-opacity: 0;
   }
+
   to {
     stop-opacity: 0.7287;
   }
 }
+
 @keyframes sto-0674 {
   from {
     stop-opacity: 0;
   }
+
   to {
     stop-opacity: 0.6742;
   }
 }
+
 @keyframes sto-0651 {
   from {
     stop-opacity: 0;
   }
+
   to {
     stop-opacity: 0.6514;
   }
 }
+
 @keyframes sto-0638 {
   from {
     stop-opacity: 0;
   }
+
   to {
     stop-opacity: 0.638;
   }
 }
+
 @keyframes sto-0607 {
   from {
     stop-opacity: 0;
   }
+
   to {
     stop-opacity: 0.6071;
   }
 }
+
 @keyframes sto-0485 {
   from {
     stop-opacity: 0;
   }
+
   to {
     stop-opacity: 0.4856;
   }
 }
+
 @keyframes sto-0478 {
   from {
     stop-opacity: 0;
   }
+
   to {
     stop-opacity: 0.4784;
   }
 }
+
 @keyframes sto-0477 {
   from {
     stop-opacity: 0;
   }
+
   to {
     stop-opacity: 0.4772;
   }
 }
+
 @keyframes sto-0429 {
   from {
     stop-opacity: 0;
   }
+
   to {
     stop-opacity: 0.4299;
   }
 }
+
 @keyframes sto-0420 {
   from {
     stop-opacity: 0;
   }
+
   to {
     stop-opacity: 0.4204;
   }
 }
+
 @keyframes sto-0398 {
   from {
     stop-opacity: 0;
   }
+
   to {
     stop-opacity: 0.398;
   }
 }
+
 @keyframes sto-0377 {
   from {
     stop-opacity: 0;
   }
+
   to {
     stop-opacity: 0.3779;
   }
 }
+
 @keyframes sto-0316 {
   from {
     stop-opacity: 0;
   }
+
   to {
     stop-opacity: 0.3169;
   }
 }
+
 @keyframes sto-0279 {
   from {
     stop-opacity: 0;
   }
+
   to {
     stop-opacity: 0.2796;
   }
 }
+
 @keyframes sto-0243 {
   from {
     stop-opacity: 0;
   }
+
   to {
     stop-opacity: 0.2439;
   }
 }
+
 @keyframes sto-0240 {
   from {
     stop-opacity: 0;
   }
+
   to {
     stop-opacity: 0.2409;
   }
 }
+
 @keyframes sto-0234 {
   from {
     stop-opacity: 0;
   }
+
   to {
     stop-opacity: 0.2343;
   }
 }
+
 @keyframes sto-0232 {
   from {
     stop-opacity: 0;
   }
+
   to {
     stop-opacity: 0.2321;
   }
 }
+
 @keyframes sto-0223 {
   from {
     stop-opacity: 0;
   }
+
   to {
     stop-opacity: 0.2238;
   }
 }
+
 @keyframes sto-0188 {
   from {
     stop-opacity: 0;
   }
+
   to {
     stop-opacity: 0.1881;
   }
 }
+
 @keyframes sto-0174 {
   from {
     stop-opacity: 0;
   }
+
   to {
     stop-opacity: 0.1749;
   }
 }
+
 @keyframes sto-0137 {
   from {
     stop-opacity: 0;
   }
+
   to {
     stop-opacity: 0.1375;
   }
 }
+
 @keyframes sto-0101 {
   from {
     stop-opacity: 0;
   }
+
   to {
     stop-opacity: 0.1017;
   }
 }
+
 @keyframes sto-01 {
   from {
     stop-opacity: 0;
   }
+
   to {
     stop-opacity: 0.1;
+  }
+}
+
+
+.bg-upload-img-people {
+  video {
+    width: 165%;
+    position: absolute;
+    left: -20%;
+    top: -39%;
   }
 }
