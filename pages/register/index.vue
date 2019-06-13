@@ -1,16 +1,16 @@
 <template>
-  <section class="container">
+  <section class="container x-ban">
     <VueMatrixRaindrop
       textContent="01"
       :fontSize="11"
       textColor="#FFFFFF"
       :speed="6"
-      :canvasWidth="windowWidth"
-      :canvasHeight="windowHeight"
+      :canvasWidth="1440"
+      :canvasHeight="canvasHeight"
     ></VueMatrixRaindrop>
     <Logo/>
     <!-- <img src="shortcut_left.png" alt="logoshortcut" class="logo-shortcut_left"> -->
-    <div class="row">
+    <div class="row">s
       <img src="logo+regis.png" alt="logoregister" class="logo-regis">
     </div>
     <img src="/png_error_line_right.png" alt="png_error_line_right" class="img-bg-font-right">
@@ -382,17 +382,16 @@ export default {
   z-index: 0;
   opacity: 0.2;
 }
-.container {
+.x-ban {
   width: 100%;
-  max-width: 100%;
   height: 100vh;
   margin: 0 auto;
   padding: 0;
   justify-content: center;
   background-color: #000;
   color: #fff;
-  // overflow: hidden;
-}
+  max-width: 100%;
+    overflow-x: hidden;}
 
 .title {
   font-family: "Quicksand", "Source Sans Pro", -apple-system, BlinkMacSystemFont,
