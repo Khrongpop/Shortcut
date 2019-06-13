@@ -17,6 +17,7 @@
     "express": "^4.16.4",
     "firebase": "^6.1.0",
     "nuxt": "^2.4.0",
+    "sweetalert2": "^8.12.1",
     "vue": "^2.6.10",
     "vue-carousel": "^0.18.0",
     "vue-matrix-digit-rain": "^1.0.1",

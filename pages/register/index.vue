@@ -125,6 +125,8 @@
 </template>
 
 <script>
+const Swal = require('sweetalert2')
+
 import { fireDb, realDb, storage, dbAuth } from "~/plugins/firebase.js";
 import fbLogin from "@/components/FacebookLogin";
 import VueMatrixRaindrop from "@/node_modules/vue-matrix-digit-rain";
@@ -166,6 +168,10 @@ export default {
       devices: [],
       img_file: null
     };
+  },
+  created(){
+
+
   },
   methods: {
     async writeToFirestore() {
@@ -231,9 +237,19 @@ export default {
                     ref.push(_this.form);
                     //  suscess
                     // TODO :   Alret upload suscess
+                      Swal.fire({
+                        type: 'succcess',
+                        title: 'ขอบคุณ',
+                        text: 'คุณได้ทำการลงเบียนงาน Shortcut 13.5 สำเร็จ',
+                      })
                     _this.clearData();
                   } catch (e) {
                     // error handling
+                      Swal.fire({
+                        type: 'error',
+                        title: 'ขออภัย',
+                        text: 'ไม่สามารถอัพโหลดรูปได้!',
+                      })
                     console.error(e);
                   }
                 });
@@ -243,6 +259,12 @@ export default {
         .catch(function(error) {
           // Handle Errors here.
           //  error
+
+            Swal.fire({
+              type: 'error',
+              title: 'แจ้งเตือน',
+              text: 'email ผู้ใข้งานนี้ได้ทำการลงทะเบียนเรียบร้อยแล้ว กรุณาใช้ email อื่นในการลงทะเบียน',
+    })
           var errorCode = error.code;
           var errorMessage = error.message;
           // status = false;
