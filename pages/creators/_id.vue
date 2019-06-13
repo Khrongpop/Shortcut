@@ -16,7 +16,7 @@
           </div>
           <div style="width:50%" class="float-left">
             <b-img
-              v-bind="profileProps"
+              class="profileProps"
               rounded
               alt="Rounded image"
               :src="`${baseURL}/creators/${creator(id).id}.jpg`"
@@ -50,8 +50,8 @@
                   <img src="/creators/detail/showreel.png" alt>
                   <br>
                   <iframe
-                    width="510"
-                    height="275"
+                    width="480"
+                    height="245"
                     src="https://www.youtube.com/embed/lELqMu5HCY0"
                     frameborder="0"
                     allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"

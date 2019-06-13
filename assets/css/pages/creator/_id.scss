@@ -3,6 +3,7 @@
 
   .avatar {
     position: absolute;
+    // bottom: 5%;
     bottom: 2.5%;
     left: 30%;
   }
@@ -74,7 +75,8 @@
   }
 
   .func-title {
-    margin-top: 25px;
+    // margin-top: 25px;
+    margin-top: 0;
   }
 
   .list-unstyled {
@@ -108,7 +110,7 @@
   }
 
   .screenshot-section {
-    margin-top: -10px;
+    margin-top: -30px;
   }
 
   .tech-section {
@@ -125,5 +127,10 @@
     .item-2 {
       margin-left: 0 !important;
     }
+  }
+
+  .profileProps {
+    width: 340px;
+    height: 570px;
   }
 }
