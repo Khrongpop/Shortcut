@@ -73,6 +73,7 @@
                     v-if="!img"
                   />
                   <img
+                    v-else
                     :src="img ? img:preview"
                     alt="profile_people"
                     @click="$refs.up.click()"
@@ -104,12 +105,9 @@
         <b-col col md="11" offset-md="1" class="text-center mt-60">
           <div class="w-25 btn-bg"></div>
           <b-button type="submit" variant="primary" class="w-25 btn-shortcut">GETSHORTCUT</b-button>
+          <b-button type="button" class="btn btn-success" @click="onReset">Reset</b-button>
+          <button type="button" class="btn btn-success" @click="onStart">Start Camera</button>
         </b-col>
-
-        <button type="button" class="btn btn-primary" @click="onCapture">Capture Photo</button>
-        <button type="button" class="btn btn-danger" @click="onStop">Stop Camera</button>
-        <button type="button" class="btn btn-success" @click="onStart">Start Camera</button>
-        <button type="button" class="btn btn-success" @click="onReset">Reset</button>
 
         <!-- <fb-login/> -->
 
@@ -278,9 +276,12 @@ export default {
           });
           _this.img_file = file;
         });
+      this.$refs.webcam.stop();
     },
     onReset() {
       this.img = null;
+      // this.$refs.webcam.stop();
+      // this.$refs.webcam.start();
     },
     onStarted(stream) {
       console.log("On Started Event", stream);
@@ -291,7 +292,9 @@ export default {
     onStop() {
       this.$refs.webcam.stop();
     },
-    onStart() {
+    async onStart() {
+      await this.onReset();
+      // this.img = null;
       this.$refs.webcam.start();
     },
 
@@ -319,8 +322,8 @@ export default {
       };
 
       this.img = null;
-
-      this.$router.go(0);
+      this.onStart();
+      // this.$router.go(0);
     }
   },
   computed: {
