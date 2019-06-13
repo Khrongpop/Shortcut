@@ -187,6 +187,7 @@ export default {
                   // const ref = _this.realDb.ref("users");
                   try {
                     ref.child(user.uid).set(_this.form);
+                    //  suscess
                   } catch (e) {
                     // TODO: error handling
                     console.error(e);
@@ -197,9 +198,10 @@ export default {
         })
         .catch(function(error) {
           // Handle Errors here.
+          //  error
           var errorCode = error.code;
           var errorMessage = error.message;
-          status = false;
+          // status = false;
           // ...
         });
 
