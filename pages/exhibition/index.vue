@@ -27,24 +27,25 @@
           </div>
         </slide>
         <slide class="exhibition-section-2">
-          <div class="slide">
+          <!-- <div class="slide">
             <b-row>
               <carousel :per-page="1" :paginationEnabled="false" :loop="true" :autoplay="false">
                 <slide v-for="(item,index) in 5" :key="index">
-                  <!-- <b-col> -->
-                  <!-- <img src="https://placehold.it/400x250"> -->
-                  <!-- </b-col> -->
+                  <b-col>
+                  <img src="https://placehold.it/400x250">
+                  </b-col>
                 </slide>
               </carousel>
             </b-row>
-          </div>
+          </div>-->
           <div class="bottom-content-1">
             <span class="clearfix"></span>
             <div class="bottom-left-content-2 mt-3">
-              <div class="img-title">
-                <img :src="`${baseURL}/creators/detail/bulet.png`" alt>
-                <div class="img"></div>
-              </div>
+              <img :src="`${baseURL}/exhibition/pick.png`" alt class="pick">
+              <img :src="`${baseURL}/exhibition/ex-title.png`" alt class="ex-title">
+              <!-- <div class="img-title"> -->
+              <!-- <div class="img"></div> -->
+              <!-- </div> -->
               <p>
                 ทางลัด คือตัวช่วย ทางออก วิธี ดีที่สุด ทางเลือก เปรียบเทียบกับวิธีอื่นที่ดีน้อยกว่า
                 อัจฉริยะ คือมีความรู้ แก้ไขปัญหา เป็นที่น่าแปลกใจ ไม่จำเป็นต้องซับซ้อน ไม่จำเป็นต้องยาก เป้าหมาย คือ

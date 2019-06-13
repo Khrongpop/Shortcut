@@ -53,7 +53,21 @@
 
     .bottom-left-content-2 {
       text-align: center;
+      position: relative;
+      padding-top: 200px;
+
       // float: left;
+      .pick {
+        position: absolute;
+        top: 0;
+        left: 200px;
+      }
+
+      .ex-title {
+        position: absolute;
+        top: 30px;
+        left: 200px;
+      }
 
       .img-title {
         width: 900px;
