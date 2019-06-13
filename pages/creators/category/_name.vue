@@ -1,7 +1,7 @@
 <template>
   <div class="creator" :style="bg_animate">
     <div v-if="lg">
-      <div style="width:5%;" class="float-left">อ่านทำไม</div>
+      <!-- <div style="width:5%;" class="float-left">อ่านทำไม</div> -->
       <div class="center-section">
         <Logo/>
 
@@ -239,10 +239,10 @@ import { mapGetters } from "vuex";
 import CreatorCard from "@/components/CreatorCard";
 import Logo from "~/components/Logo";
 export default {
-   head () {
+  head() {
     return {
       title: this.name
-    }
+    };
   },
   layout: "topMenu",
   data() {

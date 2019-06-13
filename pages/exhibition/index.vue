@@ -1,7 +1,7 @@
 <template>
   <div id="exhibition" :style="bg_animate">
     <div>
-      <div style="width:5%;" class="float-left">อ่านทำไม</div>
+      <!-- <div style="width:5%;" class="float-left">อ่านทำไม</div> -->
       <carousel :per-page="1" :paginationEnabled="false" :loop="true" :autoplay="false">
         <slide class="exhibition-section-1">
           <Logo/>
@@ -65,10 +65,10 @@
 <script>
 import Logo from "~/components/Logo";
 export default {
-   head () {
+  head() {
     return {
       title: `Exhibition`
-    }
+    };
   },
   layout: "topMenu",
   components: {

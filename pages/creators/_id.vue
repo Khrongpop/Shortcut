@@ -1,7 +1,13 @@
 <template>
   <div id="creator_detail" :style="bg_animate">
-    <div style="width:10%" class="float-left">อ่านทำไม</div>
-    <carousel :per-page="1" :paginationEnabled="false" :loop="true" :autoplay="false">
+    <!-- <div style="width:10%" class="float-left">อ่านทำไม</div> -->
+    <carousel
+      :per-page="1"
+      :paginationEnabled="false"
+      :loop="true"
+      :autoplay="false"
+      style="margin-left:10%"
+    >
       <slide>
         <div style="width:70%" class="float-left">
           <div style="width:100%" class="float-left">
@@ -62,7 +68,12 @@
                         <b-row class="mt-3">
                           <b-col v-for="(frontend, index) in creator(id).frontends" :key="index">
                             <!-- <b-img v-bind="toolProps" rounded alt="Rounded image"></b-img> -->
-                            <dev-icon :name="frontend.img" size="2" v-if="frontend.img" :svg="frontend.svg"/>
+                            <dev-icon
+                              :name="frontend.img"
+                              size="2"
+                              v-if="frontend.img"
+                              :svg="frontend.svg"
+                            />
                             <!-- {{frontend}} -->
                             <p>{{frontend.name}}</p>
                           </b-col>
@@ -76,7 +87,12 @@
                         <b-row class="mt-3">
                           <b-col v-for="(backend, index) in creator(id).backends" :key="index">
                             <!-- <b-img v-bind="toolProps" rounded alt="Rounded image"></b-img> -->
-                            <dev-icon :name="backend.img" size="2" v-if="backend.img" :svg="backend.svg"/>
+                            <dev-icon
+                              :name="backend.img"
+                              size="2"
+                              v-if="backend.img"
+                              :svg="backend.svg"
+                            />
 
                             <p>{{backend.name}}</p>
                           </b-col>
@@ -189,10 +205,12 @@
 import { mapGetters } from "vuex";
 import DevIcon from "~/components/DevIcon";
 export default {
-  head () {
+  head() {
     return {
-      title: `${this.creator(this.id).project_name} | ${this.creator(this.id).project_fullname_th} | ${this.creator(this.id).name}`
-    }
+      title: `${this.creator(this.id).project_name} | ${
+        this.creator(this.id).project_fullname_th
+      } | ${this.creator(this.id).name}`
+    };
   },
   layout: "noMenu",
   components: {
