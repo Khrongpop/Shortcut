@@ -199,8 +199,6 @@ export default {
           // ...
         });
 
-      console.log(newUser.uid);
-
       if (status) {
       } else {
         console.log("already have user");
