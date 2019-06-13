@@ -278,14 +278,13 @@ export default {
     },
     currentCreatorLG() {
       let category_id = this.creators(this.name)[0].category_id;
-      if (this.currentLG === 0) {
+      let size = this.creators(this.name).length;
+
+      if (this.currentLG === 0 && size > 8) {
         return 8;
-      } else if (this.currentLG === 1) {
-        return 17;
-      } else if (this.currentLG === 2) {
-        return 26;
       }
-      return this.creators.length;
+
+      return size;
     }
   },
   methods: {
