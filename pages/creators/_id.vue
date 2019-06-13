@@ -95,6 +95,7 @@
                               :name="creator(id).database.img"
                               size="2"
                               v-if="creator(id).database.img"
+                              :svg="creator(id).database.svg"
                             />
 
                             <!-- <b-img v-bind="toolProps" rounded alt="Rounded image"></b-img> -->
