@@ -1,6 +1,6 @@
 <template>
   <div id="menu-trigger" class="triggermb">
-    <div :class="triggerClass">
+    <div :class="triggerClass" :style="menu_mobile">
       <div class="row px-5">
         <div class="col-5">
           <div class="clearfix hfix">
@@ -57,7 +57,7 @@
           <img src="/menu/mfb.png">
         </a>
         <a href="https://www.instagram.com/funcslash/" target="_blank">
-                <img src="/menu/mig.png">
+          <img src="/menu/mig.png">
         </a>
       </div>
       <div class="text-center pb-4">
