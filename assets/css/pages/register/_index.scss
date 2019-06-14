@@ -922,6 +922,22 @@
 .preview {
   z-index: 99999;
 }
+@media screen and (min-width: 1440px) {
+  .img- {
+    &bg {
+      &-font- {
+        &left {
+          bottom: 25px;
+        }
+      }
+      &-line- {
+        &left {
+          transform: translateY(45px);
+        }
+      }
+    }
+  }
+}
 
 @media screen and (max-width: 1024px) {
   .wrapper {
