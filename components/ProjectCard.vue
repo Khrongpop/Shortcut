@@ -1,7 +1,7 @@
 <template>
   <div>
     <router-link :to="`/creators/${vdata.id}`" class="text-white" style="text-decoration:none;">
-      <b-img rounded alt="Rounded image" src="https://picsum.photos/205/120/?image=58"></b-img>
+      <b-img rounded alt="Rounded image" :src="`/creators/project/${vdata.id}_project.png`"></b-img>
       <h1>{{vdata.project_name}}</h1>
       <p>
         By
@@ -18,7 +18,7 @@ export default {
     return {
       mainProps: {
         blank: true,
-        blankColor: "#777",
+        // blankColor: "#777",
         width: 150,
         height: 200,
         class: "m1"

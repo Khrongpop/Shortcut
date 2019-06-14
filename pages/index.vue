@@ -18,7 +18,7 @@
       </div>
 
       <div class="project-card project-card-4">
-        <project-card :vdata="creator(13580220)"></project-card>
+        <project-card :vdata="creator(13580186)"></project-card>
       </div>
 
       <div class="project-card project-card-5">
