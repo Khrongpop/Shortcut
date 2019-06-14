@@ -14,7 +14,7 @@
       <img src="logo+regis.png" alt="logoregister" class="logo-regis">
     </div>
     <img src="/png_error_line_right.png" alt="png_error_line_right" class="img-bg-font-right">
-      <img src="/line_right.png" alt="line_right" class="img-bg-line-right">
+    <img src="/line_right.png" alt="line_right" class="img-bg-line-right">
 
     <div class="wrapper">
       <img src="/font_design_left_butt.png" alt="font_design_left_butt" class="img-bg-font-left">
@@ -57,63 +57,94 @@
 
           <b-col col sm="12" md="4" class="ml-md-5 p-0">
             <div class="bg-upload-img-outline">
-              <div class="bg-upload-img-inside">
+              <div
+                class="bg-upload-img-inside"
+                :style="windowWidth >= 768 ? {'overflow': 'hidden'} : {'overflow':'hidden'}"
+              >
                 <div class="bg-upload-img-people">
-                  <img :src="`${baseURL}/faceid2.png`" alt id="faceID">
-                  <!-- <img
-                    :src="form.image ? form.image:preview"
+                  <div v-if="windowWidth >= 768">
+                    <img :src="`${baseURL}/faceid2.png`" alt id="faceID">
+                    <!-- <img
+                    :src="form.image ? form.image:preview"x
                     alt="profile_people"
                     @click="$refs.up.click()"
                     class="img-profile"
                   >
-                  <img src="/profile_gradient.png" alt="profile_gradient" class="img-bg">-->
-                  <vue-web-cam
-                    ref="webcam"
-                    :device-id="deviceId"
-                    width="100%"
-                    @started="onStarted"
-                    @stopped="onStopped"
-                    @error="onError"
-                    @cameras="onCameras"
-                    @camera-change="onCameraChange"
-                    v-if="!img"
-                  />
-                  <img
-                    v-else
-                    :src="img ? img:preview"
-                    alt="profile_people"
-                    @click="$refs.up.click()"
-                    class="img-profile preview"
-                  >
+                    <img src="/profile_gradient.png" alt="profile_gradient" class="img-bg">-->
+
+                    <vue-web-cam
+                      ref="webcam"
+                      :device-id="deviceId"
+                      width="100%"
+                      @started="onStarted"
+                      @stopped="onStopped"
+                      @error="onError"
+                      @cameras="onCameras"
+                      @camera-change="onCameraChange"
+                      v-if="!img"
+                    />
+                    <img
+                      v-else
+                      :src="img ? img:preview"
+                      alt="profile_people"
+                      @click="$refs.up.click()"
+                      class="img-profile preview"
+                    >
+                  </div>
+                  <div v-else>
+                    <img
+                      :src="img ? img:preview"
+                      alt="profile_people"
+                      @click="$refs.up.click()"
+                      class="img-profile"
+                    >
+                  </div>
                 </div>
+
                 <!-- <input
-                  @change="setImg"
-                  ref="up"
-                  required
-                  style="display: none;"
-                  type="file"
-                  name="image"
-                >
-                <img
-                  src="/icon_camera.png"
-                  alt="icon_camera"
-                  class="icon-addimg"
-                  @click="$refs.up.click()"
+                    @change="setImg"
+                    ref="up"
+                    required
+                    style="display: none;"
+                    type="file"
+                    name="image"
+                  >
+                  <img
+                    src="/icon_camera.png"
+                    alt="icon_camera"
+                    class="icon-addimg"
+                    @click="$refs.up.click()"
                 >-->
               </div>
               <div ref="up" name="image" class="text-center">
-                <img
-                  src="/icon_camera.png"
-                  alt="icon_camera"
-                  class="icon-addimg"
-                  @click="onCapture"
-                  v-if="!img"
-                >
-                <b-button type="button" style="margin: 20px auto;" @click="onStart" v-else>Reset</b-button>
+                <div v-if="windowWidth >= 768">
+                  <img
+                    src="/icon_camera.png"
+                    alt="icon_camera"
+                    class="icon-addimg"
+                    @click="onCapture"
+                    v-if="!img"
+                  >
+                  <b-button type="button" style="margin: 20px auto;" @click="onStart" v-else>Reset</b-button>
+                </div>
+                <div v-else>
+                  <input
+                    @change="setImg"
+                    ref="up"
+                    required
+                    style="display: none;"
+                    type="file"
+                    name="image"
+                  >
+                  <img
+                    src="/icon_camera.png"
+                    alt="icon_camera"
+                    class="icon-addimg"
+                    @click="$refs.up.click()"
+                  >
+                </div>
               </div>
             </div>
-
-
           </b-col>
         </b-row>
         <b-col col md="11" offset-md="1" class="text-center mt-40">
