@@ -1,6 +1,6 @@
 <template>
   <div id="menu">
-    <div class="clearfix mn-50" :class="noMenuClass('position-absolute')">
+    <div class="clearfix mn-50" :class="noMenuClass('position-absolute')" >
       <div class="hamburger" :class="noMenuClass('z9999')">
         <img
           :src="`${baseURL}/menu_ham.png`"
@@ -74,6 +74,7 @@ export default {
     },
     noMenuClass(classs) {
       return !this.showmenu ? classs : "";
+
     },
     enableScrolling() {
       window.onscroll = function() {};

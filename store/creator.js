@@ -2,11 +2,14 @@ import creators from '../data/creators.json'
 import details from '../data/creator_details.json'
 import categories from '../data/categories.json'
 import creator_techs from '../data/creator_tech.json'
+import screenshots from '../data/screenshots.json'
+
 export const state = () => ({
   creators,
   details,
   categories,
-  creator_techs
+  creator_techs,
+  screenshots
 })
 export const getters = {
   creators: state => state.creators,
@@ -14,7 +17,8 @@ export const getters = {
      let creator = state.creators.find(creator => creator.id === id)
      let detail = state.details.find(detail => detail.id === id)
      let creator_tech = state.creator_techs.find(tech => tech.id === id)
-     let data = Object.assign(creator, detail,creator_tech)
+     let screenshots = state.screenshots.find(screenshot => screenshot.id === id)
+     let data = Object.assign(creator, detail,creator_tech,screenshots)
      return data
   },
   getCreatorByCat: (state) => (name) => {

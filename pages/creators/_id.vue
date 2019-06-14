@@ -1,6 +1,13 @@
 <template>
   <div id="creator_detail" :style="bg_animate">
     <div v-if="lg">
+
+
+      <div v-for="item in creator(id).screeshots" :key="item.id">
+        <pre class="text-white">
+        {{ item }}
+        </pre>
+      </div>
       <!-- <div style="width:10%" class="float-left">อ่านทำไม</div> -->
       <carousel
         :per-page="1"
