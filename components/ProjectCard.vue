@@ -1,23 +1,13 @@
 <template>
-  <div class="project-card">
-    <!-- <router-link :to="`/creators/${vdata.id}`" class="text-white" style="text-decoration:none;"> -->
-    <b-img v-bind="mainProps" rounded alt="Rounded image"></b-img>
-    <h1>Project Name</h1>
-    <p>By</p>
-
-    <!-- </router-link> -->
-
-    <!-- <router-link :to="`/creators/${vdata.id}`" class="text-white" style="text-decoration:none;">
-      <b-img
-        v-bind="mainProps"
-        rounded
-        alt="Rounded image"
-        :src="`${baseURL}/creators/${vdata.id}.jpg`"
-      ></b-img>
-      <h1>{{subName}}</h1>
-      <p>{{vdata.id}}</p>
-      <br v-if="!lg">
-    </router-link>-->
+  <div>
+    <router-link :to="`/creators/${vdata.id}`" class="text-white" style="text-decoration:none;">
+      <b-img rounded alt="Rounded image" src="https://picsum.photos/205/120/?image=58"></b-img>
+      <h1>{{vdata.project_name}}</h1>
+      <p>
+        By
+        <span>{{vdata.name}}</span>
+      </p>
+    </router-link>
   </div>
 </template>
 
