@@ -25,17 +25,33 @@
     position: absolute;
     width: 15%;
 
+
     img {
       width: 100%;
       height: 100%;
       ;
     }
 
+    &:hover {
+
+      h1 {
+        opacity: 1;
+      }
+
+      p {
+        opacity: 1;
+      }
+    }
+
     h1 {
+      transition: .5s ease-in-out;
+      opacity: 0;
       font-size: 1.2em;
     }
 
     p {
+      transition: .5s ease-in-out;
+      opacity: 0;
       font-size: 1em;
       line-height: 0;
     }
