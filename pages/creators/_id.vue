@@ -53,7 +53,7 @@
                     <iframe
                       width="480"
                       height="245"
-                      src="https://www.youtube.com/embed/lELqMu5HCY0"
+                      :src="creator(id).showreel"
                       frameborder="0"
                       allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                       allowfullscreen
@@ -262,7 +262,7 @@
             <iframe
               :width="windowWidth > 555 ? `480` : `100%`"
               height="245"
-              src="https://www.youtube.com/embed/lELqMu5HCY0"
+              :src="creator(id).showreel"
               frameborder="0"
               allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
               allowfullscreen
