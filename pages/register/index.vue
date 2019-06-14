@@ -19,8 +19,8 @@
       <img src="/font_design_left_butt.png" alt="font_design_left_butt" class="img-bg-font-left">
 
       <b-form @submit="onSubmit" v-if="show">
-        <b-row>
-          <b-col col md="6" offset-md="1" class="p-0">
+        <b-row class="w-100">
+          <b-col col md="6" offset-md="1" offset-lg="0" class="p-0 ml-lg-5">
             <b-form-group label="ชื่อ-สกุล" label-for="input-fullname">
               <b-form-input id="input-fullname" v-model="form.fullname" required class="bg-input"></b-form-input>
             </b-form-group>

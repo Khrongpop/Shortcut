@@ -80,12 +80,14 @@
 
 .logo {
   &-shortcut_left {
-    width: 23%;
+    max-width: 220px;
+    width: 22%;
     position: absolute;
     z-index: 1;
   }
 
   &-regis {
+    max-width: 280px;
     width: 25%;
     height: 100%;
     margin: 60px auto;
@@ -100,9 +102,9 @@
   }
 
   &shortcut {
-    border: 4px solid #50B1C0;
+    border: 4px solid #50b1c0;
     border-radius: 30px;
-    background-color: rgba(106, 235, 255, 0.52)
+    background-color: rgba(106, 235, 255, 0.52);
   }
 }
 
@@ -111,6 +113,7 @@
 }
 
 .wrapper {
+  max-width: 972px;
   width: 75%;
   margin: auto;
 }
