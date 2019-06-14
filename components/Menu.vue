@@ -1,6 +1,6 @@
 <template>
   <div id="menu">
-    <div class="clearfix mn-50" :class="noMenuClass('position-absolute')" >
+    <div class="clearfix mn-50" :class="noMenuClass('position-absolute')" style="z-index:9999999; position:relative;">
       <div class="hamburger" :class="noMenuClass('z9999')">
         <img
           :src="`${baseURL}/menu_ham.png`"
@@ -28,6 +28,10 @@
             </li>
           </ul>
         </transition>
+      </div>
+
+      <div v-if="!lg&&click" class="float-right">
+        <img src="/menu/major.png" class="mt-5 img-fluid">
       </div>
 
       <!-- <aside class="loading">

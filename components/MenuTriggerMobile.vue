@@ -27,8 +27,7 @@
 
         <div class="col-6">
           <div class="text-right hfix">
-                  <img src="/menu/major.png" class="mt-5">
-
+            <img src="/menu/imsu.png" class="mt-5 img-fluid">
           </div>
 
             <ul class="menu-list2 list2-r">
@@ -95,9 +94,12 @@ export default {
 .triggermb{
   font-size: 0.8em;
 }
+.triggermb{
 .logo-shortcut_left{
   position: relative !important;
 }
+}
+
 .frr {
   position: relative;
   bottom: 0;
