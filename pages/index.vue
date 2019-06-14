@@ -4,16 +4,35 @@
       <img src="/home_bg.gif" class="img-bg-home">
 
       <div class="project-card project-card-1">
-        <b-img
-          v-bind="mainProps"
-          rounded
-          alt="Rounded image"
-          src="https://picsum.photos/205/120/?image=58"
-        ></b-img>
+        <b-img rounded alt="Rounded image" src="https://picsum.photos/205/120/?image=58"></b-img>
         <h1>Project Name</h1>
         <p>By</p>
       </div>
-      <!-- <projectC-card></projectC-card> -->
+
+      <div class="project-card project-card-2">
+        <b-img rounded alt="Rounded image" src="https://picsum.photos/205/120/?image=58"></b-img>
+        <h1>Project Name</h1>
+        <p>By</p>
+      </div>
+
+      <div class="project-card project-card-3">
+        <b-img rounded alt="Rounded image" src="https://picsum.photos/205/120/?image=58"></b-img>
+        <h1>Project Name</h1>
+        <p>By</p>
+      </div>
+
+      <div class="project-card project-card-4">
+        <b-img rounded alt="Rounded image" src="https://picsum.photos/205/120/?image=58"></b-img>
+        <h1>Project Name</h1>
+        <p>By</p>
+      </div>
+
+      <div class="project-card project-card-5">
+        <b-img rounded alt="Rounded image" src="https://picsum.photos/205/120/?image=58"></b-img>
+        <h1>Project Name</h1>
+        <p>By</p>
+      </div>
+
       <Logo class="logo"/>
     </div>
   </div>
