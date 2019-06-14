@@ -3,11 +3,7 @@
     <div v-if="lg">
 
 
-      <div v-for="item in creator(id).screeshots" :key="item.id">
-        <pre class="text-white">
-        {{ item }}
-        </pre>
-      </div>
+
       <!-- <div style="width:10%" class="float-left">อ่านทำไม</div> -->
       <carousel
         :per-page="1"
@@ -177,6 +173,8 @@
                     >
                       <slide v-for="item in 10" :key="item.id">
                         <b-col>
+                            <!-- <v-lazy-image src="http://lorempixel.com/400/200/" /> -->
+                          <!-- {{item}} -->
                           <b-img v-bind="mainProps" rounded alt="Rounded image"></b-img>
                         </b-col>
                       </slide>

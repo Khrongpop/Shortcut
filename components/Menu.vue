@@ -38,7 +38,13 @@
 
     <menu-trigger
       :status="showHamburger"
-      v-if="click"
+      v-if="click&&lg"
+      :menus="links"
+      @routeChange="triggerFalse()"
+    />
+    <menu-trigger-mobile
+      :status="showHamburger"
+      v-if="click&&!lg"
       :menus="links"
       @routeChange="triggerFalse()"
     />
@@ -48,6 +54,8 @@
 
 <script>
 import MenuTrigger from "~/components/MenuTrigger";
+import MenuTriggerMobile from "~/components/MenuTriggerMobile";
+
 export default {
   props: ["showmenu"],
   data() {
@@ -89,7 +97,8 @@ export default {
     }
   },
   components: {
-    MenuTrigger
+    MenuTrigger,
+    MenuTriggerMobile
   }
 };
 </script>

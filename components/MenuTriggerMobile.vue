@@ -1,13 +1,13 @@
 <template>
-  <div id="menu-trigger">
+  <div id="menu-trigger" class="triggermb">
     <div :class="triggerClass">
-      <div class="row px-5">
-        <div class="col-md-4">
-          <logo/>
-          <left-item style="position:absolute; bottom:0; width:90%;"/>
-        </div>
 
-        <div class="col-md-4">
+      <div class="row px-5">
+        <div class="col-6">
+          <div class="clearfix hfix">
+            <logo/>
+          </div>
+          <div>
           <ul class="menu-list2 list2-l">
             <li
               v-for="link in menus"
@@ -21,10 +21,17 @@
               </nuxt-link>
             </li>
           </ul>
+          </div>
+
         </div>
 
-        <div class="col-md-4">
-          <ul class="menu-list2 list2-r">
+        <div class="col-6">
+          <div class="text-right hfix">
+                  <img src="/menu/major.png" class="mt-5">
+
+          </div>
+
+            <ul class="menu-list2 list2-r">
             <li
               v-for="(link,index) in categories"
               :key="link.name"
@@ -37,8 +44,16 @@
               </nuxt-link>
             </li>
           </ul>
-          <sponsor-small class="frr"/>
         </div>
+
+        <!-- <div class="col-md-4">
+
+        </div>
+
+        <div class="col-md-4">
+
+          <sponsor-small class="frr"/>
+        </div> -->
       </div>
 
     </div>
@@ -73,7 +88,16 @@ export default {
 };
 </script>
 
-<style scoped lang='scss'>
+<style lang='scss'>
+.hfix {
+  height: 200px;
+}
+.triggermb{
+  font-size: 0.8em;
+}
+.logo-shortcut_left{
+  position: relative !important;
+}
 .frr {
   position: relative;
   bottom: 0;
