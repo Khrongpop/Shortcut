@@ -20,6 +20,14 @@ Vue.mixin({
         'widht':'100%',
 
       },
+      home_mobile : {
+        'background-image':`url(/home-mobile.gif)`,
+        'background-repeat':`no-repeat`,
+        'background-size' : `contain`,
+        'height':'100%',
+        'width':'100%',
+
+      },
       menu_desktop : {
         'background-image':`url(/menu_desktop.gif)`,
         'background-repeat':`no-repeat`,
