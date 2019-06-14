@@ -33,6 +33,12 @@
         <p>By</p>
       </div>
 
+      <div class="project-card project-card-6">
+        <b-img rounded alt="Rounded image" src="https://picsum.photos/205/120/?image=58"></b-img>
+        <h1>Project Name</h1>
+        <p>By</p>
+      </div>
+
       <Logo class="logo"/>
     </div>
   </div>

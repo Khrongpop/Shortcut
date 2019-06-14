@@ -24,6 +24,15 @@
   .project-card {
     position: absolute;
 
+    h1 {
+      font-size: 1.2em;
+    }
+
+    p {
+      font-size: 1em;
+      line-height: 0;
+    }
+
     &-1 {
       top: 0;
       left: 20%;
@@ -40,13 +49,18 @@
     }
 
     &-4 {
-      top: 40%;
+      top: 45%;
       left: 63%;
     }
 
     &-5 {
       top: 55%;
       left: 83%;
+    }
+
+    &-6 {
+      top: 40%;
+      left: 22%;
     }
   }
 }
