@@ -1,0 +1,12 @@
+#home {
+  .home-content {
+    position: relative;
+
+    .logo-shortcut_left {
+      position: absolute;
+      // width: 50%;
+      left: 25%;
+      max-width: 25%;
+    }
+  }
+}

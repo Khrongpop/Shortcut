@@ -6,7 +6,11 @@ Vue.mixin({
       scrolled: false,
       windowWidth: 0,
       windowHeight: 0,
-      bg_animate: {'background-image':`url(/bg_animate.gif)`,'height':'100%'}
+      bg_animate: {'background-image':`url(/bg_animate.gif)`,'height':'100%'},
+      bg_home: {
+        'background-image':`url(/home_bg.gif)`,
+        'height':'100%'
+      }
     }
   },
   computed: {

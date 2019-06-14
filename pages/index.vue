@@ -1,19 +1,27 @@
 <template>
-  <div :style="bg_animate">this is home</div>
+  <div :style="bg_home" id="home">
+    <div class="home-content">
+      <Logo class="logo"/>
+    </div>
+  </div>
 </template>
 
 <script>
+import Logo from "~/components/Logo";
 export default {
-  head () {
+  head() {
     return {
-      title: 'Home'
-    }
+      title: "Home"
+    };
   },
   layout: "topMenu",
   computed: {
     id() {
       return parseInt(this.$route.query.id);
     }
+  },
+  components: {
+    Logo
   },
   mounted() {
     if (process.client) {
