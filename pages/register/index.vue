@@ -2,15 +2,15 @@
   <section class="container x-ban">
     <VueMatrixRaindrop
       textContent="01"
-      :fontSize="11"
+      :fontSize="15"
       textColor="#FFFFFF"
       :speed="6"
-      :canvasWidth="1440"
-      :canvasHeight="canvasHeight"
+      :canvasWidth="canvasWidth"
+      :canvasHeight="canvasWidth*0.8"
     ></VueMatrixRaindrop>
     <Logo/>
     <!-- <img src="shortcut_left.png" alt="logoshortcut" class="logo-shortcut_left"> -->
-    <div class="row">s
+    <div class="row w-100">
       <img src="logo+regis.png" alt="logoregister" class="logo-regis">
     </div>
     <img src="/png_error_line_right.png" alt="png_error_line_right" class="img-bg-font-right">
@@ -19,8 +19,8 @@
       <img src="/font_design_left_butt.png" alt="font_design_left_butt" class="img-bg-font-left">
 
       <b-form @submit="onSubmit" v-if="show">
-        <b-row class="w-100">
-          <b-col col md="6" offset-md="1" offset-lg="0" class="p-0 ml-lg-5">
+        <b-row class="w-100 d-content">
+          <b-col col sm="12" md="6" offset-md="1" offset-lg="0" class="p-0 ml-lg-5">
             <b-form-group label="ชื่อ-สกุล" label-for="input-fullname">
               <b-form-input id="input-fullname" v-model="form.fullname" required class="bg-input"></b-form-input>
             </b-form-group>
@@ -53,7 +53,7 @@
             </b-form-group>
           </b-col>
 
-          <b-col col md="4" class="ml-5 p-0">
+          <b-col col sm="12" md="4" class="ml-md-5 p-0">
             <div class="bg-upload-img-outline">
               <div class="bg-upload-img-inside">
                 <div class="bg-upload-img-people">
@@ -99,23 +99,26 @@
                   @click="$refs.up.click()"
                 >-->
               </div>
+              <div ref="up" name="image" class="text-center">
+                <img
+                  src="/icon_camera.png"
+                  alt="icon_camera"
+                  class="icon-addimg"
+                  @click="onCapture"
+                  v-if="!img"
+                >
+                <b-button type="button" variant="success" @click="onStart" v-else>Reset</b-button>
+              </div>
             </div>
 
-            <div ref="up" name="image">
-              <img
-                src="/icon_camera.png"
-                alt="icon_camera"
-                class="icon-addimg"
-                @click="onCapture"
-                v-if="!img"
-              >
-              <b-button type="button" variant="success" @click="onStart" v-else>Reset</b-button>
-            </div>
+
           </b-col>
         </b-row>
-        <b-col col md="11" offset-md="1" class="text-center mt-60">
+        <b-col col md="11" offset-md="1" class="text-center mt-40">
           <div class="w-25 btn-bg"></div>
-          <b-button type="submit" variant="primary" class="w-25 btn-shortcut">GETSHORTCUT</b-button>
+          <b-button type="submit" class="btn-shortcut">
+            <img src="/get_shortcut.png" alt="btn">
+          </b-button>
         </b-col>
 
         <!-- <fb-login/> -->
@@ -165,8 +168,8 @@ export default {
       show: true,
       file: {},
       writeSuccessful: false,
-      canvasWidth: 3000,
-      canvasHeight: 1000,
+      canvasWidth: 1440,
+      canvasHeight: 1100,
       img: null,
       camera: null,
       deviceId: null,
@@ -381,17 +384,18 @@ export default {
   position: absolute;
   z-index: 0;
   opacity: 0.2;
+  max-width: 100%;
+  max-height: 750px;
 }
 .x-ban {
+  max-width: 100%;
   width: 100%;
-  height: 100vh;
   margin: 0 auto;
   padding: 0;
   justify-content: center;
   background-color: #000;
   color: #fff;
-  max-width: 100%;
-    overflow-x: hidden;}
+}
 
 .title {
   font-family: "Quicksand", "Source Sans Pro", -apple-system, BlinkMacSystemFont,
@@ -413,5 +417,11 @@ export default {
 
 .links {
   padding-top: 15px;
+}
+
+@media screen and (min-width: 1140px) {
+  #vue-matrix-raindrop {
+    left: 18%;
+  }
 }
 </style>
