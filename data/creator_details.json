@@ -3,16 +3,16 @@
     "project_name": "VRUNNER",
     "project_fullname_th": "การออกแบบและพัฒนาเว็บแอปพลิเคชันสำหรับการจัดการงานวิ่งแบบเวอร์ชวลรัน",
     "functions": [{
-      "name": "",
-      "des": "1"
+      "name": "สร้างกิจกรรม",
+      "des": "สร้างกิจกรรม"
     }, {
-      "name": "",
-      "des": "2"
+      "name": "สมัครเข้าร่วมกิจกรรม",
+      "des": "สมัครเข้าร่วมกิจกรรม"
     }, {
-      "name": "",
-      "des": "3"
+      "name": "ส่งผลการวิ่ง",
+      "des": "ส่งผลการวิ่ง"
     }],
-    "showreel": "xxx",
+    "showreel": "https://drive.google.com/file/d/1khvau7SMIosuxsN0G-CPu6geCm-5y_-S/preview",
     "facebook": "Ketsuda Sataralai",
     "facebook_link": "https://www.facebook.com/maratee118"
   },
@@ -30,7 +30,7 @@
       "name": "Training",
       "des": "ฝึกทักษะการฟัง การอ่าน และพูด โดยฟังและจดจําการอ่านออกเสียง และอ่านให้ครูฝึกสุนัขฟัง"
     }],
-    "showreel": "xxx",
+    "showreel": "https://drive.google.com/file/d/1z5kiiRVrmT45qVCNk88Zj-Fp429EWNrI/preview",
     "facebook": "Winter Nmw",
     "facebook_link": "https://www.facebook.com/winternoww"
 
@@ -49,7 +49,7 @@
       "name": "สร้างทีม",
       "des": "สร้างทีมเพื่อจัดตั้งสมาคมพร้อมทั้งจัดตำแหน่งทีม"
     }],
-    "showreel": "xxx",
+    "showreel": "https://drive.google.com/file/d/15N3NWLMkvnSOeZ2smipaMYTYgIwVEVwB/preview",
     "facebook": "Chalermwut Akanitsupron",
     "facebook_link": "https://www.facebook.com/chalermwut.akanitsupon"
   }, {
@@ -66,7 +66,7 @@
       "name": "ผลิตนมวัว",
       "des": "จำลองการผลิตนนวัวในโครงการหลวง"
     }],
-    "showreel": "xxx",
+    "showreel": "https://drive.google.com/file/d/1AqM0JGeHW3Q3ZGZjTiLem8ZPOtK8gy9f/previews",
     "facebook": "Jack Tris ",
     "facebook_link": "https://www.facebook.com/mutd.jack"
   },
@@ -84,7 +84,7 @@
       "name": "หน้าหัวใจ",
       "des": "หน้าหัวใจ จะเป็นการทำงานของ ระบบการหายใจ จะมีปุ่มกดให้วิ่ง เเละ นอนหลับ ถ้ากดปุ่มไหน จะมีการเเสดงอนิเมท ให้เห็นว่า การทำงานของหัวใจ ทำเเบบไหน"
     }],
-    "showreel": "xxx",
+    "showreel": "https://drive.google.com/file/d/1kukIB1Q138Kg7Wp5-wiktNmqvg_oGwbs/preview",
     "facebook": "พัลย์ศุภา เผื่อนผุด",
     "facebook_link": "https://www.facebook.com/pe.pare.9"
   }, {
@@ -101,7 +101,7 @@
       "name": "จัดอันดับผู้เล่น ",
       "des": "เก็บคะแนนการเล่นของผู้เล่นกับคนอื่น"
     }],
-    "showreel": "xxx",
+    "showreel": "https://drive.google.com/file/d/1nmzo3NwvYHqaxT9W0RIhHJvwEzX5LdqR/preview",
     "facebook": "Montha Chiangkhong",
     "facebook_link": "https://www.facebook.com/montha.chiangkhong"
   }, {
@@ -118,7 +118,7 @@
       "name": "แมพ",
       "des": "แผนที่แสดงทางเลือกของผู้เล่นแต่ละรอบ และสามารถดูวิดีโอย่อยของแต่ละรอบ"
     }],
-    "showreel": "xxx",
+    "showreel": "https://drive.google.com/file/d/1En5flXQ18ydiB_KeMvM1LYaq_nz2ETY9/preview",
     "facebook": "Chom whishaw",
     "facebook_link": "https://www.facebook.com/wiwishaw"
   }, {
@@ -135,7 +135,7 @@
       "name": "ลงประกาศห้องว่าง",
       "des": "ลงประกาศห้องและเลือกสิ่งอำนวยความสะดวกของห้องตัวเองและปักพินคอนโดหรืออพาร์ตเมนต์"
     }],
-    "showreel": "xxx",
+    "showreel": "https://drive.google.com/file/d/1itfHRcNpaIheFpl6iCrMpXU5Ang3QUDW/preview",
     "facebook": "Pond Meebriboon",
     "facebook_link": "https://www.facebook.com/pond.sophon.5"
   }, {
@@ -152,7 +152,7 @@
       "name": "",
       "des": "3"
     }],
-    "showreel": "xxx",
+    "showreel": "https://drive.google.com/file/d/1e8nGNdURsUIjeHkiUN6kO0WjreMQN9DX/preview",
     "facebook": "Toey TP",
     "facebook_link": "https://www.facebook.com/toey.ramintrah"
   }, {
@@ -169,7 +169,7 @@
       "name": "สแกนตัวละครพับกระดาษ",
       "des": "แสดงภาพตัวละครด้วยเทคนิคเออาร์เพื่อเตรียมพร้อมสำหรับการอ่านนิทาน"
     }],
-    "showreel": "xxx",
+    "showreel": "https://drive.google.com/file/d/1cO2GI6dyutpLldOmXvzRA1RbERE81Ahv/preview",
     "facebook": "Creamm Masawat",
     "facebook_link": "https://www.facebook.com/kanokporn.masawat.1"
   }, {
@@ -177,16 +177,16 @@
     "project_name": "Showreal",
     "project_fullname_th": "การออกแบบและพัฒนาเว็บแอปพลิเคชัน เพื่อจัดรายการแข่งขันร้องเพลงแร็พ และฮิปฮอป กรณีศึกษารายการไทยแร็พทีวี",
     "functions": [{
-      "name": "",
-      "des": "1"
+      "name": "ตัดต่อวีดีโอการแข่งขัน",
+      "des": "ตัดต่อวีดีโอการแข่งขันของแร็พเปอร์มารวมกับรายการด้วย FFMPEG"
     }, {
-      "name": "",
-      "des": "2"
+      "name": "อัพโหลดวีดีโอขึ้น Youtube",
+      "des": "อัพโหลดวีดีโอการแข่งขัน ด้วย Google Cloud API"
     }, {
-      "name": "",
-      "des": "3"
+      "name": "ระบบโหวตให้คะแนน",
+      "des": "ระบบโหวตให้คะแนน เพื่อตัดสินผู้ชนะ"
     }],
-    "showreel": "xxx",
+    "showreel": "https://drive.google.com/file/d/1hIhXpzl_gh-rPXhGkxOctDLQfKoCizfs/preview",
     "facebook": "Arm Krittanai",
     "facebook_link": "https://www.facebook.com/kr1tm"
   }, {
@@ -203,7 +203,7 @@
       "name": "รีวิว",
       "des": "รีวิววงดนตรีหลังจ้างงาน เพื่อช่วยเพิ่มโอกาสในการตัดสินใจจ้างงานของผู้ว่าจ้างท่านอื่น"
     }],
-    "showreel": "xxx",
+    "showreel": "https://drive.google.com/file/d/1XAR_byp8-zrMTVzRaAUycRw63knWiFnJ/preview",
     "facebook": "Khrongpop Phonngam",
     "facebook_link": "https://www.facebook.com/khrongpop"
   }, {
@@ -220,7 +220,7 @@
       "name": "เล่นเพลงพื้นฐาน",
       "des": "สามารถเลือกเล่นเพลงได้ อัตโนมัติ หรือ เลือกเล่นเพลงได้ด้วยตัวเอง"
     }],
-    "showreel": "xxx",
+    "showreel": "https://drive.google.com/file/d/1WTs_LgKJ9R2uta-_wG0t1o183efp0y1r/preview",
     "facebook": "Pakbung Pengpan",
     "facebook_link": "https://www.facebook.com/pakbung.pengpan"
   }, {
@@ -237,7 +237,7 @@
       "name": "ใบแจ้งหนี้",
       "des": "เพื่อให้ทราบถึงค่าใช้จ่ายเบื้องต้นที่มาจากการออกแบบ จัดพิมพ์ และค่าใช้จ่ายขั้นตอนอื่นๆ ไปจนถึงราคาค่าจัดส่งสินค้า"
     }],
-    "showreel": "xxx",
+    "showreel": "https://drive.google.com/file/d/1wWsAT94fAaChhnnJkwifU2Jaf3-276O4/preview",
     "facebook": "Keromo LeChiens Artmono",
     "facebook_link": "https://www.facebook.com/Artmono1"
   }, {
@@ -254,7 +254,7 @@
       "name": "สร้างทริปท่องเที่ยวสำหรับไกด์",
       "des": "เพื่อให้ไกด์สร้างทริปท่องเที่ยวในรูปแบบของตนเองมีรายละเอียดสถานที่ รูปแบบที่พัก การเดินทาง ค่าใช้จ่าย เป็นต้น"
     }],
-    "showreel": "xxx",
+    "showreel": "https://drive.google.com/file/d/1MR3NrLkqSq-rx3D1OWu-ChtFbQUMPy0x/preview",
     "facebook": "Boy Chaiwat Trithipsakul",
     "facebook_link": "https://www.facebook.com/BoyChakuza"
   }, {
@@ -271,7 +271,7 @@
       "name": "ประวัติการเล่น ",
       "des": "เพื่อให้ผู้เล่นได้ดูสรุปผลในแต่ละวิชาว่าได้คะแนนเท่าไร และประเมินผลว่าเด็กอยู่ในระดับใด "
     }],
-    "showreel": "xxx",
+    "showreel": "https://drive.google.com/file/d/1NgsY4n83Eg3eYpz_LLuQ1Xsjz1mPpkil/preview",
     "facebook": "Thitibhorn Roongwarin",
     "facebook_link": "https://www.facebook.com/jane.glassescap"
   }, {
@@ -288,7 +288,7 @@
       "name": "เพิ่มความคืบหน้าของแคมเปญ",
       "des": "อัพเดตความคืบหน้าของงานหรือผลจากงานที่ได้จัดขึ้นจากการขอเงินสนับสนุนไป เพื่อแสดงวัตถุประสงค์และความน่าเชื่อถือให้กับแคมเปญ"
     }],
-    "showreel": "xxx",
+    "showreel": "https://drive.google.com/file/d/1AOfPcezxYHT6a6CEk0HZgRHSuEpcUmc-/preview",
     "facebook": "Natcha Mungmee",
     "facebook_link": "https://www.facebook.com/Do.Dodidonut"
   }, {
@@ -305,7 +305,7 @@
       "name": "เรียนรู้ศัพท์ในชีวิตประจําวัน",
       "des": "เรียนรู้คำศัพท์โดยแบ่งหมวดหมู่เพื่อจะสามารถเรียนรู้คำได้มากขึ้น และสามารถใช้ฟังก์ชันให้คะแนนร่วมผู้ปกครอง "
     }],
-    "showreel": "xxx",
+    "showreel": "https://drive.google.com/file/d/1BOLRjKqELkkEddQHduLyttg3LcD4HB83/preview",
     "facebook": "Lin Por",
     "facebook_link": "https://www.facebook.com/blinpor"
   }, {
@@ -322,7 +322,7 @@
       "name": "กราฟน้ำหนักประจำสัปดาห์",
       "des": "เพื่อให้คุณแม่ทราบน้ำหนักมาตรฐานของตนเอง และทารกในครรภ์ในแต่ละสัปดาห์"
     }],
-    "showreel": "xxx",
+    "showreel": "https://drive.google.com/file/d/19JCMQiWUAmTiH8vLAGU2xzKUcrILXzA2/preview",
     "facebook": "Thana Thanaphon",
     "facebook_link": "https://www.facebook.com/profile.php?id=100017132166856"
   }, {
@@ -339,24 +339,24 @@
       "name": "ค้นหางานอีเวนท์และค้นหาคนที่ต้องการจ้างงาน",
       "des": "ผู้ใช้ทั้งสองฝั่งสามารถค้นหาได้ โดยฝั่งสตาฟสามารถค้นหางานอีเวนท์ที่สนใจจะทำงาน ด้านออแกไนซ์เซอร์สามารถค้นหาคนที่ต้องการจ้างงานได้"
     }],
-    "showreel": "xxx",
+    "showreel": "https://drive.google.com/file/d/1465tld1kguhMsxwHF7UKVAk77mWIlGSq/preview",
     "facebook": "Tangmay' Aiaiz ",
     "facebook_link": "https://www.facebook.com/tangmay.aiai"
   }, {
     "id": 13580211,
-    "project_name": "Sairung",
-    "project_fullname_th": "การออกแบบและพัฒนาแอปพลิเคชันเสริมสร้างทักษะ ชีวิตด้านความปลอดภัย รูปแบบหนังสือ สำหรับ เด็กวัยประถมต้น ด้วยเทคโนโลยีเออาร์ บนระบบปฏิบัติการไอโอเอส",
+    "project_name": "Safe in School",
+    "project_fullname_th": "",
     "functions": [{
       "name": "",
-      "des": "1"
+      "des": ""
     }, {
       "name": "",
-      "des": "2"
+      "des": ""
     }, {
       "name": "",
-      "des": "3"
+      "des": ""
     }],
-    "showreel": "xxx",
+    "showreel": "https://drive.google.com/file/d/1465tld1kguhMsxwHF7UKVAk77mWIlGSq/preview",
     "facebook": "Tharinee Porsche",
     "facebook_link": "https://www.facebook.com/12juneth"
   }, {
@@ -373,7 +373,7 @@
       "name": "แชร์",
       "des": "แชร์รูปภาพกิจกรรมระบายสี"
     }],
-    "showreel": "xxx",
+    "showreel": "https://drive.google.com/file/d/1GwsOg_PGmeIYdRJtpOE42z2ORPl2C02Z/previews",
     "facebook": "E'Earth Jocular",
     "facebook_link": "https://www.facebook.com/eearth.jocular"
   }, {
@@ -390,7 +390,7 @@
       "name": "ซื้อบทเรียน",
       "des": "ในด่านที่ 4 ที่มีการล็อคไว้ คือ 4.1 - 4.5 ในราคา 9 บาท"
     }],
-    "showreel": "xxx",
+    "showreel": "https://drive.google.com/file/d/1_yudgHE-fCpbQJEuN79wosu0Zaj_F2M8/preview",
     "facebook": "Noppakorn Poolcharoen",
     "facebook_link": "https://www.facebook.com/noppakorn.poolcharoen"
   }, {
@@ -404,7 +404,7 @@
       "name": "เล่นเงามือ",
       "des": "ทำมือให้เกิดเงาตามตัวอย่างเพื่อดำเนินเนื้อเรื่องนิทานต่อ"
     }],
-    "showreel": "xxx",
+    "showreel": "https://drive.google.com/file/d/1puwK2ECm0LegD_MWVJAEmzWN8MMKTEj7/preview",
     "facebook": "Namtan Chantasorn",
     "facebook_link": "https://web.facebook.com/nedschweetz"
   }, {
@@ -421,7 +421,7 @@
       "name": "คูปอง",
       "des": "หลังจากบริหารร่างกายจะได้รับคะแนน นำไปสะสมแลกคูปองสุขภาพ โดยจะได้รับ qr code เพื่อนำไปให้ร้านค้าสแกนแลกรับส่วนลดต่างๆ"
     }],
-    "showreel": "xxx",
+    "showreel": "https://drive.google.com/file/d/1aE9hY9yOvWeJnUFlr_z9qE1j4HrQ84IS/preview  ",
     "facebook": "Jub Jub",
     "facebook_link": "https://www.facebook.com/Jubbantita"
   }, {
@@ -438,7 +438,7 @@
       "name": "อัพโหลดภาพถ่าย",
       "des": "ผู้ใช้อัพโหลดภาพถ่ายตามหมวด ที่กำหนดไว้โดยจะแสดงผลเป็นฟีดให้ผู้ใช้คนอื่นเห็นด้วย สามารถกดถูกใจ ให้กำลังใจกัน เป็นกลุ่มสังคมขนาดเล็กของผู้ใช้แอปพลิเคชัน เป็นพื้นที่ร่วมสร้างกำลังใจให้แก่กันและกัน"
     }],
-    "showreel": "xxx",
+    "showreel": "https://drive.google.com/file/d/1792KPJShYODyt3beCieyBW4X04ZOgYcG/preview",
     "facebook": "Boossakorn Chingchana",
     "facebook_link": "https://www.facebook.com/T2seven"
   }, {
@@ -455,7 +455,7 @@
       "name": "คนดังอ่าน",
       "des": "แสดงรายการหนังสือที่คนดังอ่าน"
     }],
-    "showreel": "xxx",
+    "showreel": "https://drive.google.com/file/d/1R5l3msmmc9n-ABQkY7eh6EMQauWuIZxL/preview",
     "facebook": "Pajaree Ruangrit",
     "facebook_link": "https://www.facebook.com/pjrrrit"
   }, {
@@ -472,7 +472,7 @@
       "name": "",
       "des": "3"
     }],
-    "showreel": "xxx",
+    "showreel": "https://drive.google.com/file/d/1t23_XHwMQkwlcQOBkymqySLT17W3U8OF/previews   ",
     "facebook": "Ppe Pattarwan",
     "facebook_link": "https://www.facebook.com/profile.php?id=100010192982533"
   }, {
@@ -480,16 +480,16 @@
     "project_name": "Bartrainer",
     "project_fullname_th": "การออกแบบและพัฒนาแอปพลิเคชันแนะนำการออกกำลังกายในรูปแบบเทรนเนอร์ส่วนตัวด้วยเทคโนโลยีเออาร์ สำหรับผู้หญิง บนระบบปฏิบัติการไอโอเอส",
     "functions": [{
-      "name": "",
-      "des": "1"
+      "name": "ฟังก์ชันแข่งออกกำลังกายกับเพื่อน",
+      "des": "สามารถให้เลือกท่าออกกำลังกายที่ถนัดเพื่อทำคะแนนแข่งกับคนอื่นๆได้"
     }, {
-      "name": "",
-      "des": "2"
+      "name": "ฟังก์ชันออกกำลังกาย",
+      "des": "รวบรวมท่าออกกำลังกายแต่ละหมวดหมู่ และสามารถพัฒนาระดับของการออกกำลังกายไปได้เรื่อยๆ"
     }, {
-      "name": "",
-      "des": "3"
+      "name": "ฟังก์ชันฟิตเนส",
+      "des": "รวบรวมฟิตเนสที่มีโปรโมชันส่วนลดไว้ให้ผู้ใช้ได้ไปทดลอง เพื่อพัฒนาการออกกำลังกายที่ดียิ่งขึ้น"
     }],
-    "showreel": "xxx",
+    "showreel": "https://drive.google.com/file/d/16_JVu31ABeb815xOhnSAgRcYbGxxetWl/preview",
     "facebook": "Tonamz Dtc",
     "facebook_link": "https://www.facebook.com/tonamz.dtc"
   }, {
@@ -506,7 +506,7 @@
       "name": "เสนอราคา",
       "des": "คนขับเมื่อได้รับคิวการจองขนส่งสัตว์เลี้ยงจากผู้ใช้บริการ คนขับจะสามารถเสนอราคาไปให้กับผู้ใช้บริการได้"
     }],
-    "showreel": "xxx",
+    "showreel": "https://drive.google.com/file/d/1XRPmQAyHLJlOEWGhfnehOClcdetdkyxC/preview",
     "facebook": "Warathat Panthongthaworn",
     "facebook_link": "https://www.facebook.com/WarXbp"
   }, {
@@ -523,7 +523,7 @@
       "name": "เก็บคะแนน",
       "des": "เก็บคะแนนรายคนโดยเก็บคะแนนเล่นครั้งแรกและคะแนนครั้งล่าสุด"
     }],
-    "showreel": "xxx",
+    "showreel": "https://drive.google.com/file/d/1UP_bkoOPoqm1f2QOGAjwsBGijTd-hfZ6/preview",
     "facebook": "Sawanda Trichok",
     "facebook_link": "https://www.facebook.com/oumillslick.trichok"
   }, {
@@ -540,7 +540,7 @@
       "name": "รีวิว",
       "des": "ระบบรีวิว หลังจากช่างภาพได้ส่งงานให้กับผู้ว่าจ้าง เพื่อเป็นตัวช่วยประกอบการตัดสินใจ ให้กับผู้ว่าจ้างและเป็นการเพิ่มความ น่าเชื่อถือให้กับช่างภาพ"
     }],
-    "showreel": "xxx",
+    "showreel": "https://drive.google.com/file/d/1etrNaDuI04SBw6hgPXA_UXQPUvitQOxD/preview",
     "facebook": "Minz Srt'sw",
     "facebook_link": "https://www.facebook.com/minzcb"
   }, {
@@ -557,7 +557,7 @@
       "name": "เกมชาเล้นจ์",
       "des": "เกมชาเล้นจ์แบบปลดล็อคด่าน เรียงจากระดับง่าย ปานกลาง และยาก"
     }],
-    "showreel": "xxx",
+    "showreel": "https://drive.google.com/file/d/14iB7sLTXDPnFqEEL-lV22Lg3GFq7vPVe/previewห",
     "facebook": "Maysa Dhanisornkul",
     "facebook_link": "https://www.facebook.com/maemaysa"
   }, {
@@ -565,16 +565,16 @@
     "project_name": "Castify",
     "project_fullname_th": "การออกแบบและพัฒนาเว็บแอปพลิเคชันเพื่อค้นหางานแสดงและนักแสดง สำหรับคนที่สนใจในการแสดงและอาชีพแคสติ้ง",
     "functions": [{
-      "name": "",
-      "des": "1"
+      "name": "ค้นหาและจับคู่นักแสดง",
+      "des": "โดยสามารถคำนวณเป็นเปอร์เซ็นต์"
     }, {
-      "name": "",
-      "des": "2"
+      "name": "โดยสามารถคำนวณเป็นเปอร์เซ็นต์",
+      "des": "โดยเลือกจากประเภทของงานที่ต้องการ"
     }, {
-      "name": "",
-      "des": "3"
+      "name": "เปรียบเทียบนักแสด",
+      "des": "โดยเลือกจากผลการค้นหา"
     }],
-    "showreel": "xxx",
+    "showreel": "https://drive.google.com/file/d/12uTrycs6eguf6I-3l0q3GeFSCh6v9Dzj/previewห",
     "facebook": "Fy Winyuchai",
     "facebook_link": "https://www.facebook.com/fapyw"
   }, {
@@ -591,7 +591,7 @@
       "name": "กราฟ",
       "des": "-กราฟแสดงค่าความดัน เเละค่าน้ำตาลในเลือด เป็นกราฟเส้นตามระดับที่ผู้ใช้บันทึกค่า \n -บอกค่าที่ผู้ใช้บันทึกเข้าไปล่าสุด"
     }],
-    "showreel": "xxx",
+    "showreel": "https://drive.google.com/file/d/1uHole9QjTUJ_3PoMIwvTOTDA-NE1eBZf/preview",
     "facebook": "Kan Oranat",
     "facebook_link": "https://www.facebook.com/kan.oranat"
   }
