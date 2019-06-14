@@ -1,46 +1,47 @@
 <template>
   <div id="menu-trigger">
     <div :class="triggerClass">
-      <div class="row px-5">
-        <div class="col-md-4">
-          <logo/>
-          <left-item style="position:absolute; bottom:0; width:90%;"/>
-        </div>
+      <div :style="menu_desktop">
+        <div class="row px-5">
+          <div class="col-md-4">
+            <logo/>
+            <left-item style="position:absolute; bottom:0; width:90%;"/>
+          </div>
 
-        <div class="col-md-4">
-          <ul class="menu-list2 list2-l">
-            <li
-              v-for="link in menus"
-              :key="link.name"
-              style="float:none;"
-              @click="$emit('routeChange', true )"
-            >
-              <nuxt-link :to="{name:link.path ? link.path : link.name}">
-                <img :src="`/menu/${link.name}.png`" width="48">
-                <span>{{link.name}}</span>
-              </nuxt-link>
-            </li>
-          </ul>
-        </div>
+          <div class="col-md-4">
+            <ul class="menu-list2 list2-l">
+              <li
+                v-for="link in menus"
+                :key="link.name"
+                style="float:none;"
+                @click="$emit('routeChange', true )"
+              >
+                <nuxt-link :to="{name:link.path ? link.path : link.name}">
+                  <img :src="`/menu/${link.name}.png`" width="48">
+                  <span>{{link.name}}</span>
+                </nuxt-link>
+              </li>
+            </ul>
+          </div>
 
-        <div class="col-md-4">
-          <ul class="menu-list2 list2-r">
-            <li
-              v-for="(link,index) in categories"
-              :key="link.name"
-              style="float:none;"
-              @click="$emit('routeChange', true )"
-            >
-              <nuxt-link :to="{ name:'creators-category-name', params:{name: link.name}}">
-                <img :src="`/menu/cat-${index+1}.png`" width="80">
-                {{link.name}}
-              </nuxt-link>
-            </li>
-          </ul>
-          <sponsor-small class="frr"/>
+          <div class="col-md-4">
+            <ul class="menu-list2 list2-r">
+              <li
+                v-for="(link,index) in categories"
+                :key="link.name"
+                style="float:none;"
+                @click="$emit('routeChange', true )"
+              >
+                <nuxt-link :to="{ name:'creators-category-name', params:{name: link.name}}">
+                  <img :src="`/menu/cat-${index+1}.png`" width="80">
+                  {{link.name}}
+                </nuxt-link>
+              </li>
+            </ul>
+            <sponsor-small class="frr"/>
+          </div>
         </div>
       </div>
-
     </div>
   </div>
 </template>

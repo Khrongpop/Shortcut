@@ -11,6 +11,30 @@ Vue.mixin({
         'background-image':`url(/home_bg.gif)`,
         'height':'100%',
         'background-size' : 'contain'
+      },
+      home_desktop : {
+        'background-image':`url(/home-desktop.gif)`,
+        'background-repeat':`no-repeat`,
+        'background-size' : `contain`,
+        'height':'100%',
+        'widht':'100%',
+
+      },
+      menu_desktop : {
+        'background-image':`url(/menu_desktop.gif)`,
+        'background-repeat':`no-repeat`,
+        'background-size' : `contain`,
+        'height':'100%',
+        'widht':'100%',
+
+      },
+      menu_mobile : {
+        'background-image':`url(/menu-mobile_2.gif)`,
+        'background-repeat':`no-repeat`,
+        'background-size' : `contain`,
+        'height':'100%',
+        'widht':'100%',
+
       }
     }
   },
