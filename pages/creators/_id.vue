@@ -20,7 +20,7 @@
                 class="profileProps"
                 rounded
                 alt="Rounded image"
-                :src="`${baseURL}/creators/${creator(id).id}.jpg`"
+                :src="`${baseURL}/creators_detail/${creator(id).id}_creator.png`"
               ></b-img>
             </div>
             <div style="width:50%; margin-left:-7%;" class="float-left">
@@ -464,5 +464,10 @@ export default {
 <style scoped>
 img {
   object-fit: cover;
+}
+#creator_detail .profileProps {
+    width: 500px;
+    height: 570px;
+    margin-left: -190px;
 }
 </style>

@@ -95,7 +95,6 @@ export default {
     },
     menuTrigger() {
       this.click = true;
-      // this.disableScrolling()
       this.showHamburger = !this.showHamburger;
     },
     triggerFalse() {
