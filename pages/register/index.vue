@@ -132,7 +132,7 @@
                     @change="setImg"
                     ref="up"
                     required
-                    style="display: none;"
+                    class="mobile-upload"
                     type="file"
                     name="image"
                   >
@@ -324,9 +324,11 @@ export default {
       // }
     },
     setImg(e) {
-      this.img = e.target.files[0];
+      this.img = URL.createObjectURL(event.target.files[0]);
+      this.img_file = e.target.files[0];
+
       // this.form.image = e.target.files[0];
-      this.preview = URL.createObjectURL(event.target.files[0]);
+      // this.preview = URL.createObjectURL(event.target.files[0]);
     },
     onCapture() {
       this.img = this.$refs.webcam.capture();
