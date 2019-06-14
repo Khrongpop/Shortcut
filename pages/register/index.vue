@@ -14,9 +14,11 @@
       <img src="logo+regis.png" alt="logoregister" class="logo-regis">
     </div>
     <img src="/png_error_line_right.png" alt="png_error_line_right" class="img-bg-font-right">
+      <img src="/line_right.png" alt="line_right" class="img-bg-line-right">
 
     <div class="wrapper">
       <img src="/font_design_left_butt.png" alt="font_design_left_butt" class="img-bg-font-left">
+      <img src="/png_line_left_butt.png" alt="png_line_left_butt" class="img-bg-line-left">
 
       <b-form @submit="onSubmit" v-if="show">
         <b-row class="w-100 d-content">

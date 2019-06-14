@@ -91,6 +91,21 @@
         width: 80px;
       }
     }
+    &-line- {
+      &left {
+        position: absolute;
+        bottom: 0px;
+        left: 0;
+        width: 175px;
+        transform: translateY(10px);
+      }
+      &right {
+        position: absolute;
+        top: 0px;
+        right: 0;
+        width: 180px;
+      }
+    }
   }
 }
 
@@ -935,11 +950,14 @@
           bottom: 0px;
           transform: translate3d(-60px,200px,0);
         }
+      }
+      &-line- {
+        &left {
+          width: 100px;
+          transform: translateY(295px);
+        }
         &right {
-          position: absolute;
-          top: 60px;
-          right: 0;
-          width: 80px;
+          width: 100px;
         }
       }
     }
