@@ -109,7 +109,7 @@
                   @click="onCapture"
                   v-if="!img"
                 >
-                <b-button type="button" variant="success" @click="onStart" v-else>Reset</b-button>
+                <b-button type="button" style="margin: 20px auto;" @click="onStart" v-else>Reset</b-button>
               </div>
             </div>
 
@@ -421,6 +421,10 @@ export default {
   padding-top: 15px;
 }
 
+.btn-secondary:hover {
+  background: none;
+  border: none;
+}
 @media screen and (min-width: 1140px) {
   #vue-matrix-raindrop {
     left: 18%;
