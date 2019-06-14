@@ -21,6 +21,12 @@ export const getters = {
      let data = Object.assign(creator, detail,creator_tech,screenshots)
      return data
   },
+  getCreatorDetailById: (state) => (id) => {
+    let creator = state.creators.find(creator => creator.id === id)
+    let detail = state.details.find(detail => detail.id === id)
+    let data = Object.assign(creator, detail)
+    return data
+ },
   getCreatorByCat: (state) => (name) => {
     let cats = state.categories.find(creator => creator.name === name)
     const result = state.creators.filter((creator) => {
