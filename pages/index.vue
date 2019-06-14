@@ -2,6 +2,18 @@
   <div :style="bg_home" id="home">
     <div class="home-content">
       <img src="/home_bg.gif" class="img-bg-home">
+
+      <div class="project-card project-card-1">
+        <b-img
+          v-bind="mainProps"
+          rounded
+          alt="Rounded image"
+          src="https://picsum.photos/205/120/?image=58"
+        ></b-img>
+        <h1>Project Name</h1>
+        <p>By</p>
+      </div>
+      <!-- <projectC-card></projectC-card> -->
       <Logo class="logo"/>
     </div>
   </div>
@@ -9,6 +21,7 @@
 
 <script>
 import Logo from "~/components/Logo";
+import ProjectCard from "@/components/ProjectCard";
 export default {
   head() {
     return {
@@ -22,7 +35,8 @@ export default {
     }
   },
   components: {
-    Logo
+    Logo,
+    ProjectCard
   },
   mounted() {
     if (process.client) {

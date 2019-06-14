@@ -20,4 +20,13 @@
       max-width: 20%;
     }
   }
+
+  .project-card {
+    position: absolute;
+
+    &-1 {
+      top: 0;
+      left: 20%;
+    }
+  }
 }
