@@ -4,11 +4,13 @@
       <img src="/home_bg.gif" class="img-bg-home">
 
       <div class="project-card project-card-1">
-        <project-card :vdata="creator(13580186)"></project-card>
+        <img src="/web.png" alt>
+        <!-- <project-card :vdata="creator(13580186)"></project-card> -->
       </div>
 
       <div class="project-card project-card-2">
-        <project-card :vdata="creator(13580246)"></project-card>
+        <img src="/inter-text.png" alt>
+        <!-- <project-card :vdata="creator(13580246)"></project-card> -->
       </div>
 
       <div class="project-card project-card-3">
@@ -24,7 +26,8 @@
       </div>
 
       <div class="project-card project-card-6">
-        <project-card :vdata="creator(13580180)"></project-card>
+        <img src="/mobile-text.png" alt>
+        <!-- <project-card :vdata="creator(13580180)"></project-card> -->
       </div>
 
       <Logo class="logo"/>
