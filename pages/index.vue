@@ -58,6 +58,18 @@
         <div class="project-card project-card-2">
           <project-card :vdata="creator(13580246)"></project-card>
         </div>
+
+        <div class="project-card project-card-3">
+          <img src="/web.png" alt>
+        </div>
+
+        <div class="project-card project-card-4">
+          <img src="/inter-text.png" alt>
+        </div>
+
+        <div class="project-card project-card-5">
+          <img src="/mobile-text.png" alt>
+        </div>
       </div>
     </div>
   </div>

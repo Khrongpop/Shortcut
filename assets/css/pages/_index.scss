@@ -96,7 +96,7 @@
     &-mobile {
 
 
-      position: relative;
+      // position: relative;
 
       .logo-shortcut_left {
         position: absolute;
@@ -134,6 +134,27 @@
           top: 75%;
           // left: 20%;
           left: 47%;
+        }
+
+        &-3 {
+          width: 220px;
+          top: 27%;
+          // left: 20%;
+          left: 6%;
+        }
+
+        &-4 {
+          width: 220px;
+          top: 28%;
+          // left: 20%;
+          left: 65%;
+        }
+
+        &-5 {
+          width: 220px;
+          top: 54.5%;
+          // left: 20%;
+          left: 6%;
         }
 
       }
