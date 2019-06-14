@@ -54,6 +54,10 @@
         <div class="project-card project-card-1">
           <project-card :vdata="creator(13580228)"></project-card>
         </div>
+
+        <div class="project-card project-card-2">
+          <project-card :vdata="creator(13580246)"></project-card>
+        </div>
       </div>
     </div>
   </div>
