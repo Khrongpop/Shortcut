@@ -347,14 +347,14 @@
     "project_name": "Safe in School",
     "project_fullname_th": "",
     "functions": [{
-      "name": "",
-      "des": ""
+      "name": "Select Player",
+      "des": "เริ่มต้นการเป็นผู้เรียนรู้"
     }, {
-      "name": "",
-      "des": ""
+      "name": "Select Chapter",
+      "des": "เลือกบทเรียนที่ต้องการจะเรียนรู้"
     }, {
-      "name": "",
-      "des": ""
+      "name": "Kids with AR",
+      "des": "เสริมสร้างทักษะด้านความปลอดภัยด้วย AR"
     }],
     "showreel": "https://drive.google.com/file/d/1465tld1kguhMsxwHF7UKVAk77mWIlGSq/preview",
     "facebook": "Tharinee Porsche",
