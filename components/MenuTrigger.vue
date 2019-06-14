@@ -38,7 +38,7 @@
                 </nuxt-link>
               </li>
             </ul>
-            <sponsor-small class="frr"/>
+            <sponsor-small class=""/>
           </div>
         </div>
       </div>
@@ -76,9 +76,9 @@ export default {
 
 <style scoped lang='scss'>
 .frr {
-  position: relative;
-  bottom: 0;
-  right: 0;
+  // position: relative;
+  // bottom: 0;
+  // right: 0;
 }
 .list2-l {
   font-family: "geometosregular";
