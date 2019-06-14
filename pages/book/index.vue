@@ -1,6 +1,6 @@
 <template>
 <div>
-  this is exhibition
+  Coming Soon.
 </div>
 </template>
 

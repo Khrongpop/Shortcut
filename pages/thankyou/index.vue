@@ -1,10 +1,11 @@
 <template>
   <div id="thankyou">
     <div class="row">
-      <div class="col-lg-2 pb-3" v-if="lg">
+      <div class="col-lg-2 pb-3" v-if="windowWidth>768">
         <img :src="`${baseURL}/shortcut_left.png`" class="img-fluid">
       </div>
       <div class="col-lg-3">
+        <img src="/thankyou.png" v-if="windowWidth<768">
         <ul class="list-unstyled text-center" :class="lg?'m50per':''">
           <li>
             ผู้ช่วยศาสตราจารย์ ดร.วันชัย สุทธะนันท์
@@ -17,9 +18,10 @@
         </ul>
       </div>
       <div class="col-lg-7 text-center">
-        <img :src="`${baseURL}/thankyou/head.png`" class="img-fluid">
+          <img :src="`${baseURL}/thankyou/head.png`" class="img-fluid" >
         <div class="row pt-5">
           <div class="col-12 col-md-4">
+
             <img :src="`${baseURL}/thankyou/n1.png`" class="img-fluid">
             <ul class="list-unstyled list-teacher pt-2">
               <li>อาจารย์รักชนก สุขะกาลนันท์</li>

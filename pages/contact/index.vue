@@ -5,8 +5,11 @@
         <img :src="`${baseURL}/shortcut_left.png`" class="img-fluid">
       </div>
       <div class="col-md-5">
+                <img src="/contact.png" v-if="windowWidth<768">
+
         <div class="course-information">
-          <div class="img-title">
+          <div class="img-title" :class="windowWidth < 1024 ?'text-center':''">
+
             <img :src="`${baseURL}/contact/title1.png`" class="img-fluid">
           </div>
           <ul class="list-unstyled">
@@ -22,7 +25,7 @@
         </div>
 
         <div class="portfolio mt-5">
-          <div class="img-title">
+          <div class="img-title" :class="windowWidth < 1024 ?'text-center':''">
             <img :src="`${baseURL}/contact/title3.png`" class="img-fluid">
           </div>
           <ul class="list-unstyled">
@@ -41,7 +44,7 @@
 
       <div class="col-md-5">
         <div class="thesis-list">
-          <div class="img-title">
+          <div class="img-title" :class="windowWidth < 1024 ?'text-center pt-5':''">
             <img :src="`${baseURL}/contact/title2.png`" class="img-fluid">
           </div>
           <ul class="list-unstyled">
@@ -57,7 +60,7 @@
         </div>
 
         <div class="funcsl mt-5">
-          <div class="img-title">
+          <div class="img-title"  :class="windowWidth < 1024 ?'text-center':''">
             <img :src="`${baseURL}/contact/title4.png`" class="img-fluid">
           </div>
           <h5>{{links4.name}}</h5>

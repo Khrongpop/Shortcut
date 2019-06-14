@@ -1,36 +1,34 @@
 <template>
   <div id="menu-trigger" class="triggermb">
     <div :class="triggerClass">
-
       <div class="row px-5">
-        <div class="col-6">
+        <div class="col-5">
           <div class="clearfix hfix">
             <logo/>
           </div>
           <div>
-          <ul class="menu-list2 list2-l">
-            <li
-              v-for="link in menus"
-              :key="link.name"
-              style="float:none;"
-              @click="$emit('routeChange', true )"
-            >
-              <nuxt-link :to="{name:link.path ? link.path : link.name}">
-                <img :src="`/menu/${link.name}.png`" width="48">
-                <span>{{link.name}}</span>
-              </nuxt-link>
-            </li>
-          </ul>
+            <ul class="menu-list2 list2-l pl-0" style="font-size:0.7em !important;">
+              <li
+                v-for="link in menus"
+                :key="link.name"
+                style="float:none;"
+                @click="$emit('routeChange', true )"
+              >
+                <nuxt-link :to="{name:link.path ? link.path : link.name}">
+                  <img :src="`/menu/${link.name}.png`" width="48">
+                  <span>{{link.name}}</span>
+                </nuxt-link>
+              </li>
+            </ul>
           </div>
-
         </div>
 
-        <div class="col-6">
+        <div class="col-7">
           <div class="text-right hfix">
             <img src="/menu/imsu.png" class="mt-5 img-fluid">
           </div>
 
-            <ul class="menu-list2 list2-r">
+          <ul class="menu-list2 list2-r pl-0" style="font-size:0.7em;">
             <li
               v-for="(link,index) in categories"
               :key="link.name"
@@ -52,9 +50,19 @@
         <div class="col-md-4">
 
           <sponsor-small class="frr"/>
-        </div> -->
+        </div>-->
       </div>
-
+      <div class="text-center pt-4">
+        <a href="https://www.facebook.com/funcslash/" target="_blank">
+          <img src="/menu/mfb.png">
+        </a>
+        <a href="https://www.instagram.com/funcslash/" target="_blank">
+                <img src="/menu/mig.png">
+        </a>
+      </div>
+      <div class="text-center pb-4">
+        <img src="/menu/mspon.png" class="img-fluid pl-3 pr-2">
+      </div>
     </div>
   </div>
 </template>
@@ -88,16 +96,19 @@ export default {
 </script>
 
 <style lang='scss'>
+.ffix {
+  font-size: 0.7em !important;
+}
 .hfix {
   height: 200px;
 }
-.triggermb{
+.triggermb {
   font-size: 0.8em;
 }
-.triggermb{
-.logo-shortcut_left{
-  position: relative !important;
-}
+.triggermb {
+  .logo-shortcut_left {
+    position: relative !important;
+  }
 }
 
 .frr {

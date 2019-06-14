@@ -1,5 +1,6 @@
 <template>
   <div :style="bg_home" id="home">
+
     <div class="home-content">
       <img src="/home_bg.gif" class="img-bg-home">
 
@@ -31,12 +32,30 @@
       </div>
 
       <Logo class="logo"/>
+
+
+
+
+    </div>
+
+    <div class="row">
+      <div class="col-4 text-left">
+        <left-item/>
+      </div>
+      <div class="col-2"></div>
+      <div class="col-6 text-right">
+                            <sponsor-small class="frr"/>
+
+      </div>
     </div>
   </div>
 </template>
 
 <script>
 import Logo from "~/components/Logo";
+import SponsorSmall from "~/components/SponsorSmall";
+import LeftItem from "~/components/LeftItem";
+
 import { mapGetters } from "vuex";
 import ProjectCard from "@/components/ProjectCard";
 export default {
@@ -53,7 +72,9 @@ export default {
   },
   components: {
     Logo,
-    ProjectCard
+    ProjectCard,
+    SponsorSmall,
+    LeftItem
   },
   mounted() {
     if (process.client) {

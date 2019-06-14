@@ -29,10 +29,12 @@
           </ul>
         </transition>
       </div>
+        <transition name="fade">
 
-      <div v-if="!lg&&click" class="float-right">
+      <div v-if="!lg&&showHamburger" class="float-right">
         <img src="/menu/major.png" class="mt-5 img-fluid">
       </div>
+        </transition>
 
       <!-- <aside class="loading">
         <span class="text">Loading</span>
