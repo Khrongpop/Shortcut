@@ -2,11 +2,22 @@
   .home-content {
     position: relative;
 
+    .img-bg-home {
+      // position: absolute;
+      // top: 0;
+      // bottom: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      margin-top: -50px;
+    }
+
     .logo-shortcut_left {
       position: absolute;
       // width: 50%;
-      left: 25%;
-      max-width: 25%;
+      top: 20%;
+      left: 43%;
+      max-width: 20%;
     }
   }
 }

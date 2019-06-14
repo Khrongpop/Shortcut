@@ -1,6 +1,7 @@
 <template>
   <div :style="bg_home" id="home">
     <div class="home-content">
+      <img src="/home_bg.gif" class="img-bg-home">
       <Logo class="logo"/>
     </div>
   </div>
