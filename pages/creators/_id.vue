@@ -1,9 +1,6 @@
 <template>
   <div id="creator_detail" :style="bg_animate">
     <div v-if="lg">
-
-
-
       <!-- <div style="width:10%" class="float-left">อ่านทำไม</div> -->
       <carousel
         :per-page="1"
@@ -173,9 +170,17 @@
                     >
                       <slide v-for="item in 10" :key="item.id">
                         <b-col>
-                            <!-- <v-lazy-image src="http://lorempixel.com/400/200/" /> -->
+                          <!-- <v-lazy-image src="http://lorempixel.com/400/200/" /> -->
                           <!-- {{item}} -->
-                          <b-img v-bind="mainProps" rounded alt="Rounded image"></b-img>
+                          <b-img
+                            rounded
+                            alt="Rounded image"
+                            v-if="creator(id).screeshots[item]"
+                            :src="creator(id).screeshots[item]"
+                            width="240"
+                            height="140"
+                          ></b-img>
+                          <b-img v-bind="mainProps" rounded alt="Rounded image" v-else></b-img>
                         </b-col>
                       </slide>
                     </carousel>
@@ -401,7 +406,7 @@ export default {
     return {
       mainProps: {
         blank: true,
-        blankColor: "#777",
+        // blankColor: "#000",
         width: 240,
         height: 140,
         class: ""
