@@ -118,32 +118,15 @@
               </div>
               <div ref="up" name="image" class="text-center">
                 <div v-if="windowWidth >= 800">
+                  {{countDown}}
                   <img
                     src="/icon_camera.png"
                     alt="icon_camera"
                     class="icon-addimg"
-                    @click="onCapture"
+                    @click="ctrue"
                     v-if="!img"
                   >
                   <b-button type="button" style="margin: 20px auto;" @click="onStart" v-else>Reset</b-button>
-                  <button
-                    type="button"
-                    class="btn btn-secondary"
-                    :disabled="counting"
-                    @click="counting = true"
-                  >
-                    <countdown
-                      v-if="counting"
-                      :time="60000"
-                      :leading-zero="false"
-                      @countdownend="counting = false"
-                    >
-                      <template
-                        slot-scope="props"
-                      >Fetch again {{ props.totalSeconds }} seconds later</template>
-                    </countdown>
-                    <span v-else>Fetch Verification Code</span>
-                  </button>
                 </div>
                 <div v-else>
                   <input
@@ -226,11 +209,26 @@ export default {
       camera: null,
       deviceId: null,
       devices: [],
-      img_file: null
+      img_file: null,
+      sec: "",
+      countDown: 5
     };
   },
   created() {},
   methods: {
+    ctrue() {
+      this.countDownTimer();
+    },
+    countDownTimer() {
+      if (this.countDown > 0) {
+        setTimeout(() => {
+          this.countDown -= 1;
+          this.countDownTimer();
+        }, 1000);
+      } else {
+        this.onCapture();
+      }
+    },
     async writeToFirestore() {
       // const ref = fireDb.collection("users").doc();
       const ref = realDb.ref("users");
@@ -370,6 +368,13 @@ export default {
       // this.form.image = e.target.files[0];
       // this.preview = URL.createObjectURL(event.target.files[0]);
     },
+    handleCountdownProgress(data) {
+      console.log(data.seconds);
+      this.sec = data.seconds;
+      if (parseInt(data.seconds) < 1) {
+        console.log(parseInt(data.seconds) < 1);
+      }
+    },
     onCapture() {
       this.img = this.$refs.webcam.capture();
       const _this = this;
@@ -388,6 +393,7 @@ export default {
     onReset() {
       this.img = null;
       this.img_file = null;
+      this.countDown = 5;
       // this.$refs.webcam.stop();
       // this.$refs.webcam.start();
     },
