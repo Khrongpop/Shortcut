@@ -232,96 +232,117 @@ export default {
       evt.preventDefault();
 
       // this.form.timestamp = new Date().toString;
-      const ref = realDb.ref("users");
-      let status = true;
-      const _this = this;
+      if (this.img_file) {
+        const ref = realDb.ref("users");
+        let status = true;
+        const _this = this;
 
-      // let filename = new Date().getTime() + "_" + this.img.name;
-      let filename = new Date().getTime() + "_" + this.form.name + ".jpeg";
-      let storageRef = storage
-        // .ref("images")
-        // .ref("users")
-        .ref("image/users/" + filename);
+        // let filename = new Date().getTime() + "_" + this.img.name;
+        let filename = new Date().getTime() + "_" + this.form.name + ".jpeg";
+        let storageRef = storage
+          // .ref("images")
+          // .ref("users")
+          .ref("image/users/" + filename);
 
-      let newUser = dbAuth
-        .createUserWithEmailAndPassword(this.form.email, "password")
-        .then(function(result) {
-          // sucseess
-          console.log("sucseess");
-          let user = result.user;
-          // console.log(_this.img);
-          let uploadTask = storageRef.put(_this.img_file);
+        let newUser = dbAuth
+          .createUserWithEmailAndPassword(this.form.email, "password")
+          .then(function(result) {
+            // sucseess
+            console.log("sucseess");
+            let user = result.user;
+            // console.log(_this.img);
+            let uploadTask = storageRef.put(_this.img_file);
 
-          uploadTask.on(
-            "state_changed",
-            function(snapshot) {
-              console.log(snapshot);
-            },
-            function(error) {
-              console.log(error);
-              // Handle unsuccessful uploads
-            },
-            function() {
-              console.log("upload");
-              uploadTask.snapshot.ref
-                .getDownloadURL()
-                .then(function(downloadURL) {
-                  console.log("File available at", downloadURL);
-                  // Editor.insertEmbed(cursorLocation, "image", downloadURL);
-                  _this.form.image = downloadURL;
-                  // const ref = _this.realDb.ref("users");
-                  try {
-                    // ref.child(user.uid).set(_this.form);
-                    ref.push(_this.form);
-                    //  suscess
-                    // TODO :   Alret upload suscess
-                    Swal.fire({
-                      type: "succcess",
-                      title: "ขอบคุณ",
-                      text: "คุณได้ทำการลงเบียนงาน Shortcut 13.5 สำเร็จ"
-                    });
-                    _this.clearData();
-                  } catch (e) {
-                    // error handling
-                    Swal.fire({
-                      type: "error",
-                      title: "ขออภัย",
-                      text: "ไม่สามารถอัพโหลดรูปได้!"
-                    });
-                    console.error(e);
-                  }
-                });
+            uploadTask.on(
+              "state_changed",
+              function(snapshot) {
+                console.log(snapshot);
+              },
+              function(error) {
+                console.log(error);
+                // Handle unsuccessful uploads
+              },
+              function() {
+                console.log("upload");
+                uploadTask.snapshot.ref
+                  .getDownloadURL()
+                  .then(function(downloadURL) {
+                    console.log("File available at", downloadURL);
+                    // Editor.insertEmbed(cursorLocation, "image", downloadURL);
+                    _this.form.image = downloadURL;
+                    // const ref = _this.realDb.ref("users");
+                    try {
+                      // ref.child(user.uid).set(_this.form);
+                      ref.push(_this.form);
+                      //  suscess
+                      // TODO :   Alret upload suscess
+                      Swal.fire({
+                        type: "succcess",
+                        title: "ขอบคุณ",
+                        text: "คุณได้ทำการลงเบียนงาน Shortcut 13.5 สำเร็จ"
+                      });
+                      _this.clearData();
+                    } catch (e) {
+                      // error handling
+                      Swal.fire({
+                        type: "error",
+                        title: "ขออภัย",
+                        text: "ไม่สามารถอัพโหลดรูปได้!"
+                      });
+                      console.error(e);
+                    }
+                  });
+              }
+            );
+          })
+          .catch(function(error) {
+            // Handle Errors here.
+            //  error
+
+            var errorCode = error.code;
+            var errorMessage = error.message;
+
+            console.log(errorCode);
+            console.log(errorMessage);
+
+            if (errorCode === "auth/email-already-in-use") {
+              Swal.fire({
+                type: "error",
+                title: "แจ้งเตือน",
+                text:
+                  "email ผู้ใข้งานนี้ได้ทำการลงทะเบียนเรียบร้อยแล้ว กรุณาใช้ email อื่นในการลงทะเบียน"
+              });
+            } else if (errorCode === "auth/network-request-failed") {
+              Swal.fire({
+                type: "error",
+                title: "แจ้งเตือน",
+                text:
+                  "ไม่สามารถเชื่อมต่อ Internet ได้ กรุณาเชื่อมต่อ Internet อีกครั้ง"
+              });
             }
-          );
-        })
-        .catch(function(error) {
-          // Handle Errors here.
-          //  error
-
-          Swal.fire({
-            type: "error",
-            title: "แจ้งเตือน",
-            text:
-              "email ผู้ใข้งานนี้ได้ทำการลงทะเบียนเรียบร้อยแล้ว กรุณาใช้ email อื่นในการลงทะเบียน"
+            // status = false;
+            // ...
           });
-          var errorCode = error.code;
-          var errorMessage = error.message;
-          // status = false;
-          // ...
-        });
 
-      if (status) {
+        if (status) {
+        } else {
+          console.log("already have user");
+        }
+
+        //  const ref = realDb.ref("users");
+        // try {
+        //   await ref.push(this.form);
+        // } catch (e) {
+        //   // TODO: error handling
+        //   console.error(e);
+        // }
       } else {
-        console.log("already have user");
+        Swal.fire({
+          type: "error",
+          title: "แจ้งเตือน",
+          text: "กรุณถ่ายรูปภาพ"
+        });
       }
-
-      //  const ref = realDb.ref("users");
-      // try {
-      //   await ref.push(this.form);
-      // } catch (e) {
-      //   // TODO: error handling
-      //   console.error(e);
-      // }
     },
     setImg(e) {
       this.img = URL.createObjectURL(event.target.files[0]);
@@ -347,6 +368,7 @@ export default {
     },
     onReset() {
       this.img = null;
+      this.img_file = null;
       // this.$refs.webcam.stop();
       // this.$refs.webcam.start();
     },
