@@ -126,6 +126,24 @@
                     v-if="!img"
                   >
                   <b-button type="button" style="margin: 20px auto;" @click="onStart" v-else>Reset</b-button>
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    :disabled="counting"
+                    @click="counting = true"
+                  >
+                    <countdown
+                      v-if="counting"
+                      :time="60000"
+                      :leading-zero="false"
+                      @countdownend="counting = false"
+                    >
+                      <template
+                        slot-scope="props"
+                      >Fetch again {{ props.totalSeconds }} seconds later</template>
+                    </countdown>
+                    <span v-else>Fetch Verification Code</span>
+                  </button>
                 </div>
                 <div v-else>
                   <input
@@ -183,7 +201,8 @@ export default {
   },
   head() {
     return {
-      title: `Register`
+      title: `Register`,
+      counting: false
     };
   },
   data() {
