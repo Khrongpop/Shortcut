@@ -59,10 +59,10 @@
             <div class="bg-upload-img-outline">
               <div
                 class="bg-upload-img-inside"
-                :style="windowWidth >= 768 ? {'overflow': 'hidden'} : {'overflow':'hidden'}"
+                :style="windowWidth >= 800 ? {'overflow': 'hidden'} : {'overflow':'hidden'}"
               >
                 <div class="bg-upload-img-people">
-                  <div v-if="windowWidth >= 768">
+                  <div v-if="windowWidth >= 800" style="width:140%;margin-left:-40px;">
                     <img :src="`${baseURL}/faceid2.png`" alt id="faceID">
                     <!-- <img
                     :src="form.image ? form.image:preview"x
@@ -117,7 +117,7 @@
                 >-->
               </div>
               <div ref="up" name="image" class="text-center">
-                <div v-if="windowWidth >= 768">
+                <div v-if="windowWidth >= 800">
                   <img
                     src="/icon_camera.png"
                     alt="icon_camera"
