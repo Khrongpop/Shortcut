@@ -396,7 +396,7 @@ export default {
     onReset() {
       this.img = null;
       this.img_file = null;
-      this.countDown = 5;
+      this.countDown = 3;
       // this.$refs.webcam.stop();
       // this.$refs.webcam.start();
     },
