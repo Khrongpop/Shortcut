@@ -118,7 +118,7 @@
               </div>
               <div ref="up" name="image" class="text-center">
                 <div v-if="windowWidth >= 800">
-                  {{countDown}}
+                  <span v-if="countDownStatus" class="countDownCam">{{countDown}}</span>
                   <img
                     src="/icon_camera.png"
                     alt="icon_camera"
@@ -211,12 +211,14 @@ export default {
       devices: [],
       img_file: null,
       sec: "",
-      countDown: 5
+      countDown: 3,
+      countDownStatus: false
     };
   },
   created() {},
   methods: {
     ctrue() {
+      this.countDownStatus = true;
       this.countDownTimer();
     },
     countDownTimer() {
@@ -226,6 +228,7 @@ export default {
           this.countDownTimer();
         }, 1000);
       } else {
+        this.countDownStatus = false;
         this.onCapture();
       }
     },
