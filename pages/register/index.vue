@@ -11,14 +11,26 @@
     <Logo/>
     <!-- <img src="shortcut_left.png" alt="logoshortcut" class="logo-shortcut_left"> -->
     <div class="row w-100">
-      <img src="logo+regis.png" alt="logoregister" class="logo-regis">
+      <img :src="`${this.baseURL}logo+regis.png`" alt="logoregister" class="logo-regis">
     </div>
-    <img src="/png_error_line_right.png" alt="png_error_line_right" class="img-bg-font-right">
-    <img src="/line_right.png" alt="line_right" class="img-bg-line-right">
+    <img
+      :src="`${this.baseURL}/png_error_line_right.png`"
+      alt="png_error_line_right"
+      class="img-bg-font-right"
+    >
+    <img :src="`${this.baseURL}/line_right.png`" alt="line_right" class="img-bg-line-right">
 
     <div class="wrapper">
-      <img src="/font_design_left_butt.png" alt="font_design_left_butt" class="img-bg-font-left">
-      <img src="/png_line_left_butt.png" alt="png_line_left_butt" class="img-bg-line-left">
+      <img
+        :src="`${this.baseURL}/font_design_left_butt.png`"
+        alt="font_design_left_butt"
+        class="img-bg-font-left"
+      >
+      <img
+        :src="`${this.baseURL}/png_line_left_butt.png`"
+        alt="png_line_left_butt"
+        class="img-bg-line-left"
+      >
 
       <b-form @submit="onSubmit" v-if="show">
         <b-row class="w-100 d-content">
@@ -120,7 +132,7 @@
                 <div v-if="windowWidth >= 800">
                   <span v-if="countDownStatus" class="countDownCam">{{countDown}}</span>
                   <img
-                    src="/icon_camera.png"
+                    :src="`${this.baseURL}/icon_camera.png`"
                     alt="icon_camera"
                     class="icon-addimg"
                     @click="ctrue"
@@ -138,7 +150,7 @@
                     name="image"
                   >
                   <img
-                    src="/icon_camera.png"
+                    :src="`${this.baseURL}/icon_camera.png`"
                     alt="icon_camera"
                     class="icon-addimg"
                     @click="$refs.up.click()"
@@ -151,7 +163,7 @@
         <b-col col md="11" offset-md="1" class="text-center mt-40">
           <div class="w-25 btn-bg"></div>
           <b-button type="submit" class="btn-shortcut">
-            <img src="/get_shortcut.png" alt="btn">
+            <img :src="`${this.baseURL}/get_shortcut.png`" alt="btn">
           </b-button>
         </b-col>
 

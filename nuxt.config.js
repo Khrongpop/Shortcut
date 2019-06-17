@@ -45,7 +45,6 @@ module.exports = {
     { src: '~plugins/ga.js', ssr: false },
     { src: "~/plugins/vue-carousel", ssr: false },
     { src: "~/plugins/vue-swal", ssr: false },
-    { src: "~/plugins/vue-countdown", ssr: false },
     { src: "~/plugins/vue-web-cam", ssr: false }
   ],
 
