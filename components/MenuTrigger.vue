@@ -17,7 +17,7 @@
                 @click="$emit('routeChange', true )"
               >
                 <nuxt-link :to="{name:link.path ? link.path : link.name}">
-                  <img :src="`/menu/${link.name}.png`" width="48">
+                  <img :src="`${baseURL}/menu/${link.name}.png`" width="48">
                   <span>{{link.name}}</span>
                 </nuxt-link>
               </li>
@@ -32,13 +32,14 @@
                 style="float:none;"
                 @click="$emit('routeChange', true )"
               >
-                <nuxt-link :to="{ name:'creators-category-name', params:{name: link.name}}">
-                  <img :src="`/menu/cat-${index+1}.png`" width="80">
+                <!-- <nuxt-link :to="{ name:'creators-category-name', params:{name: link.name}}"> -->
+                <nuxt-link :to="{ name:'category', query:{name: link.name}}">
+                  <img :src="`${baseURL}/menu/cat-${index+1}.png`" width="80">
                   {{link.name}}
                 </nuxt-link>
               </li>
             </ul>
-            <sponsor-small class=""/>
+            <sponsor-small class/>
           </div>
         </div>
       </div>

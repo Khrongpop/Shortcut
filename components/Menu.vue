@@ -1,6 +1,10 @@
 <template>
   <div id="menu">
-    <div class="clearfix mn-50" :class="noMenuClass('position-absolute')" style="z-index:9999999; position:relative;">
+    <div
+      class="clearfix mn-50"
+      :class="noMenuClass('position-absolute')"
+      style="z-index:9999999; position:relative;"
+    >
       <div class="hamburger" :class="noMenuClass('z9999')">
         <img
           :src="`${baseURL}/menu_ham.png`"
@@ -29,12 +33,11 @@
           </ul>
         </transition>
       </div>
-        <transition name="fade">
-
-      <div v-if="!lg&&showHamburger" class="float-right">
-        <img src="/menu/major.png" class="mt-5 img-fluid">
-      </div>
-        </transition>
+      <transition name="fade">
+        <div v-if="!lg&&showHamburger" class="float-right">
+          <img :src="`${baseURL}/menu/major.png`" class="mt-5 img-fluid">
+        </div>
+      </transition>
 
       <!-- <aside class="loading">
         <span class="text">Loading</span>
@@ -69,7 +72,7 @@ export default {
       links: [
         { name: "home", path: "index", icon: "001-home" },
         { name: "creators", icon: "002-user" },
-        { name: "book", icon: "003-ebook" },
+        // { name: "book", icon: "003-ebook" },
         { name: "exhibition", icon: "004-tickets" },
         { name: "thankyou", icon: "005-handshake" },
         { name: "contact", icon: "006-contact" }
@@ -88,7 +91,6 @@ export default {
     },
     noMenuClass(classs) {
       return !this.showmenu ? classs : "";
-
     },
     enableScrolling() {
       window.onscroll = function() {};

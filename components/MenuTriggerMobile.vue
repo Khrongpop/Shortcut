@@ -15,7 +15,7 @@
                 @click="$emit('routeChange', true )"
               >
                 <nuxt-link :to="{name:link.path ? link.path : link.name}">
-                  <img :src="`/menu/${link.name}.png`" width="48">
+                  <img :src="`${baseURL}/menu/${link.name}.png`" width="48">
                   <span>{{link.name}}</span>
                 </nuxt-link>
               </li>
@@ -25,7 +25,7 @@
 
         <div class="col-7">
           <div class="text-right hfix">
-            <img src="/menu/imsu.png" class="mt-5 img-fluid">
+            <img :src="`${baseURL}/menu/imsu.png`" class="mt-5 img-fluid">
           </div>
 
           <ul class="menu-list2 list2-r pl-0" style="font-size:0.7em;">
@@ -35,8 +35,9 @@
               style="float:none;"
               @click="$emit('routeChange', true )"
             >
-              <nuxt-link :to="{ name:'creators-category-name', params:{name: link.name}}">
-                <img :src="`/menu/cat-${index+1}.png`" width="80">
+              <!-- <nuxt-link :to="{ name:'creators-category-name', params:{name: link.name}}"> -->
+              <nuxt-link :to="{ name:'category', query:{name: link.name}}">
+                <img :src="`${baseURL}/menu/cat-${index+1}.png`" width="80">
                 {{link.name}}
               </nuxt-link>
             </li>
@@ -54,14 +55,14 @@
       </div>
       <div class="text-center pt-4">
         <a href="https://www.facebook.com/funcslash/" target="_blank">
-          <img src="/menu/mfb.png">
+          <img :src="`${baseURL}/menu/mfb.png`">
         </a>
         <a href="https://www.instagram.com/funcslash/" target="_blank">
-          <img src="/menu/mig.png">
+          <img :src="`${baseURL}/menu/mig.png`">
         </a>
       </div>
       <div class="text-center pb-4">
-        <img src="/menu/mspon.png" class="img-fluid pl-3 pr-2">
+        <img :src="`${baseURL}/menu/mspon.png`" class="img-fluid pl-3 pr-2">
       </div>
     </div>
   </div>
