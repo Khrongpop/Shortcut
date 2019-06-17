@@ -48,7 +48,7 @@
               <b-col>
                 <b-row class="creator_row">
                   <b-col>
-                    <img src="/creators/detail/showreel.png" alt>
+                    <img :src="`${this.baseURL}/creators/detail/showreel.png`" alt>
                     <br>
                     <iframe
                       width="480"
@@ -174,13 +174,12 @@
                           <!-- {{item}} -->
                           <b-img
                             rounded
-                            alt="Rounded image"
                             v-if="creator(id).screeshots[item]"
                             :src="creator(id).screeshots[item]"
                             width="240"
                             height="140"
                           ></b-img>
-                          <b-img v-bind="mainProps" rounded alt="Rounded image" v-else></b-img>
+                          <b-img v-bind="mainProps" rounded v-else></b-img>
                         </b-col>
                       </slide>
                     </carousel>
@@ -257,7 +256,7 @@
         </b-row>
         <b-row>
           <b-col class="mt-3">
-            <img src="/creators/detail/showreel.png" alt class="mb-3">
+            <img :src="`${this.baseURL}/creators/detail/showreel.png`" alt class="mb-3">
             <br>
             <iframe
               :width="windowWidth > 555 ? `480` : `100%`"
@@ -362,12 +361,7 @@
 
       <div class="avatar">
         <b-col class="avatar-card">
-          <b-img
-            v-bind="avataProps"
-            rounded
-            alt="Rounded image"
-            :src="`${baseURL}/creators/${creator(id).id}.jpg`"
-          ></b-img>
+          <b-img v-bind="avataProps" rounded :src="`${baseURL}/creators/${creator(id).id}.jpg`"></b-img>
           <div class="avatar-txt">
             <h3>{{creator(id).name}}</h3>
             <p>ID : {{creator(id).id}}</p>
@@ -466,8 +460,8 @@ img {
   object-fit: cover;
 }
 #creator_detail .profileProps {
-    width: 500px;
-    height: 570px;
-    margin-left: -190px;
+  width: 500px;
+  height: 570px;
+  margin-left: -190px;
 }
 </style>

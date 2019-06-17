@@ -1,7 +1,11 @@
 <template>
   <div>
     <router-link :to="`/creators/${vdata.id}`" class="text-white" style="text-decoration:none;">
-      <b-img rounded alt="Rounded image" :src="`/creators/project/${vdata.id}_project.png`"></b-img>
+      <b-img
+        rounded
+        alt="Rounded image"
+        :src="`${this.baseURL}/creators/project/${vdata.id}_project.png`"
+      ></b-img>
       <h1>{{vdata.project_name}}</h1>
       <p>
         By

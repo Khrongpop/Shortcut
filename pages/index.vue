@@ -3,15 +3,15 @@
     <div :style="bg_home" v-if="md">
       <div>
         <div class="home-content">
-          <img src="/home_bg.gif" class="img-bg-home">
+          <img :src="`${this.baseURL}/home_bg.gif`" class="img-bg-home">
 
           <div class="project-card project-card-1">
-            <img src="/web.png" alt>
+            <img :src="`${this.baseURL}/web.png`" alt>
             <!-- <project-card :vdata="creator(13580186)"></project-card> -->
           </div>
 
           <div class="project-card project-card-2">
-            <img src="/inter-text.png" alt>
+            <img :src="`${this.baseURL}/inter-text.png`" alt>
             <!-- <project-card :vdata="creator(13580246)"></project-card> -->
           </div>
 
@@ -28,7 +28,7 @@
           </div>
 
           <div class="project-card project-card-6">
-            <img src="/mobile-text.png" alt>
+            <img :src="`${this.baseURL}/mobile-text.png`" alt>
             <!-- <project-card :vdata="creator(13580180)"></project-card> -->
           </div>
 
@@ -49,7 +49,7 @@
     <div v-else :style="home_mobile">
       <div class="home-content-mobile">
         <Logo/>
-        <img src="/home-mobile.gif" class="img-bg-mobile">
+        <img :src="`${this.baseURL}/home-mobile.gif`" class="img-bg-mobile">
 
         <div class="project-card project-card-1">
           <project-card :vdata="creator(13580228)"></project-card>
@@ -60,15 +60,15 @@
         </div>
 
         <div class="project-card project-card-3">
-          <img src="/web.png" alt>
+          <img :src="`${this.baseURL}/web.png`" alt>
         </div>
 
         <div class="project-card project-card-4">
-          <img src="/inter-text.png" alt>
+          <img :src="`${this.baseURL}/inter-text.png`" alt>
         </div>
 
         <div class="project-card project-card-5">
-          <img src="/mobile-text.png" alt>
+          <img :src="`${this.baseURL}/mobile-text.png`" alt>
         </div>
       </div>
     </div>
