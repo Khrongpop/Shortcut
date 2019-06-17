@@ -1,6 +1,7 @@
 <template>
   <div class="creator-card">
-    <router-link :to="`/creators/${vdata.id}`" class="text-white" style="text-decoration:none;">
+    <!-- <router-link :to="`/creators/${vdata.id}`" class="text-white" style="text-decoration:none;"> -->
+    <router-link :to="`/creator?id=${vdata.id}`" class="text-white" style="text-decoration:none;">
       <!-- {{vdata.id}} -->
       <b-img
         v-bind="mainProps"
