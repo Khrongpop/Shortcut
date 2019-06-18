@@ -389,7 +389,7 @@ export default {
     return {
       title: `${this.creator(this.id).project_name} | ${
         this.creator(this.id).project_fullname_th
-      } | ${this.creator(this.id).name}`
+      } | ${this.creator(this.id).name_th}`
     };
   },
   layout: "noMenu",

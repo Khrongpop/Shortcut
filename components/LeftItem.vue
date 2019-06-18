@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="row">
-      <div class="col-6">
+      <div class="col-4">
         <div>
           <a href="https://www.facebook.com/funcslash/" target="_blank">
             <img :src="`${baseURL}/menu/fb.png`" width="80%">
@@ -13,8 +13,12 @@
           </a>
         </div>
       </div>
-      <div class="col-6">
-        <img :src="`${baseURL}/menu/major.png`" style="position:absolute; bottom:20px; ">
+      <div class="col-4">
+        <img
+          :src="`${baseURL}/menu/logoALL.png`"
+          style="position:absolute; bottom:20px;"
+          width="100%"
+        >
       </div>
     </div>
   </div>

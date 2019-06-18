@@ -1,7 +1,7 @@
 [{
     "id": 13560118,
     "name": "Ketsuda Sataralai",
-    "img": "",
+    "name_th": "เกศสุดา สาธราลัย",
     "email": "mrtnotmrt@gmail.com",
     "category_id": 1,
     "platform_id": 3
@@ -9,7 +9,7 @@
   {
     "id": 13570119,
     "name": "Kanjanat Thongkhumzuy",
-    "img": "",
+    "name_th": "กาญจนาถ ทองคำซุ่ย",
     "email": "dt-namnow@hotmail.com",
     "category_id": 3,
     "platform_id": 2
@@ -17,7 +17,7 @@
   {
     "id": 13570141,
     "name": "Chalermwut Akanitsupron",
-    "img": "",
+    "name_th": "เฉลิมวุฒิ อกนิษฐ์ศุภร",
     "email": "a.30861@hotmail.com",
     "category_id": 2,
     "platform_id": 1
@@ -25,7 +25,7 @@
   {
     "id": 13570178,
     "name": "Nattapat Triyasut",
-    "img": "",
+    "name_th": "ณัฐภัทร ไตรยสุทธิ์",
     "email": "pjspacher456@gmail.com",
     "category_id": 3,
     "platform_id": 2
@@ -33,21 +33,21 @@
   {
     "id": 13570261,
     "name": "Pansupa Pauenpud",
-    "img": "",
+    "name_th": "พัลย์ศุภา เผื่อนผุด",
     "email": "pare280239@gmail.com",
     "category_id": 3,
     "platform_id": 2
   }, {
     "id": 13570283,
     "name": "Montha Chiangkhong",
-    "img": "",
+    "name_th": "มณฑา เชียงของ",
     "email": "milkiiiez.1996@gmail.com",
     "category_id": 3,
     "platform_id": 3
   }, {
     "id": 13570321,
     "name": "Sasithorn Sinjaroenpong",
-    "img": "",
+    "name_th": "ศศิธร สินเจริญพงศ์",
     "email": "milkiiiez.1996@gmail.com",
     "category_id": 3,
     "platform_id": 2
@@ -55,7 +55,7 @@
   {
     "id": 13570357,
     "name": "Sophon Meebriboon",
-    "img": "",
+    "name_th": "โสภณ มีบริบูรณ์",
     "email": "quanta-01@outlook.com",
     "category_id": 4,
     "platform_id": 1
@@ -63,7 +63,7 @@
   {
     "id": 13570362,
     "name": "Anuwat Moungkhum",
-    "img": "",
+    "name_th": "อนุวัตร ม่วงคุ้ม",
     "email": "Toeypang03@hotmail.com",
     "category_id": 5,
     "platform_id": 1
@@ -71,7 +71,7 @@
   {
     "id": 13580180,
     "name": "Kanokporn Masawat",
-    "img": "",
+    "name_th": "กนกพร มาสวัสดิ์",
     "email": "cream-_cream@hotmail.com",
     "category_id": 3,
     "platform_id": 2
@@ -79,7 +79,7 @@
   {
     "id": 13580183,
     "name": "Krittanai Muangnoi",
-    "img": "",
+    "name_th": "กฤตนัย ม่วงน้อย",
     "email": "moungnoi_k@silpakorn.edu",
     "category_id": 2,
     "platform_id": 1
@@ -87,7 +87,7 @@
   {
     "id": 13580186,
     "name": "Khrongpop Phonngam",
-    "img": "",
+    "name_th": "ครองภพ ผลงาม",
     "email": "mr.khrongpop@gmail.com",
     "category_id": 2,
     "platform_id": 3
@@ -95,7 +95,7 @@
   {
     "id": 13580191,
     "name": "Chaliporn Pengpan",
-    "img": "",
+    "name_th": "ชลิพร เพ็งปาน",
     "email": "chalypoly@gmail.com",
     "category_id": 2,
     "platform_id": 2
@@ -103,7 +103,7 @@
   {
     "id": 13580192,
     "name": "Chanya Thaveesricharoenlap",
-    "img": "",
+    "name_th": "ชัญญา ทวีศรีเจริญลาภ",
     "email": "art_thavee@hotmail.com",
     "category_id": 4,
     "platform_id": 1
@@ -111,7 +111,7 @@
   {
     "id": 13580194,
     "name": "Chaiwat Trithipsakul",
-    "img": "",
+    "name_th": "ชัยวัฒน์ ตรีทิพย์สกุล",
     "email": "nongboy.chaiwat@gmail.com",
     "category_id": 5,
     "platform_id": 1
@@ -119,7 +119,7 @@
   {
     "id": 13580199,
     "name": "Thitibhorn Roongwarin",
-    "img": "",
+    "name_th": "ฐิติพร รุ่งวารินทร์",
     "email": "janekawaii542@gmail.com",
     "category_id": 3,
     "platform_id": 2
@@ -127,7 +127,7 @@
   {
     "id": 13580201,
     "name": "Natcha Mungmee",
-    "img": "",
+    "name_th": "ณัฐชา มั่งมี",
     "email": "donut.mungmee@gmail.com",
     "category_id": 4,
     "platform_id": 1
@@ -135,7 +135,7 @@
   {
     "id": 13580203,
     "name": "Nutthanaporn Pongudom",
-    "img": "",
+    "name_th": "ณัฐธนาภรณ์ ผ่องอุดม",
     "email": "lin-por@hotmail.com",
     "category_id": 3,
     "platform_id": 2
@@ -143,7 +143,7 @@
   {
     "id": 13580209,
     "name": "Thanaporn Pudpongsai",
-    "img": "",
+    "name_th": "ธนาพร ผุดผ่องใส",
     "email": "toth.naja@gmail.com",
     "category_id": 1,
     "platform_id": 3
@@ -151,7 +151,7 @@
   {
     "id": 13580210,
     "name": "Thanyalak Lertpromkul",
-    "img": "",
+    "name_th": "ธัญญลักษณ์ เลิศพรหมกุล",
     "email": "ccn-tangmay4@hotmail.com",
     "category_id": 4,
     "platform_id": 2
@@ -159,7 +159,7 @@
   {
     "id": 13580211,
     "name": "Tharinee Natthakaranic",
-    "img": "",
+    "name_th": "ธาริณี  ณัฏฐการณิก",
     "email": "NATTHAKARANIC_T@silpakorn.edu",
     "category_id": 3,
     "platform_id": 2
@@ -167,7 +167,7 @@
   {
     "id": 13580212,
     "name": "Thyrissara Promraksa",
-    "img": "",
+    "name_th": "ธีริศรา พรมรักษา",
     "email": "yuya.coss@gmail.com",
     "category_id": 2,
     "platform_id": 3
@@ -175,7 +175,7 @@
   {
     "id": 13580213,
     "name": "Noppakorn Poolcharoen",
-    "img": "",
+    "name_th": "นพกร พูลเจริญ",
     "email": "consequent542@gmail.com",
     "category_id": 3,
     "platform_id": 2
@@ -183,7 +183,7 @@
   {
     "id": 13580217,
     "name": "Nedchanok Chantasorn",
-    "img": "",
+    "name_th": "เนตรชนก จันทศร",
     "email": "nmtaann@gmail.com",
     "category_id": 3,
     "platform_id": 2
@@ -191,7 +191,7 @@
   {
     "id": 13580218,
     "name": "Bantita Poolpo",
-    "img": "",
+    "name_th": "บัณฑิตา พูลโพธิ์",
     "email": "bantitapoolpo@gmail.com",
     "category_id": 1,
     "platform_id": 2
@@ -199,7 +199,7 @@
   {
     "id": 13580219,
     "name": "Boossakorn Chingchana",
-    "img": "",
+    "name_th": "บุษกร ชิงชนะ",
     "email": "c.boossakorn@gmail.com",
     "category_id": 1,
     "platform_id": 2
@@ -207,7 +207,7 @@
   {
     "id": 13580220,
     "name": "Pajaree Ruangrit",
-    "img": "",
+    "name_th": "ปาจรีย์ เรืองฤทธิ์",
     "email": "pajaree2140@gmail.com",
     "category_id": 2,
     "platform_id": 3
@@ -215,7 +215,7 @@
   {
     "id": 13580228,
     "name": "Pattarwan Pumnikom",
-    "img": "",
+    "name_th": "ภัทราวรรณ พุ่มนิคม",
     "email": "earth-1@outlook.co.th",
     "category_id": 1,
     "platform_id": 2
@@ -223,7 +223,7 @@
   {
     "id": 13580232,
     "name": "Methira Denthongchai",
-    "img": "",
+    "name_th": "เมธิรา เด่นธงชัย",
     "email": "dtcstudiointh@gmail.com",
     "category_id": 1,
     "platform_id": 2
@@ -231,7 +231,7 @@
   {
     "id": 13580234,
     "name": "Warathat Panthongthaworn",
-    "img": "",
+    "name_th": "วราทัศน์ พานทองถาวร",
     "email": "warathat.pan@gmail.com",
     "category_id": 4,
     "platform_id": 1
@@ -239,7 +239,7 @@
   {
     "id": 13580238,
     "name": "Sawanda Trichok",
-    "img": "",
+    "name_th": "ศวัณดา ไตรโชค",
     "email": "sawanda.trichok@gmail.com",
     "category_id": 3,
     "platform_id": 2
@@ -247,15 +247,15 @@
   {
     "id": 13580242,
     "name": "Somruethai Saiwan",
-    "img": "",
-    "email": "sawanda.trichok@gmail.com",
+    "name_th": "สมฤทัย สายวัน",
+    "email": "minzoen.nn@gmail.com",
     "category_id": 4,
     "platform_id": 1
   },
   {
     "id": 13580246,
     "name": "Suttaya Dhanisornkul",
-    "img": "",
+    "name_th": "สุทธญาณ์ ธนิสรกุล",
     "email": "i.amaysa@hotmail.com",
     "category_id": 2,
     "platform_id": 2
@@ -263,7 +263,7 @@
   {
     "id": 13580248,
     "name": "Apinya Winyuchai",
-    "img": "",
+    "name_th": "อภิญญา วิญญูชัย",
     "email": "fapy13th@gmail.com",
     "category_id": 4,
     "platform_id": 1
@@ -271,7 +271,7 @@
   {
     "id": 13580250,
     "name": "Oranat Akkaudom",
-    "img": "",
+    "name_th": "อรณัฐ  อรรคอุดม",
     "email": "oranat.kan@gmail.com",
     "category_id": 1,
     "platform_id": 2
