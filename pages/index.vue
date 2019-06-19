@@ -16,15 +16,15 @@
           </div>
 
           <div class="project-card project-card-3">
-            <project-card :vdata="creator(13580228)"></project-card>
+            <project-card :vdata="creator(lists[0])"></project-card>
           </div>
 
           <div class="project-card project-card-4">
-            <project-card :vdata="creator(13580186)"></project-card>
+            <project-card :vdata="creator(lists[1])"></project-card>
           </div>
 
           <div class="project-card project-card-5">
-            <project-card :vdata="creator(13580232)"></project-card>
+            <project-card :vdata="creator(lists[2])"></project-card>
           </div>
 
           <div class="project-card project-card-6">
@@ -85,9 +85,13 @@ import ProjectCard from "@/components/ProjectCard";
 export default {
   head() {
     return {
-      title: "Home"
+      title: "Home",
     };
   },
+  data: () => ({
+    ids: [],
+    lists: []
+  }),
   layout: "topMenu",
   computed: {
     id() {
@@ -109,16 +113,36 @@ export default {
         console.log(`id`);
       }
     }
+    if (this.creators) {
+      this.creators.forEach(creator => {
+        this.ids.push(creator.id);
+      });
+    }
+    if (this.ids) {
+      for (let i = 0; i < 3; i++) {
+        const id = this.randomId(this.ids);
+        if (this.lists[i-1] != id) {
+          this.lists.push(id);
+        }
+      }
+    }
+    console.log('lists=>', this.lists);
   },
   computed: {
     ...mapGetters({
-      creator: "creator/getCreatorDetailById"
+      creator: "creator/getCreatorDetailById",
+      creators: "creator/creators"
     }),
     getScreenShotMargin() {
       return this.creator(this.id).tools.length === 0 &&
         !this.creator(this.id).database
         ? ""
         : "screenshot-section";
+    }
+  },
+  methods: {
+    randomId(ids) {
+      return ids[Math.floor(Math.random() * ids.length)];
     }
   }
 };
