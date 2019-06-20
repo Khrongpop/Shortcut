@@ -1,6 +1,6 @@
 <template>
   <div id="top-menu">
-    <menu-app :showmenu="true"/>
+    <!-- <menu-app :showmenu="true"/> -->
     <nuxt/>
   </div>
 </template>
