@@ -64,7 +64,12 @@
                     <b-row class="mt-3">
                       <b-col v-if="creator(id).frontends.length > 0">
                         <div class="tech-title">
-                          <img :src="`${baseURL}/creators/detail/bulet.png`" alt class="bulet">
+                          <img
+                            :src="`${baseURL}/creators/detail/bulet.png`"
+                            alt
+                            class="bulet"
+                            width="60"
+                          >
                           <span>FROTEND</span>
                           <b-row class="mt-3">
                             <b-col v-for="(frontend, index) in creator(id).frontends" :key="index">
@@ -83,7 +88,12 @@
                       </b-col>
                       <b-col v-if="creator(id).backends.length > 0">
                         <div class="tech-title">
-                          <img :src="`${baseURL}/creators/detail/bulet.png`" alt class="bulet">
+                          <img
+                            :src="`${baseURL}/creators/detail/bulet.png`"
+                            alt
+                            class="bulet"
+                            width="60"
+                          >
                           <span class="mt-3">BACKEND</span>
                           <b-row class="mt-3">
                             <b-col v-for="(backend, index) in creator(id).backends" :key="index">
@@ -245,7 +255,11 @@
 
             <ul class="list-unstyled">
               <li v-for="(func, index) in creator(id).functions" :key="index">
-                <img :src="`${baseURL}/creators/detail/bulet.png`" alt>
+                <img
+                  :src="`${baseURL}/creators/detail/bulet.png`"
+                  width="50"
+                  style="margin-top:-20px;"
+                >
                 <div class="text-list">
                   <h5>{{func.name}}</h5>
                   <p>{{func.des}}</p>
@@ -289,7 +303,7 @@
               <b-col v-if="creator(id).frontends.length > 0">
                 <div class="tech-title">
                   <img :src="`${baseURL}/creators/detail/bulet.png`" alt class="bulet">
-                  <span>FROTEND</span>
+                  <span>FRONTEND</span>
                   <b-row class="mt-3">
                     <b-col v-for="(frontend, index) in creator(id).frontends" :key="index">
                       <!-- <b-img v-bind="toolProps" rounded alt="Rounded image"></b-img> -->

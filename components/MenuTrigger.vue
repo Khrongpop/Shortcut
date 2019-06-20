@@ -41,22 +41,22 @@
           </div>
         </div>
       </div>
-    </div>
-    <left-item
-      style="position: absolute;
+      <left-item
+        style="position: absolute;
     bottom: 40px;
     left: 40px;
     width:600px;
     z-index: 999;"
-    />
+      />
 
-    <sponsor-small
-      style="position: absolute;
+      <sponsor-small
+        style="position: absolute;
     bottom: 40px;
     right: 40px;
     z-index: 999;
     }"
-    />
+      />
+    </div>
   </div>
 </template>
 
