@@ -5,11 +5,10 @@
         <img :src="`${baseURL}/shortcut_left.png`" class="img-fluid">
       </div>
       <div class="col-md-5">
-                <img src="/contact.png" v-if="windowWidth<768">
+        <img src="/contact.png" v-if="windowWidth<768">
 
-        <div class="course-information">
+        <div class="course-information" :class="lg ? 'im-h-50 ':''">
           <div class="img-title" :class="windowWidth < 1024 ?'text-center':''">
-
             <img :src="`${baseURL}/contact/title1.png`" class="img-fluid">
           </div>
           <ul class="list-unstyled">
@@ -24,7 +23,7 @@
           </ul>
         </div>
 
-        <div class="portfolio mt-5">
+        <div class="portfolio mt-5" :class="lg ? 'im-h-50 ':''">
           <div class="img-title" :class="windowWidth < 1024 ?'text-center':''">
             <img :src="`${baseURL}/contact/title3.png`" class="img-fluid">
           </div>
@@ -43,7 +42,7 @@
       </div>
 
       <div class="col-md-5">
-        <div class="thesis-list">
+        <div class="thesis-list" :class="lg ? 'im-h-50 ':''">
           <div class="img-title" :class="windowWidth < 1024 ?'text-center pt-5':''">
             <img :src="`${baseURL}/contact/title2.png`" class="img-fluid">
           </div>
@@ -59,8 +58,8 @@
           </ul>
         </div>
 
-        <div class="funcsl mt-5">
-          <div class="img-title"  :class="windowWidth < 1024 ?'text-center':''">
+        <div class="funcsl mt-5" :class="lg ? 'im-h-50 ':''">
+          <div class="img-title" :class="windowWidth < 1024 ?'text-center':''">
             <img :src="`${baseURL}/contact/title4.png`" class="img-fluid">
           </div>
           <h5>{{links4.name}}</h5>
@@ -81,10 +80,10 @@
 <script>
 import Logo from "~/components/Logo";
 export default {
-  head () {
+  head() {
     return {
-      title: 'Contact'
-    }
+      title: "Contact"
+    };
   },
   layout: "topMenu",
   data() {
@@ -173,10 +172,7 @@ export default {
 </script>
 
 <style scoped>
-.thesis-list,
-.course-information,
-.portfolio,
-.funcsl {
+.im-h-50 {
   min-height: 50%;
 }
 </style>

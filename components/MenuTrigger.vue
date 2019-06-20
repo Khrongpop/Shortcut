@@ -5,7 +5,6 @@
         <div class="row px-5">
           <div class="col-md-4">
             <logo/>
-            <left-item style="position:absolute; bottom:0; width:90%;"/>
           </div>
 
           <div class="col-md-4">
@@ -39,11 +38,25 @@
                 </nuxt-link>
               </li>
             </ul>
-            <sponsor-small class/>
           </div>
         </div>
       </div>
     </div>
+    <left-item
+      style="position: absolute;
+    bottom: 40px;
+    left: 40px;
+    width:600px;
+    z-index: 999;"
+    />
+
+    <sponsor-small
+      style="position: absolute;
+    bottom: 40px;
+    right: 40px;
+    z-index: 999;
+    }"
+    />
   </div>
 </template>
 

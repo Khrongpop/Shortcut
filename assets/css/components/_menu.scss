@@ -9,6 +9,8 @@
   .hamburger {
     float: left;
     margin-top: 10px;
+    background: #000;
+    border-radius: 50%;
 
     img {
       cursor: pointer;
@@ -54,7 +56,8 @@
 
 #menu-trigger {
   top: 40px;
-  margin-top:-20px;
+  margin-top: -20px;
+
   @keyframes in {
     0% {
       left: -100%;
