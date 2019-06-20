@@ -32,7 +32,7 @@
                   :key="index"
                   :class="getClass(index)"
                 >
-                  <img :src="`${baseURL}/creators/detail/bulet.png`" alt>
+                  <img :src="`${baseURL}/creators/detail/bulet.png`" width="60" alt>
                   <div class="text-list">
                     <h5>{{func.name}}</h5>
                     <p>{{func.des}}</p>
