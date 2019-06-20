@@ -49,26 +49,26 @@
     <div v-else :style="home_mobile">
       <div class="home-content-mobile">
         <Logo/>
-        <img :src="`${this.baseURL}/home-mobile.gif`" class="img-bg-mobile">
+        <!-- <img :src="`${this.baseURL}/home-mobile.gif`" class="img-bg-mobile"> -->
 
         <div class="project-card project-card-1">
-          <project-card :vdata="creator(13580228)"></project-card>
+          <!-- <project-card :vdata="creator(13580228)"></project-card> -->
         </div>
 
         <div class="project-card project-card-2">
-          <project-card :vdata="creator(13580246)"></project-card>
+          <!-- <project-card :vdata="creator(13580246)"></project-card> -->
         </div>
 
         <div class="project-card project-card-3">
-          <img :src="`${this.baseURL}/web.png`" alt>
+          <!-- <img :src="`${this.baseURL}/web.png`" alt> -->
         </div>
 
         <div class="project-card project-card-4">
-          <img :src="`${this.baseURL}/inter-text.png`" alt>
+          <!-- <img :src="`${this.baseURL}/inter-text.png`" alt> -->
         </div>
 
         <div class="project-card project-card-5">
-          <img :src="`${this.baseURL}/mobile-text.png`" alt>
+          <!-- <img :src="`${this.baseURL}/mobile-text.png`" alt> -->
         </div>
       </div>
     </div>
@@ -85,7 +85,7 @@ import ProjectCard from "@/components/ProjectCard";
 export default {
   head() {
     return {
-      title: "Home",
+      title: "Home"
     };
   },
   data: () => ({
@@ -121,12 +121,12 @@ export default {
     if (this.ids) {
       for (let i = 0; i < 3; i++) {
         const id = this.randomId(this.ids);
-        if (this.lists[i-1] != id) {
+        if (this.lists[i - 1] != id) {
           this.lists.push(id);
         }
       }
     }
-    console.log('lists=>', this.lists);
+    console.log("lists=>", this.lists);
   },
   computed: {
     ...mapGetters({
