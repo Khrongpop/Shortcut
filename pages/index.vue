@@ -60,15 +60,15 @@
         </div>
 
         <div class="project-card project-card-3">
-          <!-- <img :src="`${this.baseURL}/web.png`" alt> -->
+          <img :src="`${this.baseURL}/web.png`" alt>
         </div>
 
         <div class="project-card project-card-4">
-          <!-- <img :src="`${this.baseURL}/inter-text.png`" alt> -->
+          <img :src="`${this.baseURL}/inter-text.png`" alt>
         </div>
 
         <div class="project-card project-card-5">
-          <!-- <img :src="`${this.baseURL}/mobile-text.png`" alt> -->
+          <img :src="`${this.baseURL}/mobile-text.png`" alt>
         </div>
       </div>
     </div>
