@@ -2,7 +2,7 @@
   <div id="menu-trigger">
     <div :class="triggerClass">
       <div :style="menu_desktop">
-        <div class="row px-5">
+        <div class="row p-0">
           <div class="col-md-4">
             <logo/>
           </div>
@@ -102,6 +102,16 @@ export default {
 .list2-r {
   li {
     padding-bottom: 1em;
+  }
+}
+
+#menu-trigger {
+  .row {
+    padding: 0 !important;
+    margin: 0;
+    .col-md-4 {
+      margin: 0;
+    }
   }
 }
 </style>
