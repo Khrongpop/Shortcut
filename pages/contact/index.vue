@@ -23,7 +23,7 @@
           </ul>
         </div>
 
-        <div class="portfolio mt-5" :class="lg ? 'im-h-50 ':''">
+        <div class="portfolio mt-5 mb-5" :class="lg ? 'im-h-50 ':''">
           <div class="img-title" :class="windowWidth < 1024 ?'text-center':''">
             <img :src="`${baseURL}/contact/title3.png`" class="img-fluid">
           </div>
