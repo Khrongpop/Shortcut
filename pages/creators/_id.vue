@@ -176,6 +176,28 @@
                     <img :src="`${baseURL}/creators/detail/screenshots.png`" alt>
 
                     <br>
+
+                    <silentbox-group>
+                      <silentbox-item
+                        src="https://i.imgur.com/U0FeDs1.png"
+                        description="Sunken dreams II. by Arbebuk"
+                      >
+                        <img src="https://i.imgur.com/U0FeDs1.png" width="200px">
+                      </silentbox-item>
+                      <silentbox-item
+                        src="https://i.imgur.com/RLxvDs3.jpg"
+                        description="Tunnel View Sunrise by Porbital"
+                      >
+                        <img src="https://i.imgur.com/RLxvDs3.jpg" width="200px">
+                      </silentbox-item>
+                      <silentbox-item
+                        src="https://i.imgur.com/U0FeDs1.png"
+                        description="Mythology by Nelleke"
+                      >
+                        <img src="https://i.imgur.com/U0FeDs1.png" width="200px">
+                      </silentbox-item>
+                    </silentbox-group>
+
                     <carousel
                       :per-page="5"
                       :paginationEnabled="false"

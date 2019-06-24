@@ -37,11 +37,11 @@
 
         <div class="row">
           <div class="col-4 text-left">
-            <left-item/>
+            <left-item style="margin-top:-140px;"/>
           </div>
           <div class="col-2"></div>
           <div class="col-6 text-right">
-            <sponsor-small class="frr"/>
+            <sponsor-small class="frr" style="margin-top:-120px;"/>
           </div>
         </div>
       </div>
@@ -85,7 +85,7 @@ import ProjectCard from "@/components/ProjectCard";
 export default {
   head() {
     return {
-      title: "Home",
+      title: "Home"
     };
   },
   data: () => ({
@@ -121,12 +121,12 @@ export default {
     if (this.ids) {
       for (let i = 0; i < 3; i++) {
         const id = this.randomId(this.ids);
-        if (this.lists[i-1] != id) {
+        if (this.lists[i - 1] != id) {
           this.lists.push(id);
         }
       }
     }
-    console.log('lists=>', this.lists);
+    console.log("lists=>", this.lists);
   },
   computed: {
     ...mapGetters({
