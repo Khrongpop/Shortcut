@@ -37,11 +37,11 @@
 
         <div class="row">
           <div class="col-4 text-left">
-            <left-item style="margin-top:-140px;"/>
+            <left-item style="margin-top:-140px;" class="ml-4"/>
           </div>
           <div class="col-2"></div>
           <div class="col-6 text-right">
-            <sponsor-small class="frr" style="margin-top:-120px;"/>
+            <sponsor-small class="mr-4" style="margin-top:-120px;"/>
           </div>
         </div>
       </div>
