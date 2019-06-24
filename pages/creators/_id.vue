@@ -208,10 +208,10 @@
                       :loop="true"
                       :autoplay="false"
                     >
-                      <slide v-for="item in 10" :key="item.id">
+                      <slide v-for="(val,item) in 10" :key="item.id">
                         <b-col>
                           <!-- <v-lazy-image src="http://lorempixel.com/400/200/" /> -->
-                          <!-- {{item}} -->
+
                           <b-img
                             rounded
                             v-if="creator(id).screeshots[item]"
