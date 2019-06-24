@@ -1,6 +1,6 @@
 <template>
   <div class="text-white">
-    <img src="/menu/spon-r.png" alt class="img-fluid">
+    <img :src="`${baseURL}/menu/spon-r.png`" alt class="img-fluid">
   </div>
 </template>
 

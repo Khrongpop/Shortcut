@@ -31,7 +31,8 @@
                 style="float:none;"
                 @click="$emit('routeChange', true )"
               >
-                <nuxt-link :to="{ name:'creators-category-name', params:{name: link.name}}">
+                <!-- <nuxt-link :to="{ name:'creators-category-name', params:{name: link.name}}"> -->
+                <nuxt-link :to="`/creators/category/${link.name}`">
                   <!-- <nuxt-link :to="{ name:'category', query:{name: link.name}}"> -->
                   <img :src="`${baseURL}/menu/cat-${index+1}.png`" width="80">
                   {{link.name}}

@@ -208,10 +208,10 @@
                       :loop="true"
                       :autoplay="false"
                     >
-                      <slide v-for="item in 10" :key="item.id">
+                      <slide v-for="(val,item) in 10" :key="item.id">
                         <b-col>
                           <!-- <v-lazy-image src="http://lorempixel.com/400/200/" /> -->
-                          <!-- {{item}} -->
+
                           <b-img
                             rounded
                             v-if="creator(id).screeshots[item]"
@@ -318,10 +318,15 @@
 
             <br>
             <carousel :per-page="3" :paginationEnabled="false" :loop="true" :autoplay="false">
-              <slide v-for="item in 10" :key="item.id">
-                <b-col>
-                  <b-img v-bind="mainProps" rounded alt="Rounded image"></b-img>
-                </b-col>
+              <slide v-for="(val,item) in 10" :key="item.id">
+                <b-img
+                  rounded
+                  v-if="creator(id).screeshots[item]"
+                  :src="creator(id).screeshots[item]"
+                  width="240"
+                  height="140"
+                ></b-img>
+                <b-img v-bind="mainProps" rounded v-else></b-img>
               </slide>
             </carousel>
           </b-col>
