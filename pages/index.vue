@@ -52,11 +52,11 @@
         <img :src="`${this.baseURL}/home-mobile.gif`" class="img-bg-mobile">
 
         <div class="project-card project-card-1">
-          <project-card :vdata="creator(13580228)"></project-card>
+          <project-card :vdata="creator(lists[0])"></project-card>
         </div>
 
         <div class="project-card project-card-2">
-          <project-card :vdata="creator(13580246)"></project-card>
+          <project-card :vdata="creator(lists[1])"></project-card>
         </div>
 
         <div class="project-card project-card-3">
