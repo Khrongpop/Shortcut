@@ -23,6 +23,7 @@
     "vue-carousel": "^0.18.0",
     "vue-countdown": "^1.0.4",
     "vue-matrix-digit-rain": "^1.0.1",
+    "vue-silentbox": "^0.1.9",
     "vue-swal": "^1.0.0",
     "vue-web-cam": "^1.5.0",
     "vuex": "^3.1.1"
