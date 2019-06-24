@@ -5,7 +5,7 @@
         <img :src="`${baseURL}/shortcut_left.png`" class="img-fluid">
       </div>
       <div class="col-md-5">
-        <img src="/contact.png" v-if="windowWidth<768">
+        <img :src="`${baseURL}/contact.png`" v-if="windowWidth<768">
 
         <div class="course-information" :class="lg ? 'im-h-50 ':''">
           <div class="img-title" :class="windowWidth < 1024 ?'text-center':''">
@@ -29,7 +29,7 @@
           </div>
           <ul class="list-unstyled">
             <li v-for="(link, index) in links3" :key="index">
-              <img :src="`/contact/${link.icon}.png`" class="mr-1" v-if="link.icon">
+              <img :src="`${baseURL}/contact/${link.icon}.png`" class="mr-1" v-if="link.icon">
               <a
                 :href="'http://'+link.link"
                 target="_blank"

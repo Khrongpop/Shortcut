@@ -46,7 +46,7 @@
         </div>
       </div>
     </div>
-    <div v-else :style="home_mobile">
+    <div v-else>
       <div class="home-content-mobile">
         <Logo/>
         <img :src="`${this.baseURL}/home-mobile.gif`" class="img-bg-mobile">

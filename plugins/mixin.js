@@ -8,12 +8,12 @@ Vue.mixin({
       windowHeight: 0,
       bg_animate: {'background-image':`url(/bg_animate.gif)`,'height':'100%'},
       bg_home: {
-        'background-image':`url(${this.baseURL}/home_bg.gif)`,
+        // 'background-image':`url(${this.baseURL}/home_bg.gif)`,
         'height':'100%',
         'background-size' : 'contain'
       },
       home_desktop : {
-        'background-image':`url(${this.baseURL}/home-desktop.gif)`,
+        // 'background-image':`url(${this.baseURL}/home-desktop.gif)`,
         'background-repeat':`no-repeat`,
         'background-size' : `contain`,
         'height':'100%',
@@ -21,7 +21,7 @@ Vue.mixin({
 
       },
       home_mobile : {
-        'background-image':`url(${this.baseURL}/home-mobile.gif)`,
+        //'background-image':`url(${this.baseURL}/home-mobile.gif)`,
         'background-repeat':`no-repeat`,
         'background-size' : `contain`,
         'height':'100%',
@@ -29,7 +29,7 @@ Vue.mixin({
 
       },
       menu_desktop : {
-        'background-image':`url(${this.baseURL}/menu_desktop.gif)`,
+        // 'background-image':`url(${this.baseURL}/menu_desktop.gif)`,
         'background-repeat':`no-repeat`,
         'background-size' : `contain`,
         'height':'100%',
@@ -37,7 +37,7 @@ Vue.mixin({
 
       },
       menu_mobile : {
-        'background-image':`url(${this.baseURL}/menu-mobile_2.gif)`,
+        // 'background-image':`url(${this.baseURL}/menu-mobile_2.gif)`,
         'background-repeat':`no-repeat`,
         'background-size' : `contain`,
         'height':'100%',
