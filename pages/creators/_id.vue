@@ -181,7 +181,7 @@
 
                     <br>
 
-                    <silentbox-group>
+                    <!-- <silentbox-group>
                       <silentbox-item
                         src="https://i.imgur.com/U0FeDs1.png"
                         description="Sunken dreams II. by Arbebuk"
@@ -200,7 +200,7 @@
                       >
                         <img src="https://i.imgur.com/U0FeDs1.png" width="200px">
                       </silentbox-item>
-                    </silentbox-group>
+                    </silentbox-group>-->
 
                     <carousel
                       :per-page="5"
