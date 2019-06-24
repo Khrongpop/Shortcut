@@ -68,12 +68,7 @@
         <img :src="`${baseURL}/exhibition/m-title.png`" alt>
       </b-row>
       <b-row>
-        <img
-          :src="`${baseURL}/exhibition/web-title.png`"
-          alt
-          style="width:300px; margin-left:6rem"
-          class="mb-3"
-        >
+        <img :src="`${baseURL}/exhibition/web-title.png`" alt class="mb-3 ehix-title">
       </b-row>
       <b-row>
         <img :src="`${baseURL}/exhibition/banner.jpg`" alt style="width:100%;">
@@ -111,7 +106,7 @@
             โดยแต่ละชิ้นล้วนมีความแตกต่างและโดดเด่น สะท้อนองค์ความรู้ด้านการออกแบบและพัฒนางานให้ออกมาใช้ได้จริง
             บนสื่อดิจิทัลที่ทันสมัย ตอบโจทย์วงการวิชาการและวิชาชีพ
           </p>
-          <span>*หมายเลข 13.5 มีนัยยะแฝงสองส่วนคือ สื่อถึงรุ่นที่ 13</span>
+          <span>*หมายเลข 13.5 มีนัยยะแฝงสองส่วนคือ สื่อถึงรุ่นที่ 13 และงาน Exhibition ครั้งที่ 5</span>
         </div>
       </b-row>
     </div>
