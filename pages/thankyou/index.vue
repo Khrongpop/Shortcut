@@ -1,5 +1,5 @@
 <template>
-  <div id="thankyou">
+  <div id="thankyou" :style="bg_animate">
     <div v-if="lg">
       <carousel :per-page="1" :paginationEnabled="false" :loop="true" :autoplay="false">
         <slide>
