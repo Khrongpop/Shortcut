@@ -1,5 +1,5 @@
 <template>
-  <div id="thankyou">
+  <div id="thankyou" :style="bg_animate">
     <div class="row">
       <div class="col-md-2" v-if="md">
         <img :src="`${baseURL}/shortcut_left.png`" class="img-fluid">
