@@ -113,6 +113,8 @@ export default {
         console.log(`id`);
       }
     }
+  },
+  created() {
     if (this.creators) {
       this.creators.forEach(creator => {
         this.ids.push(creator.id);
