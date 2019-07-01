@@ -445,9 +445,18 @@
   },
   {
     "id": 13580211,
-    "frontends": [""],
-    "backends": [""],
-    "database": "",
+    "frontends": [{
+      "name": "Swift",
+      "img": "swift"
+    }],
+    "backends": [{
+      "name": "PHP",
+      "img": "php"
+    }],
+    "database": {
+      "name": "MySQL",
+      "img": "mysql"
+    },
     "tools": [],
     "percen": ""
   },
@@ -503,7 +512,7 @@
       "img": "swift"
     }],
     "backends": [""],
-    "database": "",
+    "database": null,
     "tools": [{
       "name": "CoreML",
       "img": "ml",
