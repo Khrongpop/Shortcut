@@ -91,53 +91,53 @@ export default {
       links1: [
         {
           text: "หลักสูตรเทคโนโลยีสารสนเทศธุรกิจ",
-          link: "#"
+          link: "https://www.ict.su.ac.th/academic/academic-it-business"
         },
         {
           text: "หลักสูตรเทคโนโลยีสารสนเทศเพื่อการออกแบบ",
-          link: "#"
+          link: "https://www.ict.su.ac.th/academic/academic-it-design"
         },
         {
           text: "หลักสูตรเทคโนโลยีสารสนเทศนิเทศศาสตร์",
-          link: "#"
+          link: "https://www.ict.su.ac.th/academic/academic-communication"
         },
         {
           text: "ติดต่อคณะ",
-          link: "#"
-        },
-        {
-          text: "ไอซีทีศิลปากรโชว์เคส(ICT Showcase)",
-          link: "#"
+          link: "https://www.ict.su.ac.th/contact"
         }
       ],
       links2: [
         {
           text: "ICTSUWEB#05",
-          link: "#"
+          link: "http://web05.ictsilpakorn.com/"
         },
         {
           text: "ICTSUWEB#06",
-          link: "#"
+          link: "http://web06.ictsilpakorn.com/"
         },
         {
           text: "ICTSUWEB#07",
-          link: "#"
+          link: "http://web07.ictsilpakorn.com/"
         },
         {
           text: "ICTSUWEB#08",
-          link: "#"
+          link: "http://web08.ictsilpakorn.com/"
         },
         {
           text: "ICTSUWEB#09 - SURAROUND 9.1",
-          link: "#"
+          link: "http://web09.ictsilpakorn.com/"
         },
         {
           text: "ICTSUWEB#10 - OATHLON 10.2",
-          link: "#"
+          link: "http://web10.ictsilpakorn.com/"
         },
         {
           text: "ICTSUWEB#11 - Ultra-Line 11.3",
-          link: "#"
+          link: "https://ictsilpakorn.com/im11/portfolio/"
+        },
+        {
+          text: "ICTSUWEB#11 - Comeraam 12.4",
+          link: "https://ictsilpakorn.com/im12/comeraam/"
         }
       ],
       links3: [
