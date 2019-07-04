@@ -99,7 +99,6 @@ Vue.mixin({
     window.removeEventListener('scroll', this.handleScroll)
   },
   methods: {
-
     handleScroll () {
       this.scrolled = window.scrollY
     },

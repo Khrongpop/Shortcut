@@ -2,7 +2,7 @@
   <div class="creator" :style="bg_animate">
     <div v-if="lg">
       <!-- <div style="width:5%;" class="float-left">อ่านทำไม</div> -->
-      <div class="center-section">
+      <div class="center-section" @scroll="nextSlide">
         <Logo/>
 
         <div class="creator-txt">
@@ -23,6 +23,7 @@
           paginationActiveColor="#6cdbe0"
           paginationColor="#ccc"
           @page-change="handleCurrentLG"
+          ref="creatorCarousel"
         >
           <slide v-for="(val, index)  in 20" :key="index">
             <div v-if="index < 5">
@@ -207,6 +208,24 @@ export default {
     CreatorCard,
     Logo
   },
+  created() {
+    if (process.browser) {
+      if (this.lg) {
+        console.log("55555");
+        document.documentElement.style.overflow = "hidden";
+      }
+    }
+  },
+  mounted() {
+    if (this.lg) {
+      console.log("55555");
+      // document.documentElement.style.overflow = "hidden";
+    }
+  },
+  destroyed() {
+    if (process.browser) {
+    }
+  },
   computed: {
     ...mapGetters({
       creators: "creator/creators"
@@ -228,7 +247,31 @@ export default {
       return this.creators.length;
     }
   },
+  watch: {
+    modalOpen: function(isOpen) {
+      if (isOpen) {
+        if (process.browser) {
+          document.documentElement.style.overflow = "hidden";
+          // document.documentElement is the same as using document.querySelector('#root')
+        }
+      } else {
+        if (process.browser) {
+          document.documentElement.style.overflow = "auto";
+        }
+      }
+    }
+  },
   methods: {
+    nextSlide() {
+      this.$refs.creatorCarousel.goToPage(
+        this.$refs.creatorCarousel.getNextPage()
+      );
+    },
+    prevSlide() {
+      this.$refs.creatorCarousel.goToPage(
+        this.$refs.creatorCarousel.getPreviousPage()
+      );
+    },
     getIndex(val, index) {
       if (val === 1) {
         return index;
