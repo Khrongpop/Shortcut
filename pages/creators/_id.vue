@@ -1,6 +1,16 @@
 <template>
   <div id="creator_detail" :style="bg_animate">
     <div v-if="lg">
+      <transition name="modal" v-if="showModal">
+        <div class="modal-mask" @click="showModal = false">
+          <div class="modal-wrapper">
+            <div class="modal-container">
+              <!-- <button class="modal-default-button" @click="showModal = false">OK</button> -->
+              <b-img :src="showImage" center fluid :style="getImgStyle"></b-img>
+            </div>
+          </div>
+        </div>
+      </transition>
       <!-- <div style="width:10%" class="float-left">อ่านทำไม</div> -->
       <carousel
         :per-page="1"
@@ -24,7 +34,7 @@
               ></b-img>
             </div>
             <div style="width:50%; margin-left:-7%;" class="float-left">
-              <img :src="`${baseURL}/creators/detail/func.png`" alt class="func-title">
+              <img :src="`${baseURL}/creators/detail/func.png`" alt class="func-title" />
 
               <ul class="list-unstyled">
                 <li
@@ -36,7 +46,7 @@
                     :src="`${baseURL}/creators/detail/bulet.png`"
                     width="60"
                     style="margin-top:-20px;"
-                  >
+                  />
                   <div class="text-list">
                     <h5>{{func.name}}</h5>
                     <p>{{func.des}}</p>
@@ -52,8 +62,8 @@
               <b-col>
                 <b-row class="creator_row">
                   <b-col>
-                    <img :src="`${this.baseURL}/creators/detail/showreel.png`" alt>
-                    <br>
+                    <img :src="`${this.baseURL}/creators/detail/showreel.png`" alt />
+                    <br />
                     <iframe
                       width="480"
                       height="245"
@@ -64,7 +74,7 @@
                     ></iframe>
                   </b-col>
                   <b-col class="tech-section">
-                    <img :src="`${baseURL}/creators/detail/tech.png`" alt>
+                    <img :src="`${baseURL}/creators/detail/tech.png`" alt />
                     <b-row class="mt-3">
                       <b-col v-if="creator(id).frontends.length > 0">
                         <div class="tech-title">
@@ -73,7 +83,7 @@
                             alt
                             class="bulet"
                             width="60"
-                          >
+                          />
                           <span>FROTEND</span>
                           <b-row class="mt-3">
                             <b-col v-for="(frontend, index) in creator(id).frontends" :key="index">
@@ -97,7 +107,7 @@
                             alt
                             class="bulet"
                             width="60"
-                          >
+                          />
                           <span class="mt-3">BACKEND</span>
                           <b-row class="mt-3">
                             <b-col v-for="(backend, index) in creator(id).backends" :key="index">
@@ -118,7 +128,7 @@
                     <b-row class="mt-3">
                       <b-col v-if="creator(id).database">
                         <div class="tech-title">
-                          <img :src="`${baseURL}/creators/detail/bulet.png`" alt class="bulet">
+                          <img :src="`${baseURL}/creators/detail/bulet.png`" alt class="bulet" />
                           <span class="mt-3">DATABASE</span>
                           <b-row class="mt-3">
                             <b-col>
@@ -140,7 +150,7 @@
                       </b-col>
                       <b-col v-if="creator(id).tools.length > 0">
                         <div class="tech-title">
-                          <img :src="`${baseURL}/creators/detail/bulet.png`" alt class="bulet">
+                          <img :src="`${baseURL}/creators/detail/bulet.png`" alt class="bulet" />
                           <span class="mt-3">TOOLS</span>
                           <b-row class="mt-3">
                             <!-- <b-col v-if="creator(id).tools.length > 3">
@@ -177,9 +187,9 @@
                 </b-row>
                 <b-row :class="getScreenShotMargin">
                   <b-col>
-                    <img :src="`${baseURL}/creators/detail/screenshots.png`" alt>
+                    <img :src="`${baseURL}/creators/detail/screenshots.png`" alt />
 
-                    <br>
+                    <br />
 
                     <!-- <silentbox-group>
                       <silentbox-item
@@ -218,6 +228,7 @@
                             :src="creator(id).screeshots[item]"
                             width="240"
                             height="140"
+                            @click="showModalImage(creator(id).screeshots[item])"
                           ></b-img>
                           <b-img v-bind="mainProps" rounded v-else></b-img>
                         </b-col>
@@ -281,7 +292,7 @@
             ></b-img>
           </div>
           <div class="float-left" :style="windowWidth > 499 ? {'width':'60%'} : {'width':'100%'}">
-            <img :src="`${baseURL}/creators/detail/func.png`" alt class="func-title">
+            <img :src="`${baseURL}/creators/detail/func.png`" alt class="func-title" />
 
             <ul class="list-unstyled">
               <li v-for="(func, index) in creator(id).functions" :key="index">
@@ -289,7 +300,7 @@
                   :src="`${baseURL}/creators/detail/bulet.png`"
                   width="50"
                   style="margin-top:-20px;"
-                >
+                />
                 <div class="text-list">
                   <h5>{{func.name}}</h5>
                   <p>{{func.des}}</p>
@@ -300,8 +311,8 @@
         </b-row>
         <b-row>
           <b-col class="mt-3">
-            <img :src="`${this.baseURL}/creators/detail/showreel.png`" alt class="mb-3">
-            <br>
+            <img :src="`${this.baseURL}/creators/detail/showreel.png`" alt class="mb-3" />
+            <br />
             <iframe
               :width="windowWidth > 555 ? `480` : `100%`"
               height="245"
@@ -314,9 +325,9 @@
         </b-row>
         <b-row class="mt-3 mb-3">
           <b-col>
-            <img :src="`${baseURL}/creators/detail/screenshots.png`" alt>
+            <img :src="`${baseURL}/creators/detail/screenshots.png`" alt />
 
-            <br>
+            <br />
             <carousel :per-page="3" :paginationEnabled="false" :loop="true" :autoplay="false">
               <slide v-for="(val,item) in 10" :key="item.id">
                 <b-img
@@ -333,11 +344,11 @@
         </b-row>
         <b-row>
           <b-col class="mt-3">
-            <img :src="`${baseURL}/creators/detail/tech.png`" alt class="mb-3">
+            <img :src="`${baseURL}/creators/detail/tech.png`" alt class="mb-3" />
             <b-row class="mt-3">
               <b-col v-if="creator(id).frontends.length > 0">
                 <div class="tech-title">
-                  <img :src="`${baseURL}/creators/detail/bulet.png`" alt class="bulet">
+                  <img :src="`${baseURL}/creators/detail/bulet.png`" alt class="bulet" />
                   <span>FRONTEND</span>
                   <b-row class="mt-3">
                     <b-col v-for="(frontend, index) in creator(id).frontends" :key="index">
@@ -356,12 +367,12 @@
               </b-col>
               <b-col v-if="creator(id).backends.length > 0">
                 <div class="tech-title">
-                  <img :src="`${baseURL}/creators/detail/bulet.png`" alt class="bulet">
+                  <img :src="`${baseURL}/creators/detail/bulet.png`" alt class="bulet" />
                   <span class="mt-3">BACKEND</span>
                   <b-row class="mt-3">
                     <b-col v-for="(backend, index) in creator(id).backends" :key="index">
                       <!-- <b-img v-bind="toolProps" rounded alt="Rounded image"></b-img> -->
-                      <dev-icon :name="backend.img" size="2" v-if="backend.img" :svg="backend.svg"/>
+                      <dev-icon :name="backend.img" size="2" v-if="backend.img" :svg="backend.svg" />
 
                       <p>{{backend.name}}</p>
                     </b-col>
@@ -372,7 +383,7 @@
             <b-row class="mt-4">
               <b-col v-if="creator(id).database">
                 <div class="tech-title">
-                  <img :src="`${baseURL}/creators/detail/bulet.png`" alt class="bulet">
+                  <img :src="`${baseURL}/creators/detail/bulet.png`" alt class="bulet" />
                   <span class="mt-3">DATABASE</span>
                   <b-row class="mt-3">
                     <b-col>
@@ -391,12 +402,12 @@
               </b-col>
               <b-col v-if="creator(id).tools.length > 0">
                 <div class="tech-title">
-                  <img :src="`${baseURL}/creators/detail/bulet.png`" alt class="bulet">
+                  <img :src="`${baseURL}/creators/detail/bulet.png`" alt class="bulet" />
                   <span class="mt-3">TOOLS</span>
                   <b-row class="mt-3">
                     <b-col v-for="(tool, index) in creator(id).tools" :key="index">
                       <div v-if="index < 3">
-                        <dev-icon :name="tool.img" size="2" v-if="tool.img" :svg="tool.svg"/>
+                        <dev-icon :name="tool.img" size="2" v-if="tool.img" :svg="tool.svg" />
                         <p>{{tool.name}}</p>
                       </div>
                     </b-col>
@@ -447,6 +458,9 @@ export default {
   },
   data() {
     return {
+      showModal: false,
+      imageCheck: false,
+      showImage: null,
       mainProps: {
         blank: true,
         // blankColor: "#000",
@@ -485,6 +499,24 @@ export default {
         return "ml-6";
       }
       return "ml-10";
+    },
+
+    showModalImage(image) {
+      if (process.client) {
+        var img = new Image();
+        img.src = image;
+        let _this = this;
+        img.addEventListener("load", function() {
+          let width = this.naturalWidth;
+          let height = this.naturalHeight;
+          // console.log(width - height < 0);
+          // console.log(_this.imageCheck);
+          _this.imageCheck = width - height < 0;
+          _this.showImage = image;
+          _this.showModal = true;
+          // return width - height < 0;
+        });
+      }
     }
   },
   computed: {
@@ -499,6 +531,12 @@ export default {
         !this.creator(this.id).database
         ? ""
         : "screenshot-section";
+    },
+    getImgStyle() {
+      if (this.imageCheck) {
+        return { width: "50%" };
+      }
+      return { width: "100%" };
     }
   }
 };
@@ -512,5 +550,72 @@ img {
   width: 500px;
   height: 570px;
   margin-left: -190px;
+}
+.modal-mask {
+  position: fixed;
+  z-index: 9998;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: table;
+  transition: opacity 0.3s ease;
+}
+
+.modal-wrapper {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.modal-container {
+  width: 40%;
+  margin: 0px auto;
+  /* padding: 20px 30px; */
+  padding: 20px 10px;
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 2px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.7);
+  transition: all 0.3s ease;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+.modal-header h3 {
+  margin-top: 0;
+  color: #42b983;
+}
+
+.modal-body {
+  margin: 20px 0;
+}
+
+.modal-default-button {
+  /* float: right; */
+  position: absolute;
+  right: 10px;
+}
+
+/*
+ * The following styles are auto-applied to elements with
+ * transition="modal" when their visibility is toggled
+ * by Vue.js.
+ *
+ * You can easily play with the modal transition by editing
+ * these styles.
+ */
+
+.modal-enter {
+  opacity: 0;
+}
+
+.modal-leave-active {
+  opacity: 0;
+}
+
+.modal-enter .modal-container,
+.modal-leave-active .modal-container {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
 }
 </style>
