@@ -26,6 +26,16 @@
 @import "pages/thankyou/index";
 @import "pages/exhibition/index";
 
+#home {
+  display: none;
+}
+
+#__nuxt {
+  #home {
+    display: block;
+  }
+}
+
 html,
 body {
   background-color: #000;
